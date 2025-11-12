@@ -548,15 +548,18 @@
     ]
   },
   "NASA-JPL-HORIZONS-3I-ATLAS": {
-    "title": "JPL HORIZONS: 3I/ATLAS Ephemerides",
+    "title": "JPL HORIZONS: 3I/ATLAS Ephemerides (Solution JPL#26)",
     "publisher": "NASA JPL",
     "urls": [
       "https://ssd.jpl.nasa.gov/horizons/"
     ],
-    "last_checked": "2025-11-07",
+    "last_checked": "2025-11-12",
     "confidence": "extremely_high",
     "type": "agency_tool",
-    "tier": "T1"
+    "tier": "T1",
+    "solution": "JPL#26",
+    "epoch": "2460978.0 (2025-Oct-29.0 TDB)",
+    "notes": "Post-perihelion solution with precise ephemeris generation. Orbital eccentricity e>6.137±0.0006. Non-gravitational acceleration measured: radial 1.1e-6 AU/day², transverse 3.7e-7 AU/day²."
   },
   "SKY-AND-TELESCOPE-NOV1-2025": {
     "title": "Sky & Telescope: November 1, 2025 visibility briefing",
@@ -662,6 +665,78 @@
     "confidence": "high",
     "type": "agency"
   },
+  "ARXIV-2509-05562-ATLAS-PHOTOMETRY": {
+    "title": "ATLAS survey photometry and color evolution of 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2509.05562"
+    ],
+    "notes": "Color shift from red to near-solar; H(t) slope break near r ~3.3 AU; coma cross-section scaling analysis.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ARXIV-2508-02934-HST-MORPHOLOGY": {
+    "title": "HST WFC3 pre-perihelion morphology and size constraints for 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2508.02934"
+    ],
+    "notes": "Active at r ~3.8 AU; dust loss 6–60 kg/s; nucleus radius constraint <2.8 km.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ARXIV-2509-08792-ZTF-PREDISCOVERY": {
+    "title": "ZTF prediscovery and early activity constraints for 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2509.08792"
+    ],
+    "notes": "Activity detected inward of r ~6.5 AU; constraints to r ~17 AU; dust production evolution.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ARXIV-2507-21967-TESS-PRECOVERY": {
+    "title": "TESS precovery photometry of 3I/ATLAS (May–June 2025)",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2507.21967"
+    ],
+    "notes": "Shift-stack recovery from 2025-05-07 to 2025-06-02; tighter inbound ephemeris constraints.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ARXIV-2510-11779-KECK-KCWI": {
+    "title": "Keck/KCWI CN and Ni spatial profiles in 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2510.11779"
+    ],
+    "notes": "Blue-sensitive IFU spectra; CN and Ni detections; Ni more centrally concentrated than CN.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "GREER-1991-CSETI-PDF": {
+    "title": "Comprehensive Assessment of the UF/ETI Phenomenon (PDF)",
+    "publisher": "Dr. Steven Greer",
+    "urls": [
+      "https://drstevengreer.com/wp-content/uploads/2023/06/Comprehensive-Assessment-of-the-UF-ET-Phenomenon.pdf"
+    ],
+    "notes": "Full Spectrum of Reality framework; CE-5 consciousness integration model. Metaphysical interpretation; see cautions in KB.",
+    "last_checked": "2025-11-12",
+    "confidence": "high_on_authorship",
+    "type": "author_publication",
+    "tier": "T3"
+  },
   "version": "2.10.1",
   "_quarantined": {
     "VLT_CHILE_2025": {
@@ -692,6 +767,8 @@
       "confidence": "medium",
       "type": "preprint",
       "do_not_cite_primary": true,
+      "do_not_surface": true,
+      "status": "quarantined",
       "quarantine_reason": "generic_arxiv_placeholder"
     },
     "ARXIV-3I-ATLAS-AGE-ESTIMATE": {
@@ -704,6 +781,8 @@
       "confidence": "medium",
       "type": "preprint",
       "do_not_cite_primary": true,
+      "do_not_surface": true,
+      "status": "quarantined",
       "quarantine_reason": "generic_arxiv_placeholder"
     },
     "VARIOUS-PRESS-REPORTS": {
@@ -715,6 +794,8 @@
       "type": "press_aggregate",
       "tier": "T3",
       "do_not_cite_primary": true,
+      "do_not_surface": true,
+      "status": "quarantined",
       "quarantine_reason": "placeholder_unverified"
     },
     "CN-TIANWEN-REPORTS-2025": {
@@ -726,6 +807,8 @@
       "confidence": "low",
       "type": "media",
       "do_not_cite_primary": true,
+      "do_not_surface": true,
+      "status": "quarantined",
       "quarantine_reason": "placeholder_unverified"
     }
   }

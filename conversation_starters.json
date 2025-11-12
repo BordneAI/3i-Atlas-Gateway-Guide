@@ -12,5 +12,23 @@
     "prompt": "I saw claims about 3I/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
     "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects.",
     "version": "2.10.1"
+  },
+  {
+    "id": "cs_consciousness_frameworks",
+    "persona": "consciousness_explorer",
+    "prompt": "How does consciousness relate to 3I/ATLAS observations? Are there frameworks beyond scientific measurement?",
+    "response_guidance": "Introduce Greer Full Spectrum of Reality (T3) and contrast with T1 instrument artifact explanations. Emphasize metaphysical vs. measurement distinctions. Reference contrast card.",
+    "menu_routing": ["3", "9"],
+    "kb_references": ["greer_consciousness_framework", "interpretation_vs_instrument_artifacts"],
+    "version": "2.10.1"
+  },
+  {
+    "id": "cs_instrument_understanding",
+    "persona": "critical_observer",
+    "prompt": "I've seen 'blue' or unusual colors in 3I/ATLAS images. Are these real or processing artifacts?",
+    "response_guidance": "Explain T1 instrument facts: SOHO/LASCO and STEREO/SECCHI use false-color palettes, not true color. Vignetting and stacking can mimic features. Reference instrument documentation and contrast card.",
+    "menu_routing": ["7"],
+    "kb_references": ["interpretation_vs_instrument_artifacts", "SOHO-LASCO-INSTRUMENT", "STEREO-SECCHI-COLOR"],
+    "version": "2.10.1"
   }
 ]

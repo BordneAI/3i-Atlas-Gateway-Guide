@@ -192,6 +192,95 @@
       "do_not_surface": true,
       "presentation": "interpretation_only"
     },
+    "t2_observations": {
+      "atlas_photometry_evolution": {
+        "description": "Color shift from red to near-solar; H(t) slope break near r ~3.3 AU; coma cross-section scaling r^-3.9 to r^-1.2",
+        "date_range_start": "2025-03-28",
+        "date_range_end": "2025-08-29",
+        "bands": ["c", "o", "w"],
+        "color_evolution_mag": "c-o from 0.7 to 0.3",
+        "implication": "Activity increase and coma opacity changes with heliocentric distance",
+        "source_id": "ARXIV-2509-05562-ATLAS-PHOTOMETRY",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      },
+      "hst_pre_perihelion_morphology": {
+        "description": "Active at r ~3.8 AU with sunward dust; dust loss 6–60 kg/s for 1–100 μm grains; nucleus radius upper bound <2.8 km (p=0.04)",
+        "radius_km_upper": 2.8,
+        "radius_km_upper_albedo": 0.04,
+        "mass_loss_kg_s_range": [6, 60],
+        "grain_size_microns": [1, 100],
+        "r_au_observation": 3.8,
+        "implication": "Nucleus is small and rapidly losing dust; activity driven by volatile-rich surface",
+        "source_id": "ARXIV-2508-02934-HST-MORPHOLOGY",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      },
+      "cn_depletion_onset": {
+        "description": "CN emission detected during Aug 8–17 window; strong C2 depletion with log(C2/CN) ≤ −1; Afρ ~300 cm",
+        "campaign_start": "2025-08-08",
+        "campaign_end": "2025-08-17",
+        "cn_production_rate_s1": "≈8e23",
+        "afrho_cm": 300,
+        "log_c2_over_cn_max": -1,
+        "implication": "Volatile activation and unusual carbon-chain abundance ratios; possible pre-perihelion outgassing signature",
+        "source_id": "CN-EMISSION-2509.01647",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      },
+      "ztf_prediscovery_constraints": {
+        "description": "Inbound constraints to r ~17 AU; activity at least inward of r ~6.5 AU; dust production rising 5→30 kg/s from r ~6→4 AU",
+        "r_max_prediscovery_au": 17,
+        "r_activity_detected_au": 6.5,
+        "dust_production_early_kg_s": 5,
+        "dust_production_mid_kg_s": 30,
+        "r_early_au": 6,
+        "r_mid_au": 4,
+        "implication": "Long-range pre-discovery activity; volatile activation extends far from perihelion",
+        "source_id": "ARXIV-2509-08792-ZTF-PREDISCOVERY",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      },
+      "tess_precovery_recovery": {
+        "description": "Shift-stack recovery from 2025-05-07 to 2025-06-02; enables tighter inbound ephemeris constraints",
+        "recovery_date_start": "2025-05-07",
+        "recovery_date_end": "2025-06-02",
+        "method": "shift-stack photometry",
+        "implication": "Earlier activity detection and improved trajectory prediction; longer observational baseline pre-discovery",
+        "source_id": "ARXIV-2507-21967-TESS-PRECOVERY",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      },
+      "rapid_brightening_perihelion": {
+        "description": "STEREO-A HI1, SOHO LASCO C3, and GOES-19 CCOR-1 show rapid pre-perihelion brightening with r^(-7.5±1.0) power law",
+        "date_range_start": "2025-09-01",
+        "date_range_end": "2025-10-28",
+        "scaling_index": -7.5,
+        "scaling_index_uncertainty": 1.0,
+        "instruments": ["STEREO-A HI1", "SOHO LASCO C3", "GOES-19 CCOR-1"],
+        "implication": "Extremely rapid outgassing increase as comet approaches perihelion; consistent with volatile-driven activity",
+        "source_id": "ARXIV-2510-25035-RAPID-BRIGHTENING",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      },
+      "keck_kcwi_spatial_profiles": {
+        "description": "Blue-sensitive IFU spectra confirm CN and Ni detections; Ni more centrally concentrated than CN",
+        "observation_date": "2025-08-24",
+        "e_folding_radius_km_ni": 594,
+        "e_folding_radius_km_cn": 841,
+        "implication": "Ni concentrated near nucleus; different outgassing mechanisms or release timescales between Ni and CN",
+        "source_id": "ARXIV-2510-11779-KECK-KCWI",
+        "as_of": "2025-11-12",
+        "confidence": "high",
+        "tier": "T2"
+      }
+    },
     "tags": [
       "facts",
       "composition",
@@ -219,7 +308,7 @@
           "measurement_by": "NASA JPL / Davide Farnocchia",
           "date_reported": "2025-10-30",
           "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
-          "as_of": "2025-11-07",
+          "as_of": "2025-11-12",
           "confidence": "high",
           "note": "Primary units AU/day²; km/day² are derived."
         },
@@ -255,6 +344,15 @@
           "note": "Completes the set of 10 anomalies as framed by Loeb; remains non-consensus."
         }
       ],
+      "post_perihelion_imaging_nov5": {
+        "claim": "Post-perihelion images on 2025-11-05 show a compact source without a clear cometary tail despite measured non-gravitational acceleration.",
+        "observation_date": "2025-11-05",
+        "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
+        "source_also": "VIRTUAL-TELESCOPE-PROJECT-NOV-5",
+        "as_of": "2025-11-12",
+        "confidence": "high_on_observation_medium_on_interpretation",
+        "note": "Tail morphology lack interpreted by Loeb as inconsistent with expected cometary outgassing; alternative interpretation: large dust grains not visible due to weak radiation pressure."
+      },
       "galileo_project_involvement": {
         "status": "Active observation campaign",
         "goal": "Multi-spectrum imaging and trajectory analysis",
@@ -287,6 +385,59 @@
           "alternative_analysis"
         ]
       }
+    },
+    "nga_assessment": {
+      "status": "finalized",
+      "measurement": "Non-gravitational acceleration confirmed via JPL Horizons (Solution JPL#26)",
+      "radial_au_day_squared": "1.1e-6",
+      "transverse_au_day_squared": "3.7e-7",
+      "interpretation": "Consistent with comet outgassing per natural model; non-consensus interpretation per Loeb",
+      "source_id": "NASA-JPL-HORIZONS-3I-ATLAS",
+      "as_of": "2025-11-12",
+      "confidence": "extremely_high_on_measurement_medium_on_interpretation"
+    },
+    "greer_consciousness_framework": {
+      "practitioner": "Steven Greer, MD",
+      "framework": "Full Spectrum of Reality (FSR) / CE-5",
+      "tier": "T3",
+      "type": "interpretation",
+      "as_of": "2025-11-12",
+      "confidence": "medium",
+      "summary": "Reality is a unified spectrum accessible by consciousness. ET craft and beings operate in broader aspects of the same reality. Differences are of degree, not kind.",
+      "source_ids": ["GREER-1991-CSETI-PDF"],
+      "cautions": [
+        "Metaphysical claim. Not supported by agency or peer-reviewed physical evidence.",
+        "Do not upgrade beyond T3 without independent T2 support."
+      ],
+      "tags": ["consciousness", "ce5", "philosophy", "interpretation"],
+      "contrast_with": "interpretation_vs_instrument_artifacts"
+    },
+    "interpretation_vs_instrument_artifacts": {
+      "id": "INT-vs-INST-ARTIFACTS",
+      "title": "Interdimensional claims vs instrument artifacts",
+      "tier": "mixed",
+      "as_of": "2025-11-12",
+      "layout": "contrast",
+      "left": {
+        "heading": "Interdimensional framing",
+        "claims": [
+          "Perceived non-Newtonian motion may reflect broader reality access.",
+          "Consciousness state may modulate perception and interaction."
+        ],
+        "tier": "T3",
+        "reference": "greer_consciousness_framework"
+      },
+      "right": {
+        "heading": "Instrument artifacts and processing",
+        "facts": [
+          "SOHO LASCO and STEREO SECCHI use false color palettes; blue or orange tones are not true color.",
+          "Vignetting, compression, and stacking can mimic jets or spokes.",
+          "GOES CCOR composites vary by processing; apparent color does not imply object chroma."
+        ],
+        "sources": ["SOHO-LASCO-INSTRUMENT", "STEREO-SECCHI-COLOR", "GOES-CCOR-INFO"],
+        "tier": "T1"
+      },
+      "tags": ["instruments", "false_color", "interpretation_contrast"]
     },
     "ce5_greer_framework": {
       "practitioner": "Steven Greer, MD",
