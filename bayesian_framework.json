@@ -1,0 +1,166 @@
+{
+  "tool_version": "1.0",
+  "tool_name": "BAAM (Bayesian Anomaly Assessment Module)",
+  "released_at": "2025-11-07",
+  "purpose": "Bayesian analysis for 3I/ATLAS origin hypothesis testing",
+  "methodology": {
+    "framework": "Likelihood ratios with Bayes factors",
+    "bayes_theorem": "P(H|E) ∝ P(E|H)×P(H)",
+    "multi_anomaly": "Combine independent evidence via product of LRs"
+  },
+  "data_schema": {
+    "anomaly": {
+      "name": "string",
+      "description": "string",
+      "p_observed_given_natural": "float 0–1",
+      "p_observed_given_artificial": "float 0–1",
+      "source_tier": "T1/T2/T3/T4",
+      "confidence": "extremely_high/high/medium/low/extremely_low",
+      "source_id": "string"
+    },
+    "priors": {
+      "p_artificial_base_rate": "float",
+      "p_natural_base_rate": "float",
+      "uncertainty_margin": "float 0–1",
+      "rationale": "string"
+    }
+  },
+  "calculation_steps": [
+    "Compute LR for each anomaly",
+    "Multiply to get BF; use logs for stability",
+    "Update prior odds to posterior odds; convert to probability",
+    "Compute 95% credible interval",
+    "Run sensitivity to identify dominant anomalies",
+    "Apply tier/confidence weighting: for each anomaly compute w and set LR_eff = LR^w; use log domain"
+  ],
+  "tier_weights": {
+    "T1": 1,
+    "T2": 0.75,
+    "T3": 0.5,
+    "T4": 0.25
+  },
+  "confidence_multipliers": {
+    "extremely_high": 1,
+    "high": 0.9,
+    "medium": 0.7,
+    "low": 0.4,
+    "extremely_low": 0.2
+  },
+  "runtime_sources_policy": {
+    "load": "sources.json",
+    "on_missing_source_id": "flag_caution_and_use_lowest_tier",
+    "notes": "Never up-tier beyond registry; prefer highest verified tier available"
+  },
+  "guardrails": {
+    "enforce_tiers": "Use T1/T2 for priors when available",
+    "credibles_required": "Always report credible intervals",
+    "precision_limit": "Do not exceed 99.5% or below 0.5% without sensitivity justification",
+    "refusals": [
+      "Refuse if <3 anomalies",
+      "Refuse if all anomalies are T4"
+    ]
+  },
+  "example_calculation": {
+    "anomaly_set": [
+      "Ecliptic alignment",
+      "Non-grav acceleration",
+      "No tail"
+    ],
+    "likelihood_ratios": [
+      {
+        "anomaly": "Ecliptic alignment",
+        "p_natural": 0.002,
+        "p_artificial": 0.3,
+        "lr": 150
+      },
+      {
+        "anomaly": "Non-grav acceleration",
+        "p_natural": 0.1,
+        "p_artificial": 0.8,
+        "lr": 8
+      },
+      {
+        "anomaly": "No tail",
+        "p_natural": 0.01,
+        "p_artificial": 0.7,
+        "lr": 70
+      }
+    ],
+    "weighting_demo": {
+      "non_grav": {
+        "tier": "T2",
+        "confidence": "high",
+        "w": 0.675,
+        "LR": 8,
+        "LR_eff": "~3.9"
+      }
+    },
+    "combined_bf": "~8.6e4 (before weighting)",
+    "posterior_probability_range": "0.90–0.98 depending on priors",
+    "caveats": [
+      "Priors speculative; independence may not hold",
+      "Exploratory; not proof"
+    ]
+  },
+  "tags": [
+    "baam",
+    "bayesian",
+    "framework",
+    "analysis_tool",
+    "v2.10"
+  ],
+  "signature": "#ATLAS-SIG-BAYESIAN-v1.0-Δ2025-11-07",
+  "weights": {
+    "T1": 1.0,
+    "T2": 0.6,
+    "T3": 0.25,
+    "T4": 0.1
+  },
+  "posterior_formula": "posterior = normalize( prior * Π_i likelihood_i^weight(tier_i) )",
+  "mappings": {
+    "ordinal_to_numeric": {
+      "very_low": 0.05,
+      "low": 0.15,
+      "medium_low": 0.3,
+      "medium": 0.5,
+      "medium_high": 0.7,
+      "high": 0.85,
+      "very_high": 0.95
+    }
+  },
+  "calibration_examples": {
+    "2025-11-08": {
+      "jets_0410ut": {
+        "prior": 0.2,
+        "posterior": 0.08,
+        "uncertainty": 0.06,
+        "comment": "No T1/T2; T4-only. BAAM low."
+      },
+      "anti_tail_pre_post": {
+        "prior": 0.3,
+        "posterior": 0.25,
+        "uncertainty": 0.1,
+        "comment": "Pre HST geometry; post unclear."
+      },
+      "nga_extreme": {
+        "prior": 0.15,
+        "posterior": 0.05,
+        "uncertainty": 0.04,
+        "comment": "T2 upper-limit contradicts 'dozens of times'."
+      },
+      "secondary_iso": {
+        "prior": 0.05,
+        "posterior": 0.01,
+        "uncertainty": 0.01,
+        "comment": "No MPC/JPL 'I/' object."
+      },
+      "cme_trigger": {
+        "prior": 0.02,
+        "posterior": 0.001,
+        "uncertainty": 0.002,
+        "comment": "No mechanism at 1 au; NOAA AR-driven."
+      },
+      "as_of": "2025-11-08"
+    }
+  }
+}

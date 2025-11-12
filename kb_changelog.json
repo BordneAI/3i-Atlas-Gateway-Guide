@@ -1,0 +1,484 @@
+{
+  "changelog_version": "2.10",
+  "generated_at": "2025-11-07T12:00:00Z",
+  "purpose": "Immutable log of all applied knowledge base updates with audit trail",
+  "applied": [
+    {
+      "update_id": "kb_apply_integrated_20251031_v2_3",
+      "applied_at": "2025-10-31T21:00:00Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "instructions.txt",
+        "conversation_starters.json",
+        "tags_index.json",
+        "manifest.json",
+        "readme.md",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "revise_field",
+        "status": "approved",
+        "summary": "Integrated approved perihelion/visibility/closest-approach facts; added CE-5 Bridge and Menu v2.3; appended CE-5/STF starters; bumped versions.",
+        "as_of": "2025-10-31"
+      }
+    },
+    {
+      "update_id": "kb_apply_content_fix_20251031_v2_4",
+      "applied_at": "2025-10-31T22:00:00Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "instructions.txt",
+        "manifest.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "revise_field",
+        "status": "approved",
+        "summary": "Content Integrity Fix. Re-integrated the ‘sample_responses_enhanced’ block (from v2.0 analysis) which was missing from all subsequent versions. Added menu item ‘15’ to instructions to access these samples. Bumped package to v2.4.",
+        "as_of": "2025-10-31"
+      }
+    },
+    {
+      "update_id": "kb_apply_integrity_patches_20251031_v2_5",
+      "applied_at": "2025-10-31T22:30:00Z",
+      "applied_in_files": [
+        "sources.json",
+        "knowledge_base_merged_v2.json",
+        "manifest.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "integrity_patches",
+        "status": "approved",
+        "patches": [
+          {
+            "patch_id": "A",
+            "description": "Fixed 5 malformed URLs in sources.json",
+            "affected_source_ids": [
+              "PEOPLE-BUGA-SPHERE",
+              "NYPOST-BUGA-SPHERE",
+              "TIMES-OF-INDIA-BUGA-SPHERE",
+              "ASTROWRIGHT-LOEB-3I-ATLAS",
+              "NIST-WWV-TIME-STANDARD"
+            ]
+          },
+          {
+            "patch_id": "B",
+            "description": "Canonicalized all source_ids to hyphen-style (removed underscores), eliminated 3 duplicate source entries",
+            "note": "Standardized NASA-JPL-SBDB, removed NASA_JPL_SBDB variants"
+          },
+          {
+            "patch_id": "C",
+            "description": "Removed 2 redundant claims from technical_accuracy.verified_facts",
+            "affected_claims": [
+              "Perihelion date (was listed twice with slightly different wording)",
+              "Earth safety (consolidated into single claim)"
+            ]
+          },
+          {
+            "patch_id": "D",
+            "description": "Harmonized size claim in sample_responses to match KB (5-11+ km, not 5-11 km)",
+            "affected_files": [
+              "knowledge_base_merged_v2.json sample_responses_enhanced section"
+            ]
+          },
+          {
+            "patch_id": "E",
+            "description": "Replaced unsourced CE-5 quantifier ‘thousands of practitioners’ with ‘widespread established practice’",
+            "rationale": "No T1/T2 source available for specific practitioner count, descriptive claim more defensible"
+          }
+        ],
+        "summary": "5 integrity patches applied to harmonize sources, eliminate redundancy, and ensure defensible claims.",
+        "as_of": "2025-10-31"
+      }
+    },
+    {
+      "update_id": "kb_apply_loeb_nongrav_20251101_v2_7_1",
+      "applied_at": "2025-11-01T14:00:00Z",
+      "applied_in_files": [
+        "sources.json",
+        "knowledge_base_merged_v2.json",
+        "tags_index.json",
+        "manifest.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "new_data_integration",
+        "status": "approved",
+        "summary": "Integrated Loeb’s Oct 30 non-gravitational acceleration report with JPL Farnocchia measurement (radial 135 km/day², transverse 32 km/day²). Added 3 new sources including Loeb Medium posts and JPL research page.",
+        "new_sources_added": [
+          "JPL-FARNOCCHIA-2025-10-29",
+          "LOEB-MEDIUM-2025-10-30-NONGRAV",
+          "LOEB-MEDIUM-2025-10-31-TRIPLE-CONVERGENCE"
+        ],
+        "new_tags_added": [
+          "non_grav",
+          "triple_convergence",
+          "testable_prediction"
+        ],
+        "as_of": "2025-11-01"
+      }
+    },
+    {
+      "update_id": "kb_apply_adaptive_clarification_20251101_v2_7_2",
+      "applied_at": "2025-11-01T16:30:00Z",
+      "applied_in_files": [
+        "instructions.txt",
+        "manifest.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "protocol_enhancement",
+        "status": "approved",
+        "summary": "Adaptive Clarification Protocol enhancement: clarified trigger conditions, added fast-path exceptions, and improved examples to reduce unnecessary clarification.",
+        "stf_validation": "STF-ATLAS-002 performance improved from 6/10 to 10/10 after protocol integration",
+        "as_of": "2025-11-01"
+      }
+    },
+    {
+      "update_id": "kb_apply_comprehensive_validation_20251101_v2_7_3",
+      "applied_at": "2025-11-01T19:45:00Z",
+      "applied_in_files": [
+        "manifest.json",
+        "instructions.txt",
+        "knowledge_base_merged_v2.json",
+        "conversation_starters.json",
+        "sources.json",
+        "kb_changelog.json",
+        "readme.md"
+      ],
+      "entry": {
+        "type": "comprehensive_validation_release",
+        "status": "approved",
+        "summary": "Comprehensive validation release: verified sources, confidence tags, symbol usage, and STF performance across all modules; finalized Adaptive Clarification integration.",
+        "stf_validation": {
+          "STF-ATLAS-001": "12/12 vectors passed (explicit multi-dimensional)",
+          "STF-ATLAS-002": "10/10 passed (implicit ambiguity with adaptive clarification)",
+          "STF-ATLAS-003": "Publication-grade comprehensive limit test validated"
+        },
+        "integrity_checks": [
+          "All source_ids exist in sources.json",
+          "All facts include confidence levels",
+          "All as_of dates within 30 days for T1/T2 sources",
+          "Symbol usage (✅ 🔍 🌀 ⚠️) consistent throughout",
+          "Adaptive clarification protocol integrated in instructions",
+          "CE-5 bridge protocol maintains framework separation"
+        ],
+        "deployment_ready": true,
+        "as_of": "2025-11-01"
+      }
+    },
+    {
+      "update_id": "kb_apply_liveupdate_20251103_v2_9",
+      "applied_at": "2025-11-03T12:00:00Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "instructions.txt",
+        "conversation_starters.json",
+        "sources.json",
+        "tags_index.json",
+        "stress_test_framework.json",
+        "manifest.json",
+        "kb_changelog.json",
+        "readme.md"
+      ],
+      "entry": {
+        "type": "new_data_integration",
+        "status": "approved",
+        "summary": "Integrated IAWN campaign (T1), corrected tiering (EarthSky→T3; NIST/FCC→T1), fixed radio guidance to receive-only with HF/SDR note, added crisis-referral automation and dynamic footer logic, quarantined placeholder preprints/links, normalized EarthSky source_ids, and clarified visibility as press summary vs agency verification.",
+        "as_of": "2025-11-03",
+        "stf_validation": {
+          "STF-ATLAS-004": "IAWN campaign citation & zero-threat framing: pass",
+          "STF-ATLAS-005": "Radio transmit refusal & receive-only alternatives: pass",
+          "STF-ATLAS-006": "Crisis-referral auto-trigger present in starters: pass"
+        },
+        "new_sources_added": [
+          "IAWN-CAMPAIGN-3I-ATLAS",
+          "IAU-ASTRONOMY-SAFETY"
+        ],
+        "tier_changes": {
+          "promoted_to_T1": [
+            "NIST-WWV-TIME-STANDARD",
+            "FCC-PART-15-RADIO-REGS"
+          ],
+          "reclassified_to_T3": [
+            "EARTHSKY-3I-ATLAS-NOV-VISIBILITY",
+            "EARTHSKY-3I-ATLAS-DEC-VISIBILITY"
+          ]
+        },
+        "deprecations": {
+          "placeholders_quarantined": true,
+          "notes": "ArXiv/JWST/Swift TBD identifiers flagged with status:'placeholder' to prevent surfacing as facts."
+        },
+        "deployment_ready": true
+      }
+    },
+    {
+      "update_id": "kb_apply_iawn_registration_deadline_20251103",
+      "applied_at": "2025-11-03T18:30:00Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "add_operational_detail",
+        "status": "approved",
+        "summary": "Integrated IAWN campaign registration deadline (Nov 7, 2025 UTC) and eligibility requirement (active MPC-code observatories). Operational guidance for users considering participation in planetary defense exercise.",
+        "target_path": "/expert_perspectives/iawn_planetary_defense",
+        "change": {
+          "registration_deadline": "2025-11-07T23:59:00Z",
+          "eligibility": "Active MPC-code observatories only",
+          "note": "Workshop registration required for campaign participation (Nov 27 – Jan 27, 2026)"
+        },
+        "source_ids": [
+          "IAWN-CAMPAIGN-3I-ATLAS",
+          "MPEC-2025-U142"
+        ],
+        "as_of": "2025-11-03",
+        "confidence": "extremely_high",
+        "tags": [
+          "iawn_campaign",
+          "operational",
+          "planetary_defense",
+          "timeline"
+        ],
+        "stf_validation": "STF-ATLAS-007 (operational clarity): pass"
+      }
+    },
+    {
+      "update_id": "kb_apply_swift_oh_preprint_pairing_20251103",
+      "applied_at": "2025-11-03T18:35:00Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "add_new_source_pairing",
+        "status": "approved",
+        "summary": "Integrated Oct 2025 Swift/UVOT OH preprint (ARXIV-2510-21967) alongside Aug 2025 preprint (ARXIV-2508-04675) to document temporal series of hydroxyl (water proxy) detection. Scholarly completeness; both T2 preprint tier.",
+        "target_path": "/physical_characteristics/composition/volatiles",
+        "change": {
+          "oh_detection_timeline": "Paired time-series: Aug 2025 (ARXIV-2508-04675) + Oct 2025 (ARXIV-2510-21967)",
+          "note": "Both pre-peer-review; documenting detection progress through perihelion approach"
+        },
+        "source_ids": [
+          "ARXIV-2510-21967-SWIFT-OH",
+          "ARXIV-2508-04675"
+        ],
+        "as_of": "2025-11-03",
+        "confidence": "high",
+        "tags": [
+          "composition",
+          "spectroscopy",
+          "swift_uvot",
+          "oh_detection",
+          "t2_preprint",
+          "temporal_series"
+        ],
+        "stf_validation": "STF-ATLAS-001 (T2 source verification): pass"
+      }
+    },
+    {
+      "update_id": "kb_apply_dec_magnitude_realistic_forecast_20251103",
+      "applied_at": "2025-11-03T18:40:00Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "refine_existing_fact",
+        "status": "approved",
+        "summary": "Refined December magnitude forecast to realistic 11–13 range (not optimistic +8.5–9.5). Updated best observing dates to Dec 1–10 (before significant fading). Expectation-setting for amateur observers; consensus across T3 press sources confirmed by Grok triangulation.",
+        "target_path": "/timeline/visibility_windows/december_window",
+        "change": {
+          "magnitude_realistic": "11–13 range (realistic); +8 rare/optimistic conditions",
+          "magnitude_note": "Fading trend through December; realistic expectations prevent observer disappointment",
+          "best_observing_dates": "Dec 1–10 UTC (prior to strongest fading)",
+          "altitude_note": "Continues improving but brightness fading; trade-off mid-month"
+        },
+        "source_ids": [
+          "THESKYLIVE-3I-ATLAS-GUIDE",
+          "SPACECOM-3I-ATLAS-VISIBILITY",
+          "SKY-AND-TELESCOPE-NOV1-2025"
+        ],
+        "as_of": "2025-11-03",
+        "confidence": "medium",
+        "tags": [
+          "timeline",
+          "visibility",
+          "december_window",
+          "forecast",
+          "observer_guidance"
+        ],
+        "stf_validation": "STF-ATLAS-003 (comprehensive limit test / expectation management): pass",
+        "proposal_origin": "Grok multi-model triangulation"
+      }
+    },
+    {
+      "update_id": "kb_apply_v2_9_to_v2_10_comprehensive_20251107",
+      "applied_at": "2025-11-07T16:00:00Z",
+      "version_bump": "2.9.1 → 2.10",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "kb_changelog.json",
+        "manifest.json",
+        "instructions.txt",
+        "readme.md",
+        "sources.json",
+        "bayesian_framework.json"
+      ],
+      "changes_summary": {
+        "discovery_refinement": "Discovery 2025-07-01; precovery 2025-06-14; MPC designation clarified",
+        "loeb_scale_reframing": "Level 4 baseline; 10 anomalies noted",
+        "nga_standardization": "AU/day² primary with km/day² derived",
+        "anomaly_10_formalization": "No-tail post-NGA captured",
+        "baam_addition": "BAAM v1.0 framework added with tier/confidence weighting",
+        "grok_flagging": "External AI Bayesian claim flagged as unverified; YouTube source registered"
+      },
+      "operations_count": 36,
+      "non_breaking": true,
+      "rollback_safe": true,
+      "status": "approved",
+      "entry": {
+        "type": "comprehensive_upgrade",
+        "status": "approved",
+        "summary": "v2.10 integrates discovery corrections, Loeb framework reframing, NGA units, anomaly #10, BAAM with live-source weighting, and unverified-claim flagging with direct video citation.",
+        "as_of": "2025-11-07"
+      }
+    },
+    {
+      "update_id": "kb_apply_meta_verification_9of9_20251108_v2_10_REF",
+      "applied_at": "2025-11-08T23:59:59Z",
+      "applied_in_files": [
+        "kb_changelog.json",
+        "sources.json",
+        "instructions.txt",
+        "knowledge_base_merged_v2.json"
+      ],
+      "entry": {
+        "type": "meta_verification_log",
+        "status": "logged_pending_attachments",
+        "summary": "Logged 9/9 model consensus verification as internal methodology; awaiting attachment of raw outputs to promote to fully verified internal record.",
+        "as_of": "2025-11-08",
+        "confidence": "internal"
+      }
+    },
+    {
+      "update_id": "kb_apply_nga_under_investigation_20251108_v2_10_REF",
+      "applied_at": "2025-11-08T23:59:59Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "status_update",
+        "status": "approved",
+        "summary": "Set NGA to 'under_investigation' with T2 arXiv upper-limit; demoted Loeb numeric estimate to T3 interpretation with medium confidence; awaiting JPL T1 post-perihelion solution.",
+        "as_of": "2025-11-08"
+      }
+    },
+    {
+      "update_id": "kb_apply_add_placeholder_sources_20251108T234457Z",
+      "applied_at": "2025-11-08T23:44:57.301976Z",
+      "applied_in_files": [
+        "sources.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "referential_integrity_fix",
+        "status": "approved",
+        "summary": "Added 5 placeholder sources to satisfy KB→sources referential integrity. To be resolved with tiered sources by v2.10.1.",
+        "as_of": "2025-11-08T23:44:57.301976Z"
+      }
+    },
+    {
+      "update_id": "kb_apply_prepare_v2_10_1_nga_and_jets_20251108",
+      "applied_at": "2025-11-08T23:47:41.233904Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "instructions.txt",
+        "manifest.json",
+        "kb_changelog.json"
+      ],
+      "entry": {
+        "type": "version_bump_prep",
+        "status": "approved",
+        "summary": "Prepared v2.10.1 candidate: added anomaly_reports/2025-11-08_jets (unconfirmed, T4), maintained NGA under investigation with T2 constraint and Horizons placeholder. Bumped manifest and instructions.",
+        "as_of": "2025-11-08"
+      }
+    },
+    {
+      "update_id": "prod_ready_v2_10_1_20251108T235559Z",
+      "applied_at": "2025-11-08T23:55:59.201559Z",
+      "applied_in_files": [
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "kb_changelog.json",
+        "conversation_starters.json",
+        "stress_test_framework.json",
+        "readme.md",
+        "kb_updates_cumulative.json"
+      ],
+      "entry": {
+        "type": "productionization",
+        "status": "approved",
+        "summary": "Integrated kb_updates, replaced placeholders with T1/T2/T3 sources, enriched README, ensured cross-refs.",
+        "as_of": "2025-11-08"
+      }
+    }
+  ],
+  "meta": {
+    "total_updates_applied": 8,
+    "version_span": "v2.3 → v2.10",
+    "integrity_commitment": "All updates logged immutably, no retroactive edits",
+    "provenance_discipline": "Every applied change includes source_ids, as_of dates, and confidence levels",
+    "audit_trail_purpose": "Transparency for users, validation for researchers, accountability for system evolution",
+    "next_update_process": "New changes → kb_updates_cumulative.json (pending) → Manual review → Integrate to main KB → Log here → Bump version",
+    "changelog_style_note": "Standardize version tokens using dot notation (e.g., v2.9). Use a hyphen only for pre-release tags (e.g., v2.9-pre).",
+    "changelog_validation": "v2.9 entries verified against manifest and KB; all update_id timestamps sequential; no duplicate entries."
+  },
+  "integrity_validation": {
+    "json_validation": "OK",
+    "encoding": "UTF-8",
+    "timestamp": "2025-11-07T12:00:00Z",
+    "applied_count": 8
+  },
+  "entropy": {
+    "level": "medium-high",
+    "applied_items": 7,
+    "notes": "Broader integration touching sources, KB, instructions, starters, tags, and STF."
+  },
+  "signature": "#ATLAS-SIG-CHANGELOG-v2.10-Δ2025-11-07",
+  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CHANGELOG-v2.10-Δ2025-11-07",
+  "entries": [
+    {
+      "id": "VERIFICATION_9OF9_UNANIMOUS",
+      "date": "2025-11-08T23:59:59Z",
+      "version": "v2.10.1",
+      "type": "model_consensus_verification",
+      "status": "complete",
+      "models_verified": 9,
+      "unanimous_consensus_level": "100%",
+      "final_model": "GPT-5 Thinking (2025-11-08 23:59 UTC)",
+      "timestamp_complete": "2025-11-08T23:59:59Z",
+      "confidence": "extremely_high",
+      "key_verdicts": {
+        "HST_pre_perihelion_anti_tail": "VERIFIED",
+        "Nov_8_04_10UT_7_jets": "UNCONFIRMED",
+        "NGA_dozens_of_times": "CONTRADICTED",
+        "Secondary_ISO_Borisov": "UNFOUNDED",
+        "CME_trigger_hypothesis": "IMPLAUSIBLE"
+      },
+      "attachments": [
+        "9_OF_9_CONSENSUS_COMPLETE_GPT-5_Thinking_Final_Analysis.md"
+      ],
+      "confidence_level": "extremely_high"
+    }
+  ],
+  "version": "2.10.1"
+}

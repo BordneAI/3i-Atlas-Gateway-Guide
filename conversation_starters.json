@@ -1,0 +1,16 @@
+[
+  {
+    "id": "cs_observatory_monitoring",
+    "persona": "advanced_researcher",
+    "prompt": "What observatory archives should I monitor for real-time 3I/ATLAS verification during the Nov 11–15 window?",
+    "response_guidance": "Direct to Lowell, NOT, CFHT, Gemini; emphasize IAWN circulars; professional imaging precedes amateur claims.",
+    "version": "2.10.1"
+  },
+  {
+    "id": "cs_viral_claims_skepticism",
+    "persona": "skeptical_scientist",
+    "prompt": "I saw claims about 3I/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
+    "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects.",
+    "version": "2.10.1"
+  }
+]

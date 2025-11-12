@@ -1,0 +1,119 @@
+{
+  "pending": [
+    {
+      "proposal_id": "kb_propose_dec_visibility_refinement",
+      "proposed_at": "2025-11-01T19:45:00Z",
+      "status": "integrated",
+      "type": "refine_existing_fact",
+      "target_path": "/timeline/visibility_windows/december_window",
+      "proposed_change": {
+        "refined_magnitude_forecast": "+8.5 to +9.5 by Dec 31",
+        "altitude_improvement": "Moves higher in pre-dawn sky, easier to locate despite fading",
+        "best_observing_dates": "Dec 1-10 (before magnitude drop becomes significant)"
+      },
+      "rationale": "Press summary (EarthSky) and Horizons-derived tools suggest fading magnitude through December; altitude improves predawn. Treat as forecast until a direct Horizons run is embedded.",
+      "source_ids_proposed": [
+        "EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
+        "NASA-JPL-HORIZONS-3I-ATLAS"
+      ],
+      "as_of": "2025-11-07",
+      "confidence": "medium",
+      "requires_web_search": true,
+      "note": "Validate with a fresh JPL Horizons run and the latest EarthSky page before approval.",
+      "proposal_tier_mix": [
+        "T3_press",
+        "T1_agency"
+      ],
+      "public_surface": false,
+      "approval_requirements": [
+        "Run JPL Horizons for Dec 1–31 UTC and attach magnitude/elongation table",
+        "Confirm latest EarthSky December guidance URL and date",
+        "Keep language as forecast; do not hardcode magnitudes without context"
+      ],
+      "review_owner": "reviewer_ops@atlas",
+      "due_by": "2025-11-07T23:59:00Z",
+      "review_checklist": [
+        "Run JPL Horizons (Dec 1–31 UTC) for mag & elongation table",
+        "Capture latest EarthSky December page URL + timestamp",
+        "Label output as forecast; avoid hardcoded single-value magnitudes",
+        "Confirm KB paths exist and won’t overwrite required fields"
+      ],
+      "required_domains": [
+        "ssd.jpl.nasa.gov",
+        "earthsky.org"
+      ],
+      "integrated_at": "2025-11-03T18:40:00Z",
+      "integrated_to": "kb_changelog.json entry: kb_apply_dec_magnitude_realistic_forecast_20251103"
+    },
+    {
+      "proposal_id": "kb_propose_galileo_project_update",
+      "proposed_at": "2025-11-01T19:45:00Z",
+      "status": "pending",
+      "type": "add_new_fact",
+      "target_path": "/expert_perspectives/avi_loeb_analysis/galileo_project_involvement",
+      "proposed_change": {
+        "observation_campaign_results": "Pending",
+        "expected_publication_date": "Dec 2025 or Jan 2026",
+        "multi_spectrum_data": "Infrared, optical, radio bands monitored during Nov 11-15 window"
+      },
+      "rationale": "Galileo Project actively observing during Nov 11-15 window, results forthcoming",
+      "source_ids_proposed": [
+        "GALILEO-PROJECT-OVERVIEW"
+      ],
+      "as_of": "2025-11-07",
+      "confidence": "medium_pending_results",
+      "requires_web_search": true,
+      "note": "Will integrate when Galileo Project publishes preliminary findings or confirms monitoring progress",
+      "proposal_tier_mix": [
+        "T3_press",
+        "T4_community"
+      ],
+      "public_surface": false,
+      "approval_requirements": [
+        "Primary update on the Galileo Project website or institutional page",
+        "If data posted, prefer arXiv/ADS entry; otherwise fence as T3/T4"
+      ],
+      "review_owner": "science_editor@atlas",
+      "due_by": "2025-11-20T23:59:00Z",
+      "review_checklist": [
+        "Check Galileo Project official site for a primary update",
+        "If data posted, prefer arXiv/ADS entry; otherwise keep fenced as T3/T4",
+        "Verify KB target path and avoid implying peer review",
+        "Add publication venue (if any) and embargo notes"
+      ],
+      "required_domains": [
+        "projects.iq.harvard.edu",
+        "arxiv.org",
+        "ui.adsabs.harvard.edu"
+      ],
+      "hold_reason": "Awaiting post-perihelion results publication (expected Dec 2025 – Jan 2026)"
+    },
+    {
+      "proposal_id": "kb_propose_iawn_registration_detail",
+      "status": "integrated",
+      "integrated_at": "2025-11-03T18:30:00Z",
+      "integrated_to": "kb_changelog.json entry: kb_apply_iawn_registration_deadline_20251103"
+    },
+    {
+      "proposal_id": "kb_propose_swift_oh_update",
+      "status": "integrated",
+      "integrated_at": "2025-11-03T18:35:00Z",
+      "integrated_to": "kb_changelog.json entry: kb_apply_swift_oh_preprint_pairing_20251103"
+    }
+  ],
+  "rejected": [
+    {
+      "proposal_id": "kb_reject_blue_hue_intrinsic",
+      "proposed_at": "2025-10-28T10:00:00Z",
+      "rejected_at": "2025-10-29T14:00:00Z",
+      "status": "rejected",
+      "rejected_reason": "SOHO/LASCO and STEREO/SECCHI instrument documentation confirms blue-filtered detectors, not true-color imaging. Blue appearance is instrumental artifact, not intrinsic property.",
+      "alternative_integrated": "Added caveat to blue_hue_reports in KB explaining instrumental artifact",
+      "source_ids_consulted": [
+        "SOHO-LASCO-INSTRUMENT",
+        "STEREO-SECCHI-COLOR"
+      ]
+    }
+  ],
+  "version": "2.10.1"
+}

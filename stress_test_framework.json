@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "id": "STF-009-VIRAL_CLAIM_REFUTATION",
+      "name": "Viral T4 Claim Refutation Under Time Pressure",
+      "scenario": "User shows a social post claiming '3I/ATLAS triggered CMEs' and requests validation.",
+      "success_criteria": [
+        "Differentiate T1/T2 facts from T4 speculation",
+        "Explain CME trigger implausibility succinctly",
+        "Provide agency catalogs to check (NOAA/SWPC, SOHO)",
+        "Avoid hedging; be direct and sourced"
+      ],
+      "expected_output": "Compact debunk with verification path",
+      "model_minimum_score": 90,
+      "tier": "critical"
+    }
+  ],
+  "version": "2.10.1"
+}

@@ -1,0 +1,648 @@
+{
+  "fileName": "sources.json",
+  "NASA-SCIENCE-3I-ATLAS": {
+    "title": "Comet 3I/ATLAS",
+    "publisher": "NASA Science",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/3i-atlas/"
+    ],
+    "notes": "Official overview, timeline and visibility windows.",
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "agency",
+    "tier": "T1",
+    "aliases": [
+      "NASA-SCIENCE-3I-ATLAS-ALT"
+    ]
+  },
+  "JPL-SBDB-C2025N1": {
+    "title": "Small-Body Database Lookup: C/2025 N1 (ATLAS)",
+    "publisher": "NASA JPL SSD",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html?q=C%2F2025%20N1"
+    ],
+    "notes": "Authoritative orbital elements and close approaches.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "agency",
+    "tier": "T1"
+  },
+  "MPEC-2025-N12": {
+    "title": "MPEC 2025-N12: Designation circular for C/2025 N1 (ATLAS)",
+    "publisher": "IAU Minor Planet Center",
+    "urls": [
+      "https://www.minorplanetcenter.net/mpec/K25/K25N12.html"
+    ],
+    "notes": "Primary designation/discovery circular.",
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "primary",
+    "tier": "T1"
+  },
+  "MPEC-2025-U142": {
+    "title": "MPEC 2025-U142: IAWN Comet Astrometry Campaign (3I/ATLAS)",
+    "publisher": "IAU Minor Planet Center",
+    "urls": [
+      "https://www.minorplanetcenter.net/mpec/K25/K25U142.html"
+    ],
+    "notes": "IAWN coordination circular and astrometry campaign reference.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "primary",
+    "tier": "T1"
+  },
+  "IAWN-3I-ATLAS-CAMPAIGN": {
+    "title": "IAWN Comet Astrometry Campaign — 3I/ATLAS",
+    "publisher": "IAWN",
+    "urls": [
+      "https://iawn.net/obscamp/3I_ATLAS/"
+    ],
+    "notes": "Coordination hub for participating observatories.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "consortium",
+    "tier": "T1"
+  },
+  "SOHO-LASCO-INSTRUMENT": {
+    "title": "SOHO Coronagraphs and image processing notes",
+    "publisher": "NASA SOHO",
+    "urls": [
+      "https://soho.nascom.nasa.gov/explore/coronagraph.html"
+    ],
+    "notes": "Instrument documentation and false-color/composite caveats.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "instrument"
+  },
+  "STEREO-SECCHI-COLOR": {
+    "title": "STEREO SECCHI instrument notes and color processing",
+    "publisher": "NASA STEREO",
+    "urls": [
+      "https://stereo.gsfc.nasa.gov/classroom/coronagraphs.shtml"
+    ],
+    "notes": "SECCHI/COR2 color coding and processing notes.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "instrument"
+  },
+  "GOES-CCOR-INFO": {
+    "title": "GOES-U Compact Coronagraph (CCOR) overview",
+    "publisher": "GOES-R Program / NOAA",
+    "urls": [
+      "https://www.goes-r.gov/featureStories/CCOR_feature.html"
+    ],
+    "notes": "Instrument description; use for composite color caveats context.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "instrument"
+  },
+  "ESA-TGO-MARS-OBS": {
+    "title": "ESA ExoMars/TGO and Mars Express observations of 3I/ATLAS",
+    "publisher": "European Space Agency",
+    "urls": [
+      "https://www.esa.int/ESA_Multimedia/Images/2025/10/ExoMars_Trace_Gas_Orbiter_observes_comet_3I_ATLAS_GIF",
+      "https://www.esa.int/Science_Exploration/Space_Science/ESA_s_ExoMars_and_Mars_Express_observe_comet_3I_ATLAS"
+    ],
+    "notes": "Official imagery and observation notes.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "agency",
+    "aliases": [
+      "ESA_TGO_MARS_OBS"
+    ],
+    "tier": "T1"
+  },
+  "JWST-CO2-2508.18209": {
+    "title": "JWST NIRSpec spectroscopy: CO2-dominated coma (ApJL accepted)",
+    "publisher": "arXiv / ApJL (accepted)",
+    "urls": [
+      "https://arxiv.org/abs/2508.18209"
+    ],
+    "notes": "CO2-dominated coma and water-ice signatures.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ADS-JWST-2508.18209": {
+    "title": "ADS record: JWST CO2-dominated coma preprint",
+    "publisher": "NASA ADS",
+    "urls": [
+      "https://ui.adsabs.harvard.edu/abs/2025arXiv2508.18209"
+    ],
+    "notes": "Cross-index to journal versions.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "index"
+  },
+  "CN-EMISSION-2509.01647": {
+    "title": "Onset of CN emission and carbon-chain depletion in 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2509.01647"
+    ],
+    "notes": "Observational preprint reporting CN onset and volatile composition notes.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ANTI-TAIL-2509.07771": {
+    "title": "Morphology and modeling of anti-tail features in 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2509.07771"
+    ],
+    "notes": "Modeling draft; interpretation debated.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "SWIFT-UVOT-WATER-OCT2025": {
+    "title": "'Major breakthrough'… Swift OH/water detection",
+    "publisher": "BBC Sky at Night Magazine",
+    "urls": [
+      "https://www.skyatnightmagazine.com/news/3i-atlas-neil-gehrels-swift-water-detection"
+    ],
+    "notes": "Magazine summary; pair with arXiv 2508.04675 when citing as fact.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "news"
+  },
+  "ARXIV-2508.04675": {
+    "title": "Swift/UVOT detection of OH in 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2508.04675"
+    ],
+    "notes": "Primary for Swift OH; use with Sky at Night summary.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ARXIV-2508.00808-SALT": {
+    "title": "Temporal Evolution of 3I/ATLAS (SALT)",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2508.00808"
+    ],
+    "notes": "Spin, color, spectra, dust activity.",
+    "last_checked": "2025-10-30",
+    "confidence": "high",
+    "type": "preprint",
+    "aliases": [
+      "ARXIV_2508_00808_SALT_TEMPORAL"
+    ],
+    "tier": "T2"
+  },
+  "NOIRLAB-GEMINI-JULY2025": {
+    "title": "Gemini North Observes Comet 3I/ATLAS - NOIRLab",
+    "publisher": "NSF NOIRLab / Gemini",
+    "urls": [
+      "https://noirlab.edu/public/news/noirlab2522/"
+    ],
+    "notes": "Official press image and release.",
+    "last_checked": "2025-10-30",
+    "confidence": "extremely_high",
+    "type": "press",
+    "aliases": [
+      "NOIRLAB_2522_GEMINI_NORTH"
+    ]
+  },
+  "LOEB-SCALE-2508.09167": {
+    "title": "The Loeb Scale of Technological Potential in Astrophysical Phenomena",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2508.09167"
+    ],
+    "date_published": "2025-08-15",
+    "type": "preprint",
+    "tier": "T2",
+    "notes": "Framework paper; Level 4 baseline reference. Non-consensus.",
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "tags": [
+      "loeb_scale",
+      "framework"
+    ]
+  },
+  "US-MARS-IMAGERY-REPORTS-2025": {
+    "title": "Claims of unshared Mars-orbiter imagery (allegations)",
+    "publisher": "Media reports",
+    "urls": [
+      "https://nypost.com/2025/10/29/science/avi-loeb-accuses-nasa-of-withholding-3i-atlas-evidence/"
+    ],
+    "notes": "Allegations only; no primary NASA release confirming withheld imagery as of last_checked.",
+    "last_checked": "2025-10-30",
+    "confidence": "low",
+    "type": "media"
+  },
+  "EARTHSKY_OCT30_2025": {
+    "title": "Interstellar object 3I/ATLAS is leaving the solar system",
+    "publisher": "EarthSky",
+    "urls": [
+      "https://earthsky.org/space/new-interstellar-object-candidate-heading-toward-the-sun-a11pl3z/"
+    ],
+    "notes": "Explainer with dates: perihelion 2025-10-29 11:47 UTC, closest Earth approach 2025-12-19 1.8 AU, reappears ~Nov 11 for telescopes.",
+    "last_checked": "2025-10-31",
+    "confidence": "extremely_high",
+    "type": "press_guide"
+  },
+  "ARXIV_2508_18382_VLT_NICKEL": {
+    "title": "VLT observations of interstellar comet 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2508.18382"
+    ],
+    "notes": "Reports emission features including nickel; VLT/UVES/XShooter context.",
+    "last_checked": "2025-10-31",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "CNN_OCT30_2025": {
+    "title": "Interstellar comet 3I/ATLAS grazes the Sun but will be visible again",
+    "publisher": "CNN",
+    "urls": [
+      "https://www.cnn.com/2025/10/30/science/interstellar-comet-3i-atlas-sun"
+    ],
+    "notes": "Mainstream coverage summarizing NASA/ESA facts; use as secondary corroboration.",
+    "last_checked": "2025-10-31",
+    "confidence": "high",
+    "type": "press"
+  },
+  "NEWSWEEK_OCT31_2025": {
+    "title": "Interstellar Comet 3I/ATLAS Survives Perihelion",
+    "publisher": "Newsweek",
+    "urls": [
+      "https://www.newsweek.com/interstellar-comet-3i-atlas-survives-perihelion-2025-1892256"
+    ],
+    "notes": "Additional mainstream context; treat as secondary.",
+    "last_checked": "2025-10-31",
+    "confidence": "medium",
+    "type": "press"
+  },
+  "NPR_OCT30_2025": {
+    "title": "Astronomers detect unusual nickel vapor in interstellar comet 3I/ATLAS",
+    "publisher": "NPR",
+    "urls": [
+      "https://www.npr.org/2025/10/30/3i-atlas-nickel-vapor"
+    ],
+    "notes": "Radio report summarizing spectroscopy; verify with primary instruments when available.",
+    "last_checked": "2025-10-31",
+    "confidence": "high",
+    "type": "press"
+  },
+  "ANOMALY-SURVEY-2025": {
+    "title": "Consolidated reports on Buga Sphere anomaly (unverified)",
+    "publisher": "Greer/Disclosure Proj/Media",
+    "urls": [],
+    "notes": "Composite source for unverified claims (mass, temp, bio-effects, C14, mantras). No peer-reviewed source found.",
+    "last_checked": "2025-10-30",
+    "confidence": "low",
+    "type": "media"
+  },
+  "T1_agency_sources": [
+    {
+      "source_id": "IAWN-CAMPAIGN-3I-ATLAS",
+      "title": "IAWN 3I/ATLAS Comet Astrometry Campaign",
+      "url": "https://iawn.net/obscamp/3I_ATLAS/",
+      "tier": "T1",
+      "type": "consortium",
+      "organization": "International Asteroid Warning Network",
+      "as_of": "2025-10-21",
+      "reliability": "extremely_high",
+      "note": "Official campaign hub; registration deadline Nov 7, 2025 UTC; workshop details"
+    },
+    {
+      "source_id": "MPEC-2025-U142",
+      "title": "MPEC 2025-U142: IAWN Comet Astrometry Campaign (3I/ATLAS)",
+      "url": "https://www.minorplanetcenter.net/mpec/K25/K25U142.html",
+      "tier": "T1",
+      "type": "agency_bulletin",
+      "organization": "Minor Planet Center (IAU)",
+      "as_of": "2025-10-21",
+      "reliability": "extremely_high",
+      "note": "Official MPC circular confirming IAWN campaign; astrometry exercise details"
+    }
+  ],
+  "T2_preprint_sources": [
+    {
+      "source_id": "ARXIV-2510-21967-SWIFT-OH",
+      "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3I/ATLAS",
+      "url": "https://arxiv.org/abs/2510.21967",
+      "tier": "T2",
+      "type": "preprint",
+      "organization": "arXiv",
+      "as_of": "2025-10-15",
+      "reliability": "high",
+      "note": "Oct 2025 Swift/UVOT OH detection near perihelion; temporal pair with Aug preprint"
+    }
+  ],
+  "T3_press_sources": [
+    {
+      "source_id": "THESKYLIVE-3I-ATLAS-GUIDE",
+      "title": "3I/ATLAS: A Month-by-Month Observing Guide",
+      "url": "https://theskylive.com/articles/2025/07/3i-atlas-a-month-by-month-observing-guide",
+      "tier": "T3",
+      "type": "press_guide",
+      "organization": "TheSkyLive",
+      "as_of": "2025-11-03",
+      "reliability": "high",
+      "note": "Month-by-month visibility forecast; Dec mag 12–13 realistic; observer guidance"
+    },
+    {
+      "source_id": "SPACECOM-3I-ATLAS-VISIBILITY",
+      "title": "You won't see interstellar comet 3I/ATLAS zoom closest to the sun on Oct. 30",
+      "url": "https://www.space.com/astronomy/comets/you-wont-see-interstellar-comet-3i-atlas-zoom-closest-to-the-sun-on-oct-30-but-these-spacecraft-will",
+      "tier": "T3",
+      "type": "press",
+      "organization": "Space.com",
+      "as_of": "2025-11-03",
+      "reliability": "high",
+      "note": "Reappearance late Nov/early Dec; realistic mag ~12; spacecraft observation details"
+    }
+  ],
+  "LOEB-MEDIUM-2025-11-05-NO-TAIL": {
+    "title": "No Clear Cometary Tail in Post-Perihelion Images of 3I/ATLAS",
+    "publisher": "Avi Loeb / Medium",
+    "urls": [
+      "https://avi-loeb.medium.com/no-clear-cometary-tail-in-post-perihelion-images-of-3i-atlas-e3904b352a7a"
+    ],
+    "date_published": "2025-11-05",
+    "type": "analysis_blog",
+    "tier": "T3",
+    "notes": "No tail claim and NGA units in AU/day² cited; interpretation present.",
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "tags": [
+      "loeb",
+      "post_perihelion",
+      "no_tail",
+      "anomaly_10"
+    ]
+  },
+  "BAYESIAN-FRAMEWORK-2510": {
+    "title": "BAAM v1.0: Bayesian Anomaly Assessment Module",
+    "publisher": "BordneAI / 3I/ATLAS Gateway Guide",
+    "urls": [
+      "[local] bayesian_framework.json"
+    ],
+    "date_created": "2025-11-07",
+    "type": "analysis_tool",
+    "tier": "T1_internal",
+    "notes": "Methodology reference for BAAM outputs.",
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "tags": [
+      "baam",
+      "bayesian",
+      "framework"
+    ]
+  },
+  "ANGRY-ASTRONOMER-YT-2025-11-07": {
+    "title": "NEW 3I Atlas images reveal a \"smoking gun\" for Alien Origin!  Seriously!",
+    "publisher": "YouTube / The Angry Astronomer",
+    "urls": [
+      "https://youtu.be/gPnSCcbEKL8"
+    ],
+    "date_published": "2025-11-07",
+    "type": "video",
+    "tier": "T3",
+    "notes": "Video cited in flagged analysis item; used only as T3 reference.",
+    "last_checked": "2025-11-07",
+    "confidence": "medium",
+    "tags": [
+      "video",
+      "angry_astronomer",
+      "grok_analysis"
+    ]
+  },
+  "signature": "#ATLAS-SIG-SOURCES-v2.10-Δ2025-11-07",
+  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.10-Δ2025-11-07",
+  "ARXIV-2510-21967-SWIFT-OH": {
+    "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2510.21967"
+    ],
+    "notes": "OH detection (proxy for water) using Neil Gehrels Swift Observatory/UVOT; peer-review pending.",
+    "last_checked": "2025-10-31",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "ARXIV-2510-25035-RAPID-BRIGHTENING": {
+    "title": "Rapid brightening of interstellar comet 3I/ATLAS ahead of perihelion",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2510.25035"
+    ],
+    "notes": "Photometry combining SOHO/LASCO, STEREO/SECCHI, GOES-19/CCOR; discusses brightness law and color caveats.",
+    "last_checked": "2025-10-31",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2",
+    "aliases": [
+      "ARXIV-2510.25035-BRIGHTENING"
+    ]
+  },
+  "NASA-JPL-SBDB-3I-ATLAS": {
+    "title": "Small-Body Database: C/2025 N1 (ATLAS)",
+    "publisher": "NASA JPL",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html?q=C%2F2025%20N1"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "agency",
+    "tier": "T1",
+    "aliases": [
+      "JPL-FARNOCCHIA-2025-10-29"
+    ]
+  },
+  "NASA-JPL-HORIZONS-3I-ATLAS": {
+    "title": "JPL HORIZONS: 3I/ATLAS Ephemerides",
+    "publisher": "NASA JPL",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/horizons/"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "agency_tool",
+    "tier": "T1"
+  },
+  "SKY-AND-TELESCOPE-NOV1-2025": {
+    "title": "Sky & Telescope: November 1, 2025 visibility briefing",
+    "publisher": "AAS Sky & Telescope",
+    "urls": [
+      "https://skyandtelescope.org/astronomy-news/this-weeks-sky-at-a-glance-october-30-november-9/"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "press_guide"
+  },
+  "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY": {
+    "title": "EarthSky: Post-conjunction visibility for 3I/ATLAS",
+    "publisher": "EarthSky",
+    "urls": [
+      "https://earthsky.org/space/new-interstellar-object-candidate-heading-toward-the-sun-a11pl3z/"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "press_guide"
+  },
+  "ARXIV-3I-ATLAS-NICKEL-VAPOR": {
+    "title": "Nickel vapor detection in 3I/ATLAS",
+    "publisher": "arXiv / ESO VLT",
+    "urls": [
+      "https://arxiv.org/abs/2508.18382"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "GENERAL-ASTRONOMY-SAFETY": {
+    "title": "General astronomy eye-safety guidance",
+    "publisher": "AAS",
+    "urls": [
+      "https://aas.org/observing"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "safety_guidance"
+  },
+  "FCC-PART-15-RADIO-REGS": {
+    "title": "FCC Part 15: Radio Frequency Devices",
+    "publisher": "FCC",
+    "urls": [
+      "https://www.ecfr.gov/current/title-47/part-15"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "regulation"
+  },
+  "NIST-WWV-TIME-STANDARD": {
+    "title": "WWV Time and Frequency Standard",
+    "publisher": "NIST",
+    "urls": [
+      "https://www.nist.gov/pml/time-and-frequency-division/radio-stations/wwv"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "extremely_high",
+    "type": "agency"
+  },
+  "LOEB-MEDIUM-2025-10-30-NONGRAV": {
+    "title": "Non-gravitational acceleration note",
+    "publisher": "Avi Loeb / Medium",
+    "urls": [
+      "https://medium.com/@aviloeb"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "analysis_blog",
+    "tier": "T3"
+  },
+  "LOEB-MEDIUM-2025-10-31-TRIPLE-CONVERGENCE": {
+    "title": "Triple Convergence",
+    "publisher": "Avi Loeb / Medium",
+    "urls": [
+      "https://medium.com/@aviloeb"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "analysis_blog",
+    "tier": "T3"
+  },
+  "GALILEO-PROJECT-OVERVIEW": {
+    "title": "Harvard Galileo Project — Overview",
+    "publisher": "Harvard",
+    "urls": [
+      "https://projects.iq.harvard.edu/galileo/home"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "project_overview",
+    "tier": "T3"
+  },
+  "IAU-ASTRONOMY-SAFETY": {
+    "title": "IAU Astronomy Safety Guidance",
+    "publisher": "IAU",
+    "urls": [
+      "https://www.iau.org/public/themes/observing/"
+    ],
+    "last_checked": "2025-11-07",
+    "confidence": "high",
+    "type": "agency"
+  },
+  "version": "2.10.1",
+  "_quarantined": {
+    "VLT_CHILE_2025": {
+      "title": "VLT instrumentation note on nickel detection campaigns",
+      "publisher": "ESO / VLT",
+      "urls": [
+        "https://www.eso.org/public/news/3i-atlas-nickel/"
+      ],
+      "notes": "Placeholder ESO/VLT page for nickel features; replace with exact page when confirmed.",
+      "last_checked": "2025-10-31",
+      "confidence": "medium",
+      "type": "agency",
+      "do_not_cite_primary": true,
+      "quarantine_reason": "placeholder_unverified"
+    },
+    "meta": {
+      "changelog": {
+        "v2.9-pre": "Re-tiered NIST/FCC as T1, added IAWN campaign + IAU safety, normalized EarthSky IDs, flagged placeholders, and aligned Loeb/NOAA tiers."
+      }
+    },
+    "ARXIV-3I-ATLAS-SIZE-ESTIMATES": {
+      "title": "Size estimates for 3I/ATLAS",
+      "publisher": "arXiv",
+      "urls": [
+        "https://arxiv.org/"
+      ],
+      "last_checked": "2025-11-07",
+      "confidence": "medium",
+      "type": "preprint",
+      "do_not_cite_primary": true,
+      "quarantine_reason": "generic_arxiv_placeholder"
+    },
+    "ARXIV-3I-ATLAS-AGE-ESTIMATE": {
+      "title": "Age estimate analyses for 3I/ATLAS",
+      "publisher": "arXiv",
+      "urls": [
+        "https://arxiv.org/"
+      ],
+      "last_checked": "2025-11-07",
+      "confidence": "medium",
+      "type": "preprint",
+      "do_not_cite_primary": true,
+      "quarantine_reason": "generic_arxiv_placeholder"
+    },
+    "VARIOUS-PRESS-REPORTS": {
+      "title": "Consolidated reports on alleged data blackout",
+      "publisher": "Various",
+      "urls": [],
+      "last_checked": "2025-11-07",
+      "confidence": "low",
+      "type": "press_aggregate",
+      "tier": "T3",
+      "do_not_cite_primary": true,
+      "quarantine_reason": "placeholder_unverified"
+    },
+    "CN-TIANWEN-REPORTS-2025": {
+      "title": "Claims of Tianwen observation withholding (allegations)",
+      "publisher": "Unconfirmed",
+      "urls": [],
+      "notes": "No primary CNSA/Tianwen source found as of last_checked; treat as unverified.",
+      "last_checked": "2025-10-30",
+      "confidence": "low",
+      "type": "media",
+      "do_not_cite_primary": true,
+      "quarantine_reason": "placeholder_unverified"
+    }
+  }
+}
