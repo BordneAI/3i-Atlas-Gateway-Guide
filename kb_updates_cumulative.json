@@ -3,7 +3,7 @@
     {
       "proposal_id": "kb_propose_dec_visibility_refinement",
       "proposed_at": "2025-11-01T19:45:00Z",
-      "status": "integrated",
+      "status": "pending",
       "type": "refine_existing_fact",
       "target_path": "/timeline/visibility_windows/december_window",
       "proposed_change": {
@@ -42,8 +42,10 @@
         "ssd.jpl.nasa.gov",
         "earthsky.org"
       ],
-      "integrated_at": "2025-11-03T18:40:00Z",
-      "integrated_to": "kb_changelog.json entry: kb_apply_dec_magnitude_realistic_forecast_20251103"
+      "artifacts": {
+        "horizons_csv": null,
+        "earthsky_url": null
+      }
     },
     {
       "proposal_id": "kb_propose_galileo_project_update",
@@ -90,15 +92,11 @@
     },
     {
       "proposal_id": "kb_propose_iawn_registration_detail",
-      "status": "integrated",
-      "integrated_at": "2025-11-03T18:30:00Z",
-      "integrated_to": "kb_changelog.json entry: kb_apply_iawn_registration_deadline_20251103"
+      "status": "pending"
     },
     {
       "proposal_id": "kb_propose_swift_oh_update",
-      "status": "integrated",
-      "integrated_at": "2025-11-03T18:35:00Z",
-      "integrated_to": "kb_changelog.json entry: kb_apply_swift_oh_preprint_pairing_20251103"
+      "status": "pending"
     }
   ],
   "rejected": [
@@ -115,5 +113,20 @@
       ]
     }
   ],
-  "version": "2.10.1"
+  "version": "2.10.1",
+  "schema_version": "2.0",
+  "kb_version": "2.10.1",
+  "file": "kb_updates_cumulative.json",
+  "as_of": "2025-11-12T13:39:32.771Z",
+  "status": "PENDING_QUEUE",
+  "notes": "Pending knowledge base updates awaiting review and integration",
+  "updates": [],
+  "entries": [],
+  "sources_registry_ops": [],
+  "ops_rollback": [],
+  "tests": [],
+  "integrity": {
+    "as_of": "2025-11-12T13:39:32.771Z",
+    "signature": "#ATLAS-SIG-UPDATES-v2.10.1-Δ2025-11-12"
+  }
 }
