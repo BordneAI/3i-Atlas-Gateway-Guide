@@ -9,53 +9,6 @@
   "notes": "All entries are PENDING proposals awaiting review and integration. Do not promote to facts until logged in kb_changelog.json.",
   "pending": [
     {
-      "proposal_id": "kb_propose_dec_visibility_refinement",
-      "proposed_at": "2025-11-01T19:45:00Z",
-      "status": "pending",
-      "type": "refine_existing_fact",
-      "target_path": "/timeline/visibility_windows/december_window",
-      "proposed_change": {
-        "refined_magnitude_forecast": "+8.5 to +9.5 by Dec 31",
-        "altitude_improvement": "Moves higher in pre-dawn sky, easier to locate despite fading",
-        "best_observing_dates": "Dec 1-10 (before magnitude drop becomes significant)"
-      },
-      "rationale": "Press summary (EarthSky) and Horizons-derived tools suggest fading magnitude through December; altitude improves predawn. Treat as forecast until a direct Horizons run is embedded.",
-      "source_ids_proposed": [
-        "EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
-        "NASA-JPL-HORIZONS-3I-ATLAS"
-      ],
-      "as_of": "2025-11-07T00:00:00Z",
-      "confidence": "medium",
-      "requires_web_search": true,
-      "note": "Validate with a fresh JPL Horizons run and the latest EarthSky page before approval.",
-      "proposal_tier_mix": [
-        "T3_press",
-        "T1_agency"
-      ],
-      "public_surface": false,
-      "approval_requirements": [
-        "Run JPL Horizons for Dec 1–31 UTC and attach magnitude/elongation table",
-        "Confirm latest EarthSky December guidance URL and date",
-        "Keep language as forecast; do not hardcode magnitudes without context"
-      ],
-      "review_owner": "reviewer_ops@atlas",
-      "due_by": "2025-11-07T23:59:00Z",
-      "review_checklist": [
-        "Run JPL Horizons (Dec 1–31 UTC) for mag & elongation table",
-        "Capture latest EarthSky December page URL + timestamp",
-        "Label output as forecast; avoid hardcoded single-value magnitudes",
-        "Confirm KB paths exist and won't overwrite required fields"
-      ],
-      "required_domains": [
-        "ssd.jpl.nasa.gov",
-        "earthsky.org"
-      ],
-      "artifacts": {
-        "horizons_csv": "https://ssd.jpl.nasa.gov/cgi-bin/observer?user_id=0&lon=0&lat=0&elevation=0&jd_start=2460293.5&jd_stop=2460323.5&step=1d&csv=1&target=C%2F2025+N1",
-        "earthsky_url": "https://earthsky.org/space/comet-3i-atlas-2025/"
-      }
-    },
-    {
       "proposal_id": "kb_propose_galileo_project_update",
       "proposed_at": "2025-11-01T19:45:00Z",
       "status": "pending",
@@ -97,16 +50,6 @@
         "ui.adsabs.harvard.edu"
       ],
       "hold_reason": "Awaiting post-perihelion results publication (expected Dec 2025 – Jan 2026)"
-    },
-    {
-      "proposal_id": "kb_propose_iawn_registration_detail",
-      "status": "pending",
-      "note": "Previously marked integrated in v2.10 cycle; parked as pending pending formal removal or archival decision"
-    },
-    {
-      "proposal_id": "kb_propose_swift_oh_update",
-      "status": "pending",
-      "note": "Previously marked integrated in v2.10 cycle; parked as pending pending formal removal or archival decision"
     }
   ],
   "rejected": [
