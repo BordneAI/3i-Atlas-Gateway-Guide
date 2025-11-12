@@ -433,7 +433,7 @@
     }
   ],
   "meta": {
-    "total_updates_applied": 8,
+    "total_updates_applied": 9,
     "version_span": "v2.3 → v2.10",
     "integrity_commitment": "All updates logged immutably, no retroactive edits",
     "provenance_discipline": "Every applied change includes source_ids, as_of dates, and confidence levels",
@@ -453,8 +453,8 @@
     "applied_items": 7,
     "notes": "Broader integration touching sources, KB, instructions, starters, tags, and STF."
   },
-  "signature": "#ATLAS-SIG-CHANGELOG-v2.10-Δ2025-11-07",
-  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CHANGELOG-v2.10-Δ2025-11-07",
+  "signature": "#ATLAS-SIG-CHANGELOG-v2.10.1-Δ2025-11-12",
+  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CHANGELOG-v2.10.1-Δ2025-11-12",
   "entries": [
     {
       "id": "VERIFICATION_9OF9_UNANIMOUS",
@@ -478,6 +478,49 @@
         "9_OF_9_CONSENSUS_COMPLETE_GPT-5_Thinking_Final_Analysis.md"
       ],
       "confidence_level": "extremely_high"
+    },
+    {
+      "id": "KB_TIER_UPDATE_2025_11_12",
+      "date": "2025-11-12T00:00:00Z",
+      "version": "v2.10.1",
+      "type": "knowledge_base_expansion",
+      "status": "complete",
+      "commit": "f8456ad",
+      "summary": "Added T1 NASA/MPC/ESA/IAWN and T2 arXiv sources. Upserted designation, perihelion, Earth safety, size bounds. Logged ESA Mars window and IAWN dates. Added JWST CO2-dominated coma as T2. Registered T3 and T4 items for context only.",
+      "sources_added": {
+        "T1": [
+          "T1.MPC.OBJECT.3I",
+          "T1.ESA.MARS.OBS.ARTICLE",
+          "T1.IAWN.3IATLAS.CAMPAIGN"
+        ],
+        "T2": [
+          "T2.ARXIV.SPACECRAFT.OPP"
+        ],
+        "T3": [
+          "T3.LIVESCIENCE.ESA.MARSOBS",
+          "T3.ELPAIS.ESA.MARSOBS",
+          "T3.PHYSORG.JWST.CO2"
+        ],
+        "T4": [
+          "T4.3IATLASLIVE.AGG",
+          "T4.3IATLASWATCH.AGG"
+        ]
+      },
+      "facts_added": [
+        "3i_designation",
+        "3i_perihelion",
+        "3i_earth_min_distance",
+        "3i_size_bounds",
+        "3i_esa_mars_window",
+        "3i_iawn_campaign",
+        "3i_jwst_co2_coma"
+      ],
+      "tags_added": [
+        "esa_mars_observations",
+        "jwst_observations",
+        "mpc_ephemerides"
+      ],
+      "confidence_level": "high"
     }
   ],
   "version": "2.10.1"

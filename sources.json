@@ -420,8 +420,92 @@
       "grok_analysis"
     ]
   },
-  "signature": "#ATLAS-SIG-SOURCES-v2.10-Δ2025-11-07",
-  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.10-Δ2025-11-07",
+  "T1.MPC.OBJECT.3I": {
+    "title": "MPC Object Page — 3I/ATLAS (C/2025 N1)",
+    "publisher": "IAU Minor Planet Center",
+    "urls": [
+      "https://www.minorplanetcenter.net/db_search/show_object?object_id=3I"
+    ],
+    "notes": "Primary MPC database entry for 3I/ATLAS orbital elements and observations.",
+    "last_checked": "2025-11-12",
+    "confidence": "extremely_high",
+    "type": "agency",
+    "tier": "T1"
+  },
+  "T2.ARXIV.SPACECRAFT.OPP": {
+    "title": "Direct Spacecraft Exploration of 3I/ATLAS",
+    "publisher": "arXiv",
+    "urls": [
+      "https://arxiv.org/abs/2508.15768"
+    ],
+    "notes": "Analysis of mission opportunities for direct spacecraft exploration of 3I/ATLAS.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "preprint",
+    "tier": "T2"
+  },
+  "T3.LIVESCIENCE.ESA.MARSOBS": {
+    "title": "Closest view of 3I/ATLAS from Mars orbiter",
+    "publisher": "LiveScience",
+    "urls": [
+      "https://www.livescience.com/space/comets/closest-view-yet-of-interstellar-comet-3i-atlas-captured-by-mars-orbiter"
+    ],
+    "notes": "Press coverage of ESA Mars orbiter observations of 3I/ATLAS.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "press",
+    "tier": "T3"
+  },
+  "T3.ELPAIS.ESA.MARSOBS": {
+    "title": "Captado desde Marte el cometa 3I/ATLAS",
+    "publisher": "El País",
+    "urls": [
+      "https://elpais.com/ciencia/2025-10-08/captado-desde-marte-al-cometa-3iatlas-el-tercer-visitante-de-fuera-del-sistema-solar.html"
+    ],
+    "notes": "Spanish-language press coverage of ESA Mars observations.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "press",
+    "tier": "T3"
+  },
+  "T3.PHYSORG.JWST.CO2": {
+    "title": "JWST reveals CO2-dominated coma",
+    "publisher": "Phys.org",
+    "urls": [
+      "https://phys.org/news/2025-09-jwst-reveals-3iatlas-coma-largely.html"
+    ],
+    "notes": "Press summary of JWST CO2 detection in 3I/ATLAS coma.",
+    "last_checked": "2025-11-12",
+    "confidence": "high",
+    "type": "press",
+    "tier": "T3"
+  },
+  "T4.3IATLASLIVE.AGG": {
+    "title": "3I/ATLAS — Live Tracker (community)",
+    "publisher": "3iatlaslive.com",
+    "urls": [
+      "https://www.3iatlaslive.com/"
+    ],
+    "notes": "Community-maintained live tracking site for 3I/ATLAS observations.",
+    "last_checked": "2025-11-12",
+    "confidence": "medium",
+    "type": "community",
+    "tier": "T4"
+  },
+  "T4.3IATLASWATCH.AGG": {
+    "title": "3I/ATLAS — Scientific data aggregation",
+    "publisher": "3iatlas.watch",
+    "urls": [
+      "https://3iatlas.watch/3i-atlas-scientific-data"
+    ],
+    "notes": "Community aggregation of scientific data and observations.",
+    "last_checked": "2025-11-12",
+    "confidence": "medium",
+    "type": "community",
+    "tier": "T4"
+  },
+  "signature": "#ATLAS-SIG-SOURCES-v2.10.1-Δ2025-11-12",
+  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.10.1-Δ2025-11-12",
   "ARXIV-2510-21967-SWIFT-OH": {
     "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3I/ATLAS",
     "publisher": "arXiv",

@@ -1,7 +1,7 @@
 {
-  "tags_version": "2.10",
-  "last_updated": "2025-11-07",
-  "total_tags": 66,
+  "tags_version": "2.10.1",
+  "last_updated": "2025-11-12",
+  "total_tags": 69,
   "purpose": "Searchable tag index for knowledge base navigation and content discovery",
   "tags": [
     "advanced",
@@ -21,6 +21,7 @@
     "cycle",
     "daily",
     "entropy",
+    "esa_mars_observations",
     "expert_perspectives",
     "facts",
     "formatting",
@@ -32,11 +33,13 @@
     "guidelines",
     "iawn_campaign",
     "interpretation",
+    "jwst_observations",
     "loeb",
     "loeb_scale",
     "menu",
     "meta",
     "milestones",
+    "mpc_ephemerides",
     "no_tail",
     "non_grav",
     "nov11",
@@ -219,7 +222,7 @@
     "level": "low",
     "notes": "Tag surface expanded by +10 without altering core categories."
   },
-  "signature": "#ATLAS-SIG-TAGS-v2.10-Δ2025-11-07",
-  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.10-Δ2025-11-07",
+  "signature": "#ATLAS-SIG-TAGS-v2.10.1-Δ2025-11-12",
+  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.10.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.10.1-Δ2025-11-12",
   "version": "2.10.1"
 }
