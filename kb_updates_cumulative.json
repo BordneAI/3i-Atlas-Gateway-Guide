@@ -1,4 +1,12 @@
 {
+  "version": "2.10.1",
+  "schema_version": "2.0",
+  "kb_version": "2.10.1",
+  "file": "kb_updates_cumulative.json",
+  "status": "PENDING_QUEUE",
+  "as_of": "2025-11-12T13:40:00Z",
+  "generated_at": "2025-11-12T13:40:00Z",
+  "notes": "All entries are PENDING proposals awaiting review and integration. Do not promote to facts until logged in kb_changelog.json.",
   "pending": [
     {
       "proposal_id": "kb_propose_dec_visibility_refinement",
@@ -16,7 +24,7 @@
         "EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
         "NASA-JPL-HORIZONS-3I-ATLAS"
       ],
-      "as_of": "2025-11-07",
+      "as_of": "2025-11-07T00:00:00Z",
       "confidence": "medium",
       "requires_web_search": true,
       "note": "Validate with a fresh JPL Horizons run and the latest EarthSky page before approval.",
@@ -36,15 +44,15 @@
         "Run JPL Horizons (Dec 1–31 UTC) for mag & elongation table",
         "Capture latest EarthSky December page URL + timestamp",
         "Label output as forecast; avoid hardcoded single-value magnitudes",
-        "Confirm KB paths exist and won’t overwrite required fields"
+        "Confirm KB paths exist and won't overwrite required fields"
       ],
       "required_domains": [
         "ssd.jpl.nasa.gov",
         "earthsky.org"
       ],
       "artifacts": {
-        "horizons_csv": null,
-        "earthsky_url": null
+        "horizons_csv": "https://ssd.jpl.nasa.gov/cgi-bin/observer?user_id=0&lon=0&lat=0&elevation=0&jd_start=2460293.5&jd_stop=2460323.5&step=1d&csv=1&target=C%2F2025+N1",
+        "earthsky_url": "https://earthsky.org/space/comet-3i-atlas-2025/"
       }
     },
     {
@@ -62,7 +70,7 @@
       "source_ids_proposed": [
         "GALILEO-PROJECT-OVERVIEW"
       ],
-      "as_of": "2025-11-07",
+      "as_of": "2025-11-07T00:00:00Z",
       "confidence": "medium_pending_results",
       "requires_web_search": true,
       "note": "Will integrate when Galileo Project publishes preliminary findings or confirms monitoring progress",
@@ -92,11 +100,13 @@
     },
     {
       "proposal_id": "kb_propose_iawn_registration_detail",
-      "status": "pending"
+      "status": "pending",
+      "note": "Previously marked integrated in v2.10 cycle; parked as pending pending formal removal or archival decision"
     },
     {
       "proposal_id": "kb_propose_swift_oh_update",
-      "status": "pending"
+      "status": "pending",
+      "note": "Previously marked integrated in v2.10 cycle; parked as pending pending formal removal or archival decision"
     }
   ],
   "rejected": [
@@ -113,20 +123,621 @@
       ]
     }
   ],
-  "version": "2.10.1",
-  "schema_version": "2.0",
-  "kb_version": "2.10.1",
-  "file": "kb_updates_cumulative.json",
-  "as_of": "2025-11-12T13:39:32.771Z",
-  "status": "PENDING_QUEUE",
-  "notes": "Pending knowledge base updates awaiting review and integration",
-  "updates": [],
-  "entries": [],
-  "sources_registry_ops": [],
-  "ops_rollback": [],
-  "tests": [],
+  "updates": [
+    {
+      "id": "UPD-INT-GREER-1991-FSR",
+      "status": "pending",
+      "title": "Full Spectrum of Reality framing (Greer 1991)",
+      "scope": "expert_perspectives.interpretation_cards",
+      "tier": "T3",
+      "as_of": "2025-11-12T00:00:00Z",
+      "confidence": "medium",
+      "labels": [
+        "consciousness",
+        "CE-5",
+        "philosophy",
+        "interdimensional"
+      ],
+      "summary": "Greer asserts reality is a unified spectrum accessible by consciousness; ET craft and beings operate within a broader aspect of the same reality. Differences are of degree, not kind.",
+      "cautions": [
+        "Metaphysical claim. Not supported by agency or peer-reviewed physical evidence.",
+        "Do not upgrade beyond T3 without independent T2 support."
+      ],
+      "sources": [
+        {
+          "title": "Comprehensive Assessment of the UFO/ETI Phenomenon",
+          "url": "https://drstevengreer.com/cseti-papers/comprehensive-assessment-of-the-ufoeti-phenomenon/index.html",
+          "tier": "T3"
+        },
+        {
+          "title": "PDF mirror",
+          "url": "https://drstevengreer.com/wp-content/uploads/2023/06/Comprehensive-Assessment-of-the-UF-ET-Phenomenon.pdf",
+          "tier": "T3"
+        }
+      ],
+      "ops": [
+        {
+          "op": "upsert",
+          "path": "/expert_perspectives/interpretation_cards/INT-GREER-1991-FSR",
+          "value": {
+            "id": "INT-GREER-1991-FSR",
+            "title": "Full Spectrum of Reality framing (Greer 1991)",
+            "tier": "T3",
+            "type": "interpretation",
+            "as_of": "2025-11-12T00:00:00Z",
+            "confidence": "medium",
+            "summary": "Reality is a unified spectrum accessible by consciousness. ET craft and beings operate in broader aspects of the same reality. Differences are of degree, not kind.",
+            "sources": [
+              {
+                "source_id": "GREER-1991-CSETI-PDF",
+                "tier": "T3"
+              }
+            ],
+            "labels": [
+              "consciousness",
+              "CE-5",
+              "philosophy",
+              "interdimensional"
+            ],
+            "cautions": [
+              "Metaphysical claim. Not supported by agency or peer-reviewed physical evidence.",
+              "Do not upgrade beyond T3 without independent T2 support."
+            ],
+            "menu_links": [
+              "3",
+              "9"
+            ]
+          }
+        }
+      ],
+      "review_checklist": [
+        "Verify URLs resolve and content matches summary",
+        "Confirm tier stays T3 across surfaces",
+        "Spellcheck and schema validation"
+      ]
+    },
+    {
+      "id": "UPD-COMPARE-INT-vs-INST-ARTIFACTS",
+      "status": "pending",
+      "title": "Interdimensional claims vs instrument artifacts",
+      "scope": "expert_perspectives.compare_cards",
+      "tier": "mixed",
+      "as_of": "2025-11-12T00:00:00Z",
+      "confidence": "medium",
+      "labels": [
+        "instruments",
+        "false_color",
+        "processing",
+        "interpretation_contrast"
+      ],
+      "summary": "Contrast Greer's metaphysical framing with T1 instrument caveats to prevent conflation of processing artifacts with interdimensional claims.",
+      "sources": [
+        {
+          "id": "SOHO-LASCO-INSTRUMENT",
+          "tier": "T1"
+        },
+        {
+          "id": "STEREO-SECCHI-COLOR",
+          "tier": "T1"
+        },
+        {
+          "id": "GOES-CCOR-INFO",
+          "tier": "T1"
+        }
+      ],
+      "ops": [
+        {
+          "op": "upsert",
+          "path": "/expert_perspectives/compare_cards/INT-vs-INST-ARTIFACTS",
+          "value": {
+            "id": "INT-vs-INST-ARTIFACTS",
+            "title": "Interdimensional claims vs instrument artifacts",
+            "tier": "mixed",
+            "as_of": "2025-11-12T00:00:00Z",
+            "layout": "contrast",
+            "left": {
+              "heading": "Interdimensional framing",
+              "claims": [
+                "Perceived non-Newtonian motion may reflect broader reality access.",
+                "Consciousness state may modulate perception and interaction."
+              ],
+              "tier": "T3",
+              "link": "INT-GREER-1991-FSR"
+            },
+            "right": {
+              "heading": "Instrument artifacts and processing",
+              "facts": [
+                "SOHO LASCO and STEREO SECCHI use false color palettes; blue or orange tones are not true color.",
+                "Vignetting, compression, and stacking can mimic jets or spokes.",
+                "GOES CCOR composites vary by processing; apparent color does not imply object chroma."
+              ],
+              "sources": [
+                {
+                  "id": "SOHO-LASCO-INSTRUMENT",
+                  "tier": "T1"
+                },
+                {
+                  "id": "STEREO-SECCHI-COLOR",
+                  "tier": "T1"
+                },
+                {
+                  "id": "GOES-CCOR-INFO",
+                  "tier": "T1"
+                }
+              ],
+              "tier": "T1"
+            },
+            "notes": [
+              "Do not conflate artifact-driven morphology with metaphysical inference.",
+              "Keep imagery claims separate from consciousness narratives."
+            ],
+            "menu_links": [
+              "3",
+              "7"
+            ]
+          }
+        }
+      ],
+      "review_checklist": [
+        "Instrument pages live and unchanged",
+        "Contrast card renders correctly",
+        "Left panel remains labeled T3"
+      ]
+    },
+    {
+      "id": "UPD-MENU-HOOKS-INT-GREER",
+      "status": "pending",
+      "title": "Menu routing hooks for new interpretation and contrast cards",
+      "scope": "ui.menu_hooks",
+      "tier": "T4",
+      "as_of": "2025-11-12T00:00:00Z",
+      "confidence": "high",
+      "labels": [
+        "menu",
+        "routing",
+        "ui"
+      ],
+      "summary": "Expose Greer interpretation and contrast cards in Menus 3, 7, and 9.",
+      "ops": [
+        {
+          "op": "link",
+          "path": "/daily_practices/nov11_protocols/references",
+          "value": [
+            "INT-GREER-1991-FSR"
+          ]
+        },
+        {
+          "op": "link",
+          "path": "/expert_perspectives/ce5_greer_framework/references",
+          "value": [
+            "INT-GREER-1991-FSR",
+            "INT-vs-INST-ARTIFACTS"
+          ]
+        },
+        {
+          "op": "upsert",
+          "path": "/ui/menu_hooks",
+          "value": [
+            {
+              "menu": "3",
+              "add_panels": [
+                "p-int-greer-1991",
+                "p-contrast-int-vs-artifacts"
+              ]
+            },
+            {
+              "menu": "7",
+              "add_panels": [
+                "p-contrast-int-vs-artifacts"
+              ]
+            },
+            {
+              "menu": "9",
+              "add_panels": [
+                "p-int-greer-1991"
+              ]
+            }
+          ]
+        }
+      ],
+      "review_checklist": [
+        "Menus 3, 7, 9 render added panels",
+        "No duplicate panel IDs",
+        "Backward compatibility with earlier UI"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "U-2025-11-12-T1-IAWN-CAMPAIGN",
+      "tier": "T1",
+      "status": "pending",
+      "topic": "IAWN comet astrometry campaign",
+      "summary": "IAWN announces a 3I/ATLAS comet-astrometry campaign, Nov 27 2025 to Jan 27 2026, with a preparatory workshop.",
+      "details": {
+        "window_utc": [
+          "2025-11-27",
+          "2026-01-27"
+        ],
+        "goal": "Improve centroiding methods for extended comae",
+        "ops_note": "Prefer PSF-fitting with coma-masked centroid"
+      },
+      "provenance": [
+        {
+          "name": "IAWN campaign page",
+          "url": "https://iawn.net/obscamp/3I_ATLAS/",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T1"
+        },
+        {
+          "name": "MPEC editorial notice",
+          "url": "https://www.minorplanetcenter.net/mpec/K25/K25UE2.html",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T1"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "U-2025-11-12-T1-MPC-ELEMENTS",
+      "tier": "T1",
+      "status": "pending",
+      "topic": "MPC elements and identity",
+      "summary": "MPC lists object as 3I/ATLAS = C/2025 N1 (ATLAS) with hyperbolic elements and perihelion on 2025-10-29.48 UT.",
+      "details": {
+        "designation": "3I/ATLAS = C/2025 N1 (ATLAS)",
+        "perihelion_ut": "2025-10-29.48",
+        "element_epoch_ut": "2025-11-21.0",
+        "note": "Use MPC page for identity; use JPL/Horizons for site-specific ephemerides."
+      },
+      "provenance": [
+        {
+          "name": "MPEC 2025-N12",
+          "url": "https://www.minorplanetcenter.net/mpec/K25/K25N12.html",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T1"
+        },
+        {
+          "name": "MPC object page (3I)",
+          "url": "https://www.minorplanetcenter.net/db_search/show_object?object_id=3I",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T1"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "U-2025-11-12-T2-JWST-COMPOSITION",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "JWST NIRSpec composition",
+      "summary": "CO2-dominated coma with CO2/H2O ≈ 8 at r ~3.3 au; detections include H2O, CO, OCS, ice and dust.",
+      "details": {
+        "ratio_CO2_to_H2O": 8,
+        "geometry": {
+          "r_au": 3.32
+        },
+        "implication": "CO2-rich surface layer or intrinsically CO2-rich nucleus",
+        "uncertainty": "preprint; model-dependent extraction"
+      },
+      "provenance": [
+        {
+          "name": "JWST NIRSpec preprint",
+          "url": "https://arxiv.org/abs/2508.15768",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-HST-MORPHOLOGY",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "HST pre-perihelion morphology and size bound",
+      "summary": "Active at r ~3.8 au with sunward dust; dust loss ~6–60 kg/s for 1–100 μm grains; nucleus radius < 2.8 km (p=0.04).",
+      "details": {
+        "r_au": 3.8,
+        "mass_loss_kg_s": [
+          6,
+          60
+        ],
+        "radius_km_upper": 2.8,
+        "albedo": 0.04
+      },
+      "provenance": [
+        {
+          "name": "HST WFC3 preprint",
+          "url": "https://arxiv.org/abs/2508.02934",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-CN-DEPLETION",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "CN onset and carbon-chain depletion",
+      "summary": "CN emission detected Aug 8–17; Afρ ~300 cm; strong C2 depletion with log(C2/CN) ≤ about −1.",
+      "details": {
+        "campaign_utc": [
+          "2025-08-08",
+          "2025-08-17"
+        ],
+        "Q_CN_s_1": "≈8e23",
+        "Afrho_cm": 300,
+        "log_C2_over_CN_max": -1
+      },
+      "provenance": [
+        {
+          "name": "CN onset preprint",
+          "url": "https://arxiv.org/abs/2509.01647",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-ATLAS-PHOTOMETRY",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "ATLAS survey photometry and color evolution",
+      "summary": "Color shift from red to near-solar; H(t) slope break near r ~3.3 au; coma cross-section scaling r^-3.9 to r^-1.2.",
+      "details": {
+        "date_range": [
+          "2025-03-28",
+          "2025-08-29"
+        ],
+        "bands": [
+          "c",
+          "o",
+          "w"
+        ],
+        "color_c_minus_o": {
+          "before": 0.7,
+          "after": 0.3
+        },
+        "slope_break_r_au": 3.3
+      },
+      "provenance": [
+        {
+          "name": "ATLAS photometry preprint",
+          "url": "https://arxiv.org/abs/2509.05562",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-ZTF-PREDISCOVERY",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "ZTF prediscovery and early activity",
+      "summary": "Inbound constraints to r ~17 au; activity at least inward of r ~6.5 au; dust production rising 5→30 kg/s from r ~6→4 au.",
+      "details": {
+        "r_max_prediscovery_au": 17,
+        "r_activity_detected_au": 6.5,
+        "dust_production_kg_s": {
+          "early_May": 5,
+          "mid_July": 30
+        }
+      },
+      "provenance": [
+        {
+          "name": "ZTF prediscovery preprint",
+          "url": "https://arxiv.org/abs/2509.08792",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-TESS-PRECOVERY",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "TESS precovery photometry",
+      "summary": "Shift-stack recovery from 2025-05-07 to 2025-06-02 enables tighter inbound constraints.",
+      "details": {
+        "date_range": [
+          "2025-05-07",
+          "2025-06-02"
+        ],
+        "method": "shift-stack",
+        "use": "refine early light curve and ephemeris"
+      },
+      "provenance": [
+        {
+          "name": "TESS precovery preprint",
+          "url": "https://arxiv.org/abs/2507.21967",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-NEAR-PERIH-SECCHI",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "Rapid brightening near perihelion in coronagraph data",
+      "summary": "STEREO-A HI1, SOHO LASCO C3, and GOES-19 CCOR-1 show rapid pre-perihelion brightening with r^(-7.5±1.0).",
+      "details": {
+        "date_range": [
+          "2025-09-01",
+          "2025-10-28"
+        ],
+        "scaling_index": -7.5,
+        "sigma": 1
+      },
+      "provenance": [
+        {
+          "name": "Zhang & Battams preprint",
+          "url": "https://arxiv.org/abs/2510.25035",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "U-2025-11-12-T2-KECK-KCWI-NI",
+      "tier": "T2",
+      "status": "pending",
+      "topic": "Keck/KCWI CN and Ni spatial profiles",
+      "summary": "Blue-sensitive IFU spectra confirm CN and Ni; Ni more centrally concentrated than CN.",
+      "details": {
+        "date_ut": "2025-08-24",
+        "e_folding_radius_km": {
+          "Ni": 594,
+          "CN": 841
+        }
+      },
+      "provenance": [
+        {
+          "name": "KCWI spatial profiles preprint",
+          "url": "https://arxiv.org/pdf/2510.11779",
+          "as_of": "2025-11-12T00:00:00Z",
+          "tier": "T2"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "sources_registry_ops": [
+    {
+      "op": "upsert",
+      "status": "pending",
+      "path": "/sources_registry/GREER-1991-CSETI-PAPER",
+      "value": {
+        "title": "Comprehensive Assessment of the UFO/ETI Phenomenon",
+        "publisher": "Dr. Steven Greer",
+        "url": "https://drstevengreer.com/cseti-papers/comprehensive-assessment-of-the-ufoeti-phenomenon/index.html",
+        "tier": "T3",
+        "type": "author_site",
+        "as_of": "2025-11-12T00:00:00Z",
+        "confidence": "high_on_authorship"
+      }
+    },
+    {
+      "op": "upsert",
+      "status": "pending",
+      "path": "/sources_registry/GREER-1991-CSETI-PDF",
+      "value": {
+        "title": "Comprehensive Assessment of the UF-ET Phenomenon (PDF)",
+        "publisher": "Dr. Steven Greer",
+        "url": "https://drstevengreer.com/wp-content/uploads/2023/06/Comprehensive-Assessment-of-the-UF-ET-Phenomenon.pdf",
+        "tier": "T3",
+        "type": "author_site_pdf",
+        "as_of": "2025-11-12T00:00:00Z",
+        "confidence": "high_on_authorship"
+      }
+    }
+  ],
+  "ops_rollback": [
+    {
+      "id": "RB-INT-GREER-1991-FSR",
+      "steps": [
+        {
+          "op": "remove",
+          "path": "/expert_perspectives/interpretation_cards/INT-GREER-1991-FSR"
+        },
+        {
+          "op": "remove",
+          "path": "/expert_perspectives/compare_cards/INT-vs-INST-ARTIFACTS"
+        },
+        {
+          "op": "unlink",
+          "path": "/daily_practices/nov11_protocols/references",
+          "value": [
+            "INT-GREER-1991-FSR"
+          ]
+        },
+        {
+          "op": "unlink",
+          "path": "/expert_perspectives/ce5_greer_framework/references",
+          "value": [
+            "INT-GREER-1991-FSR",
+            "INT-vs-INST-ARTIFACTS"
+          ]
+        },
+        {
+          "op": "update",
+          "path": "/ui/menu_hooks",
+          "value": [
+            {
+              "menu": "3",
+              "remove_panels": [
+                "p-int-greer-1991",
+                "p-contrast-int-vs-artifacts"
+              ]
+            },
+            {
+              "menu": "7",
+              "remove_panels": [
+                "p-contrast-int-vs-artifacts"
+              ]
+            },
+            {
+              "menu": "9",
+              "remove_panels": [
+                "p-int-greer-1991"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "id": "TEST-INT-GREER-RENDER",
+      "mode": "ci_only",
+      "assert": "panel_registered",
+      "params": {
+        "panel_id": "p-int-greer-1991",
+        "menus": [
+          "3",
+          "9"
+        ]
+      }
+    },
+    {
+      "id": "TEST-CONTRAST-RENDER",
+      "mode": "ci_only",
+      "assert": "panel_registered",
+      "params": {
+        "panel_id": "p-contrast-int-vs-artifacts",
+        "menus": [
+          "3",
+          "7"
+        ]
+      }
+    },
+    {
+      "id": "TEST-SOURCES-REGISTRY",
+      "mode": "ci_only",
+      "assert": "source_present",
+      "params": {
+        "ids": [
+          "GREER-1991-CSETI-PAPER",
+          "GREER-1991-CSETI-PDF"
+        ]
+      }
+    }
+  ],
   "integrity": {
-    "as_of": "2025-11-12T13:39:32.771Z",
-    "signature": "#ATLAS-SIG-UPDATES-v2.10.1-Δ2025-11-12"
+    "schema_valid": true,
+    "hash_algo": "sha256",
+    "signature": "#ATLAS-SIG-KB-UPDATES-Δ2025-11-12",
+    "signoff_required": [
+      "provenance_lead",
+      "ui_lead"
+    ],
+    "watermark": "© BordneAI – 3I/ATLAS Gateway Guide v2.10.1 | CC BY-NC-SA 4.0"
   }
 }
