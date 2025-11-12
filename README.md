@@ -1,6 +1,6 @@
 # 3I/ATLAS Gateway Guide v2.10.1
 
-**Scheduled release:** 2025-11-16  
+**Scheduled release:** 2025-11-12  
 **Status:** Production-ready  
 **Scope:** Post-perihelion prep with conservative NGA handling and Nov 8 jets tracking
 
