@@ -666,5 +666,79 @@
       "version": "2.10.1"
     }
   ],
-  "kb_compiled_on": "2025-11-09"
+  "kb_compiled_on": "2025-11-09",
+  "facts": [
+    {
+      "id": "3i_designation",
+      "text": "3I/ATLAS is officially designated interstellar comet C/2025 N1 (ATLAS).",
+      "tier": "T1",
+      "confidence": "extremely_high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "MPEC-2025-N12",
+        "NASA-SCIENCE-3I-ATLAS"
+      ]
+    },
+    {
+      "id": "3i_perihelion",
+      "text": "Perihelion occurred around 2025-10-30 at about 1.4 au.",
+      "tier": "T1",
+      "confidence": "extremely_high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "NASA-SCIENCE-3I-ATLAS",
+        "T1.MPC.OBJECT.3I"
+      ]
+    },
+    {
+      "id": "3i_earth_min_distance",
+      "text": "Closest Earth distance is about 1.8 au; no impact threat.",
+      "tier": "T1",
+      "confidence": "extremely_high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "NASA-SCIENCE-3I-ATLAS"
+      ]
+    },
+    {
+      "id": "3i_size_bounds",
+      "text": "HST observations constrain the nucleus diameter between roughly 0.44 km and 5.6 km.",
+      "tier": "T1",
+      "confidence": "high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "NASA-SCIENCE-3I-ATLAS"
+      ]
+    },
+    {
+      "id": "3i_esa_mars_window",
+      "text": "ESA's ExoMars TGO and Mars Express observed 3I/ATLAS during 2025-10-01 to 2025-10-07, with closest distance near 30 million km on 2025-10-03.",
+      "tier": "T1",
+      "confidence": "high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "ESA-TGO-MARS-OBS"
+      ]
+    },
+    {
+      "id": "3i_iawn_campaign",
+      "text": "IAWN's 3I/ATLAS comet astrometry exercise runs 2025-11-27 to 2026-01-27.",
+      "tier": "T1",
+      "confidence": "high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "IAWN-3I-ATLAS-CAMPAIGN"
+      ]
+    },
+    {
+      "id": "3i_jwst_co2_coma",
+      "text": "JWST NIRSpec reports a CO2-dominated coma with additional detected species.",
+      "tier": "T2",
+      "confidence": "high",
+      "as_of": "2025-11-12",
+      "sources": [
+        "JWST-CO2-2508.18209"
+      ]
+    }
+  ]
 }
