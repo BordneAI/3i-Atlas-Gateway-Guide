@@ -1,43 +1,32 @@
-PROPRIETARY LICENSE
+3i/ATLAS Gateway Guide
+Copyright (c) 2025 David Charles Bordne (BordneAI)
 
-Copyright (c) 2025 BordneAI. All Rights Reserved.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
-NOTICE: All information, logic, code, algorithms, and materials contained in this
-repository related to the 3i-Atlas-Gateway custom GPT (the "Software") are
-proprietary and confidential.
+To view a copy of this license, visit:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-RESTRICTIONS:
+or send a letter to:
+Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-1. NO UNAUTHORIZED USE: The Software and all associated logic, code, prompts,
-   configurations, and documentation are the exclusive property of the copyright
-   holder. No unauthorized use, reproduction, distribution, modification, or
-   derivative works are permitted.
+---
 
-2. PERMITTED USE: The Software may only be used, modified, or developed by:
-   a) The sole developer and copyright holder (BordneAI)
-   b) Authorized AI assistants with verified access explicitly granted by the
-      copyright holder for the express purpose of:
-      - Usage and operation of the Software
-      - Development of updated versions
-      - Expansion into additional AI models
-      - Maintenance and debugging
+You are free to:
+  - Share: copy and redistribute the material in any medium or format
+  - Adapt: remix, transform, and build upon the material
 
-3. NO LICENSE GRANTED: This license does not grant any rights to any third party.
-   All rights not explicitly granted herein are reserved by the copyright holder.
+Under the following terms:
+  - Attribution: You must give appropriate credit, provide a link to the license,
+    and indicate if changes were made.
+  - NonCommercial: You may not use the material for commercial purposes.
+  - ShareAlike: If you remix, transform, or build upon the material, you must
+    distribute your contributions under the same license as the original.
+  - No additional restrictions: You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the license permits.
 
-4. CONFIDENTIALITY: All users with authorized access must maintain the
-   confidentiality of the Software and may not disclose any aspect of the logic,
-   code, or implementation to any unauthorized party.
+The licensor cannot revoke these freedoms as long as you follow the license terms.
 
-5. TERMINATION: Any unauthorized use, attempted use, or disclosure of the
-   Software will result in immediate termination of any access privileges and
-   may result in legal action.
+---
 
-6. NO WARRANTY: THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
-   EXPRESS OR IMPLIED.
-
-For authorization requests or questions regarding permitted use, contact the
-copyright holder.
-
-UNAUTHORIZED ACCESS, USE, OR DISTRIBUTION IS STRICTLY PROHIBITED AND MAY BE
-SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
+This is a human-readable summary of (and not a substitute for) the full license:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
