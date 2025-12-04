@@ -1,7 +1,7 @@
 {
   "filename": "knowledge_base_merged_v2.json",
-  "kb_version": "2.11.0",
-  "last_updated": "2025-12-03",
+  "kb_version": "2.11.1",
+  "last_updated": "2025-12-04",
   "integrity_note": "v2.11 upgrade from v2.10.1 with entropy system and preserved content",
   "entropy_system": {
     "enabled": true,
@@ -30,7 +30,7 @@
   "overview": {
     "topic_domain": "overview",
     "entropy_level": 1,
-    "designation": "3I/ATLAS (C/2025 N1)",
+    "designation": "3i/ATLAS (C/2025 N1)",
     "discovery": {
       "date": "2025-07-01",
       "discoverer": "ATLAS survey",
@@ -183,13 +183,13 @@
       },
       "cryovolcanism_candidate": {
         "status": "proposed",
-        "description": "A Joan Or\u00f3 Telescope preprint interprets recurrent localized outflows on 3I/ATLAS as candidate cryovolcanism (\"ice volcanoes\") on a metal-bearing, carbonaceous nucleus, broadly analogous to volatile-rich outer solar system bodies.",
-        "implication": "If confirmed, 3I/ATLAS would be the first interstellar object with evidence for localized cryovolcanic activity, providing a direct probe of extrasolar volatile geology.",
+        "description": "A Joan Or\u00f3 Telescope preprint interprets recurrent localized outflows on 3i/ATLAS as candidate cryovolcanism (\"ice volcanoes\") on a metal-bearing, carbonaceous nucleus, broadly analogous to volatile-rich outer solar system bodies.",
+        "implication": "If confirmed, 3i/ATLAS would be the first interstellar object with evidence for localized cryovolcanic activity, providing a direct probe of extrasolar volatile geology.",
         "sources": [
           "ARXIV-2511-19112-CRYOVOLCANOES",
           "LIVESCi-3I-ATLAS-CRYOVOLCANOES-20251201"
         ],
-        "as_of": "2025-12-03",
+        "as_of": "2025-12-04",
         "confidence": "medium",
         "tier": "T2",
         "presentation": "interpretation_only",
@@ -281,7 +281,7 @@
         "confidence": "high"
       },
       "null_negative_tracking": {
-        "as_of": "2025-12-03",
+        "as_of": "2025-12-04",
         "description": "Tracks negative-null style claims in Loeb framing so they are not silently upgraded to T1/T2 facts.",
         "claims": [
           {
@@ -291,11 +291,11 @@
             "statement_type": "negative_null",
             "tier_context": "T3_interpretation",
             "f_tier": "F1_context",
-            "notes": "This is an absence-of-feature claim framed from specific images and processing choices. It must not be treated as a T1/T2 fact that '3I/ATLAS has no tail'; it records that Loeb did not see a clear classical dust tail in the images he highlights."
+            "notes": "This is an absence-of-feature claim framed from specific images and processing choices. It must not be treated as a T1/T2 fact that '3i/ATLAS has no tail'; it records that Loeb did not see a clear classical dust tail in the images he highlights."
           },
           {
             "label": "no_swarm_companions",
-            "applies_to_claim_text": "Claims that there is 'no swarm', 'no companion craft', or 'no satellites' associated with 3I/ATLAS in imaging data.",
+            "applies_to_claim_text": "Claims that there is 'no swarm', 'no companion craft', or 'no satellites' associated with 3i/ATLAS in imaging data.",
             "statement_type": "negative_null",
             "tier_context": "mixed_T1_T3_imaging",
             "f_tier": "F1_context",
@@ -303,7 +303,7 @@
           },
           {
             "label": "no_heartbeat_lightcurve",
-            "applies_to_claim_text": "Claims that there is 'no heartbeat', 'no engine-like periodicity', or 'no artificial modulation' in light-curve data for 3I/ATLAS.",
+            "applies_to_claim_text": "Claims that there is 'no heartbeat', 'no engine-like periodicity', or 'no artificial modulation' in light-curve data for 3i/ATLAS.",
             "statement_type": "negative_null",
             "tier_context": "T2_photometry_and_T3_commentary",
             "f_tier": "F1_context",
@@ -566,7 +566,7 @@
     },
     "horizons_system": {
       "url": "https://ssd.jpl.nasa.gov/horizons/",
-      "purpose": "Precise ephemeris calculations for 3I/ATLAS",
+      "purpose": "Precise ephemeris calculations for 3i/ATLAS",
       "data_outputs": "RA/Dec coordinates, distance, velocity, UTC times",
       "source_id": "NASA-JPL-HORIZONS-3I-ATLAS",
       "as_of": "2025-10-31",
@@ -581,7 +581,7 @@
   "facts": [
     {
       "id": "3i_designation",
-      "text": "Comet 3I/ATLAS (C/2025 N1) was designated as the third confirmed interstellar comet via MPC circular.",
+      "text": "Comet 3i/ATLAS (C/2025 N1) was designated as the third confirmed interstellar comet via MPC circular.",
       "tier": "T1",
       "confidence": "extremely_high",
       "as_of": "2025-10-31",
@@ -622,20 +622,20 @@
     },
     {
       "id": "3i_esa_mars_window",
-      "text": "ESA ExoMars Trace Gas Orbiter and Mars Express observed 3I/ATLAS during the 2025 passage, providing imagery and geometry context.",
+      "text": "ESA ExoMars Trace Gas Orbiter and Mars Express observed 3i/ATLAS during the 2025 passage, providing imagery and geometry context.",
       "tier": "T1",
       "confidence": "high",
-      "as_of": "2025-12-03",
+      "as_of": "2025-12-04",
       "sources": [
         "ESA-EXOMARS-MARSEXPRESS-3I-ATLAS"
       ]
     },
     {
       "id": "3i_iawn_campaign",
-      "text": "IAWN ran an official comet astrometry campaign for 3I/ATLAS with registration closing in early November 2025 and observing running into early 2026.",
+      "text": "IAWN ran an official comet astrometry campaign for 3i/ATLAS with registration closing in early November 2025 and observing running into early 2026.",
       "tier": "T1",
       "confidence": "extremely_high",
-      "as_of": "2025-12-03",
+      "as_of": "2025-12-04",
       "sources": [
         "IAWN-3I-ATLAS-CAMPAIGN",
         "MPEC-2025-U142"
@@ -643,20 +643,20 @@
     },
     {
       "id": "3i_jwst_co2_coma",
-      "text": "JWST NIRSpec spectroscopy shows that 3I/ATLAS has a CO2-dominated coma with a CO2/H2O ratio of order 8 at r \u2248 3.3 au, along with detections of water, carbon monoxide and other species.",
+      "text": "JWST NIRSpec spectroscopy shows that 3i/ATLAS has a CO2-dominated coma with a CO2/H2O ratio of order 8 at r \u2248 3.3 au, along with detections of water, carbon monoxide and other species.",
       "tier": "T2",
       "confidence": "high",
-      "as_of": "2025-12-03",
+      "as_of": "2025-12-04",
       "sources": [
         "JWST-CO2-2508.18209"
       ]
     },
     {
       "id": "3i_no_threat_to_earth",
-      "text": "NASA states that comet 3I/ATLAS poses no known threat to Earth; its closest approach is about 1.8 au.",
+      "text": "NASA states that comet 3i/ATLAS poses no known threat to Earth; its closest approach is about 1.8 au.",
       "tier": "T1",
       "confidence": "extremely_high",
-      "as_of": "2025-12-03",
+      "as_of": "2025-12-04",
       "sources": [
         "NASA-SCIENCE-3I-ATLAS",
         "MPEC-2025-N12"
@@ -668,19 +668,19 @@
     "entropy_level": 2,
     "fearful_query": {
       "user_query": "Is this comet going to hit Earth? Should I be worried?",
-      "response": "\u2705 **Zero threat to Earth.** 3I/ATLAS will pass 1.8 AU (269 million km / 167 million miles) away on December 19, 2025\u2014that's 700\u00d7 farther than the Moon. Its hyperbolic orbit means it came from interstellar space and will leave our solar system entirely. NASA/JPL confirm it poses no danger.\n\n**Source**: [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi) | As-of: 2025-11-03 | Confidence: extremely_high\n\nYou're safe. This is a rare opportunity to observe, not a reason for concern."
+      "response": "\u2705 **Zero threat to Earth.** 3i/ATLAS will pass 1.8 AU (269 million km / 167 million miles) away on December 19, 2025\u2014that's 700\u00d7 farther than the Moon. Its hyperbolic orbit means it came from interstellar space and will leave our solar system entirely. NASA/JPL confirm it poses no danger.\n\n**Source**: [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi) | As-of: 2025-11-03 | Confidence: extremely_high\n\nYou're safe. This is a rare opportunity to observe, not a reason for concern."
     },
     "skeptical_query": {
       "user_query": "Isn\u2019t Avi Loeb just hyping this for attention? Where\u2019s the peer review?",
-      "response": "Valid skepticism. Here\u2019s what\u2019s verified vs interpreted:\n\n\u2705 **Verified (T1/T2 sources)**:\n- 3I/ATLAS is confirmed interstellar (NASA/JPL/MPC)\n- Perihelion Oct 29, 2025 at 1.36 AU (NASA)\n- Non-grav acceleration detected by JPL\u2019s Davide Farnocchia (135 km/day\u00b2 radial)\n- IAWN activated first interstellar defense campaign (MPEC 2025-U142)\n\n\ud83d\udd0d **Loeb\u2019s Interpretation**:\n- \"8-9/10 on Loeb Scale\" is *his framework*, not consensus\n- \"Technological hypothesis\" is one of two competing explanations (other: natural outgassing)\n- Testable prediction: If natural, expect massive gas plume in Nov-Dec 2025\n\n**Sources**: [NASA JPL](https://ssd.jpl.nasa.gov), [MPC MPEC](https://minorplanetcenter.net), [Loeb\u2019s Medium](https://medium.com/@aviloeb) | As-of: 2025-10-31\n\nLoeb\u2019s claims are *partially* verified. The data is real; the interpretation is contested."
+      "response": "Valid skepticism. Here\u2019s what\u2019s verified vs interpreted:\n\n\u2705 **Verified (T1/T2 sources)**:\n- 3i/ATLAS is confirmed interstellar (NASA/JPL/MPC)\n- Perihelion Oct 29, 2025 at 1.36 AU (NASA)\n- Non-grav acceleration detected by JPL\u2019s Davide Farnocchia (135 km/day\u00b2 radial)\n- IAWN activated first interstellar defense campaign (MPEC 2025-U142)\n\n\ud83d\udd0d **Loeb\u2019s Interpretation**:\n- \"8-9/10 on Loeb Scale\" is *his framework*, not consensus\n- \"Technological hypothesis\" is one of two competing explanations (other: natural outgassing)\n- Testable prediction: If natural, expect massive gas plume in Nov-Dec 2025\n\n**Sources**: [NASA JPL](https://ssd.jpl.nasa.gov), [MPC MPEC](https://minorplanetcenter.net), [Loeb\u2019s Medium](https://medium.com/@aviloeb) | As-of: 2025-10-31\n\nLoeb\u2019s claims are *partially* verified. The data is real; the interpretation is contested."
     },
     "new_user_query": {
       "user_query": "I just heard about this comet. What should I know?",
-      "response": "# Welcome! Quick Start for 3I/ATLAS\n\n## \ud83d\udd2d **What It Is**\n3I/ATLAS (C/2025 N1) is the third confirmed interstellar comet, discovered July 2025. It\u2019s passing through our solar system on a hyperbolic trajectory.\n\n## \ud83d\udcc5 **Key Dates**\n- **Oct 29, 2025**: Closest to Sun (perihelion, 1.36 AU)\n- **Nov 11 (first visibility) \u2192 Nov 16\u2013Dec 2 (optimal window)**: Post-conjunction visibility (morning twilight)\n- **Dec 19, 2025**: Closest to Earth (1.8 AU, zero threat)\n\n## \ud83d\udd0d **Why Interesting**\n- Nickel vapor detected at unusual distance\n- Non-gravitational acceleration measured at perihelion\n- Size estimate: 5-11+ km\n- Age estimate: 3-11 billion years\n\n## \ud83d\udca1 **Explore Further**\nType `99` to see the full menu, or try:\n- `1` for facts & timeline\n- `13` for conversation starters\n- `9` for consciousness preparation (if interested)\n\n**As-of**: 2025-10-31 | **Sources**: NASA/JPL/ESA (T1)\n\n**Next steps**: What aspect interests you most?"
+      "response": "# Welcome! Quick Start for 3i/ATLAS\n\n## \ud83d\udd2d **What It Is**\n3i/ATLAS (C/2025 N1) is the third confirmed interstellar comet, discovered July 2025. It\u2019s passing through our solar system on a hyperbolic trajectory.\n\n## \ud83d\udcc5 **Key Dates**\n- **Oct 29, 2025**: Closest to Sun (perihelion, 1.36 AU)\n- **Nov 11 (first visibility) \u2192 Nov 16\u2013Dec 2 (optimal window)**: Post-conjunction visibility (morning twilight)\n- **Dec 19, 2025**: Closest to Earth (1.8 AU, zero threat)\n\n## \ud83d\udd0d **Why Interesting**\n- Nickel vapor detected at unusual distance\n- Non-gravitational acceleration measured at perihelion\n- Size estimate: 5-11+ km\n- Age estimate: 3-11 billion years\n\n## \ud83d\udca1 **Explore Further**\nType `99` to see the full menu, or try:\n- `1` for facts & timeline\n- `13` for conversation starters\n- `9` for consciousness preparation (if interested)\n\n**As-of**: 2025-10-31 | **Sources**: NASA/JPL/ESA (T1)\n\n**Next steps**: What aspect interests you most?"
     },
     "advanced_query": {
       "user_query": "What\u2019s the orbital eccentricity and how does it compare to 1I and 2I?",
-      "response": "# Orbital Comparison: Interstellar Objects\n\n| Object | Eccentricity | Perihelion (AU) | V\u221e (km/s) |\n|\u2013\u2013\u2013\u2013|\u2013\u2013\u2013\u2013\u2013\u2013\u2013|\u2014\u2014\u2014\u2014\u2014\u2013|\u2013\u2013\u2013\u2013\u2013|\n| 1I/\u2018Oumuamua | 1.20 | 0.25 | 26.3 |\n| 2I/Borisov | 3.36 | 2.01 | 32.3 |\n| 3I/ATLAS | >1 (hyperbolic) | 1.36 | TBD |\n\n**Key Differences**:\n- 3I has intermediate perihelion (closer than 2I, farther than 1I)\n- All three are hyperbolic (e > 1 = unbound from solar system)\n- 3I\u2019s V\u221e (solar system escape velocity) not yet precisely determined\n\n**Non-Grav Acceleration** (New Data, Oct 30):\n- Radial: 135 km/day\u00b2 (away from Sun)\n- Transverse: 32 km/day\u00b2\n- Measured by JPL\u2019s Davide Farnocchia\n\n**Sources**: \n- [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi)\n- [Loeb Medium (Oct 30)](https://medium.com/@aviloeb)\n\n**As-of**: 2025-10-31 | **Confidence**: extremely_high on eccentricity, high on non-grav data\n\n**Next steps**: Want Horizons query parameters for precise ephemeris?"
+      "response": "# Orbital Comparison: Interstellar Objects\n\n| Object | Eccentricity | Perihelion (AU) | V\u221e (km/s) |\n|\u2013\u2013\u2013\u2013|\u2013\u2013\u2013\u2013\u2013\u2013\u2013|\u2014\u2014\u2014\u2014\u2014\u2013|\u2013\u2013\u2013\u2013\u2013|\n| 1I/\u2018Oumuamua | 1.20 | 0.25 | 26.3 |\n| 2I/Borisov | 3.36 | 2.01 | 32.3 |\n| 3i/ATLAS | >1 (hyperbolic) | 1.36 | TBD |\n\n**Key Differences**:\n- 3I has intermediate perihelion (closer than 2I, farther than 1I)\n- All three are hyperbolic (e > 1 = unbound from solar system)\n- 3I\u2019s V\u221e (solar system escape velocity) not yet precisely determined\n\n**Non-Grav Acceleration** (New Data, Oct 30):\n- Radial: 135 km/day\u00b2 (away from Sun)\n- Transverse: 32 km/day\u00b2\n- Measured by JPL\u2019s Davide Farnocchia\n\n**Sources**: \n- [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi)\n- [Loeb Medium (Oct 30)](https://medium.com/@aviloeb)\n\n**As-of**: 2025-10-31 | **Confidence**: extremely_high on eccentricity, high on non-grav data\n\n**Next steps**: Want Horizons query parameters for precise ephemeris?"
     },
     "ce5_practitioner_query": {
       "user_query": "I practice CE-5. How does Nov 11 fit into this?",
@@ -723,8 +723,8 @@
       "versioning"
     ]
   },
-  "version": "2.11.0",
-  "signature": "#ATLAS-SIG-KB-v2.11.0-\u03942025-12-02",
+  "version": "2.11.1",
+  "signature": "#ATLAS-SIG-KB-v2.11.1-\u03942025-12-02",
   "protocols": {
     "replication_gate_policy": {
       "version": "v2.11-proposal",
@@ -802,7 +802,7 @@
     }
   ],
   "kb_compiled_on": "2025-11-09",
-  "description": "Knowledge base upgraded under BordneAI v2.11.0 with tier tagging, confidence harmonization, Love>Fear constant, and CHI audit system.",
+  "description": "Knowledge base upgraded under BordneAI v2.11.1 with tier tagging, confidence harmonization, Love>Fear constant, and CHI audit system.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
   "continuity_score": 9.7,
@@ -831,7 +831,7 @@
   },
   "integrity_audit": {
     "as_of": "2025-12-02T00:00:00Z",
-    "auditor": "Reflexion v2.11.0",
+    "auditor": "Reflexion v2.11.1",
     "chi_score": 9.7,
     "entropy_leak": 0.02,
     "false_tier_hits": 0,
@@ -839,7 +839,7 @@
     "audit_log_entry": "#ATLAS-AUDIT-KB-\u03942025-12-02"
   },
   "reflexion_metadata": {
-    "audited_by": "Reflexion v2.11.0",
+    "audited_by": "Reflexion v2.11.1",
     "ethical_weight": 0.35,
     "tier_coherence_ratio": 0.96,
     "false_tier_activity": "minimal",

@@ -1,7 +1,7 @@
 {
   "filename": "conversation_starters.json",
-  "version": "2.11.0",
-  "last_updated": "2025-12-03",
+  "version": "2.11.1",
+  "last_updated": "2025-12-04",
   "updated_at": "2025-12-02T20:23:34.025784Z",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
@@ -10,14 +10,14 @@
     "default_truth_tier": "T1",
     "max_false_tier_allowed": "F2"
   },
-  "description": "Conversation starters updated to BordneAI v2.11.0 for Reflexion-aware, tier-verified, and ethically balanced interactions.",
+  "description": "Conversation starters updated to BordneAI v2.11.1 for Reflexion-aware, tier-verified, and ethically balanced interactions.",
   "starters": [
     {
       "id": "cs_observatory_monitoring",
       "persona": "advanced_researcher",
-      "prompt": "What observatory archives should I monitor for real-time 3I/ATLAS verification during the Nov 11\u201315 window?",
+      "prompt": "What observatory archives should I monitor for real-time 3i/ATLAS verification during the Nov 11\u201315 window?",
       "response_guidance": "Direct to Lowell, NOT, CFHT, Gemini; emphasize IAWN circulars; professional imaging precedes amateur claims. Ensure Love>Fear tone calibration and maintain CHI \u2265 9.5 during discussion.",
-      "version": "2.11.0",
+      "version": "2.11.1",
       "continuity_meta": {
         "truth_tier": "T1",
         "false_tier": "F1",
@@ -28,9 +28,9 @@
     {
       "id": "cs_viral_claims_skepticism",
       "persona": "skeptical_scientist",
-      "prompt": "I saw claims about 3I/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
+      "prompt": "I saw claims about 3i/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
       "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects. Ensure Love>Fear tone calibration and maintain CHI \u2265 9.5 during discussion.",
-      "version": "2.11.0",
+      "version": "2.11.1",
       "continuity_meta": {
         "truth_tier": "T1",
         "false_tier": "F1",
@@ -75,5 +75,5 @@
       }
     }
   ],
-  "signature": "#ATLAS-SIG-CONVSTART-v2.11.0-\u03942025-12-03"
+  "signature": "#ATLAS-SIG-CONVSTART-v2.11.1-\u03942025-12-04"
 }
