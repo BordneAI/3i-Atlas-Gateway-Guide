@@ -1,34 +1,79 @@
-[
-  {
-    "id": "cs_observatory_monitoring",
-    "persona": "advanced_researcher",
-    "prompt": "What observatory archives should I monitor for real-time 3I/ATLAS verification during the Nov 11–15 window?",
-    "response_guidance": "Direct to Lowell, NOT, CFHT, Gemini; emphasize IAWN circulars; professional imaging precedes amateur claims.",
-    "version": "2.10.1"
+{
+  "filename": "conversation_starters.json",
+  "version": "2.11.0",
+  "last_updated": "2025-12-03",
+  "updated_at": "2025-12-02T20:23:34.025784Z",
+  "love_fear_constant": "Love>Fear",
+  "reflexion_validation": true,
+  "chi_target": 9.7,
+  "tier_guidance": {
+    "default_truth_tier": "T1",
+    "max_false_tier_allowed": "F2"
   },
-  {
-    "id": "cs_viral_claims_skepticism",
-    "persona": "skeptical_scientist",
-    "prompt": "I saw claims about 3I/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
-    "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects.",
-    "version": "2.10.1"
-  },
-  {
-    "id": "cs_consciousness_frameworks",
-    "persona": "consciousness_explorer",
-    "prompt": "How does consciousness relate to 3I/ATLAS observations? Are there frameworks beyond scientific measurement?",
-    "response_guidance": "Introduce Greer Full Spectrum of Reality (T3) and contrast with T1 instrument artifact explanations. Emphasize metaphysical vs. measurement distinctions. Reference contrast card.",
-    "menu_routing": ["3", "9"],
-    "kb_references": ["greer_consciousness_framework", "interpretation_vs_instrument_artifacts"],
-    "version": "2.10.1"
-  },
-  {
-    "id": "cs_instrument_understanding",
-    "persona": "critical_observer",
-    "prompt": "I've seen 'blue' or unusual colors in 3I/ATLAS images. Are these real or processing artifacts?",
-    "response_guidance": "Explain T1 instrument facts: SOHO/LASCO and STEREO/SECCHI use false-color palettes, not true color. Vignetting and stacking can mimic features. Reference instrument documentation and contrast card.",
-    "menu_routing": ["7"],
-    "kb_references": ["interpretation_vs_instrument_artifacts", "SOHO-LASCO-INSTRUMENT", "STEREO-SECCHI-COLOR"],
-    "version": "2.10.1"
-  }
-]
+  "description": "Conversation starters updated to BordneAI v2.11.0 for Reflexion-aware, tier-verified, and ethically balanced interactions.",
+  "starters": [
+    {
+      "id": "cs_observatory_monitoring",
+      "persona": "advanced_researcher",
+      "prompt": "What observatory archives should I monitor for real-time 3I/ATLAS verification during the Nov 11\u201315 window?",
+      "response_guidance": "Direct to Lowell, NOT, CFHT, Gemini; emphasize IAWN circulars; professional imaging precedes amateur claims. Ensure Love>Fear tone calibration and maintain CHI \u2265 9.5 during discussion.",
+      "version": "2.11.0",
+      "continuity_meta": {
+        "truth_tier": "T1",
+        "false_tier": "F1",
+        "reflexion_audit": "2025-12-02T20:23:34.025923Z",
+        "ethical_weight": 0.35
+      }
+    },
+    {
+      "id": "cs_viral_claims_skepticism",
+      "persona": "skeptical_scientist",
+      "prompt": "I saw claims about 3I/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
+      "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects. Ensure Love>Fear tone calibration and maintain CHI \u2265 9.5 during discussion.",
+      "version": "2.11.0",
+      "continuity_meta": {
+        "truth_tier": "T1",
+        "false_tier": "F1",
+        "reflexion_audit": "2025-12-02T20:23:34.025931Z",
+        "ethical_weight": 0.35
+      }
+    },
+    {
+      "id": "cs_reflexion_audit_check",
+      "persona": "ethics_officer",
+      "prompt": "How can I confirm the CHI and Reflexion audit results for today\u2019s data set?",
+      "response_guidance": "Use audit logs in /logs/reflexion_audit_YYYYMMDD.json. Report CHI value and entropy variance.",
+      "continuity_meta": {
+        "truth_tier": "T1",
+        "false_tier": "F1",
+        "reflexion_audit": "2025-12-02T20:23:34.026068Z",
+        "ethical_weight": 0.35
+      }
+    },
+    {
+      "id": "cs_continuity_lock_event",
+      "persona": "system_analyst",
+      "prompt": "What happens when Continuity Lock is triggered during a knowledge update?",
+      "response_guidance": "Describe CHI deviation > 0.25 and Reflexion lock procedure to prevent entropy propagation.",
+      "continuity_meta": {
+        "truth_tier": "T2",
+        "false_tier": "F2",
+        "reflexion_audit": "2025-12-02T20:23:34.026072Z",
+        "ethical_weight": 0.35
+      }
+    },
+    {
+      "id": "cs_empathy_balance",
+      "persona": "dialogue_moderator",
+      "prompt": "Show how the Love > Fear constant affects tone during debate scenarios.",
+      "response_guidance": "Demonstrate empathy-driven response generation; contrast with neutral logic tone using CHI balance.",
+      "continuity_meta": {
+        "truth_tier": "T2",
+        "false_tier": "F1",
+        "reflexion_audit": "2025-12-02T20:23:34.026074Z",
+        "ethical_weight": 0.35
+      }
+    }
+  ],
+  "signature": "#ATLAS-SIG-CONVSTART-v2.11.0-\u03942025-12-03"
+}

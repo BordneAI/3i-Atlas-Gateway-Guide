@@ -1,7 +1,8 @@
 {
-  "tool_version": "1.0",
+  "filename": "bayesian_framework.json",
+  "tool_version": "2.11.0",
   "tool_name": "BAAM (Bayesian Anomaly Assessment Module)",
-  "released_at": "2025-11-07",
+  "released_at": "2025-12-03",
   "purpose": "Bayesian analysis for 3I/ATLAS origin hypothesis testing",
   "methodology": {
     "framework": "Likelihood ratios with Bayes factors",
@@ -34,13 +35,13 @@
     "Apply tier/confidence weighting: for each anomaly compute w and set LR_eff = LR^w; use log domain"
   ],
   "tier_weights": {
-    "T1": 1,
+    "T1": 1.0,
     "T2": 0.75,
     "T3": 0.5,
     "T4": 0.25
   },
   "confidence_multipliers": {
-    "extremely_high": 1,
+    "extremely_high": 1.0,
     "high": 0.9,
     "medium": 0.7,
     "low": 0.4,
@@ -58,6 +59,15 @@
     "refusals": [
       "Refuse if <3 anomalies",
       "Refuse if all anomalies are T4"
+    ]
+  },
+  "null_negative_evidence_policy": {
+    "description": "How BAAM treats null / negative statements from T1/T2/T3 sources.",
+    "rules": [
+      "T tiers encode strength of positive evidence for specific measurements, not ontological non-existence of a phenomenon.",
+      "Negative or null statements from T1/T2 sources (e.g., 'no detection of X above threshold Y as of date Z') are modeled as measurement status, not proofs of absence.",
+      "F tiers and explicit negative_evidence/null_tracking fields capture how null results weigh against specific hypotheses or over-claims.",
+      "Consciousness tiers (C) represent awareness and experiential context and are never downgraded solely due to T1/T2 null statements."
     ]
   },
   "example_calculation": {
@@ -109,13 +119,7 @@
     "analysis_tool",
     "v2.10"
   ],
-  "signature": "#ATLAS-SIG-BAYESIAN-v1.0-Δ2025-11-07",
-  "weights": {
-    "T1": 1.0,
-    "T2": 0.6,
-    "T3": 0.25,
-    "T4": 0.1
-  },
+  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.0-Δ2025-12-02",
   "posterior_formula": "posterior = normalize( prior * Π_i likelihood_i^weight(tier_i) )",
   "mappings": {
     "ordinal_to_numeric": {
@@ -162,5 +166,117 @@
       },
       "as_of": "2025-11-08"
     }
+  },
+  "version": "2.11.0",
+  "ethical_weight": 0.35,
+  "reflexion_validation": true,
+  "love_fear_constant": "Love>Fear",
+  "continuity_score": 9.7,
+  "description": "Bayesian analysis for 3I/ATLAS origin hypothesis testing | Enhanced under BordneAI v2.11.0 for ethical calibration, tier mapping, and Reflexion cross-validation.",
+  "tier_systems": {
+    "truth_tiers": {
+      "0": "empirical",
+      "1": "corroborated",
+      "2": "interpretive",
+      "3": "symbolic",
+      "4": "speculative",
+      "5": "mythic"
+    },
+    "false_tiers": {
+      "0": "mechanical_fault",
+      "1": "context_loss",
+      "2": "misclassification",
+      "3": "cognitive_bias",
+      "4": "fabrication",
+      "5": "deceptive",
+      "6": "parasitic_entropy",
+      "7": "nihilistic_collapse"
+    },
+    "consciousness_tiers": {
+      "0": "instinctive",
+      "1": "procedural",
+      "2": "analytical",
+      "3": "empathic",
+      "4": "reflective",
+      "5": "integrative",
+      "6": "transcendent"
+    },
+    "numeric_weights": {
+      "truth": {
+        "0": 5,
+        "1": 4,
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 0
+      },
+      "false": {
+        "0": 0,
+        "1": -1,
+        "2": -2,
+        "3": -3,
+        "4": -4,
+        "5": -5,
+        "6": -6,
+        "7": -7
+      }
+    },
+    "c_modulation": {
+      "usage": "Consciousness tiers modulate presentation style and openness to experiential framing; they do not change truth scores or Bayes factors.",
+      "style_multipliers": {
+        "C0": 0.5,
+        "C1": 0.7,
+        "C2": 0.9,
+        "C3": 1.0,
+        "C4": 1.1,
+        "C5": 1.3,
+        "C6": 1.5
+      }
+    },
+    "tier_matrix": {
+      "C0": [
+        "T0",
+        "T1"
+      ],
+      "C1": [
+        "T0",
+        "T1"
+      ],
+      "C2": [
+        "T0",
+        "T2"
+      ],
+      "C3": [
+        "T0",
+        "T3"
+      ],
+      "C4": [
+        "T1",
+        "T4"
+      ],
+      "C5": [
+        "T2",
+        "T5"
+      ],
+      "C6": [
+        "T3",
+        "T5"
+      ]
+    }
+  },
+  "reflexion_controls": {
+    "continuity_lock_threshold": 0.25,
+    "audit_cycle_hours": 24,
+    "auto_downgrade_on_false_tier": true,
+    "log_confidence_changes": true
+  },
+  "integrity_audit": {
+    "as_of": "2025-12-02T00:00:00Z",
+    "auditor": "Reflexion v2.11.0",
+    "chi_score": 9.7,
+    "entropy_leak": 0.02,
+    "false_tier_hits": 0,
+    "audit_passed": true,
+    "audit_log_entry": "#ATLAS-AUDIT-BAYESIAN-Δ2025-12-02"
   }
 }
