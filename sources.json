@@ -1,13 +1,13 @@
 {
   "filename": "sources.json",
   "NASA-SCIENCE-3I-ATLAS": {
-    "title": "Comet 3I/ATLAS",
+    "title": "Comet 3i/ATLAS",
     "publisher": "NASA Science",
     "urls": [
       "https://science.nasa.gov/solar-system/comets/3i-atlas/"
     ],
-    "notes": "Official overview, timeline and visibility windows. This is the primary NASA overview page for Comet 3I/ATLAS; it states there is no threat to Earth and summarizes multi-mission observing context.",
-    "last_checked": "2025-12-03",
+    "notes": "Official overview, timeline and visibility windows. This is the primary NASA overview page for Comet 3i/ATLAS; it states there is no threat to Earth and summarizes multi-mission observing context.",
+    "last_checked": "2025-12-04",
     "confidence": "extremely_high",
     "type": "agency",
     "tier": "T1",
@@ -40,7 +40,7 @@
     "tier": "T1"
   },
   "MPEC-2025-U142": {
-    "title": "MPEC 2025-U142: IAWN Comet Astrometry Campaign (3I/ATLAS)",
+    "title": "MPEC 2025-U142: IAWN Comet Astrometry Campaign (3i/ATLAS)",
     "publisher": "IAU Minor Planet Center",
     "urls": [
       "https://www.minorplanetcenter.net/mpec/K25/K25U142.html"
@@ -52,13 +52,13 @@
     "tier": "T1"
   },
   "IAWN-3I-ATLAS-CAMPAIGN": {
-    "title": "IAWN Comet Astrometry Campaign \u2014 3I/ATLAS",
+    "title": "IAWN Comet Astrometry Campaign \u2014 3i/ATLAS",
     "publisher": "IAWN",
     "urls": [
       "https://iawn.net/obscamp/3I_ATLAS/"
     ],
-    "notes": "Coordination hub for participating observatories. Comet Astrometry Campaign for 3I/ATLAS runs approximately 2025-11-27 to 2026-01-27; registration closed in early November 2025.",
-    "last_checked": "2025-12-03",
+    "notes": "Coordination hub for participating observatories. Comet Astrometry Campaign for 3i/ATLAS runs approximately 2025-11-27 to 2026-01-27; registration closed in early November 2025.",
+    "last_checked": "2025-12-04",
     "confidence": "high",
     "type": "consortium",
     "tier": "T1"
@@ -97,7 +97,7 @@
     "type": "instrument"
   },
   "ESA-TGO-MARS-OBS": {
-    "title": "ESA ExoMars/TGO and Mars Express observations of 3I/ATLAS",
+    "title": "ESA ExoMars/TGO and Mars Express observations of 3i/ATLAS",
     "publisher": "European Space Agency",
     "urls": [
       "https://www.esa.int/ESA_Multimedia/Images/2025/10/ExoMars_Trace_Gas_Orbiter_observes_comet_3I_ATLAS_GIF",
@@ -136,7 +136,7 @@
     "type": "index"
   },
   "CN-EMISSION-2509.01647": {
-    "title": "Onset of CN emission and carbon-chain depletion in 3I/ATLAS",
+    "title": "Onset of CN emission and carbon-chain depletion in 3i/ATLAS",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2509.01647"
@@ -148,7 +148,7 @@
     "tier": "T2"
   },
   "ANTI-TAIL-2509.07771": {
-    "title": "Morphology and modeling of anti-tail features in 3I/ATLAS",
+    "title": "Morphology and modeling of anti-tail features in 3i/ATLAS",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2509.07771"
@@ -171,19 +171,19 @@
     "type": "news"
   },
   "ARXIV-2508.04675": {
-    "title": "Swift/UVOT detection of OH in 3I/ATLAS",
+    "title": "Swift/UVOT detection of OH in 3i/ATLAS",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2508.04675"
     ],
     "notes": "Primary for Swift OH; use with Sky at Night summary. Swift/UVOT OH/water detection preprint; not yet peer-reviewed.",
-    "last_checked": "2025-12-03",
+    "last_checked": "2025-12-04",
     "confidence": "high",
     "type": "preprint",
     "tier": "T2"
   },
   "ARXIV-2508.00808-SALT": {
-    "title": "Temporal Evolution of 3I/ATLAS (SALT)",
+    "title": "Temporal Evolution of 3i/ATLAS (SALT)",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2508.00808"
@@ -198,7 +198,7 @@
     "tier": "T2"
   },
   "NOIRLAB-GEMINI-JULY2025": {
-    "title": "Gemini North Observes Comet 3I/ATLAS - NOIRLab",
+    "title": "Gemini North Observes Comet 3i/ATLAS - NOIRLab",
     "publisher": "NSF NOIRLab / Gemini",
     "urls": [
       "https://noirlab.edu/public/news/noirlab2522/"
@@ -240,7 +240,7 @@
     "type": "media"
   },
   "EARTHSKY_OCT30_2025": {
-    "title": "Interstellar object 3I/ATLAS is leaving the solar system",
+    "title": "Interstellar object 3i/ATLAS is leaving the solar system",
     "publisher": "EarthSky",
     "urls": [
       "https://earthsky.org/space/new-interstellar-object-candidate-heading-toward-the-sun-a11pl3z/"
@@ -251,7 +251,7 @@
     "type": "press_guide"
   },
   "ARXIV_2508_18382_VLT_NICKEL": {
-    "title": "VLT observations of interstellar comet 3I/ATLAS",
+    "title": "VLT observations of interstellar comet 3i/ATLAS",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2508.18382"
@@ -263,7 +263,7 @@
     "tier": "T2"
   },
   "CNN_OCT30_2025": {
-    "title": "Interstellar comet 3I/ATLAS grazes the Sun but will be visible again",
+    "title": "Interstellar comet 3i/ATLAS grazes the Sun but will be visible again",
     "publisher": "CNN",
     "urls": [
       "https://www.cnn.com/2025/10/30/science/interstellar-comet-3i-atlas-sun"
@@ -274,7 +274,7 @@
     "type": "press"
   },
   "NEWSWEEK_OCT31_2025": {
-    "title": "Interstellar Comet 3I/ATLAS Survives Perihelion",
+    "title": "Interstellar Comet 3i/ATLAS Survives Perihelion",
     "publisher": "Newsweek",
     "urls": [
       "https://www.newsweek.com/interstellar-comet-3i-atlas-survives-perihelion-2025-1892256"
@@ -285,7 +285,7 @@
     "type": "press"
   },
   "NPR_OCT30_2025": {
-    "title": "Astronomers detect unusual nickel vapor in interstellar comet 3I/ATLAS",
+    "title": "Astronomers detect unusual nickel vapor in interstellar comet 3i/ATLAS",
     "publisher": "NPR",
     "urls": [
       "https://www.npr.org/2025/10/30/3i-atlas-nickel-vapor"
@@ -307,7 +307,7 @@
   "T1_agency_sources": [
     {
       "source_id": "IAWN-3I-ATLAS-CAMPAIGN",
-      "title": "IAWN 3I/ATLAS Comet Astrometry Campaign",
+      "title": "IAWN 3i/ATLAS Comet Astrometry Campaign",
       "url": "https://iawn.net/obscamp/3I_ATLAS/",
       "tier": "T1",
       "type": "consortium",
@@ -318,7 +318,7 @@
     },
     {
       "source_id": "MPEC-2025-U142",
-      "title": "MPEC 2025-U142: IAWN Comet Astrometry Campaign (3I/ATLAS)",
+      "title": "MPEC 2025-U142: IAWN Comet Astrometry Campaign (3i/ATLAS)",
       "url": "https://www.minorplanetcenter.net/mpec/K25/K25U142.html",
       "tier": "T1",
       "type": "agency_bulletin",
@@ -331,7 +331,7 @@
   "T2_preprint_sources": [
     {
       "source_id": "ARXIV-2510-21967-SWIFT-OH",
-      "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3I/ATLAS",
+      "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3i/ATLAS",
       "url": "https://arxiv.org/abs/2510.21967",
       "tier": "T2",
       "type": "preprint",
@@ -344,7 +344,7 @@
   "T3_press_sources": [
     {
       "source_id": "THESKYLIVE-3I-ATLAS-GUIDE",
-      "title": "3I/ATLAS: A Month-by-Month Observing Guide",
+      "title": "3i/ATLAS: A Month-by-Month Observing Guide",
       "url": "https://theskylive.com/articles/2025/07/3i-atlas-a-month-by-month-observing-guide",
       "tier": "T3",
       "type": "press_guide",
@@ -355,7 +355,7 @@
     },
     {
       "source_id": "SPACECOM-3I-ATLAS-VISIBILITY",
-      "title": "You won't see interstellar comet 3I/ATLAS zoom closest to the sun on Oct. 30",
+      "title": "You won't see interstellar comet 3i/ATLAS zoom closest to the sun on Oct. 30",
       "url": "https://www.space.com/astronomy/comets/you-wont-see-interstellar-comet-3i-atlas-zoom-closest-to-the-sun-on-oct-30-but-these-spacecraft-will",
       "tier": "T3",
       "type": "press",
@@ -366,7 +366,7 @@
     }
   ],
   "LOEB-MEDIUM-2025-11-05-NO-TAIL": {
-    "title": "No Clear Cometary Tail in Post-Perihelion Images of 3I/ATLAS",
+    "title": "No Clear Cometary Tail in Post-Perihelion Images of 3i/ATLAS",
     "publisher": "Avi Loeb / Medium",
     "urls": [
       "https://avi-loeb.medium.com/no-clear-cometary-tail-in-post-perihelion-images-of-3i-atlas-e3904b352a7a"
@@ -386,7 +386,7 @@
   },
   "BAYESIAN-FRAMEWORK-2510": {
     "title": "BAAM v1.0: Bayesian Anomaly Assessment Module",
-    "publisher": "BordneAI / 3I/ATLAS Gateway Guide",
+    "publisher": "BordneAI / 3i/ATLAS Gateway Guide",
     "urls": [
       "[local] bayesian_framework.json"
     ],
@@ -420,21 +420,21 @@
       "grok_analysis"
     ]
   },
-  "signature_footer": "© BordneAI – 3I/ATLAS Gateway Guide v2.11.0 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.11.0-Δ2025-12-03",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.11.1-Δ2025-12-04",
   "ARXIV-2510-21967-SWIFT-OH": {
-    "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3I/ATLAS",
+    "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3i/ATLAS",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2510.21967"
     ],
     "notes": "OH detection (proxy for water) using Neil Gehrels Swift Observatory/UVOT; peer-review pending. Swift/UVOT OH/water detection preprint; not yet peer-reviewed.",
-    "last_checked": "2025-12-03",
+    "last_checked": "2025-12-04",
     "confidence": "high",
     "type": "preprint",
     "tier": "T2"
   },
   "ARXIV-2510-25035-RAPID-BRIGHTENING": {
-    "title": "Rapid brightening of interstellar comet 3I/ATLAS ahead of perihelion",
+    "title": "Rapid brightening of interstellar comet 3i/ATLAS ahead of perihelion",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2510.25035"
@@ -463,7 +463,7 @@
     ]
   },
   "NASA-JPL-HORIZONS-3I-ATLAS": {
-    "title": "JPL HORIZONS: 3I/ATLAS Ephemerides",
+    "title": "JPL HORIZONS: 3i/ATLAS Ephemerides",
     "publisher": "NASA JPL",
     "urls": [
       "https://ssd.jpl.nasa.gov/horizons/"
@@ -484,7 +484,7 @@
     "type": "press_guide"
   },
   "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY": {
-    "title": "EarthSky: Post-conjunction visibility for 3I/ATLAS",
+    "title": "EarthSky: Post-conjunction visibility for 3i/ATLAS",
     "publisher": "EarthSky",
     "urls": [
       "https://earthsky.org/space/new-interstellar-object-candidate-heading-toward-the-sun-a11pl3z/"
@@ -494,7 +494,7 @@
     "type": "press_guide"
   },
   "ARXIV-3I-ATLAS-NICKEL-VAPOR": {
-    "title": "Nickel vapor detection in 3I/ATLAS",
+    "title": "Nickel vapor detection in 3i/ATLAS",
     "publisher": "arXiv / ESO VLT",
     "urls": [
       "https://arxiv.org/abs/2508.18382"
@@ -577,7 +577,7 @@
     "confidence": "high",
     "type": "agency"
   },
-  "version": "2.11.0",
+  "version": "2.11.1",
   "_quarantined": {
     "VLT_CHILE_2025": {
       "title": "VLT instrumentation note on nickel detection campaigns",
@@ -598,7 +598,7 @@
       }
     },
     "ARXIV-3I-ATLAS-SIZE-ESTIMATES": {
-      "title": "Size estimates for 3I/ATLAS",
+      "title": "Size estimates for 3i/ATLAS",
       "publisher": "arXiv",
       "urls": [
         "https://arxiv.org/"
@@ -610,7 +610,7 @@
       "quarantine_reason": "generic_arxiv_placeholder"
     },
     "ARXIV-3I-ATLAS-AGE-ESTIMATE": {
-      "title": "Age estimate analyses for 3I/ATLAS",
+      "title": "Age estimate analyses for 3i/ATLAS",
       "publisher": "arXiv",
       "urls": [
         "https://arxiv.org/"
@@ -686,7 +686,7 @@
       "require_last_checked": true,
       "require_tier": true
     },
-    "verified_by": "EOS Transparency Layer v2.11.0"
+    "verified_by": "EOS Transparency Layer v2.11.1"
   },
   "provenance_audit": {
     "audit_date": "2025-12-02T00:00:00Z",
@@ -708,76 +708,76 @@
       "No confirmed satellites or swarm objects resolved in current imaging."
     ]
   },
-  "signature": "#ATLAS-SIG-SOURCES-v2.11.0-Δ2025-12-03",
+  "signature": "#ATLAS-SIG-SOURCES-v2.11.1-Δ2025-12-04",
   "NASA-MULTIPLE-LENSES-3I-ATLAS": {
-    "title": "View Interstellar Comet 3I/ATLAS Through NASA\u2019s Multiple Lenses",
+    "title": "View Interstellar Comet 3i/ATLAS Through NASA\u2019s Multiple Lenses",
     "publisher": "NASA Science",
     "urls": [
       "https://science.nasa.gov/solar-system/view-interstellar-comet-3i-atlas-through-nasas-multiple-lenses/"
     ],
     "notes": "NASA overview of the multi-mission observing campaign (including MAVEN and other spacecraft) with ultraviolet hydrogen imaging and geometry details.",
-    "last_checked": "2025-12-03",
+    "last_checked": "2025-12-04",
     "confidence": "extremely_high",
     "type": "agency",
     "tier": "T1"
   },
   "NASA-SCIENCE-3I-ATLAS-GALLERY": {
-    "title": "Comet 3I/ATLAS Image Gallery",
+    "title": "Comet 3i/ATLAS Image Gallery",
     "publisher": "NASA Science",
     "urls": [
       "https://science.nasa.gov/solar-system/comets/3i-atlas/comet-3i-atlas-image-gallery/"
     ],
-    "notes": "Curated gallery of images and trajectory graphics for 3I/ATLAS from NASA missions.",
-    "last_checked": "2025-12-03",
+    "notes": "Curated gallery of images and trajectory graphics for 3i/ATLAS from NASA missions.",
+    "last_checked": "2025-12-04",
     "confidence": "extremely_high",
     "type": "agency",
     "tier": "T1"
   },
   "NASA-NEWS-3I-ATLAS-IMAGES-20251119": {
-    "title": "NASA to Share Comet 3I/ATLAS Images From Spacecraft, Telescopes",
+    "title": "NASA to Share Comet 3i/ATLAS Images From Spacecraft, Telescopes",
     "publisher": "NASA",
     "urls": [
       "https://www.nasa.gov/news-release/nasa-to-share-comet-3i-atlas-images-from-spacecraft-telescopes/",
       "https://plus.nasa.gov/scheduled-video/nasa-shares-interstellar-comet-3i-atlas-images/"
     ],
-    "notes": "Official NASA news release and NASA+ event describing the multi-mission observing campaign and public briefing on 3I/ATLAS.",
-    "last_checked": "2025-12-03",
+    "notes": "Official NASA news release and NASA+ event describing the multi-mission observing campaign and public briefing on 3i/ATLAS.",
+    "last_checked": "2025-12-04",
     "confidence": "extremely_high",
     "type": "agency",
     "tier": "T1"
   },
   "ESA-EXOMARS-MARSEXPRESS-3I-ATLAS": {
-    "title": "ESA\u2019s ExoMars and Mars Express observe comet 3I/ATLAS",
+    "title": "ESA\u2019s ExoMars and Mars Express observe comet 3i/ATLAS",
     "publisher": "ESA",
     "urls": [
       "https://www.esa.int/Science_Exploration/Space_Science/ESA_s_ExoMars_and_Mars_Express_observe_comet_3I_ATLAS"
     ],
-    "notes": "Official ESA account of Mars-orbiter observations (TGO, Mars Express) including geometry and closest-approach information for comet 3I/ATLAS.",
-    "last_checked": "2025-12-03",
+    "notes": "Official ESA account of Mars-orbiter observations (TGO, Mars Express) including geometry and closest-approach information for comet 3i/ATLAS.",
+    "last_checked": "2025-12-04",
     "confidence": "high",
     "type": "agency",
     "tier": "T1"
   },
   "ARXIV-2511-19112-CRYOVOLCANOES": {
-    "title": "Cryovolcanism on Interstellar Comet 3I/ATLAS (preprint)",
+    "title": "Cryovolcanism on Interstellar Comet 3i/ATLAS (preprint)",
     "publisher": "arXiv",
     "urls": [
       "https://arxiv.org/abs/2511.19112"
     ],
-    "notes": "Preprint posted 2025-11-24 proposing cryovolcanism on 3I/ATLAS from Joan Or\u00f3 Telescope observations; not yet peer-reviewed.",
-    "last_checked": "2025-12-03",
+    "notes": "Preprint posted 2025-11-24 proposing cryovolcanism on 3i/ATLAS from Joan Or\u00f3 Telescope observations; not yet peer-reviewed.",
+    "last_checked": "2025-12-04",
     "confidence": "medium",
     "type": "preprint",
     "tier": "T2"
   },
   "LIVESCi-3I-ATLAS-CRYOVOLCANOES-20251201": {
-    "title": "Interstellar comet 3I/ATLAS is erupting in 'ice volcanoes', new images suggest",
+    "title": "Interstellar comet 3i/ATLAS is erupting in 'ice volcanoes', new images suggest",
     "publisher": "LiveScience",
     "urls": [
       "https://www.livescience.com/space/interstellar-comet-3i-atlas-is-erupting-in-ice-volcanoes-new-images-suggest"
     ],
-    "notes": "Science-journalism summary of the 3I/ATLAS cryovolcanism preprint, including size and composition ranges and comparison to trans-Neptunian objects.",
-    "last_checked": "2025-12-03",
+    "notes": "Science-journalism summary of the 3i/ATLAS cryovolcanism preprint, including size and composition ranges and comparison to trans-Neptunian objects.",
+    "last_checked": "2025-12-04",
     "confidence": "medium",
     "type": "science_press",
     "tier": "T3"
@@ -788,20 +788,20 @@
     "urls": [
       "https://apod.nasa.gov/apod/ap251201.html"
     ],
-    "notes": "Astronomy Picture of the Day image showing 3I/ATLAS with coma, ion tail, and anti-tail; educational context, not a primary source for orbital elements.",
-    "last_checked": "2025-12-03",
+    "notes": "Astronomy Picture of the Day image showing 3i/ATLAS with coma, ion tail, and anti-tail; educational context, not a primary source for orbital elements.",
+    "last_checked": "2025-12-04",
     "confidence": "medium",
     "type": "education",
     "tier": "T3"
   },
   "THE-SUN-3I-ATLAS-PLANETARY-DEFENCE": {
-    "title": "UN activates Earth's planetary defences over mysterious 'alien' 3I/ATLAS object as shock new pics revealed",
+    "title": "UN activates Earth's planetary defences over mysterious 'alien' 3i/ATLAS object as shock new pics revealed",
     "publisher": "The Sun",
     "urls": [
       "https://www.the-sun.com/tech-old/15556886/earth-defends-against-alien-atlas-object-new-pics/"
     ],
     "notes": "Sensational framing of an IAWN planetary defense exercise that mixes accurate drill information with alien-spacecraft claims.",
-    "last_checked": "2025-12-03",
+    "last_checked": "2025-12-04",
     "confidence": "low",
     "type": "tabloid",
     "tier": "T4",

@@ -1,6 +1,6 @@
-# 🧾 3I/ATLAS Gateway Guide — CHANGELOG
+# 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
-## 📦 Version 2.11.0  ( 2025‑12‑03 )
+## 📦 Version 2.11.1  ( 2025‑12‑04 )
 **Codename:** *BordneAI Continuity Update / Phase‑10 Integration*  
 **Integrity Score:** 9.7 | **Ethics Constant:** Love > Fear | **Audit Cycle:** 24 h
 
@@ -16,9 +16,10 @@ All subsystems now operate under tier‑coupled truth validation and continuous 
 
 | File | Update Summary |
 |------|----------------|
+| **Project-wide metadata** | Bumped release/version markers to 2.11.1, shifted dates to 2025‑12‑04 (including bootloader build), and normalized naming to **3i/ATLAS** across docs, signatures, and prompts. |
 | **manifest.json** | Added Love > Fear constant, CHI target, audit cycle metadata, public audit badge, and Reflexion hook flags. |
 | **bayesian_framework.json** | Integrated truth/false/consciousness tier schemas, ethical weighting, and Reflexion controls. |
-| **normalize_updates.js** | Upgraded to v2.11.0 with Reflexion F‑tier detection, CHI computation, audit logging, and Love > Fear UX safety. |
+| **normalize_updates.js** | Upgraded to v2.11.1 with Reflexion F‑tier detection, CHI computation, audit logging, and Love > Fear UX safety. |
 | **stress_test_framework.json** | Added 3 new Integrity Pulse tests (STF‑010 CHI Audit, STF‑011 Love/Fear Balance, STF‑012 Reflexion Loop). |
 | **sources.json** | Introduced EOS Transparency Layer with provenance tiers (T1–T4) and confidence ranges. |
 | **knowledge_base_merged_v2.json** | Embedded tier and confidence metadata, Reflexion audit record, and continuity stability status. |
@@ -31,7 +32,7 @@ All subsystems now operate under tier‑coupled truth validation and continuous 
 
 ### 🧠 New System Concepts
 - **Love > Fear Constant** — ethical polarity balancer for responses and system decisions.  
-- **Reflexion v2.11.0** — self‑validation layer detecting F‑tier anomalies and entropy drift.  
+- **Reflexion v2.11.1** — self‑validation layer detecting F‑tier anomalies and entropy drift.  
 - **Continuity Health Index ( CHI )** — numerical integrity score ( target ≥ 9.5 ).  
 - **EOS Transparency Layer** — source provenance and confidence disclosure.  
 - **Integrity Pulse Cycle** — automatic daily audit ( 24 h interval ).  
@@ -39,7 +40,7 @@ All subsystems now operate under tier‑coupled truth validation and continuous 
 
 ---
 
-### 🧩 Added Tag Categories (v2.11.0)
+### 🧩 Added Tag Categories (v2.11.1)
 | Category | Tags |
 |-----------|------|
 | **ethics_and_audit** | ethics, audit, integrity, love_fear, transparency |
@@ -71,6 +72,6 @@ Each release is cryptographically signed with its ATLAS signatur
 ---
 
 ### ⚖️ License & Signature
-**© 2025 BordneAI – 3I/ATLAS Gateway Guide v2.11.0**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.1**  
 Released under CC BY‑NC‑SA 4.0 • Integrity Score 9.7  
-Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.0‑Δ2025‑12‑03
+Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.1‑Δ2025‑12‑04

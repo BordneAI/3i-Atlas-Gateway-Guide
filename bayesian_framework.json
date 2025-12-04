@@ -1,9 +1,9 @@
 {
   "filename": "bayesian_framework.json",
-  "tool_version": "2.11.0",
+  "tool_version": "2.11.1",
   "tool_name": "BAAM (Bayesian Anomaly Assessment Module)",
-  "released_at": "2025-12-03",
-  "purpose": "Bayesian analysis for 3I/ATLAS origin hypothesis testing",
+  "released_at": "2025-12-04",
+  "purpose": "Bayesian analysis for 3i/ATLAS origin hypothesis testing",
   "methodology": {
     "framework": "Likelihood ratios with Bayes factors",
     "bayes_theorem": "P(H|E) ∝ P(E|H)×P(H)",
@@ -119,7 +119,7 @@
     "analysis_tool",
     "v2.10"
   ],
-  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.0-Δ2025-12-02",
+  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.1-Δ2025-12-02",
   "posterior_formula": "posterior = normalize( prior * Π_i likelihood_i^weight(tier_i) )",
   "mappings": {
     "ordinal_to_numeric": {
@@ -167,12 +167,12 @@
       "as_of": "2025-11-08"
     }
   },
-  "version": "2.11.0",
+  "version": "2.11.1",
   "ethical_weight": 0.35,
   "reflexion_validation": true,
   "love_fear_constant": "Love>Fear",
   "continuity_score": 9.7,
-  "description": "Bayesian analysis for 3I/ATLAS origin hypothesis testing | Enhanced under BordneAI v2.11.0 for ethical calibration, tier mapping, and Reflexion cross-validation.",
+  "description": "Bayesian analysis for 3i/ATLAS origin hypothesis testing | Enhanced under BordneAI v2.11.1 for ethical calibration, tier mapping, and Reflexion cross-validation.",
   "tier_systems": {
     "truth_tiers": {
       "0": "empirical",
@@ -272,7 +272,7 @@
   },
   "integrity_audit": {
     "as_of": "2025-12-02T00:00:00Z",
-    "auditor": "Reflexion v2.11.0",
+    "auditor": "Reflexion v2.11.1",
     "chi_score": 9.7,
     "entropy_leak": 0.02,
     "false_tier_hits": 0,

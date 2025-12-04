@@ -1,6 +1,6 @@
 {
   "filename": "kb_changelog.json",
-  "changelog_version": "2.11.0",
+  "changelog_version": "2.11.1",
   "generated_at": "2025-12-02T00:00:00Z",
   "purpose": "Immutable log of all applied knowledge base updates with audit trail",
   "applied": [
@@ -433,7 +433,7 @@
       }
     },
     {
-      "update_id": "kb_apply_bordneai_audit_20251202_v2_11_0",
+      "update_id": "kb_apply_bordneai_audit_20251202_v2_11_1",
       "applied_at": "2025-12-02T12:00:00Z",
       "applied_in_files": [
         "knowledge_base_merged_v2.json",
@@ -447,7 +447,7 @@
       "entry": {
         "type": "system_integrity_audit",
         "status": "approved",
-        "summary": "Integrated BordneAI v2.11.0 Reflexion, CHI, and tier transparency protocols across system. All components passed Reflexion validation and audit verification.",
+        "summary": "Integrated BordneAI v2.11.1 Reflexion, CHI, and tier transparency protocols across system. All components passed Reflexion validation and audit verification.",
         "as_of": "2025-12-02",
         "chi_score": 9.7,
         "audit_passed": true,
@@ -478,8 +478,8 @@
     "applied_items": 17,
     "notes": "Broader integration touching sources, KB, instructions, starters, tags, and STF."
   },
-  "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.11.0-\u03942025-12-02",
-  "signature_footer": "\u00a9 BordneAI \u2013 3I/ATLAS Gateway Guide v2.11.0 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-CHANGELOG-v2.11.0-\u03942025-12-02",
+  "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.11.1-\u03942025-12-02",
+  "signature_footer": "\u00a9 BordneAI \u2013 3i/ATLAS Gateway Guide v2.11.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-CHANGELOG-v2.11.1-\u03942025-12-02",
   "entries": [
     {
       "id": "VERIFICATION_9OF9_UNANIMOUS",
@@ -505,20 +505,20 @@
       "confidence_level": "extremely_high"
     },
     {
-      "id": "REFLEXION_INTEGRITY_VALIDATION_V2_11_0",
+      "id": "REFLEXION_INTEGRITY_VALIDATION_V2_11_1",
       "date": "2025-12-02T00:00:00Z",
-      "version": "v2.11.0",
+      "version": "v2.11.1",
       "type": "system_validation",
       "status": "complete",
       "verdict": "All BordneAI Phase-10 modules stable, coherent, and validated.",
       "chi_score": 9.7,
       "confidence": "extremely_high",
       "attachments": [
-        "REFLEXION_AUDIT_SUMMARY_V2_11_0.json"
+        "REFLEXION_AUDIT_SUMMARY_V2_11_1.json"
       ]
     }
   ],
-  "version": "2.11.0",
+  "version": "2.11.1",
   "description": "Immutable BordneAI Changelog for Knowledge Base Evolution \u2014 integrated Reflexion audits, CHI scoring, and tier transparency.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
@@ -526,7 +526,7 @@
   "audit_cycle_hours": 24,
   "integrity_audit": {
     "as_of": "2025-12-02T00:00:00Z",
-    "auditor": "Reflexion v2.11.0",
+    "auditor": "Reflexion v2.11.1",
     "chi_score": 9.7,
     "entropy_leak": 0.01,
     "audit_passed": true,

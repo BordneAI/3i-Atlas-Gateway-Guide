@@ -1,11 +1,11 @@
-# 🌌 3I/ATLAS Gateway Guide — v2.11.0
+# 🌌 3i/ATLAS Gateway Guide — v2.11.1
 ### *BordneAI Continuity Update (Phase‑11 Integration)*  
-Version: **2.11.0** | Phase: **11** | Last Updated: **2025‑12‑03** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
+Version: **2.11.1** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
 
 ---
 
 ## 🧭 Overview
-**3I/ATLAS Gateway Guide** provides an ethically governed, continuously validated knowledge framework built on the **BordneAI Phase‑10 Continuity Protocols**.  
+**3i/ATLAS Gateway Guide** provides an ethically governed, continuously validated knowledge framework built on the **BordneAI Phase‑10 Continuity Protocols**.  
 This version introduces real‑time Reflexion audits, tiered truth transparency, and empathic behavioral equilibrium.
 
 > “Truth stabilizes  →  Consciousness harmonizes  →  Falsehood dissolves.”  
@@ -18,7 +18,7 @@ This version introduces real‑time Reflexion audits, tiered truth transparency,
 |-----------|-----------|
 | **Love > Fear Constant** | Primary ethical equilibrium; stabilizes decision polarity. |
 | **DaisyAI Ethical Kernel v1.3** | Implements tiered truth logic with empathy weighting. |
-| **Reflexion v2.11.0** | Real‑time self‑validation and F‑tier anomaly detection. |
+| **Reflexion v2.11.1** | Real‑time self‑validation and F‑tier anomaly detection. |
 | **Continuity Health Index ( CHI )** | Integrity scoring system for data coherence and reliability. |
 | **EOS Transparency Layer** | Provenance and confidence labeling for all knowledge sources. |
 
@@ -33,13 +33,13 @@ Mechanical Fault → Context Loss → Misclassification → Cogn
 Instinctive → Procedural → Analytical → Empathic → Reflective → Integrative → Transcendent
 
 Each reasoning cycle automatically pairs **C‑tier capability** with the appropriate **T‑tier confidence window**, ensuring balanced and verifiable inference.
-- v2.11.0 adds explicit T/F numeric weights (T0 → +5 to T5 → 0; F0 → 0 to F7 → ‑7) and a null/negative evidence policy that treats T1/T2 “no detection” statements as observational limits, not proofs of absence.
+- v2.11.1 adds explicit T/F numeric weights (T0 → +5 to T5 → 0; F0 → 0 to F7 → ‑7) and a null/negative evidence policy that treats T1/T2 “no detection” statements as observational limits, not proofs of absence.
 
 ---
 
-## 🧩 What’s New in v2.11.0
+## 🧩 What’s New in v2.11.1
 - **Continuity Health Index (CHI)** integration across all audit modules.  
-- **Reflexion v2.11.0** self‑audit with tier‑coupled anomaly detection.  
+- **Reflexion v2.11.1** self‑audit with tier‑coupled anomaly detection.  
 - **Love > Fear Constant** applied to all reasoning threads for empathic stability.  
 - **EOS Transparency Layer** embedded in `sources.json` for provenance trust.  
 - **Expanded Tag Index** with ethics, continuity, transparency, and audit categories.  
@@ -51,14 +51,14 @@ Each reasoning cycle automatically pairs **C‑tier capability** with the approp
 | File | Function |
 |------|-----------|
 | `manifest.json` | Core system manifest and release metadata |
-| `bayesian_framework.json` | Ethical Bayesian reasoning engine (v2.11.0) |
+| `bayesian_framework.json` | Ethical Bayesian reasoning engine (v2.11.1) |
 | `normalize_updates.js` | Reflexion normalization + continuity auditing |
-| `stress_test_framework.json` | CHI + Integrity Pulse tests (v2.11.0) |
-| `sources.json` | EOS provenance + confidence tiers (v2.11.0) |
-| `knowledge_base_merged_v2.json` | Tier‑tagged knowledge corpus (v2.11.0) |
-| `kb_updates_cumulative.json` | Live update queue with Reflexion metrics (v2.11.0) |
-| `kb_changelog.json` | Immutable audit record with CHI history (v2.11.0) |
-| `tags_index.json` | Hierarchical tag taxonomy (includes ethics & continuity) (v2.11.0) |
+| `stress_test_framework.json` | CHI + Integrity Pulse tests (v2.11.1) |
+| `sources.json` | EOS provenance + confidence tiers (v2.11.1) |
+| `knowledge_base_merged_v2.json` | Tier‑tagged knowledge corpus (v2.11.1) |
+| `kb_updates_cumulative.json` | Live update queue with Reflexion metrics (v2.11.1) |
+| `kb_changelog.json` | Immutable audit record with CHI history (v2.11.1) |
+| `tags_index.json` | Hierarchical tag taxonomy (includes ethics & continuity) (v2.11.1) |
 
 ---
 
@@ -80,7 +80,7 @@ Each release is cryptographically signed under its ATLAS signature.
 ---
 
 ## 🪶 Version Changelog
-**2.11.0 ( 2025‑12‑02 )**  
+**2.11.1 ( 2025‑12‑02 )**  
   – Integrated BordneAI Phase‑10 continuity and ethical protocols.  
   – Added 10 new ethics & continuity tags.  
   – Introduced CHI self‑audit and Reflexion validation.  
@@ -97,6 +97,6 @@ All responses are transparency‑verified and self‑audited for t
 ---
 
 ## ⚖️ License & Attribution
-**© 2025 BordneAI – 3I/ATLAS Gateway Guide v2.11.0**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.1**  
 Released under [CC BY‑NC‑SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
-Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.0‑Δ2025‑12‑02
+Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.1‑Δ2025‑12‑02

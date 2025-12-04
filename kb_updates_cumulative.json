@@ -140,7 +140,7 @@
       ]
     }
   ],
-  "version": "2.11.0",
+  "version": "2.11.1",
   "last_updated": "2025-12-02",
   "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols \u2014 Reflexion validation, CHI computation, and tier tagging integrated.",
   "love_fear_constant": "Love>Fear",
@@ -149,7 +149,7 @@
   "chi_target": 9.7,
   "integrity_audit": {
     "as_of": "2025-12-02T00:00:00Z",
-    "auditor": "normalize_updates.js v2.11.0",
+    "auditor": "normalize_updates.js v2.11.1",
     "false_tier_hits": 0,
     "entropy_leak": 0.02,
     "chi_score": 9.7,
@@ -162,5 +162,5 @@
     "integration_ratio": 0.75,
     "average_continuity_weight": 0.94
   },
-  "signature": "#ATLAS-SIG-UPDATES-v2.11.0-\u03942025-12-02"
+  "signature": "#ATLAS-SIG-UPDATES-v2.11.1-\u03942025-12-02"
 }

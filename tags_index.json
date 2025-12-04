@@ -1,7 +1,7 @@
 {
   "filename": "tags_index.json",
-  "tags_version": "2.11.0",
-  "last_updated": "2025-12-03",
+  "tags_version": "2.11.1",
+  "last_updated": "2025-12-04",
   "total_tags": 66,
   "purpose": "Searchable tag index for knowledge base navigation and content discovery",
   "tags": [
@@ -235,7 +235,7 @@
         "stf"
       ],
       "v1.0": "Initial baseline",
-      "v2.11.0": [
+      "v2.11.1": [
         "ethics",
         "continuity",
         "transparency",
@@ -253,7 +253,7 @@
       "v2.10": "Added 10 tags for BAAM, Loeb Scale, Anomaly #10, and analysis flagging.",
       "v2.9": "Added 'iawn_campaign' tag for planetary-defense content, confirmed tag-category alignment, and appended public signature footer.",
       "v2.9-pre": "Pre-release validation completed; cross-file tag alignment confirmed before final 2.9 lock.",
-      "v2.11.0": "Added 10 BordneAI ethics and continuity tags (ethics, continuity, transparency, reflexion, audit, chi, integrity, love_fear, false_tier, truth_tier). Introduced new categories for ethical and continuity systems."
+      "v2.11.1": "Added 10 BordneAI ethics and continuity tags (ethics, continuity, transparency, reflexion, audit, chi, integrity, love_fear, false_tier, truth_tier). Introduced new categories for ethical and continuity systems."
     }
   },
   "integrity_validation": {
@@ -268,9 +268,9 @@
     "level": "low",
     "notes": "Tag surface expanded by +10 without altering core categories."
   },
-  "signature": "#ATLAS-SIG-TAGS-v2.11.0-\u03942025-12-02",
-  "signature_footer": "\u00a9 BordneAI \u2013 3I/ATLAS Gateway Guide v2.11.0 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.11.0-\u03942025-12-02",
-  "version": "2.11.0",
+  "signature": "#ATLAS-SIG-TAGS-v2.11.1-\u03942025-12-02",
+  "signature_footer": "\u00a9 BordneAI \u2013 3i/ATLAS Gateway Guide v2.11.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.11.1-\u03942025-12-02",
+  "version": "2.11.1",
   "description": "Expanded tag index harmonized with BordneAI Phase-10 ethics, continuity, and reflexion protocols.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
