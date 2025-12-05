@@ -178,9 +178,9 @@
     ]
   },
   "tag_usage_notes": {
-    "facts": "Use for \u2705 Verified Facts with T1/T2 sources",
-    "interpretation": "Use for \ud83d\udd0d Interpretations and non-consensus claims",
-    "practice": "Use for \ud83c\udf00 Practices (consciousness/preparation techniques)",
+    "facts": "Use for ✅ Verified Facts with T1/T2 sources",
+    "interpretation": "Use for 🔍 Interpretations and non-consensus claims",
+    "practice": "Use for 🌀 Practices (consciousness/preparation techniques)",
     "nov11": "Use for November 11-specific content (visibility window, protocols, synchronicity)",
     "non_grav": "Use for non-gravitational acceleration content (Loeb Oct 30, JPL Farnocchia measurement)",
     "triple_convergence": "Use for content bridging NASA visibility, CE-5 timing, and testable prediction",
@@ -248,7 +248,7 @@
         "truth_tier"
       ]
     },
-    "maintenance_protocol": "Add new tags when introducing new content categories. Do not remove tags unless content is fully deprecated. Tag usage should match symbol usage (\u2705 facts, \ud83d\udd0d interpretation, \ud83c\udf00 practice). BordneAI continuity and ethics tags must be included in all future schema audits.",
+    "maintenance_protocol": "Add new tags when introducing new content categories. Do not remove tags unless content is fully deprecated. Tag usage should match symbol usage (✅ facts, 🔍 interpretation, 🌀 practice). BordneAI continuity and ethics tags must be included in all future schema audits.",
     "changelog": {
       "v2.10": "Added 10 tags for BAAM, Loeb Scale, Anomaly #10, and analysis flagging.",
       "v2.9": "Added 'iawn_campaign' tag for planetary-defense content, confirmed tag-category alignment, and appended public signature footer.",
@@ -268,9 +268,9 @@
     "level": "low",
     "notes": "Tag surface expanded by +10 without altering core categories."
   },
-  "signature": "#ATLAS-SIG-TAGS-v2.11.1-\u03942025-12-02",
-  "signature_footer": "\u00a9 BordneAI \u2013 3i/ATLAS Gateway Guide v2.11.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.11.1-\u03942025-12-02",
-  "version": "2.11.1",
+  "signature": "#ATLAS-SIG-TAGS-v2.11.2-Δ2025-12-02",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.11.2-Δ2025-12-02",
+  "version": "2.11.2",
   "description": "Expanded tag index harmonized with BordneAI Phase-10 ethics, continuity, and reflexion protocols.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,

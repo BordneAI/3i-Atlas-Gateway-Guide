@@ -1,5 +1,38 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## 📦 Version 2.11.2  ( 2025-12-04 )
+**Codename:** *Ergonomics & Governance Refinement*  
+**Integrity Score:** 9.7 | **Ethics Constant:** Love > Fear | **Audit Cycle:** 24 h
+
+---
+
+### 🔍 Summary
+Light-weight behavior/UX update layered on top of the Phase-10 Continuity release.  
+No core KB facts or tier schemas changed. This release focuses on ergonomics, transparency, and evaluation mapping:
+
+- Plain/simple-mode response design for non-expert users (jargon-suppressed explanations on request).  
+- Optional post-response audit footer pattern (CHI, Reflexion, Love > Fear) for high-risk or audit-focused queries.  
+- Ephemeris helper behavior: magnitude/coordinates plus links out to JPL HORIZONS and TheSkyLive.  
+- T4 misinformation handling docs and stress-tests for ranking/debunking viral “alien swarm / impact / cover-up” claims.  
+- New `docs/` artifacts tracking external evaluations and design notes for v2.11.2.
+- External validation: Grok peer review for v2.11.2 confirms the self-audit and rates the system at **9.9/10** with all 11 stress tests passing and no tier/ethics violations.
+
+---
+
+### ⚙️ Core Enhancements by File
+
+| File | Update Summary |
+|------|----------------|
+| **manifest.json** | Bumped project version to 2.11.2 and documented ergonomics features (plain mode design, audit footer toggle, ephemeris helper, T4 misinfo docs, external evaluations). |
+| **instructions.txt** | Documented plain/simple-mode behavior, audit footer usage, misinfo-handling expectations, and ephemeris helper guidance. |
+| **BOOTLOADER.md** | Updated bootloader metadata to v2.11.2 and reaffirmed Phase-10 Continuity, CHI targets, and Reflexion hooks. |
+| **stress_test_framework.json** | Added tests for plain mode, audit footer visibility, ephemeris helper behavior, T4 misinfo debunking, and fiction/out-of-context misuse. |
+| **README.md** | Added v2.11.2 entry, `docs/` map, and **External Evaluations** section linking human and Grok peer reviews (now including 9.9/10 v2.11.2 validation). |
+| **kb_changelog.json** | Logged `kb_apply_v2_11_2_ergonomics_and_docs` as a doc/UX-only update (no KB content changes). |
+| **docs/** | Added `peer_review_human_v2_10_1.md`, `peer_review_grok_v2_11_1.md`, `peer_review_grok_followup_v2_11_1.md`, and `v2.11.2_NOTES.md` as public evaluation and design references. |
+
+---
+
 ## 📦 Version 2.11.1  ( 2025‑12‑04 )
 **Codename:** *BordneAI Continuity Update / Phase‑10 Integration*  
 **Integrity Score:** 9.7 | **Ethics Constant:** Love > Fear | **Audit Cycle:** 24 h
@@ -72,6 +105,6 @@ Each release is cryptographically signed with its ATLAS signatur
 ---
 
 ### ⚖️ License & Signature
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.1**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.2**  
 Released under CC BY‑NC‑SA 4.0 • Integrity Score 9.7  
-Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.1‑Δ2025‑12‑04
+Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.2‑Δ2025‑12‑04

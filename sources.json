@@ -52,7 +52,7 @@
     "tier": "T1"
   },
   "IAWN-3I-ATLAS-CAMPAIGN": {
-    "title": "IAWN Comet Astrometry Campaign \u2014 3i/ATLAS",
+    "title": "IAWN Comet Astrometry Campaign — 3i/ATLAS",
     "publisher": "IAWN",
     "urls": [
       "https://iawn.net/obscamp/3I_ATLAS/"
@@ -160,7 +160,7 @@
     "tier": "T2"
   },
   "SWIFT-UVOT-WATER-OCT2025": {
-    "title": "'Major breakthrough'\u2026 Swift OH/water detection",
+    "title": "'Major breakthrough'… Swift OH/water detection",
     "publisher": "BBC Sky at Night Magazine",
     "urls": [
       "https://www.skyatnightmagazine.com/news/3i-atlas-neil-gehrels-swift-water-detection"
@@ -351,7 +351,7 @@
       "organization": "TheSkyLive",
       "as_of": "2025-11-03",
       "reliability": "high",
-      "note": "Month-by-month visibility forecast; Dec mag 12\u201313 realistic; observer guidance"
+      "note": "Month-by-month visibility forecast; Dec mag 12–13 realistic; observer guidance"
     },
     {
       "source_id": "SPACECOM-3I-ATLAS-VISIBILITY",
@@ -374,7 +374,7 @@
     "date_published": "2025-11-05",
     "type": "analysis_blog",
     "tier": "T3",
-    "notes": "No tail claim and NGA units in AU/day\u00b2 cited; interpretation present.",
+    "notes": "No tail claim and NGA units in AU/day² cited; interpretation present.",
     "last_checked": "2025-11-07",
     "confidence": "high",
     "tags": [
@@ -420,7 +420,7 @@
       "grok_analysis"
     ]
   },
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.1 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.11.1-Δ2025-12-04",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.11.2-Δ2025-12-02",
   "ARXIV-2510-21967-SWIFT-OH": {
     "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3i/ATLAS",
     "publisher": "arXiv",
@@ -557,7 +557,7 @@
     "tier": "T3"
   },
   "GALILEO-PROJECT-OVERVIEW": {
-    "title": "Harvard Galileo Project \u2014 Overview",
+    "title": "Harvard Galileo Project — Overview",
     "publisher": "Harvard",
     "urls": [
       "https://projects.iq.harvard.edu/galileo/home"
@@ -577,7 +577,7 @@
     "confidence": "high",
     "type": "agency"
   },
-  "version": "2.11.1",
+  "version": "2.11.2",
   "_quarantined": {
     "VLT_CHILE_2025": {
       "title": "VLT instrumentation note on nickel detection campaigns",
@@ -645,7 +645,7 @@
     }
   },
   "released_at": "2025-12-02",
-  "description": "Source registry upgraded under BordneAI Phase-10 protocols \u2014 includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
+  "description": "Source registry upgraded under BordneAI Phase-10 protocols — includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
   "chi_target": 9.7,
@@ -653,23 +653,23 @@
   "provenance_tiers": {
     "T1": {
       "label": "Agency/Primary",
-      "confidence_range": "0.9\u20131.0",
-      "color": "\ud83d\udfe2"
+      "confidence_range": "0.9–1.0",
+      "color": "🟢"
     },
     "T2": {
       "label": "Preprint/Peer-review pending",
-      "confidence_range": "0.75\u20130.9",
-      "color": "\ud83d\udfe1"
+      "confidence_range": "0.75–0.9",
+      "color": "🟡"
     },
     "T3": {
       "label": "Press/Community/Analytical",
-      "confidence_range": "0.5\u20130.75",
-      "color": "\ud83d\udfe0"
+      "confidence_range": "0.5–0.75",
+      "color": "🟠"
     },
     "T4": {
       "label": "Unverified/Speculative",
-      "confidence_range": "0\u20130.5",
-      "color": "\ud83d\udd34"
+      "confidence_range": "0–0.5",
+      "color": "🔴"
     }
   },
   "transparency_map": {
@@ -708,9 +708,9 @@
       "No confirmed satellites or swarm objects resolved in current imaging."
     ]
   },
-  "signature": "#ATLAS-SIG-SOURCES-v2.11.1-Δ2025-12-04",
+  "signature": "#ATLAS-SIG-SOURCES-v2.11.2-Δ2025-12-02",
   "NASA-MULTIPLE-LENSES-3I-ATLAS": {
-    "title": "View Interstellar Comet 3i/ATLAS Through NASA\u2019s Multiple Lenses",
+    "title": "View Interstellar Comet 3i/ATLAS Through NASA’s Multiple Lenses",
     "publisher": "NASA Science",
     "urls": [
       "https://science.nasa.gov/solar-system/view-interstellar-comet-3i-atlas-through-nasas-multiple-lenses/"
@@ -747,7 +747,7 @@
     "tier": "T1"
   },
   "ESA-EXOMARS-MARSEXPRESS-3I-ATLAS": {
-    "title": "ESA\u2019s ExoMars and Mars Express observe comet 3i/ATLAS",
+    "title": "ESA’s ExoMars and Mars Express observe comet 3i/ATLAS",
     "publisher": "ESA",
     "urls": [
       "https://www.esa.int/Science_Exploration/Space_Science/ESA_s_ExoMars_and_Mars_Express_observe_comet_3I_ATLAS"
@@ -764,7 +764,7 @@
     "urls": [
       "https://arxiv.org/abs/2511.19112"
     ],
-    "notes": "Preprint posted 2025-11-24 proposing cryovolcanism on 3i/ATLAS from Joan Or\u00f3 Telescope observations; not yet peer-reviewed.",
+    "notes": "Preprint posted 2025-11-24 proposing cryovolcanism on 3i/ATLAS from Joan Oró Telescope observations; not yet peer-reviewed.",
     "last_checked": "2025-12-04",
     "confidence": "medium",
     "type": "preprint",
@@ -807,5 +807,6 @@
     "tier": "T4",
     "do_not_cite_primary": true,
     "quarantine_reason": "sensational_misframing_of_T1_exercise"
-  }
+  },
+  "sources_version": "2.11.2"
 }

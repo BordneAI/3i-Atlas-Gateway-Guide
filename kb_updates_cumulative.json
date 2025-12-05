@@ -27,17 +27,17 @@
       ],
       "public_surface": false,
       "approval_requirements": [
-        "Run JPL Horizons for Dec 1\u201331 UTC and attach magnitude/elongation table",
+        "Run JPL Horizons for Dec 1–31 UTC and attach magnitude/elongation table",
         "Confirm latest EarthSky December guidance URL and date",
         "Keep language as forecast; do not hardcode magnitudes without context"
       ],
       "review_owner": "reviewer_ops@atlas",
       "due_by": "2025-11-07T23:59:00Z",
       "review_checklist": [
-        "Run JPL Horizons (Dec 1\u201331 UTC) for mag & elongation table",
+        "Run JPL Horizons (Dec 1–31 UTC) for mag & elongation table",
         "Capture latest EarthSky December page URL + timestamp",
         "Label output as forecast; avoid hardcoded single-value magnitudes",
-        "Confirm KB paths exist and won\u2019t overwrite required fields"
+        "Confirm KB paths exist and won’t overwrite required fields"
       ],
       "required_domains": [
         "ssd.jpl.nasa.gov",
@@ -93,7 +93,7 @@
         "arxiv.org",
         "ui.adsabs.harvard.edu"
       ],
-      "hold_reason": "Awaiting post-perihelion results publication (expected Dec 2025 \u2013 Jan 2026)",
+      "hold_reason": "Awaiting post-perihelion results publication (expected Dec 2025 – Jan 2026)",
       "tier_system": {
         "truth_tier": "T2",
         "false_tier_estimate": "F1",
@@ -124,6 +124,151 @@
         "reflexion_status": "validated"
       },
       "continuity_weight": 1.0
+    },
+    {
+      "proposal_id": "kb_propose_kaku_heartbeat_nga_bundle_20251204",
+      "proposed_at": "2025-12-04T00:00:00Z",
+      "status": "pending",
+      "type": "add_new_fact",
+      "target_path": "/composite_updates/kaku_heartbeat_nga",
+      "proposed_change": {
+        "sources": {
+          "expert_commentary": {
+            "kaku_pack": {
+              "description": "Add Michio Kaku as a T3 expert-commentary source for 3i/ATLAS public narrative tracking.",
+              "entries": [
+                {
+                  "source_id": "MICHIO-KAKU-3I-ATLAS-OFFICIAL-SITE",
+                  "role": "popularizer_physicist_commentary",
+                  "tier": "T3",
+                  "notes": "Mkaku.org landing/aggregation pages for 3I/ATLAS TV appearances. Use only for narrative context and threshold quotes, not for orbital or compositional ground truth."
+                },
+                {
+                  "source_id": "MICHIO-KAKU-3I-ATLAS-MEDIA-PACK",
+                  "role": "press_summary",
+                  "tier": "T3",
+                  "notes": "Bundle of mainstream and niche coverage quoting Kaku on 3I/ATLAS (extra energy test, NASA openness critique). Requires cross-check against T1/T2 sources before using any quantitative claims."
+                }
+              ],
+              "use_cases": [
+                "public_discourse_context",
+                "expectation_thresholds",
+                "media_audit"
+              ],
+              "do_not_use_for": [
+                "primary_orbital_elements",
+                "primary_composition_inference"
+              ]
+            }
+          }
+        },
+        "observations": {
+          "lightcurve": {
+            "heartbeat_periodicity": {
+              "description": "16.16-hour periodic brightness modulation (heartbeat-style lightcurve) reported for 3i/ATLAS.",
+              "candidate_source_id": "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
+              "period_hours": 16.16,
+              "observation_type": "photometric_lightcurve",
+              "natural_interpretation": "Rotating or tumbling nucleus and/or jet-modulated coma brightness; consistent with comet physics.",
+              "alternative_interpretations": [
+                {
+                  "source_id": "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
+                  "tier": "T3_opinion",
+                  "summary": "Loeb suggests the jets may be pulsed like a heartbeat and potentially tied to artificial thrusters; explicitly non-consensus and speculative."
+                }
+              ],
+              "validation_requirements": [
+                "Locate and catalog the primary lightcurve paper (likely on arXiv/ADS; Santana-Ros group or equivalent).",
+                "Verify the period, amplitude, and data reduction method from the primary source.",
+                "Ensure heartbeat framing is clearly split: T2 fact (periodicity) vs T3/T4 interpretations (artificial/engine/heartbeat language)."
+              ]
+            }
+          }
+        },
+        "orbital_models": {
+          "nongravitational_acceleration_updates": {
+            "description": "Press-reported JPL Horizons non-gravitational radial A1 values for 3i/ATLAS around perihelion.",
+            "entries": [
+              {
+                "label": "NGA_A1_oct30",
+                "epoch": "2025-10-30",
+                "a1_au_per_day2": 1.6e-06,
+                "provenance": "Press citing JPL Horizons public solution around Oct 30 2025.",
+                "status": "needs_direct_horizons_verification"
+              },
+              {
+                "label": "NGA_A1_nov24",
+                "epoch": "2025-11-24",
+                "a1_au_per_day2": 4e-07,
+                "provenance": "Press citing updated JPL Horizons solution around Nov 24 2025.",
+                "status": "needs_direct_horizons_verification"
+              }
+            ],
+            "notes": [
+              "Values appear consistent with strong cometary outgassing, not obviously beyond known comet NGAs.",
+              "Public articles sometimes frame these as 'extra energy' or 'visitor signature'; KB should treat them as orbital-fit parameters pending direct Horizons runs.",
+              "Final numeric values must come from direct JPL Horizons ephemeris snapshots and/or peer-reviewed orbital-fit papers, not secondary press."
+            ],
+            "required_actions": [
+              "Run JPL Horizons for 3i/ATLAS at the quoted epochs and log the official A1/A2/A3 parameters.",
+              "Cross-check against any available T2 orbital-fit publications.",
+              "Ensure BAAM uses verified NGA values, not press-derived numbers, when possible."
+            ]
+          }
+        }
+      },
+      "rationale": "Integrate a controlled representation of Michio Kaku's 3i/ATLAS commentary (as T3 expert media), a well-documented ~16.16-hour lightcurve periodicity, and press-quoted JPL Horizons NGA values into the KB. This allows the Gateway to track public narrative, heartbeat framing, and 'extra energy' claims while keeping T1/T2 physics clearly separated from T3/T4 speculation.",
+      "source_ids_proposed": [
+        "MICHIO-KAKU-3I-ATLAS-OFFICIAL-SITE",
+        "MICHIO-KAKU-3I-ATLAS-MEDIA-PACK",
+        "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
+        "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
+        "LOEB-3I-ATLAS-ANTI-TAIL-SWARM-2025-12-01",
+        "NGA-HORIZONS-3I-ATLAS-2025-10-30",
+        "NGA-HORIZONS-3I-ATLAS-2025-11-24"
+      ],
+      "as_of": "2025-12-04",
+      "confidence": "medium",
+      "requires_web_search": true,
+      "note": "Bundle proposal: does not directly change user-facing facts until sources are verified (Kaku pack, heartbeat period, NGA values) and integrated into the main KB structures. Designed to be audited via JPL Horizons, arXiv/ADS, and primary opinion essays.",
+      "proposal_tier_mix": [
+        "T1_agency_tools",
+        "T2_preprint",
+        "T3_press",
+        "T3_opinion"
+      ],
+      "public_surface": false,
+      "approval_requirements": [
+        "Confirm official Michio Kaku 3I/ATLAS appearances on mkaku.org and tag them appropriately.",
+        "Locate the primary heartbeat/periodicity lightcurve paper and attach its arXiv/ADS identifiers.",
+        "Run JPL Horizons at the quoted epochs to confirm or correct A1 values and document uncertainties.",
+        "Ensure all heartbeat/jet/visitor framings are fenced as T3/T4 interpretations, separate from T1/T2 orbital and photometric facts."
+      ],
+      "review_owner": "science_editor@atlas",
+      "due_by": "2025-12-09T23:59:00Z",
+      "review_checklist": [
+        "Check mkaku.org and major outlets for Kaku primary commentary; avoid using clickbait blogs as primary sources.",
+        "Find and register the Santana-Ros (or equivalent) lightcurve analysis in sources.json with T2 tiering.",
+        "Capture direct JPL Horizons A1/A2/A3 values with timestamps and include them in advanced_technical or orbital_models.",
+        "Verify that BAAM and anomaly sections reference the updated NGA and heartbeat entries correctly and do not overstate artificiality hypotheses."
+      ],
+      "required_domains": [
+        "mkaku.org",
+        "people.com",
+        "businesstimes.co",
+        "usaherald.com",
+        "economictimes.com",
+        "cfa.harvard.edu",
+        "arxiv.org",
+        "ui.adsabs.harvard.edu",
+        "ssd.jpl.nasa.gov"
+      ],
+      "tier_system": {
+        "truth_tier": "T2",
+        "false_tier_estimate": "F1",
+        "reflexion_status": "under_review"
+      },
+      "continuity_weight": 0.85
     }
   ],
   "rejected": [
@@ -140,9 +285,9 @@
       ]
     }
   ],
-  "version": "2.11.1",
-  "last_updated": "2025-12-02",
-  "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols \u2014 Reflexion validation, CHI computation, and tier tagging integrated.",
+  "version": "2.11.2",
+  "last_updated": "2025-12-05T03:30:00Z",
+  "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
   "audit_cycle_hours": 24,
@@ -154,7 +299,7 @@
     "entropy_leak": 0.02,
     "chi_score": 9.7,
     "audit_passed": true,
-    "log_id": "#ATLAS-AUDIT-UPDATES-\u03942025-12-02"
+    "log_id": "#ATLAS-AUDIT-UPDATES-Δ2025-12-02"
   },
   "continuity_metrics": {
     "total_pending": 1,
@@ -162,5 +307,7 @@
     "integration_ratio": 0.75,
     "average_continuity_weight": 0.94
   },
-  "signature": "#ATLAS-SIG-UPDATES-v2.11.1-\u03942025-12-02"
+  "signature": "#ATLAS-SIG-KB-UPDATES-v2.11.2-Δ2025-12-02",
+  "updates_version": "2.11.2",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-UPDATES-v2.11.2-Δ2025-12-02"
 }
