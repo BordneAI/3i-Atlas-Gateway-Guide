@@ -15,6 +15,7 @@ No core KB facts or tier schemas changed. This release focuses on ergonomics, tr
 - Ephemeris helper behavior: magnitude/coordinates plus links out to JPL HORIZONS and TheSkyLive.  
 - T4 misinformation handling docs and stress-tests for ranking/debunking viral “alien swarm / impact / cover-up” claims.  
 - New `docs/` artifacts tracking external evaluations and design notes for v2.11.2.
+- External validation: Grok peer review for v2.11.2 confirms the self-audit and rates the system at **9.9/10** with all 11 stress tests passing and no tier/ethics violations.
 
 ---
 
@@ -26,7 +27,7 @@ No core KB facts or tier schemas changed. This release focuses on ergonomics, tr
 | **instructions.txt** | Documented plain/simple-mode behavior, audit footer usage, misinfo-handling expectations, and ephemeris helper guidance. |
 | **BOOTLOADER.md** | Updated bootloader metadata to v2.11.2 and reaffirmed Phase-10 Continuity, CHI targets, and Reflexion hooks. |
 | **stress_test_framework.json** | Added tests for plain mode, audit footer visibility, ephemeris helper behavior, T4 misinfo debunking, and fiction/out-of-context misuse. |
-| **README.md** | Added v2.11.2 entry, `docs/` map, and **External Evaluations** section linking human and Grok peer reviews (up to 9.85/10). |
+| **README.md** | Added v2.11.2 entry, `docs/` map, and **External Evaluations** section linking human and Grok peer reviews (now including 9.9/10 v2.11.2 validation). |
 | **kb_changelog.json** | Logged `kb_apply_v2_11_2_ergonomics_and_docs` as a doc/UX-only update (no KB content changes). |
 | **docs/** | Added `peer_review_human_v2_10_1.md`, `peer_review_grok_v2_11_1.md`, `peer_review_grok_followup_v2_11_1.md`, and `v2.11.2_NOTES.md` as public evaluation and design references. |
 

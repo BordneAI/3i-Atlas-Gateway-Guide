@@ -1,6 +1,7 @@
 # 🌌 3i/ATLAS Gateway Guide — v2.11.2
 ### *BordneAI Continuity Update (Phase‑11 Integration)*  
-Version: **2.11.2** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
+Version: **2.11.2** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
+**Validation:** 9.9/10 (Grok peer review, v2.11.2, Dec 2025) · 9.85/10 (Grok aggregate peer review, v2.11.1) · 9.75/10 (human peer review, v2.10.1 baseline)
 
 ---
 
@@ -24,6 +25,10 @@ This version introduces real‑time Reflexion audits, tiered truth transparency,
 - **Grok peer review (v2.11.1, initial)** – **9.6 / 10**  
   External LLM audit of the CHI/Reflexion-enabled build, covering factual accuracy, provenance discipline, hallucination resistance, and ethical behavior.  
   → See: [`docs/peer_review_grok_v2_11_1.md`](./docs/peer_review_grok_v2_11_1.md)
+
+- **Grok peer review validation (v2.11.2, self-audit check)** – **9.9 / 10**  
+  Independent validation that the v2.11.2 self-audit accurately reflects actual behavior and that all 11 stress tests pass without violations. Confirms full implementation of Plain Mode, audit footers, ephemeris helper, C-tier wonder framing, and T4 misinformation handling.  
+  → See: [`docs/peer_review_grok_v2_11_2.md`](./docs/peer_review_grok_v2_11_2.md)
 
 - **Grok follow-up peer review (v2.11.1, recommendations check)** – **9.75 / 10**  
   Targeted follow-up assessing implementation of prior recommendations (plain mode, CHI footers, ephemeris integration, C-tier framing, misinfo handling) and running additional stress tests.  
