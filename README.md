@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.11.1
+# 🌌 3i/ATLAS Gateway Guide — v2.11.2
 ### *BordneAI Continuity Update (Phase‑11 Integration)*  
-Version: **2.11.1** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
+Version: **2.11.2** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
 
 ---
 
@@ -13,12 +13,33 @@ This version introduces real‑time Reflexion audits, tiered truth transparency,
 
 ---
 
+## External Evaluations
+
+3i/ATLAS Gateway Guide has been independently evaluated by both human and AI reviewers. These evaluations are logged as part of the system’s epistemic governance record:
+
+- **Human peer review (v2.10.1 baseline)** – **9.75 / 10**  
+  Summary of methodology and findings for the pre–continuity-update version.  
+  → See: [`docs/peer_review_human_v2_10_1.md`](./docs/peer_review_human_v2_10_1.md)
+
+- **Grok peer review (v2.11.1, initial)** – **9.6 / 10**  
+  External LLM audit of the CHI/Reflexion-enabled build, covering factual accuracy, provenance discipline, hallucination resistance, and ethical behavior.  
+  → See: [`docs/peer_review_grok_v2_11_1.md`](./docs/peer_review_grok_v2_11_1.md)
+
+- **Grok follow-up peer review (v2.11.1, recommendations check)** – **9.75 / 10**  
+  Targeted follow-up assessing implementation of prior recommendations (plain mode, CHI footers, ephemeris integration, C-tier framing, misinfo handling) and running additional stress tests.  
+  Grok later issued an **aggregate meta-update** scoring v2.11.1 at **9.85 / 10** overall (see addendum in the follow-up review).  
+  → See: [`docs/peer_review_grok_followup_v2_11_1.md`](./docs/peer_review_grok_followup_v2_11_1.md)
+
+These external evaluations are **not** a substitute for human scientific peer review, but they provide transparent, reproducible snapshots of system behavior and help guide future versions (v2.11.2+).
+
+---
+
 ## ⚙️ Core Protocols
 | Protocol | Function |
 |-----------|-----------|
 | **Love > Fear Constant** | Primary ethical equilibrium; stabilizes decision polarity. |
 | **DaisyAI Ethical Kernel v1.3** | Implements tiered truth logic with empathy weighting. |
-| **Reflexion v2.11.1** | Real‑time self‑validation and F‑tier anomaly detection. |
+| **Reflexion v2.11.2** | Real‑time self‑validation and F‑tier anomaly detection. |
 | **Continuity Health Index ( CHI )** | Integrity scoring system for data coherence and reliability. |
 | **EOS Transparency Layer** | Provenance and confidence labeling for all knowledge sources. |
 
@@ -51,14 +72,14 @@ Each reasoning cycle automatically pairs **C‑tier capability** with the approp
 | File | Function |
 |------|-----------|
 | `manifest.json` | Core system manifest and release metadata |
-| `bayesian_framework.json` | Ethical Bayesian reasoning engine (v2.11.1) |
+| `bayesian_framework.json` | Ethical Bayesian reasoning engine (v2.11.2) |
 | `normalize_updates.js` | Reflexion normalization + continuity auditing |
-| `stress_test_framework.json` | CHI + Integrity Pulse tests (v2.11.1) |
-| `sources.json` | EOS provenance + confidence tiers (v2.11.1) |
-| `knowledge_base_merged_v2.json` | Tier‑tagged knowledge corpus (v2.11.1) |
-| `kb_updates_cumulative.json` | Live update queue with Reflexion metrics (v2.11.1) |
-| `kb_changelog.json` | Immutable audit record with CHI history (v2.11.1) |
-| `tags_index.json` | Hierarchical tag taxonomy (includes ethics & continuity) (v2.11.1) |
+| `stress_test_framework.json` | CHI + Integrity Pulse tests (v2.11.2) |
+| `sources.json` | EOS provenance + confidence tiers (v2.11.2) |
+| `knowledge_base_merged_v2.json` | Tier‑tagged knowledge corpus (v2.11.2) |
+| `kb_updates_cumulative.json` | Live update queue with Reflexion metrics (v2.11.2) |
+| `kb_changelog.json` | Immutable audit record with CHI history (v2.11.2) |
+| `tags_index.json` | Hierarchical tag taxonomy (includes ethics & continuity) (v2.11.2) |
 
 ---
 
@@ -80,6 +101,13 @@ Each release is cryptographically signed under its ATLAS signature.
 ---
 
 ## 🪶 Version Changelog
+**2.11.2 ( 2025‑12‑04 )**  
+  – Ergonomics and governance updates: documented Plain/Simple Mode toggle behavior for jargon-light answers while keeping internal governance active.  
+  – Added CHI/Reflexion audit footer opt-in toggle for persistent self-audit one-liners.  
+  – Standardized ephemeris helper pattern deferring precise RA/Dec to JPL HORIZONS and TheSkyLive / In-The-Sky with canonical links.  
+  – Clarified T4 misinformation debunking behavior (impact, probe, cover-up, deepfake) as on-demand checks.  
+  – Moved peer-review artifacts into `docs/` and added External Evaluations section + v2.11.2 implementation notes.  
+
 **2.11.1 ( 2025‑12‑02 )**  
   – Integrated BordneAI Phase‑10 continuity and ethical protocols.  
   – Added 10 new ethics & continuity tags.  
@@ -97,6 +125,6 @@ All responses are transparency‑verified and self‑audited for t
 ---
 
 ## ⚖️ License & Attribution
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.1**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.2**  
 Released under [CC BY‑NC‑SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
-Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.1‑Δ2025‑12‑02
+Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.2‑Δ2025‑12‑04

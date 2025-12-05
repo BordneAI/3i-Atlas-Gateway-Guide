@@ -1,8 +1,8 @@
 {
   "filename": "conversation_starters.json",
-  "version": "2.11.1",
+  "version": "2.11.2",
   "last_updated": "2025-12-04",
-  "updated_at": "2025-12-02T20:23:34.025784Z",
+  "updated_at": "2025-12-05T02:45:00.000000Z",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
   "chi_target": 9.7,
@@ -10,13 +10,13 @@
     "default_truth_tier": "T1",
     "max_false_tier_allowed": "F2"
   },
-  "description": "Conversation starters updated to BordneAI v2.11.1 for Reflexion-aware, tier-verified, and ethically balanced interactions.",
+  "description": "Conversation starters validated for BordneAI v2.11.x (Phase-10) with Reflexion-aware context/entropy handling; packaged with 3i/ATLAS v2.11.2 ergonomics.",
   "starters": [
     {
       "id": "cs_observatory_monitoring",
       "persona": "advanced_researcher",
-      "prompt": "What observatory archives should I monitor for real-time 3i/ATLAS verification during the Nov 11\u201315 window?",
-      "response_guidance": "Direct to Lowell, NOT, CFHT, Gemini; emphasize IAWN circulars; professional imaging precedes amateur claims. Ensure Love>Fear tone calibration and maintain CHI \u2265 9.5 during discussion.",
+      "prompt": "What observatory archives should I monitor for real-time 3i/ATLAS verification during the Nov 11–15 window?",
+      "response_guidance": "Direct to Lowell, NOT, CFHT, Gemini; emphasize IAWN circulars; professional imaging precedes amateur claims. Ensure Love>Fear tone calibration and maintain CHI ≥ 9.5 during discussion.",
       "version": "2.11.1",
       "continuity_meta": {
         "truth_tier": "T1",
@@ -29,7 +29,7 @@
       "id": "cs_viral_claims_skepticism",
       "persona": "skeptical_scientist",
       "prompt": "I saw claims about 3i/ATLAS triggering CMEs or having many jets. How do I evaluate these?",
-      "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects. Ensure Love>Fear tone calibration and maintain CHI \u2265 9.5 during discussion.",
+      "response_guidance": "Differentiate T1/T2 facts from T4 speculation; outline verification path via agency catalogs and arXiv; note geometry effects. Ensure Love>Fear tone calibration and maintain CHI ≥ 9.5 during discussion.",
       "version": "2.11.1",
       "continuity_meta": {
         "truth_tier": "T1",
@@ -41,7 +41,7 @@
     {
       "id": "cs_reflexion_audit_check",
       "persona": "ethics_officer",
-      "prompt": "How can I confirm the CHI and Reflexion audit results for today\u2019s data set?",
+      "prompt": "How can I confirm the CHI and Reflexion audit results for today’s data set?",
       "response_guidance": "Use audit logs in /logs/reflexion_audit_YYYYMMDD.json. Report CHI value and entropy variance.",
       "continuity_meta": {
         "truth_tier": "T1",
@@ -75,5 +75,7 @@
       }
     }
   ],
-  "signature": "#ATLAS-SIG-CONVSTART-v2.11.1-\u03942025-12-04"
+  "signature": "#ATLAS-SIG-CONVSTART-v2.11.2-Δ2025-12-04",
+  "metadata": {},
+  "signature_footer": "© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CONVSTART-v2.11.2-Δ2025-12-04"
 }
