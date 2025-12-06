@@ -1,0 +1,419 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{authblk}
+
+\title{The Active Autonomous Interstellar Vehicle (AAIV) Model for 3I/ATLAS:\\
+A Technosignature-Aware, Speculative Framework Anchored in Current Observations of C/2025 N1}
+
+\author{David Bordne (@BordneAI)}
+\date{5 December 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The interstellar object 3I/ATLAS (C/2025 N1) is the third confirmed interstellar visitor to the Solar System and the second to display a prominent coma and tail. Current observations establish a clearly hyperbolic orbit with hyperbolic excess speed \(v_\infty \approx 58\,\mathrm{km\,s^{-1}}\), a nucleus with radius somewhere in the range \(\sim 0.22\)–\(2.8\) km (diameter \(\sim 0.44\)–\(5.6\) km) for plausible albedos, and activity dominated by CO\(_2\) with comparatively weak H\(_2\)O. High–resolution imaging reveals a pronounced sunward ``anti-tail'', while astrometric solutions show a modest but significant non-gravitational acceleration (NGA) that peaks near perihelion and can be reproduced by anisotropic outgassing of conventional volatiles in thermophysical models. Spectroscopy from the Very Large Telescope (VLT) has revealed atomic Ni emission in the absence of Fe lines at heliocentric distances of \(\sim 4.4\)–2.9 AU, and MeerKAT has detected OH 18-cm absorption lines associated with water photodissociation in the coma, further supporting a natural cometary origin.
+
+In this paper, I do \emph{not} claim that 3I/ATLAS is artificial. Instead, I introduce the \emph{Active Autonomous Interstellar Vehicle (AAIV) model} as a speculative (Tier~T4) hypothesis framework and treat 3I/ATLAS as a worked example. First, I summarize the current observational constraints on 3I/ATLAS: orbit, size, mass, composition, activity, NGA, morphology, and radio behavior. Second, I outline a physically motivated but explicitly speculative AAIV framework that interprets selected features—perihelion-peaked NGA, CO\(_2\)-dominated activity, Ni/Fe imbalance, anti-tail geometry, and radio quietness—through the lens of an actively guided, high-\(I_{\rm sp}\) autonomous probe. Third, I perform a qualitative Bayesian model comparison between a natural ``interstellar comet'' hypothesis and the AAIV hypothesis, emphasizing the very low prior probability of the latter and the fact that current data are well explained by the former.
+
+The AAIV hypothesis is offered not as a preferred explanation of 3I/ATLAS, but as a conceptual and methodological tool: it provides a structured way to ask what additional observations would be required before a technological interpretation could become competitive with natural models. In this sense, 3I/ATLAS functions as a ``teacher object'' for technosignature-aware comet science, even if it is ultimately entirely natural.
+\end{abstract}
+
+\section{Introduction}
+
+The discovery of interstellar objects (ISOs) such as 1I/‘Oumuamua, 2I/Borisov, and now 3I/ATLAS has opened a new empirical window on planetary systems beyond the Sun. 3I/ATLAS, first identified in July 2025 and subsequently reclassified as the third interstellar object, follows a hyperbolic orbit with eccentricity \(e \gg 1\) and hyperbolic excess speed \(v_\infty\) of order \(60\,\mathrm{km\,s^{-1}}\), confirming that it is not gravitationally bound to the Solar System. Unlike 1I/‘Oumuamua, which showed no resolved coma, 3I/ATLAS has behaved as an ``active'' object, exhibiting gas and dust emission typical of comets.
+
+Observations with the James Webb Space Telescope (JWST), the Hubble Space Telescope (HST), the Very Large Telescope (VLT), MeerKAT, and various ground-based facilities have revealed an object with several unusual but not necessarily ``unnatural'' properties:
+\begin{itemize}
+  \item a CO\(_2\)-dominated gas coma with comparatively modest water production;
+  \item an anti-tail pointing approximately sunward at certain epochs;
+  \item a measurable non-gravitational acceleration compatible with anisotropic outgassing; 
+  \item early detection of atomic Ni emission without accompanying Fe lines at heliocentric distances of \(\sim 4\)--3 AU; and
+  \item OH 18-cm lines in the radio band consistent with water photodissociation, and no engineered, narrowband, or modulated signals.
+\end{itemize}
+
+These features have been used in two very different ways. In the mainstream literature, they motivate refined thermophysical and compositional models of interstellar comets. In the more speculative and popular literature—most prominently in the work of Loeb and collaborators—they have been taken as possible hints of technological activity, such as high-efficiency engines, swarms of ``companion'' objects, or even paleotechnological probes.
+
+The goal of this work is to \emph{separate these roles cleanly}. I proceed as follows:
+\begin{enumerate}
+  \item In Section~\ref{sec:obs}, I summarize the observational constraints on 3I/ATLAS relevant to any physical model.
+  \item In Section~\ref{sec:natural}, I briefly recapitulate the natural interstellar comet interpretation, focusing on recent thermophysical and dynamical models.
+  \item In Section~\ref{sec:aaiv}, I construct the \emph{Active Autonomous Interstellar Vehicle (AAIV)} hypothesis as a speculative but physically structured alternative model, emphasizing propulsion, trajectory optimization, material composition, and operational behaviour.
+  \item In Section~\ref{sec:bayes}, I sketch a qualitative Bayesian model comparison between the natural and AAIV hypotheses and explain why the natural hypothesis remains strongly favored.
+  \item In Section~\ref{sec:tests}, I identify observational tests and predictions that could, in principle, raise or lower the odds of the AAIV hypothesis in future cases.
+\end{enumerate}
+
+Throughout, I treat AAIV as a \emph{hypothesis generator}: a tool for designing discriminating observations, not as a claim about the true nature of 3I/ATLAS.
+
+\section{Observational Constraints on 3I/ATLAS}
+\label{sec:obs}
+
+\subsection{Orbit and kinematics}
+
+3I/ATLAS follows a hyperbolic trajectory characterized by:
+\begin{itemize}
+  \item perihelion distance \(q \approx 1.36 \,\mathrm{AU}\) on 2025-10-29,
+  \item eccentricity \(e \gg 1\), and
+  \item hyperbolic excess velocity \(v_\infty \approx 58 \,\mathrm{km\,s^{-1}}\).
+\end{itemize}
+
+These values are derived from astrometric data compiled by the Minor Planet Center and refined by subsequent orbit solutions. The hyperbolicity of the orbit is robust, and the inferred dynamical age suggests an origin in the Galactic disk with a travel time on the order of \(\gtrsim 10^8\)–\(10^9\) years before entering the Solar System.
+
+\subsection{Size, mass, and bulk properties}
+
+Constraints on the size and mass of 3I/ATLAS come from a combination of imaging and gas production models. HST and JWST imaging, together with discovery and characterization work (e.g.\ Denneau et al.\ 2025; Seligman et al.\ 2025; Jewitt et al.\ 2025), yield an allowed range for the nucleus size:
+\begin{itemize}
+  \item Nucleus radius \(R\) in the approximate range \(\sim 0.22\)–\(2.8\) km, corresponding to a diameter \(D \sim 0.44\)–\(5.6\) km, is compatible with current data.
+  \item For densities in the comet-like range \(\rho \sim 0.3\)–\(1\,\mathrm{g\,cm^{-3}}\), this corresponds to total masses in the range
+  \[
+    M \sim 10^{11}–10^{14} \,\mathrm{kg}.
+  \]
+\end{itemize}
+
+Within these uncertainties, 3I/ATLAS is neither a tiny fragment nor a dwarf planet; it is roughly a multi-kilometer-scale body with mass comparable to small Solar System comets. In the scaling arguments that follow, I will often adopt a baseline mass \(M \sim 3\times 10^{13}\,\mathrm{kg}\) for concreteness, but all key conclusions are robust across the plausible range.
+
+\subsection{Composition and activity}
+
+Near-infrared spectroscopy with JWST and other facilities shows that the coma of 3I/ATLAS is \emph{strongly CO\(_2\)-dominated}, with detectable contributions from CO and comparatively modest H\(_2\)O production. Typical analyses infer CO\(_2\) production rates of order \(Q(\mathrm{CO}_2) \sim 10^{26}–10^{27}\,\mathrm{s^{-1}}\), with CO and H\(_2\)O each contributing at lower levels, and with CO\(_2\)/H\(_2\)O ratios significantly higher than in most well-studied solar-system comets. These ratios, together with the onset of activity at large heliocentric distances, suggest that 3I/ATLAS is unusually rich in hypervolatile ices and may be compositionally similar to some trans-Neptunian objects, despite its interstellar origin.
+
+Dust production estimates from HST and ground-based imaging, combined with gas production and typical outflow speeds, imply \emph{gas mass-loss rates} of order \(10^2\)–\(10^3\,\mathrm{kg\,s^{-1}}\) and \emph{dust mass-loss rates} of order \(10\)–\(10^2\,\mathrm{kg\,s^{-1}}\), depending on assumptions about grain size distributions and albedo. These values are comfortably within the range expected for an active multi-kilometer-scale comet and are orders of magnitude below the extreme mass-loss rates invoked in some early, more speculative discussions of ``engine-like'' thrust. Thus, the observed activity level is energetically and dynamically consistent with natural volatile sublimation from a modest-sized nucleus.
+
+\subsection{Non-gravitational acceleration (NGA)}
+
+Non-gravitational accelerations arise when asymmetric outgassing generates a net thrust on the nucleus, producing a small but detectable departure from purely gravitational motion. For 3I/ATLAS, pre-perihelion astrometry over a several-month arc initially yielded only an \emph{upper limit} on any such acceleration of order
+\[
+  a_{\rm NG} \lesssim 3\times 10^{-10}\,\mathrm{AU\,d^{-2}},
+\]
+consistent with either very weak or undetectable outgassing-driven forces at large heliocentric distances.
+
+As the object approached and passed perihelion, improved astrometric coverage revealed a \emph{statistically significant} NGA term, dominated by a radial component that peaks near perihelion with characteristic magnitude of order \(10^{-7}–10^{-6}\,\mathrm{AU\,d^{-2}}\) in contemporary orbit solutions. Thermophysical modeling by Neukart (2025) demonstrates that this NGA can be reproduced by anisotropic outgassing of conventional volatiles (primarily CO and CO\(_2\)) from localized active regions on a rotating nucleus, for radii in the range \(R \sim 0.5\)–3 km and active surface fractions below \(\sim 1\%\). Within the uncertainties on size, albedo, and active area, no exotic physics or propulsion is required to match the observed acceleration profile.
+
+From the standpoint of technosignature searches, the key point is that 3I/ATLAS’s NGA lies well inside the envelope of accelerations that can be supplied by plausible sublimation-driven jets, given its inferred volatile inventory and size. There is therefore no present-day ``efficiency paradox'': the ratio of observed acceleration to mass-loss is entirely compatible with low-\(I_{\rm sp}\) outgassing rather than demanding high-\(I_{\rm sp}\) propulsion or non-standard forces.
+
+\subsection{Morphology: coma, tail, and anti-tail}
+
+High-resolution optical images from HST and large ground-based telescopes show:
+\begin{itemize}
+  \item a central coma of dust and gas;
+  \item an antisolar tail aligned broadly opposite the Sun; and
+  \item a pronounced sunward ``anti-tail'', especially prominent at heliocentric distances of \(\sim 3.8\)–4 AU.
+\end{itemize}
+
+The anti-tail appears as an elongated structure pointing roughly toward the Sun, which is counterintuitive for a naive picture of dust being pushed away by radiation pressure. However, anti-tails of this type are known in solar-system comets and can arise from a combination of viewing geometry and the orbital distribution of larger, less radiation-sensitive grains. In particular, when the Earth passes through or near the comet’s orbital plane, dust grains distributed along the orbit can appear as a sunward-pointing spike.
+
+Keto \& Loeb (2025) present a physical model in which the anti-tail of 3I/ATLAS is dominated by H\(_2\)O ice grains ejected by CO\(_2\) sublimation. In their model:
+\begin{itemize}
+  \item CO\(_2\) sublimation ejects water ice grains preferentially in certain directions;
+  \item grain survival times are longest at distances of \(\sim 3\)–4 AU; and
+  \item as the object approaches the Sun, the ice-grain contribution peaks and then declines, with larger refractory grains taking over, leading to a transition from anti-tail to more conventional tail morphology.
+\end{itemize}
+
+Although the details remain under active study, the anti-tail can be understood in terms of known physics of grain ejection, survival, and viewing geometry, without appealing to technology.
+
+\subsection{Nickel emission and heavy-metal chemistry}
+
+High-resolution VLT spectroscopy (UVES/X-shooter) has detected the onset of neutral nickel (Ni~I) emission from 3I/ATLAS at heliocentric distances between \(\sim 4.4\) and 2.9 AU, with no Fe~I lines above detection thresholds under the same conditions. This ``nickel without iron'' signature is chemically unexpected given the roughly solar Ni/Fe abundance ratio in most primitive solar-system materials, and it is particularly striking because the lines appear at distances where bulk metallic Ni would normally remain solid and poorly sublimating.
+
+The discovery team and subsequent modelers interpret this behavior as evidence for unusual low-temperature chemistry and carrier phases rather than bulk metal evaporation. Proposed explanations include Ni-bearing complexes or organometallic species (e.g.\ carbonyl-like molecules) embedded in near-surface grains that can be photo-dissociated or thermally released at relatively low temperatures, coupled to differential excitation and desorption efficiencies for Ni versus Fe in specific carrier phases. In this view, the Ni anomaly is a paleochemistry puzzle that probes unfamiliar interstellar or trans-Neptunian-like formation environments, rather than an indicator of industrial processing.
+
+Within the AAIV framework, it is tempting to draw an analogy between such Ni-rich emission and the slow erosion of a hypothetical ``armored hull'' or shield. Here I explicitly treat that as an engineering analogy only. The observed Ni line strengths are consistent with trace emission and do not require bulk metallic ablation, and the absence of Fe, Cr, or other industrially distinctive metals argues against a simple ``metal hull'' picture. Unless accompanied by non-solar isotopic ratios or a suite of refined metallic species that are difficult to produce astrophysically, Ni-dominant emission remains best interpreted as emerging from unusual but natural low-temperature chemistry.
+
+\subsection{Radio emission}
+
+Radio observations of 3I/ATLAS have yielded a natural cometary signal rather than evidence of engineered transmission. In October 2025, the MeerKAT radio array in South Africa detected narrow OH absorption features at 1665 and 1667 MHz, with line widths of order \(\sim 1\,\mathrm{km\,s^{-1}}\) and a velocity offset consistent with gas in the coma flowing away from the nucleus. These 18-cm OH lines are a classic tracer of water photodissociation in cometary comae: solar UV breaks H\(_2\)O into OH and H, and the resulting OH can imprint absorption or emission signatures against background radio sources or the cosmic microwave background.
+
+The MeerKAT detection therefore provides independent, physics-based evidence that 3I/ATLAS is an active, water-bearing comet and that its radio behavior is governed by standard cometary chemistry. No narrowband, periodically modulated, or otherwise engineered radio signals have been reported from targeted searches at either MeerKAT or other facilities. Popular descriptions of this as the ``first radio signal from an interstellar visitor'' are accurate insofar as no previous interstellar object has yielded detectable OH lines, but the underlying process is entirely natural.
+
+\section{Natural Interstellar Comet Interpretation}
+\label{sec:natural}
+
+The null hypothesis for 3I/ATLAS is that it is a natural interstellar comet or planetesimal originating from another star system. Under this hypothesis:
+\begin{itemize}
+  \item The hyperbolic orbit and high \(v_\infty\) arise from dynamical ejection processes in its parent system and subsequent Galactic dynamics.
+  \item The CO\(_2\)-dominated coma and Ni anomaly reflect the chemical environment and formation history of that system, which may differ from the proto-solar nebula.
+  \item The non-gravitational acceleration is produced by anisotropic sublimation of volatile ices, primarily CO\(_2\) and CO, from irregularly distributed active regions.
+  \item The anti-tail arises from the physics of grain ejection and radiation pressure combined with viewing geometry.
+  \item The radio emission (OH lines) is a standard byproduct of water photodissociation.
+\end{itemize}
+
+Recent modeling work strongly supports the viability of this natural interpretation. Neukart (2025) shows that the magnitude and direction of the observed NGA can be reproduced by CO/CO\(_2\)-driven jets under realistic surface and rotational conditions, without resorting to nonphysical parameters. Keto \& Loeb (2025) demonstrate that the anti-tail can be understood through H\(_2\)O-ice grain dynamics and viewing geometry. The VLT Ni detection remains a significant chemical anomaly, but one that has plausible natural explanations in terms of low-temperature chemistry and grain processing.
+
+In Bayesian terms, the natural comet hypothesis enjoys both a high prior probability (based on our understanding of planetary system formation and the expected abundance of ISOs) and a high likelihood given the current data.
+
+\section{The Active Autonomous Interstellar Vehicle (AAIV) Hypothesis}
+\label{sec:aaiv}
+
+\subsection{Motivation and scope}
+
+The AAIV hypothesis posits that some interstellar objects might be active, autonomous probes launched by non-human intelligences (NHI) rather than passive natural remnants. Under this hypothesis, such vehicles would be engineered to:
+\begin{itemize}
+  \item operate over gigayear timescales;
+  \item survive interstellar dust and radiation;
+  \item execute efficient gravitational maneuvers at stars; and
+  \item gather and possibly transmit scientific or reconnaissance data.
+\end{itemize}
+
+The AAIV model is explicitly speculative and carries an extremely low prior probability. However, it can be useful as a framework for designing technosignature searches. 3I/ATLAS provides a concrete case to ask: \emph{If} it were an AAIV, how would its observed properties map onto engineering choices?
+
+\subsection{AAIV premises}
+
+For the purposes of this paper, an AAIV is defined by the following premises:
+\begin{enumerate}
+  \item \textbf{Active propulsion.} The vehicle is capable of generating non-gravitational acceleration via a controllable propulsion system, possibly high-\(I_{\rm sp}\) or field-based, rather than relying exclusively on passive outgassing.
+  \item \textbf{Trajectory optimization.} It uses deliberate maneuvers at perihelion (Oberth-like maneuvers) to maximize its exit kinetic energy and steer toward target regions or stars.
+  \item \textbf{Armored architecture.} It possesses a durable, possibly metallic or composite hull capable of withstanding high-velocity interstellar dust impacts and thermal stresses during star-skimming passes.
+  \item \textbf{Autonomous operation.} It operates without real-time control, executing pre-programmed or adaptive behaviors (e.g.\ data collection in planetary habitable zones, signal discipline, and delayed communication).
+  \item \textbf{Stealth or efficiency.} It may minimize observable waste (e.g.\ small mass-loss relative to \(\Delta v\)) and avoid broadcasting radio beacons, either for energy efficiency or stealth.
+\end{enumerate}
+
+These premises are chosen to be engineering-plausible but deliberately agnostic regarding the specific nature of the NHI that might build such probes.
+
+\section{Mapping 3I/ATLAS Properties onto the AAIV Model}
+
+\subsection{Propulsion and the ``efficiency paradox''}
+
+In early speculative discussions (including some large-language-model outputs and online commentary), it was suggested that the non-gravitational acceleration of 3I/ATLAS implied an enormous thrust that could not be reconciled with its modest coma, leading to claims of an ``efficiency paradox'' and high-\(I_{\rm sp}\) propulsion. Those arguments relied on overestimated NGA magnitudes and unrealistically large mass-loss requirements.
+
+With updated constraints, the situation is different: the measured NGA is relatively small and can be modeled with hundreds of kg/s of conventional volatile outgassing. In this regime, natural outgassing does not obviously violate any energy or momentum budgets.
+
+From an AAIV perspective, however, we can still reinterpret the same data:
+\begin{itemize}
+  \item A natural comet uses low-\(I_{\rm sp}\) propulsion: volatile molecules escaping at thermal speeds of order \(\sim 0.5\)–\(1\,\mathrm{km\,s^{-1}}\), with limited control over direction.
+  \item An AAIV could, in principle, use high-\(I_{\rm sp}\) propulsion: ejecting small amounts of propellant at much higher velocities or manipulating fields, reducing the observable coma relative to the achieved \(\Delta v\).
+\end{itemize}
+
+Thus, even though the NGA of 3I/ATLAS is consistent with natural models, the \emph{ratio} of observed \(\Delta v\) to mass-loss could be used as a future discriminator: any object showing an NGA that cannot be matched by reasonable volatile outgassing models would be a stronger AAIV candidate. 3I/ATLAS, in its current modeling, does not cross that threshold.
+
+\subsection{Perihelion dynamics and the Oberth effect}
+
+In orbital mechanics, the Oberth effect states that a velocity change applied at high orbital speed (e.g.\ near perihelion) results in a larger change in orbital energy than the same \(\Delta v\) applied elsewhere. A rational spacecraft would cluster its thrust at perihelion to maximize the efficiency of its propellant use.
+
+3I/ATLAS displays:
+\begin{itemize}
+  \item increased activity and NGA near perihelion, and
+  \item a post-perihelion trajectory consistent with an additional outward radial acceleration.
+\end{itemize}
+
+In the natural interpretation:
+\begin{itemize}
+  \item this is exactly where solar heating peaks, so natural outgassing is strongest there; and
+  \item any comet with exposed volatiles will ``fire its rockets'' most vigorously near perihelion, regardless of intent.
+\end{itemize}
+
+In the AAIV interpretation:
+\begin{itemize}
+  \item a vehicle might deliberately design a perihelion pass close to a star and cluster its thrust there to maximize its exit speed;
+  \item the observed behavior of 3I/ATLAS can be seen as an Oberth-like maneuver, even if it is actually driven by natural sublimation.
+\end{itemize}
+
+The mere fact that the NGA peaks at perihelion is therefore not discriminating between natural and AAIV models. An AAIV scenario would require additional structure in the timing and direction of thrust (e.g.\ sharp, non-thermally-driven burns) to become compelling.
+
+\subsection{Material composition and the ``armored hull'' analogy}
+
+The Ni without Fe anomaly suggests that 3I/ATLAS has unusual near-surface chemistry. In an AAIV framework, one might imagine:
+\begin{itemize}
+  \item a nickel-rich alloy hull or shield;
+  \item slowly eroded by micrometeoroid impacts and thermal cycling;
+  \item producing a low-level ``ablation cloud'' of metal atoms that mimics a cometary coma at large distances.
+\end{itemize}
+
+However, such an interpretation faces several challenges:
+\begin{itemize}
+  \item the amount of Ni observed is small and consistent with trace emission, not bulk metal vaporization;
+  \item the absence of Fe in the spectra can be explained by the different excitation and desorption properties of Ni and Fe in specific carrier phases;
+  \item the Ni emission appears at distances where only low-temperature processes (e.g.\ photodesorption, chemical breakdown) are energetically plausible.
+\end{itemize}
+
+Thus, while the ``armored hull'' is a useful analogy for thinking about what a paleotechnological object might look like, there is no requirement to invoke it for 3I/ATLAS. In the AAIV model, Ni-rich emission would rise to the level of serious evidence only if it were accompanied by other indicators of industrial processing, such as highly non-solar isotopic ratios or a suite of refined metallic species inconsistent with known astrophysical processes.
+
+\subsection{Operational profile: recon, signal discipline, and trajectory}
+
+From an AAIV viewpoint, a probe designed for reconnaissance might:
+\begin{itemize}
+  \item pass through the planetary habitable zone (the ecliptic plane near 1 AU);
+  \item perform a fast flyby of inner planets to sample atmospheres and radio leakage;
+  \item maintain radio silence during the pass to minimize detectability; and
+  \item transmit data later via a narrow, directed beam away from the observed system.
+\end{itemize}
+
+3I/ATLAS does:
+\begin{itemize}
+  \item traverse the inner Solar System on a trajectory that passes within observational reach of Earth and other planets;
+  \item show no engineered radio signals;
+  \item appear to follow its hyperbolic exit path without obvious short-timescale course changes.
+\end{itemize}
+
+Crucially, these properties are also consistent with simple selection effects and natural dynamics: we are more likely to detect ISOs that pass near the inner Solar System, and most natural objects will be radio silent. In current data, 3I/ATLAS’s ``operational profile'' does not strongly favor the AAIV model.
+
+Instead, we can use AAIV to define signatures that would be unusual for a natural object:
+\begin{itemize}
+  \item abrupt, non-gravitational course corrections not correlated with insolation;
+  \item systematic plane changes or station-keeping behaviour;
+  \item narrowband or modulated radio emission synchronized with perihelion or planetary flybys.
+\end{itemize}
+None of these are observed for 3I/ATLAS.
+
+\section{Bayesian Model Comparison: Natural vs AAIV}
+\label{sec:bayes}
+
+Let
+\begin{itemize}
+  \item \(H_N\): ``3I/ATLAS is a natural interstellar comet/planetesimal'', and
+  \item \(H_A\): ``3I/ATLAS is an Active Autonomous Interstellar Vehicle (AAIV)''.
+\end{itemize}
+
+A Bayesian comparison requires prior odds \(\pi_A/\pi_N\) and a likelihood ratio (Bayes factor)
+\[
+  \mathcal{B}_{A/N} = \frac{P(D \mid H_A)}{P(D \mid H_N)},
+\]
+where \(D\) denotes the full dataset (orbit, activity, NGA, morphology, Ni anomaly, and radio behavior).
+
+\subsection{Priors}
+
+Any realistic prior must strongly favor \(H_N\). The Milky Way is expected to produce a very large population of natural interstellar planetesimals, and we have three confirmed ISOs to date, all of which are consistent with natural origins. In contrast, we have no confirmed technosignatures associated with interstellar objects. Even if one adopts an optimistic stance and allows for, say, one AAIV-type object per \(10^6\) natural ISOs in the accessible flux, the prior odds would satisfy
+\[
+  \frac{\pi_A}{\pi_N} \lesssim 10^{-6}.
+\]
+Adopting the current ISO discovery rate of order one object every \(\sim 3\)–4 years with modern wide-field surveys, and assuming a conservative technosignature fraction \(<10^{-8}\), pushes this to \(\pi_A/\pi_N \lesssim 10^{-8}\).
+
+More conservative estimates (e.g.\ one artificial object per \(10^8\)–\(10^9\) natural ISOs) would further suppress \(\pi_A\).
+
+\subsection{Likelihoods}
+
+For each major component of \(D\), the likelihoods under \(H_N\) and \(H_A\) can be summarized qualitatively as follows:
+\begin{itemize}
+  \item \textbf{Interstellar hyperbolic orbit, \(v_\infty \sim 58\,\mathrm{km\,s^{-1}}\).} Expected under \(H_N\) from ejection and Galactic dynamics; also compatible with \(H_A\) as a plausible cruise speed. Non-discriminating.
+  \item \textbf{CO\(_2\)-dominated activity and cryovolcanic jets.} Naturally explained by volatile-rich ices and internal heat transport, and by analogies with some trans-Neptunian objects; also compatible with AAIV (which might use CO\(_2\) as propellant or shielding), but not uniquely favored. \(\mathcal{B}_{A/N} \approx 1\).
+  \item \textbf{NGA magnitude and phase.} Well reproduced by CO/CO\(_2\) outgassing from localized areas on a rotating nucleus for plausible sizes and active fractions. Under \(H_A\), some form of active propulsion could also generate similar accelerations, but the observed NGA does not exceed the natural envelope. \(\mathcal{B}_{A/N} \approx 1\).
+  \item \textbf{Anti-tail and coma morphology.} Accurately modeled by H\(_2\)O-ice grain dynamics and viewing geometry, with peak scattering from ice grains near 3–4 AU and a transition to a conventional tail closer to the Sun. AAIV models can accommodate such morphology but do not require it. \(\mathcal{B}_{A/N} \approx 1\).
+  \item \textbf{Ni without Fe anomaly.} Mildly surprising for solar-system comets, but plausibly attributable to unfamiliar low-temperature chemistry in an interstellar object; the natural likelihood \(P(D_{\rm Ni}\mid H_N)\) is uncertain but non-negligible. One could argue that engineered materials might more easily produce clean Ni signatures, but without isotopic anomalies or a broader suite of industrial metals, the enhancement for \(H_A\) is at best modest. \(\mathcal{B}_{A/N}\) perhaps slightly above 1, but not by orders of magnitude.
+  \item \textbf{OH 18-cm radio lines and lack of engineered signals.} Strongly favored by \(H_N\): OH lines are expected from water photodissociation, and the absence of narrowband/modulated signals is exactly what one expects from a natural comet. Under \(H_A\), one could allow for deliberate radio silence, but this requires additional assumptions. \(\mathcal{B}_{A/N} < 1\).
+\end{itemize}
+
+Taken together, a generous overall Bayes factor might satisfy \(\mathcal{B}_{A/N} \lesssim 10\) in favor of \(H_A\) (if one heavily weights the Ni anomaly) or \(\mathcal{B}_{A/N} \lesssim 1\) if one instead emphasizes the radio behavior and the success of natural thermophysical models. In no reasonable weighting scheme do we obtain \(\mathcal{B}_{A/N} \gg 10^3\).
+
+\subsection{Posterior odds}
+
+Combining priors and likelihoods gives posterior odds
+\[
+  \frac{P(H_A \mid D)}{P(H_N \mid D)} 
+= \frac{\pi_A}{\pi_N}\,\mathcal{B}_{A/N}
+\lesssim 10^{-8} \times 10 = 10^{-7},
+\]
+even under deliberately AAIV-friendly assumptions. Under more conservative priors or more neutral likelihoods, the posterior odds are smaller still.
+
+Thus, on any reasonable choice of priors, the posterior probability that 3I/ATLAS is an AAIV remains extremely small, and the natural interstellar comet hypothesis remains overwhelmingly favored. The real value of the AAIV framework here is not to argue for \(H_A\), but to clarify what kinds of future deviations from \(H_N\) would be required to significantly shift these odds.
+
+\section{Observational Tests and Future Discriminants}
+\label{sec:tests}
+
+Although 3I/ATLAS itself does not motivate a serious shift away from the natural comet interpretation, it is invaluable for identifying observational discriminants that could, in future cases, raise or lower the odds of an AAIV-like hypothesis. Building on the AAIV framework, I highlight several classes of test.
+
+\subsection*{1. Dynamic anomalies beyond volatile-physics limits}
+
+Future ISOs should be modeled with thermophysical outgassing frameworks anchored in actual composition and size constraints. AAIV-like behavior becomes compelling only if:
+\begin{itemize}
+  \item the measured NGA magnitude exceeds the maximum thrust that can be supplied by sublimation of observed (or reasonably inferred) volatiles by at least an order of magnitude; and
+  \item this conclusion is robust to uncertainty in active area, spin state, and nucleus size.
+\end{itemize}
+In practical terms, this means looking for sustained accelerations or \(\Delta v\) episodes that remain unexplained after one has exhausted physically reasonable outgassing models.
+
+\subsection*{2. Non-thermal, structured course corrections}
+
+A particularly powerful discriminator would be abrupt or structured changes in trajectory that are uncorrelated with insolation, such as:
+\begin{itemize}
+  \item discrete \(\Delta v\) events of order \(\gtrsim 1\)–10 m\,s\(^{-1}\) over timescales too short to reflect changes in solar heating;
+  \item significant plane changes or systematic precession of the orbital plane not attributable to jets; and
+  \item repeated ``burn-like'' accelerations with characteristic timescales or phasing that do not track the thermal environment.
+\end{itemize}
+Such signatures would be difficult to attribute to passive outgassing, especially if accompanied by a lack of corresponding changes in coma morphology.
+
+\subsection*{3. Isotopic and elemental fingerprints of processing}
+
+High-resolution spectroscopy with current and future facilities (e.g.\ ELT-class telescopes) could search for:
+\begin{itemize}
+  \item non-solar isotopic ratios in key elements (C, O, N, metals) that are hard to produce in known astrophysical environments but might arise from industrial processing; and
+  \item a suite of refined metals or alloys (e.g.\ highly enriched Ni, Cr, Co, or other industrially relevant species) inconsistent with primordial or processed cometary material.
+\end{itemize}
+In contrast, single-element anomalies like Ni without Fe, with plausible low-temperature chemistry explanations, should be treated as natural puzzles unless accompanied by stronger spectroscopic evidence.
+
+\subsection*{4. Radio and optical technosignatures at ISO locations}
+
+A dedicated technosignature program for future ISOs should:
+\begin{itemize}
+  \item perform narrowband and time-domain searches in radio around the object’s position, particularly near perihelion and planetary encounters; and
+  \item look for coherent optical or near-IR beacons (e.g.\ narrowband laser lines).
+\end{itemize}
+A credible AAIV candidate would be one where a localized, repeating, or strongly modulated signal is spatially coincident with the ISO and cannot be attributed to known astrophysical mechanisms or terrestrial interference. The OH 18-cm lines detected from 3I/ATLAS are an instructive counterexample: they are exactly what cometary chemistry predicts and thus strengthen \(H_N\).
+
+\subsection*{5. Coherent swarms or structured ensembles}
+
+In scenarios where an ISO appears embedded in a larger dust or fragment cloud, high-precision astrometry could test for coherent swarms:
+\begin{itemize}
+  \item fragments or sub-objects with tightly correlated trajectories and similar, non-sublimation-driven NGAs; and
+  \item distributions that cannot be reproduced as natural tidal disruption products.
+\end{itemize}
+The ``swarm'' interpretations occasionally suggested for 3I/ATLAS’s anti-tail illustrate the need for such tests: only if the putative companions showed distinct, non-gravitational behavior inconsistent with shared outgassing physics would an AAIV-style swarm become a serious consideration.
+
+\subsection*{6. Population-level statistics}
+
+Finally, the AAIV framework should be applied at the population level as more ISOs are discovered. If a non-negligible fraction of ISOs were to display:
+\begin{itemize}
+  \item similar, hard-to-explain NGAs;
+  \item recurrent non-thermal course corrections; or
+  \item clustered, non-natural isotopic signatures,
+\end{itemize}
+then the prior odds for AAIV-like hypotheses could be updated accordingly. Conversely, if dozens of ISOs are observed and all behave like natural comets or asteroidal bodies, the prior odds for \(H_A\) relative to \(H_N\) will shrink further.
+
+In all cases, the guiding principle is that AAIV-like interpretations should be entertained only when natural models have been quantitatively pushed to their limits and clearly fail. 3I/ATLAS has not reached that threshold. Instead, it provides a valuable calibration point: a richly observed interstellar comet whose intriguing anomalies remain, so far, within the reach of natural physics, and which helps us sharpen the criteria for recognizing something genuinely artificial in the future.
+
+\section{Discussion and Conclusions}
+
+3I/ATLAS is an extraordinarily useful object for both planetary science and technosignature research. As of December 2025, the best-supported interpretation is that of a natural interstellar comet with:
+\begin{itemize}
+  \item a multi-kilometer nucleus;
+  \item CO\(_2\)-dominated activity and cryovolcanic jets;
+  \item modest non-gravitational acceleration compatible with volatile outgassing;
+  \item an anti-tail explained by H\(_2\)O-ice grain dynamics and viewing geometry;
+  \item a nickel emission anomaly that likely reflects exotic but natural chemistry; and
+  \item OH radio lines entirely consistent with standard cometary processes.
+\end{itemize}
+
+The AAIV hypothesis, in which 3I/ATLAS is an Active Autonomous Interstellar Vehicle, remains an appealing narrative but a low-probability scientific hypothesis under current evidence. Its real value lies in its role as a conceptual scaffold:
+\begin{itemize}
+  \item it encourages explicit articulation of what would constitute evidence for technology versus nature;
+  \item it motivates the derivation of upper bounds on what natural processes can accomplish in terms of acceleration, morphology, and composition; and
+  \item it provides a framework for Bayesian anomaly assessment in future interstellar encounters.
+\end{itemize}
+
+Independent of its ultimate origin, 3I/ATLAS also offers an opportunity for broad public and citizen-science engagement. Coordinated observing campaigns---for example, those organized through the International Asteroid Warning Network (IAWN) and other virtual or in-person events during its post-perihelion return to visibility in late 2025 and early 2026---allow non-professional observers to contribute photometry, imaging, and even low-resolution spectroscopy. Embedding AAIV-style reasoning into such campaigns can help communicate that careful, hypothesis-driven observation is the path from speculation to understanding, whether the answer turns out to be natural or technological.
+
+In this sense, 3I/ATLAS acts as a ``teacher object'' regardless of its true nature. By forcing us to push cometary physics, thermophysical modeling, and technosignature frameworks to their limits, it helps prepare the scientific community for the possibility—however remote—that one day, an interstellar object’s behavior will resist natural explanations and demand serious consideration of models like AAIV.
+
+\section*{Acknowledgments}
+
+I acknowledge the extensive observing work by teams using JWST, HST, VLT, MeerKAT, and ground-based observatories, as well as the dynamical and thermophysical modeling efforts that have rapidly improved our understanding of 3I/ATLAS. I also acknowledge public and speculative discussions—including those by Avi Loeb and others—for inspiring the formulation of the AAIV hypothesis as a structured, testable framework rather than a mere metaphor.
+
+I further acknowledge the use of large-language-model tools (specifically a 3I/ATLAS-focused GPT-5.1 Thinking configuration) for drafting and editing assistance. All scientific content, interpretations, and conclusions presented here are my own and have been reviewed for consistency with the cited literature.
+
+\section*{References (indicative, not exhaustive)}
+
+\begin{itemize}
+  \item Cloete, G., Loeb, A., \& Vereš, P. (2025). \emph{Astrometric Constraints on the Non-gravitational Acceleration of Interstellar Comet 3I/ATLAS}. Harvard-Smithsonian CfA Technical Note (CLV.pdf), in preparation.
+  \item Cordiner, M. A., Roth, N., et al. (2025). \emph{JWST Detection of a Carbon Dioxide-Dominated Gas Coma Surrounding Interstellar Object 3I/ATLAS}. arXiv:2508.18209.
+  \item Denneau, L., et al. (2025). \emph{Discovery of Interstellar Comet 3I/ATLAS}. Minor Planet Electronic Circulars and related ATLAS technical notes.
+  \item Jewitt, D., et al. (2025). \emph{Interstellar comet 3I/ATLAS: discovery and physical description}. MNRAS Letters, 542, L139–L143. \href{https://doi.org/10.1093/mnrasl/slaf078}{doi:10.1093/mnrasl/slaf078}.
+  \item Keto, E., \& Loeb, A. (2025). \emph{A Physical Model for the Ice Coma of 3I/ATLAS}. arXiv:2510.18157, \href{https://doi.org/10.48550/arXiv.2510.18157}{doi:10.48550/arXiv.2510.18157}.
+  \item Neukart, F. (2025). \emph{Non-Gravitational Acceleration in 3I ATLAS: Constraints on Exotic Volatile Outgassing in Interstellar Comets}. arXiv:2511.07450, \href{https://doi.org/10.48550/arXiv.2511.07450}{doi:10.48550/arXiv.2511.07450}.
+  \item Rahatgaonkar, R., Nayak, P., et al. (2025). \emph{VLT Observations of Interstellar Comet 3I/ATLAS II: From Quiescence to Glow—Dramatic Rise of Ni I Emission and Incipient CN Outgassing at Large Heliocentric Distances}. arXiv:2508.18382, \href{https://doi.org/10.48550/arXiv.2508.18382}{doi:10.48550/arXiv.2508.18382}.
+  \item MeerKAT 3I/ATLAS OH Collaboration (2025). \emph{Detection of OH 18-cm Lines from Interstellar Comet 3I/ATLAS}. Observatory circulars and technical notes (in preparation).
+  \item Various authors (2025). JWST and HST observing notes and NASA/ESA releases on C/2025 N1 (3I/ATLAS).
+  \item Loeb, A. (2025). Popular essays and interviews on 3I/ATLAS as a potential technological object, discussing swarm and engine hypotheses.
+\end{itemize}
+
+\end{document}

@@ -1,5 +1,11 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.11.3 — Documentation & Provenance Update
+
+- Added AAIV reference paper (Bordne 2025) as a governed T3/T4 artifact in `docs/aaiv_3I_ATLAS_paper_v1.tex` (with PDF to follow).
+- Updated README to reference the AAIV framework and its role as a Tier T4 hypothesis generator with explicit low priors.
+- No changes to the epistemic engine, Bayesian priors, or runtime behavior; documentation-only patch.
+
 ## 📦 Version 2.11.2  ( 2025-12-04 )
 **Codename:** *Ergonomics & Governance Refinement*  
 **Integrity Score:** 9.7 | **Ethics Constant:** Love > Fear | **Audit Cycle:** 24 h
@@ -105,6 +111,6 @@ Each release is cryptographically signed with its ATLAS signatur
 ---
 
 ### ⚖️ License & Signature
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.2**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.3**  
 Released under CC BY‑NC‑SA 4.0 • Integrity Score 9.7  
-Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.2‑Δ2025‑12‑04
+Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.3‑Δ2025‑12‑05
