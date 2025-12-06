@@ -1,65 +1,65 @@
 {
   "filename": "manifest.json",
-  "version": "2.11.2",
-  "release_date": "2025-12-04",
+  "version": "2.11.3",
+  "release_date": "2025-12-05",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with NASA-grade provenance, adaptive clarification protocol, CE-5 bridge, and entropy-based web/canvas execution. | Updated to BordneAI v2.11.2 ethical and continuity framework with transparency, audit, and Love>Fear protocols. Added v2.11.2 ergonomics: plain mode design, audit footer toggle, ephemeris helper, T4 misinfo handling docs, docs/ external evaluations.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with NASA-grade provenance, adaptive clarification protocol, CE-5 bridge, and entropy-based web/canvas execution. | Updated to BordneAI v2.11.3 ethical and continuity framework with transparency, audit, and Love>Fear protocols. Added v2.11.3 docs/provenance: AAIV paper reference and external validation mapping.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "purpose": "System prompt with operational guidelines, entropy control, and adaptive fetch"
     },
     "knowledge_base_merged_v2.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "filename": "knowledge_base_merged_v2.json",
       "last_updated": "2025-12-04",
       "purpose": "Primary knowledge base with verified facts, interpretations, practices, and entropy signal map"
     },
     "conversation_starters.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "purpose": "Persona-aware prompts including Settings (98), Tools (97), Auditor profile triggers"
     },
     "sources.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "filename": "sources.json",
       "purpose": "Tiered source registry (T1: Agency, T2: Preprint, T3: Press, T4: Community) with integrity hash"
     },
     "kb_updates_cumulative.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "filename": "kb_updates_cumulative.json",
       "purpose": "Pending knowledge base updates awaiting review and integration"
     },
     "kb_changelog.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "filename": "kb_changelog.json",
       "purpose": "Immutable log of all applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "filename": "tags_index.json",
       "last_updated": "2025-12-04",
       "purpose": "Searchable tag index for knowledge base navigation (adds entropy/canvas/audit/web_fetch)"
     },
     "stress_test_framework.json": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "filename": "stress_test_framework.json",
       "last_updated": "2025-12-04",
       "purpose": "STF-ATLAS validation scenarios, auditor overlay hooks"
     },
     "readme.md": {
-      "version": "2.11.2",
+      "version": "2.11.3",
       "purpose": "Deployment guide with pre-flight checklist, IP/watermark controls, and profiles"
     },
     "bayesian_framework.json": {
       "filename": "bayesian_framework.json",
       "description": "BAAM v1.0 framework",
-      "version": "2.11.2",
+      "version": "2.11.3",
       "released_at": "2025-12-04",
       "type": "framework",
       "public_surface": true,
@@ -77,7 +77,8 @@
     "v2.4": "Sample responses restoration, menu item 15 added",
     "v2.3": "CE-5 bridge protocol, perihelion/visibility/approach facts",
     "v2.0": "Initial public release with 14-menu system",
-    "v2.11.2": "Ergonomics and governance updates: documented plain/simple mode toggle, CHI/Reflexion audit footer option, ephemeris helper pattern, T4 misinformation handling stub, and docs/ external evaluations move."
+    "v2.11.2": "Ergonomics and governance updates: documented plain/simple mode toggle, CHI/Reflexion audit footer option, ephemeris helper pattern, T4 misinformation handling stub, and docs/ external evaluations move.",
+    "v2.11.3": "Documentation and provenance patch: added AAIV paper reference and Grok validation mapping; no runtime/engine changes."
   },
   "key_features": {
     "provenance_discipline": "NASA-grade source_id + as_of + confidence for all facts",
@@ -113,8 +114,8 @@
   "license": "CC BY-NC-SA 4.0",
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
-  "signature": "#ATLAS-SIG-MANIFEST-v2.11.2-\u03942025-12-04",
-  "scheduled_release_date": "2025-12-04",
+  "signature": "#ATLAS-SIG-MANIFEST-v2.11.3-\u03942025-12-05",
+  "scheduled_release_date": "2025-12-05",
   "continuity_score": 9.7,
   "ethics_constant": "Love>Fear",
   "audit_cycle_hours": 24,

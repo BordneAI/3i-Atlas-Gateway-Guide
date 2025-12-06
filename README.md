@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.11.2
+# 🌌 3i/ATLAS Gateway Guide — v2.11.3
 ### *BordneAI Continuity Update (Phase‑11 Integration)*  
-Version: **2.11.2** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
+Version: **2.11.3** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
 **Validation:** 9.9/10 (Grok peer review, v2.11.2, Dec 2025) · 9.85/10 (Grok aggregate peer review, v2.11.1) · 9.75/10 (human peer review, v2.10.1 baseline)
 
 ---
@@ -35,7 +35,12 @@ This version introduces real‑time Reflexion audits, tiered truth transparency,
   Grok later issued an **aggregate meta-update** scoring v2.11.1 at **9.85 / 10** overall (see addendum in the follow-up review).  
   → See: [`docs/peer_review_grok_followup_v2_11_1.md`](./docs/peer_review_grok_followup_v2_11_1.md)
 
-These external evaluations are **not** a substitute for human scientific peer review, but they provide transparent, reproducible snapshots of system behavior and help guide future versions (v2.11.2+).
+- **AAIV Scientific Framework (T4 hypothesis generator)**  
+  • Bordne, D. (2025). *The Active Autonomous Interstellar Vehicle (AAIV) Model for 3I/ATLAS: A technosignature-aware, speculative framework anchored in current observations of C/2025 N1.*  
+    → `docs/aaiv_3I_ATLAS_paper_v1.pdf` (author version, CC BY-NC-SA 4.0)  
+    This paper is treated as a T2/T3 artifact (documented reasoning) that defines the AAIV hypothesis as a Tier T4 hypothesis generator with explicit low priors and Bayesian anomaly tests.
+
+These external evaluations are **not** a substitute for human scientific peer review, but they provide transparent, reproducible snapshots of system behavior and help guide future versions (v2.11.3+).
 
 ---
 
@@ -44,7 +49,7 @@ These external evaluations are **not** a substitute for human scientific peer re
 |-----------|-----------|
 | **Love > Fear Constant** | Primary ethical equilibrium; stabilizes decision polarity. |
 | **DaisyAI Ethical Kernel v1.3** | Implements tiered truth logic with empathy weighting. |
-| **Reflexion v2.11.2** | Real‑time self‑validation and F‑tier anomaly detection. |
+| **Reflexion v2.11.3** | Real‑time self‑validation and F‑tier anomaly detection. |
 | **Continuity Health Index ( CHI )** | Integrity scoring system for data coherence and reliability. |
 | **EOS Transparency Layer** | Provenance and confidence labeling for all knowledge sources. |
 
@@ -77,14 +82,14 @@ Each reasoning cycle automatically pairs **C‑tier capability** with the approp
 | File | Function |
 |------|-----------|
 | `manifest.json` | Core system manifest and release metadata |
-| `bayesian_framework.json` | Ethical Bayesian reasoning engine (v2.11.2) |
+| `bayesian_framework.json` | Ethical Bayesian reasoning engine (v2.11.3) |
 | `normalize_updates.js` | Reflexion normalization + continuity auditing |
-| `stress_test_framework.json` | CHI + Integrity Pulse tests (v2.11.2) |
-| `sources.json` | EOS provenance + confidence tiers (v2.11.2) |
-| `knowledge_base_merged_v2.json` | Tier‑tagged knowledge corpus (v2.11.2) |
-| `kb_updates_cumulative.json` | Live update queue with Reflexion metrics (v2.11.2) |
-| `kb_changelog.json` | Immutable audit record with CHI history (v2.11.2) |
-| `tags_index.json` | Hierarchical tag taxonomy (includes ethics & continuity) (v2.11.2) |
+| `stress_test_framework.json` | CHI + Integrity Pulse tests (v2.11.3) |
+| `sources.json` | EOS provenance + confidence tiers (v2.11.3) |
+| `knowledge_base_merged_v2.json` | Tier‑tagged knowledge corpus (v2.11.3) |
+| `kb_updates_cumulative.json` | Live update queue with Reflexion metrics (v2.11.3) |
+| `kb_changelog.json` | Immutable audit record with CHI history (v2.11.3) |
+| `tags_index.json` | Hierarchical tag taxonomy (includes ethics & continuity) (v2.11.3) |
 
 ---
 
@@ -130,6 +135,6 @@ All responses are transparency‑verified and self‑audited for t
 ---
 
 ## ⚖️ License & Attribution
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.2**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.3**  
 Released under [CC BY‑NC‑SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
-Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.2‑Δ2025‑12‑04
+Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.3‑Δ2025‑12‑05
