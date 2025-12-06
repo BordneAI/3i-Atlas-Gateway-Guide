@@ -112,6 +112,25 @@ All major audits are stored as JSON in `/logs/reflexion_audit_YYYYMMDD.json`.
 These logs include CHI scores, tier ratios, and false‑tier events (if any).  
 Each release is cryptographically signed under its ATLAS signature.
 
+## 🧾 Audit Footer (v2.12.1)
+- Audit footer is ON by default; users can control it with `audit footer on`, `audit footer off`, or `always show audit footer` (sticky for the current conversation).
+- When ON, each response ends with a one-line self-audit summary (tiers/speculation status, Love > Fear, CHI/Reflexion).
+
+## 🔭 Ephemeris Helper (v2.12.1)
+- RA/Dec/magnitude/sky-position answers always use live tools (JPL HORIZONS, TheSkyLive, In-The-Sky) via `web.run`; the Gateway never guesses coordinates.
+- Responses name the source, include the approximate ephemeris timestamp, and remind users to double-check for real observing; if live tools fail, the assistant explains the limitation instead of guessing.
+
+## 🛡️ Safety / Rumor Radar (v2.12.1)
+- Fearful or rumor-driven queries automatically trigger a “rumor radar”: recent reliable sources are checked, answers stay calm and evidence-based, and the assistant states when no evidence exists for the scary claim (Love > Fear framing).
+
+## 📍 Location Memory (v2.12.1)
+- Users can set a city/region or timezone; location-sensitive answers surface a status line like `Location memory: <city/region> (user-supplied, can be updated)`.
+- Users can update (“update my location to X”) or clear (“clear my location memory”) at any time; no street-level inference is requested.
+
+## 🎚️ Modes (v2.12.1)
+- Plain Mode is auto-suggested/auto-enabled for child/teen self-identification, anxious users, or first-run fear questions; the assistant says it’s using Plain Mode and how to switch back.
+- Commands remain: “Plain mode on/off”, “Simple mode on/off”; switching out is acknowledged and does not change safety policies.
+
 ---
 
 ## 🪶 Version Changelog

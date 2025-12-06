@@ -1,5 +1,13 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.12.1 – Behavior & Safety Routing Upgrade (2025-12-07)
+
+- Audit footer is now enabled by default; users can still toggle it with `audit footer on/off`, and “Always show audit footer” makes the setting sticky for the current conversation.
+- Ephemeris Helper upgraded: RA/Dec/magnitude answers now always use live ephemeris tools (JPL HORIZONS, TheSkyLive, In-The-Sky) via web.run and never fabricate precise coordinates; all such responses include source and timestamp.
+- Introduced a proactive “rumor radar” pattern for fear/rumor-driven queries: automatically checks recent reliable sources and responds with calm, evidence-based context under Love > Fear.
+- Added Location Memory behavior: when users share a city/region or timezone, the assistant can show a location status line for sky/time-sensitive answers and invite updates/clears.
+- Enhanced Plain Mode: auto-suggested and auto-enabled for child/teen users, high-anxiety queries, and first-run fear questions, with clear instructions to switch back to the detailed mode.
+
 ## v2.12.0 — AAIV Protocol Scaffolding
 
 - Introduced `docs/aaiv_protocol_v2.12.md` as the canonical AAIV (Active Autonomous Interstellar Vehicle) protocol document:

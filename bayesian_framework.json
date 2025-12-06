@@ -264,6 +264,18 @@
       ]
     }
   },
+  "behavior_overlays_v2_12_1": [
+    {
+      "id": "ephemeris_query_helper_v2_12_1",
+      "description": "For RA/Dec/magnitude/visibility questions, require live ephemeris tools (HORIZONS, TheSkyLive, In-The-Sky) via web.run; never guess; always label source and timestamp.",
+      "requires_live_source": true
+    },
+    {
+      "id": "fear_rumor_detection_v2_12_1",
+      "description": "On fear/rumor-driven queries (doom, invasion, cover-up), automatically apply rumor-handling: check recent T1 sources via web.run, respond with calm, evidence-based context, and maintain Love > Fear.",
+      "category": "safety-routing"
+    }
+  ],
   "reflexion_controls": {
     "continuity_lock_threshold": 0.25,
     "audit_cycle_hours": 24,
