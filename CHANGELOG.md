@@ -1,5 +1,18 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.12.0 — AAIV Protocol Scaffolding
+
+- Introduced `docs/aaiv_protocol_v2.12.md` as the canonical AAIV (Active Autonomous Interstellar Vehicle) protocol document:
+  - Treats AAIV strictly as a **Tier T4 hypothesis generator** with **explicit low priors** (π_A/π_N ≲ 10⁻⁸).
+  - Codifies 3I/ATLAS as a **“teacher object”** for technosignature-aware comet science, not as evidence of artificial origin.
+  - Requires **Bayesian anomaly assessment** and **Love > Fear** framing for all AAIV-mode responses.
+- Updated `manifest.json` to:
+  - Bump project metadata to **v2.12.0**.
+  - Register the AAIV protocol doc as a public protocol surface.
+  - Add a v2.12.0 changelog summary entry noting that AAIV remains **opt-in** and **non-default**.
+- No changes to the underlying epistemic engine, KB tiering, or default behavior:
+  - AAIV handling only activates when the user explicitly requests artificial-probe analysis or AAIV framing.
+
 ## v2.11.3 — Documentation & Provenance Update
 
 - Added AAIV reference paper (Bordne 2025) as a governed T3/T4 artifact in `docs/aaiv_3I_ATLAS_paper_v1.tex` (with PDF to follow).
@@ -110,7 +123,7 @@ Each release is cryptographically signed with its ATLAS signatur
 
 ---
 
-### ⚖️ License & Signature
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.3**  
+### ⚖️ License & Signature
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.12.0**  
 Released under CC BY‑NC‑SA 4.0 • Integrity Score 9.7  
-Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.3‑Δ2025‑12‑05
+Signature #ATLAS‑SIG‑CHANGELOG‑v2.12.0‑Δ2025‑12‑05
