@@ -483,10 +483,32 @@
         ],
         "as_of": "2025-12-04"
       }
+    },
+    {
+      "update_id": "kb_meta_v2_12_0_docs_overlay",
+      "applied_at": "2025-12-06T00:00:00Z",
+      "applied_in_files": [
+        "docs/aaiv_3I_ATLAS_paper_v1.pdf",
+        "docs/aaiv_protocol_v2.12.md",
+        "docs/aaiv_agent_spec_v2.12.md",
+        "manifest.json",
+        "README.md",
+        "BOOTLOADER.md",
+        "instructions.txt",
+        "sources.json"
+      ],
+      "entry": {
+        "type": "meta",
+        "status": "logged",
+        "summary": "No KB content changes vs v2.11.2; v2.12.0 release adds AAIV documentation layer and AAIV Assessment Agent spec as T4 scaffolding on top of the existing KB.",
+        "kb_version": "2.11.2",
+        "package_version": "2.12.0",
+        "as_of": "2025-12-06"
+      }
     }
   ],
   "meta": {
-    "total_updates_applied": 18,
+    "total_updates_applied": 19,
     "version_span": "v2.10 → v2.11.2",
     "integrity_commitment": "All updates logged immutably, no retroactive edits",
     "provenance_discipline": "Every applied change includes source_ids, as_of dates, and confidence levels",
@@ -500,11 +522,11 @@
     "json_validation": "OK",
     "encoding": "UTF-8",
     "timestamp": "2025-11-07T12:00:00Z",
-    "applied_count": 18
+    "applied_count": 19
   },
   "entropy": {
     "level": "medium-high",
-    "applied_items": 18,
+    "applied_items": 19,
     "notes": "Broader integration touching sources, KB, instructions, starters, tags, and STF."
   },
   "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.11.2-Δ2025-12-04",

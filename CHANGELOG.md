@@ -6,6 +6,9 @@
   - Treats AAIV strictly as a **Tier T4 hypothesis generator** with **explicit low priors** (π_A/π_N ≲ 10⁻⁸).
   - Codifies 3I/ATLAS as a **“teacher object”** for technosignature-aware comet science, not as evidence of artificial origin.
   - Requires **Bayesian anomaly assessment** and **Love > Fear** framing for all AAIV-mode responses.
+- Added `docs/aaiv_agent_spec_v2.12.md` as the design spec for an **AAIV Assessment Agent**:
+  - Encodes how a future agent should implement the AAIV protocol (natural-first, T4-only, low priors, Love > Fear).
+  - Clarifies workflow: observation bundle → natural model pass → AAIV what-if pass → discriminant checks → Bayesian-style conclusion.
 - Updated `manifest.json` to:
   - Bump project metadata to **v2.12.0**.
   - Register the AAIV protocol doc as a public protocol surface.

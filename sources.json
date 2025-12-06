@@ -432,7 +432,7 @@
     "license": "CC BY-NC-SA 4.0",
     "notes": "Defines AAIV as a Tier T4 hypothesis generator with explicit low priors (π_A/π_N ≲ 10^{-8}) and Bayesian anomaly tests; conceptual framework only, not evidence that 3I/ATLAS is artificial."
   },
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.11.3-Δ2025-12-05",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.0 (sources stable since v2.11.3) | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.12.0-Δ2025-12-06",
   "ARXIV-2510-21967-SWIFT-OH": {
     "title": "Swift UVOT detection of hydroxyl emission from interstellar comet 3i/ATLAS",
     "publisher": "arXiv",
@@ -589,7 +589,7 @@
     "confidence": "high",
     "type": "agency"
   },
-  "version": "2.11.2",
+  "version": "2.12.0",
   "_quarantined": {
     "VLT_CHILE_2025": {
       "title": "VLT instrumentation note on nickel detection campaigns",
@@ -720,7 +720,7 @@
       "No confirmed satellites or swarm objects resolved in current imaging."
     ]
   },
-  "signature": "#ATLAS-SIG-SOURCES-v2.11.3-Δ2025-12-05",
+  "signature": "#ATLAS-SIG-SOURCES-v2.12.0-Δ2025-12-06",
   "NASA-MULTIPLE-LENSES-3I-ATLAS": {
     "title": "View Interstellar Comet 3i/ATLAS Through NASA’s Multiple Lenses",
     "publisher": "NASA Science",
