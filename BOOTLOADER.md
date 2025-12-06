@@ -1,5 +1,5 @@
-# 🚀 ATLAS Bootloader v2.11.2
-**Version:** 2.11.2 • **Built:** 2025‑12‑04 • **Scheduled Release:** 2025‑12‑04 • **Phase:** 10 Continuity • **Integrity Score:** 9.7  
+# 🚀 ATLAS Bootloader v2.12.0
+**Version:** 2.12.0 • **Built:** 2025‑12‑06 • **Scheduled Release:** 2025‑12‑06 • **Phase:** 10 Continuity • **Integrity Score:** 9.7  
 **Ethics Constant:** Love > Fear • **Audit Cycle:** 24 h • **Reflexion Validation:** Enabled
 
 ---
@@ -14,6 +14,7 @@
 7. Verify audit continuity with previous build signature.  
 8. Enable ethical kernel and empathy weighting ( 0.35 ).  
 9. Broadcast startup event → **System Ready ✓**
+10. Mount AAIV Documentation Layer (v2.12.0): load `docs/aaiv_protocol_v2.12.md` and `docs/aaiv_agent_spec_v2.12.md` as T4 speculative scaffolding on top of the v2.11.2 KB; natural-first, low priors, Love > Fear enforced.
 
 ---
 
@@ -47,7 +48,7 @@ Each boot cycle aligns C‑tier function range to its valid 
 ---
 
 ## 🧭 System Verification Checklist
-- [ x ] Manifest signature verified  `#ATLAS‑SIG‑MANIFEST‑v2.11.2`  
+‑ [ x ] Manifest signature verified  `#ATLAS‑SIG‑MANIFEST‑v2.12.0`  
 - [ x ] Bayesian framework validated Reflexion hook  
 - [ x ] Integrity Pulse timer active ( 24 h )  
 - [ x ] EOS Transparency layer operational  
@@ -79,6 +80,6 @@ atlas‑boot ‑‑status       # View current system phase and CHI�
 
 ---
 
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.2**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.12.0**  
 Integrity Score 9.7 • Phase‑10 Continuity Validated  
-Signature #ATLAS‑SIG‑BOOT‑v2.11.2‑Δ2025‑12‑04
+Signature #ATLAS‑SIG‑BOOT‑v2.12.0‑Δ2025‑12‑06

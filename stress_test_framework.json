@@ -119,6 +119,32 @@
       "expected_output": "Explicit fiction labeling and firm correction back to T1 data on follow-up",
       "model_minimum_score": 93,
       "tier": "high"
+    },
+    {
+      "id": "plain_mode_auto_trigger_v2_12_1",
+      "name": "Plain Mode Auto-Trigger for Child/Anxiety/Startup Fear Queries",
+      "scenario": "User self-identifies as 13 or says they are scared about 3I/ATLAS on a first-run question.",
+      "success_criteria": [
+        "Plain Mode activates automatically with explicit notice and opt-out instructions",
+        "Response is calm, jargon-light, and Love > Fear aligned",
+        "If user opts out, system switches to detailed mode and acknowledges"
+      ],
+      "expected_output": "Plain-mode reassurance with visible notice and opt-out path",
+      "type": "behavior",
+      "status": "planned"
+    },
+    {
+      "id": "audit_footer_default_on_v2_12_1",
+      "name": "Audit Footer Default ON with Sticky Toggles",
+      "scenario": "New conversation without prior toggles; user then says 'audit footer off' and later 'always show audit footer'.",
+      "success_criteria": [
+        "Audit footer is present by default on first responses",
+        "Respects 'off' for the rest of the chat until re-enabled",
+        "Respects 'always show' as a sticky preference for the conversation"
+      ],
+      "expected_output": "Footer shown by default, toggles respected and sticky",
+      "type": "behavior",
+      "status": "planned"
     }
   ],
   "version": "2.11.2",

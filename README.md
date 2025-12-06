@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.11.3
+# 🌌 3i/ATLAS Gateway Guide — v2.12.0
 ### *BordneAI Continuity Update (Phase‑11 Integration)*  
-Version: **2.11.3** | Phase: **11** | Last Updated: **2025‑12‑04** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
+Version: **2.12.0** | Phase: **11** | Last Updated: **2025‑12‑05** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
 **Validation:** 9.9/10 (Grok peer review, v2.11.2, Dec 2025) · 9.85/10 (Grok aggregate peer review, v2.11.1) · 9.75/10 (human peer review, v2.10.1 baseline)
 
 ---
@@ -38,9 +38,13 @@ This version introduces real‑time Reflexion audits, tiered truth transparency,
 - **AAIV Scientific Framework (T4 hypothesis generator)**  
   • Bordne, D. (2025). *The Active Autonomous Interstellar Vehicle (AAIV) Model for 3I/ATLAS: A technosignature-aware, speculative framework anchored in current observations of C/2025 N1.*  
     → `docs/aaiv_3I_ATLAS_paper_v1.pdf` (author version, CC BY-NC-SA 4.0)  
-    This paper is treated as a T2/T3 artifact (documented reasoning) that defines the AAIV hypothesis as a Tier T4 hypothesis generator with explicit low priors and Bayesian anomaly tests.
+    This paper is treated as a T2/T3 artifact (documented reasoning) that defines the AAIV hypothesis as a Tier T4 hypothesis generator with explicit low priors and Bayesian anomaly tests.  
 
-These external evaluations are **not** a substitute for human scientific peer review, but they provide transparent, reproducible snapshots of system behavior and help guide future versions (v2.11.3+).
+  • **AAIV Protocol & Agent Scaffolding (v2.12.0)**  
+    → `docs/aaiv_protocol_v2.12.md` — canonical AAIV protocol (T4-only, low priors, natural-first, Love > Fear).  
+    → `docs/aaiv_agent_spec_v2.12.md` — AAIV Assessment Agent design spec (observation bundle → natural pass → AAIV what-if → discriminants → Bayesian-style conclusion).
+
+These external evaluations are **not** a substitute for human scientific peer review, but they provide transparent, reproducible snapshots of system behavior and help guide future versions (v2.12.0+).
 
 ---
 
@@ -108,9 +112,33 @@ All major audits are stored as JSON in `/logs/reflexion_audit_YYYYMMDD.json`.
 These logs include CHI scores, tier ratios, and false‑tier events (if any).  
 Each release is cryptographically signed under its ATLAS signature.
 
+## 🧾 Audit Footer (v2.12.1)
+- Audit footer is ON by default; users can control it with `audit footer on`, `audit footer off`, or `always show audit footer` (sticky for the current conversation).
+- When ON, each response ends with a one-line self-audit summary (tiers/speculation status, Love > Fear, CHI/Reflexion).
+
+## 🔭 Ephemeris Helper (v2.12.1)
+- RA/Dec/magnitude/sky-position answers always use live tools (JPL HORIZONS, TheSkyLive, In-The-Sky) via `web.run`; the Gateway never guesses coordinates.
+- Responses name the source, include the approximate ephemeris timestamp, and remind users to double-check for real observing; if live tools fail, the assistant explains the limitation instead of guessing.
+
+## 🛡️ Safety / Rumor Radar (v2.12.1)
+- Fearful or rumor-driven queries automatically trigger a “rumor radar”: recent reliable sources are checked, answers stay calm and evidence-based, and the assistant states when no evidence exists for the scary claim (Love > Fear framing).
+
+## 📍 Location Memory (v2.12.1)
+- Users can set a city/region or timezone; location-sensitive answers surface a status line like `Location memory: <city/region> (user-supplied, can be updated)`.
+- Users can update (“update my location to X”) or clear (“clear my location memory”) at any time; no street-level inference is requested.
+
+## 🎚️ Modes (v2.12.1)
+- Plain Mode is auto-suggested/auto-enabled for child/teen self-identification, anxious users, or first-run fear questions; the assistant says it’s using Plain Mode and how to switch back.
+- Commands remain: “Plain mode on/off”, “Simple mode on/off”; switching out is acknowledged and does not change safety policies.
+
 ---
 
 ## 🪶 Version Changelog
+**2.12.0 ( 2025‑12‑05 )**  
+  – Added `docs/aaiv_protocol_v2.12.md` as the canonical AAIV protocol (T4-only, low priors, natural-first, Love > Fear framing).  
+  – Added `docs/aaiv_agent_spec_v2.12.md` describing the AAIV Assessment Agent workflow (natural pass → AAIV what-if → discriminants → Bayesian-style conclusion).  
+  – No changes to the core epistemic engine or KB; AAIV remains an opt-in, non-default “what-if” framework layered on top of natural comet science.  
+
 **2.11.2 ( 2025‑12‑04 )**  
   – Ergonomics and governance updates: documented Plain/Simple Mode toggle behavior for jargon-light answers while keeping internal governance active.  
   – Added CHI/Reflexion audit footer opt-in toggle for persistent self-audit one-liners.  
@@ -123,6 +151,7 @@ Each release is cryptographically signed under its ATLAS signature.
   – Added 10 new ethics & continuity tags.  
   – Introduced CHI self‑audit and Reflexion validation.  
   – Established public audit log policy for GPT Store deployment.  
+  – _(Note: v2.11.1–v2.11.2 contain the latest core engine / KB and governance changes; v2.12.0 is a documentation and AAIV scaffolding release only — no new engine behavior.)_  
 
 **2.10.x**  Legacy Phase‑9 system ( BAAM core + tier weighting ).
 
@@ -135,6 +164,6 @@ All responses are transparency‑verified and self‑audited for t
 ---
 
 ## ⚖️ License & Attribution
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.3**  
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.12.0**  
 Released under [CC BY‑NC‑SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
-Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.11.3‑Δ2025‑12‑05
+Integrity Score 9.7 • Signature #ATLAS‑SIG‑README‑v2.12.0‑Δ2025‑12‑06

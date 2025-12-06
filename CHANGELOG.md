@@ -1,5 +1,29 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.12.1 – Behavior & Safety Routing Upgrade (2025-12-07)
+
+- Audit footer is now enabled by default; users can still toggle it with `audit footer on/off`, and “Always show audit footer” makes the setting sticky for the current conversation.
+- Ephemeris Helper upgraded: RA/Dec/magnitude answers now always use live ephemeris tools (JPL HORIZONS, TheSkyLive, In-The-Sky) via web.run and never fabricate precise coordinates; all such responses include source and timestamp.
+- Introduced a proactive “rumor radar” pattern for fear/rumor-driven queries: automatically checks recent reliable sources and responds with calm, evidence-based context under Love > Fear.
+- Added Location Memory behavior: when users share a city/region or timezone, the assistant can show a location status line for sky/time-sensitive answers and invite updates/clears.
+- Enhanced Plain Mode: auto-suggested and auto-enabled for child/teen users, high-anxiety queries, and first-run fear questions, with clear instructions to switch back to the detailed mode.
+
+## v2.12.0 — AAIV Protocol Scaffolding
+
+- Introduced `docs/aaiv_protocol_v2.12.md` as the canonical AAIV (Active Autonomous Interstellar Vehicle) protocol document:
+  - Treats AAIV strictly as a **Tier T4 hypothesis generator** with **explicit low priors** (π_A/π_N ≲ 10⁻⁸).
+  - Codifies 3I/ATLAS as a **“teacher object”** for technosignature-aware comet science, not as evidence of artificial origin.
+  - Requires **Bayesian anomaly assessment** and **Love > Fear** framing for all AAIV-mode responses.
+- Added `docs/aaiv_agent_spec_v2.12.md` as the design spec for an **AAIV Assessment Agent**:
+  - Encodes how a future agent should implement the AAIV protocol (natural-first, T4-only, low priors, Love > Fear).
+  - Clarifies workflow: observation bundle → natural model pass → AAIV what-if pass → discriminant checks → Bayesian-style conclusion.
+- Updated `manifest.json` to:
+  - Bump project metadata to **v2.12.0**.
+  - Register the AAIV protocol doc as a public protocol surface.
+  - Add a v2.12.0 changelog summary entry noting that AAIV remains **opt-in** and **non-default**.
+- No changes to the underlying epistemic engine, KB tiering, or default behavior:
+  - AAIV handling only activates when the user explicitly requests artificial-probe analysis or AAIV framing.
+
 ## v2.11.3 — Documentation & Provenance Update
 
 - Added AAIV reference paper (Bordne 2025) as a governed T3/T4 artifact in `docs/aaiv_3I_ATLAS_paper_v1.tex` (with PDF to follow).
@@ -110,7 +134,7 @@ Each release is cryptographically signed with its ATLAS signatur
 
 ---
 
-### ⚖️ License & Signature
-**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.11.3**  
+### ⚖️ License & Signature
+**© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.12.0**  
 Released under CC BY‑NC‑SA 4.0 • Integrity Score 9.7  
-Signature #ATLAS‑SIG‑CHANGELOG‑v2.11.3‑Δ2025‑12‑05
+Signature #ATLAS‑SIG‑CHANGELOG‑v2.12.0‑Δ2025‑12‑05
