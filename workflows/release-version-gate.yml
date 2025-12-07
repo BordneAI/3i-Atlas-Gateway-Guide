@@ -1,0 +1,67 @@
+name: Release Version Consistency
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  check-versions:
+    name: Check manifest and README versions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract tag name
+        id: vars
+        run: |
+          echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+
+      - name: Show tag and derived version
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          VERSION="${TAG#v}"
+          echo "Tag:        $TAG"
+          echo "Version:    $VERSION"
+
+      - name: Check manifest.json top-level version
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          VERSION="${TAG#v}"
+
+          MANIFEST_VERSION=$(jq -r '.version' manifest.json)
+          echo "manifest.json version: $MANIFEST_VERSION"
+
+          if [ "$MANIFEST_VERSION" != "$VERSION" ]; then
+            echo "❌ manifest.json .version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
+            exit 1
+          fi
+
+      - name: Check manifest readme.md version entry
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          VERSION="${TAG#v}"
+
+          MANIFEST_README_VERSION=$(jq -r '.files["readme.md"].version' manifest.json)
+          echo "manifest files[\"readme.md\"].version: $MANIFEST_README_VERSION"
+
+          if [ "$MANIFEST_README_VERSION" != "$VERSION" ]; then
+            echo "❌ manifest files[\"readme.md\"].version ($MANIFEST_README_VERSION) does not match tag version ($VERSION)"
+            exit 1
+          fi
+
+      - name: Check README headline mentions version
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          VERSION="${TAG#v}"
+
+          echo "Checking that README.md headline mentions v$VERSION ..."
+          if ! grep -q "v$VERSION" README.md; then
+            echo "❌ README.md does not mention v$VERSION in the headline."
+            exit 1
+          fi
+
+      - name: All checks passed
+        run: echo "✅ Release versions are consistent."
