@@ -25,11 +25,10 @@
         "GitHub.vscode-pull-request-github",
         "streetsidesoftware.code-spell-checker",
         "yzhang.markdown-all-in-one",
-        "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint"
       ]
     }
-  },
+  }
 
-  "remoteUser": "vscode"
+  // NOTE: intentionally no "remoteUser" here
 }
