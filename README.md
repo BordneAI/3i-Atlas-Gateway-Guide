@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.12.0
+# 🌌 3i/ATLAS Gateway Guide — v2.12.2
 ### *BordneAI Continuity Update (Phase‑11 Integration)*  
-Version: **2.12.0** | Phase: **11** | Last Updated: **2025‑12‑05** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
+Version: **2.12.2** | Phase: **11** | Last Updated: **2025‑12‑05** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**  
 **Validation:** 9.9/10 (Grok peer review, v2.11.2, Dec 2025) · 9.85/10 (Grok aggregate peer review, v2.11.1) · 9.75/10 (human peer review, v2.10.1 baseline)
 
 ---
