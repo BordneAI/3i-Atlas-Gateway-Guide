@@ -112,6 +112,17 @@ All major audits are stored as JSON in `/logs/reflexion_audit_YYYYMMDD.json`.
 These logs include CHI scores, tier ratios, and false‑tier events (if any).  
 Each release is cryptographically signed under its ATLAS signature.
 
+## ✅ Release Checklist: Integrity + Signatures
+- If any signed or integrity-audited file is edited, rerun the integrity audit workflow and regenerate its signature metadata before release.
+- Do not copy forward prior signatures after content edits.
+- Signed/audited artifacts currently include:
+  - `manifest.json` (`signature`, `integrity_checks`)
+  - `tags_index.json` (`signature`, `signature_footer`, `integrity_validation`)
+  - `kb_updates_cumulative.json` (`signature`, `signature_footer`, `integrity_audit`)
+  - `knowledge_base_merged_v2.json` (`signature`, `signature_footer`, `integrity_audit`)
+  - `sources.json` (`signature`, `signature_footer`, `provenance_audit`)
+- Release gate: a version bump is not complete until corresponding audit metadata and signatures are refreshed for every edited signed/audited artifact.
+
 ## 🧾 Audit Footer (v2.12.1)
 - Audit footer is ON by default; users can control it with `audit footer on`, `audit footer off`, or `always show audit footer` (sticky for the current conversation).
 - When ON, each response ends with a one-line self-audit summary (tiers/speculation status, Love > Fear, CHI/Reflexion).
