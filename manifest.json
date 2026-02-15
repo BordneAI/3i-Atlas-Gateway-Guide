@@ -8,7 +8,7 @@
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.12.0",
+      "version": "2.12.2",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
