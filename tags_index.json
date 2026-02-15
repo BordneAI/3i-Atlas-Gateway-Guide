@@ -1,8 +1,8 @@
 {
   "filename": "tags_index.json",
-  "tags_version": "2.11.1",
-  "last_updated": "2025-12-04",
-  "total_tags": 66,
+  "version": "2.12.2",
+  "last_updated": "2026-02-15",
+  "total_tags": 75,
   "purpose": "Searchable tag index for knowledge base navigation and content discovery",
   "tags": [
     "advanced",
@@ -259,7 +259,7 @@
   "integrity_validation": {
     "json_validation": "OK",
     "encoding": "UTF-8",
-    "timestamp": "2025-12-02T00:00:00Z",
+    "timestamp": "2026-02-15T00:00:00Z",
     "tag_count": 75,
     "uniqueness_check": "OK",
     "entropy": "low"
@@ -269,8 +269,9 @@
     "notes": "Tag surface expanded by +10 without altering core categories."
   },
   "signature": "#ATLAS-SIG-TAGS-v2.11.2-Δ2025-12-02",
+  "signature_status": "needs_regeneration_after_edits",
   "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.11.2-Δ2025-12-02",
-  "version": "2.11.2",
+  "signature_footer_status": "needs_regeneration_after_edits",
   "description": "Expanded tag index harmonized with BordneAI Phase-10 ethics, continuity, and reflexion protocols.",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,

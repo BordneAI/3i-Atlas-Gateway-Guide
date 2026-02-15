@@ -41,9 +41,9 @@
       "purpose": "Immutable log of all applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.11.2",
+      "version": "2.12.2",
       "filename": "tags_index.json",
-      "last_updated": "2025-12-04",
+      "last_updated": "2026-02-15",
       "purpose": "Searchable tag index for knowledge base navigation (adds entropy/canvas/audit/web_fetch)"
     },
     "stress_test_framework.json": {
@@ -85,7 +85,7 @@
   "version_alignment_notes": {
     "instructions.txt": "Version is declared in the document header (v2.12.2).",
     "knowledge_base_merged_v2.json": "Top-level version is 2.11.2; kb_version 2.11.1 remains as legacy internal schema marker.",
-    "tags_index.json": "Top-level version is authoritative for manifest alignment; tags_version is a legacy field pending normalization.",
+    "tags_index.json": "Top-level version is authoritative for manifest alignment; counts are normalized so total_tags and integrity_validation.tag_count match.",
     "sources.json": "Top-level version is 2.12.0; sources_version 2.11.3 marks source-list lineage and is not the release surface.",
     "docs/aaiv_protocol_v2.12.md": "Version is declared in the markdown title/header.",
     "docs/aaiv_agent_spec_v2.12.md": "Version is declared in the markdown title/header."
