@@ -1,10 +1,10 @@
 {
   "filename": "manifest.json",
-  "version": "2.12.0",
-  "release_date": "2025-12-05",
+  "version": "2.12.2",
+  "release_date": "2026-02-15",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with NASA-grade provenance, adaptive clarification protocol, CE-5 bridge, and entropy-based web/canvas execution. | Updated to BordneAI v2.12.0 with AAIV protocol scaffolding for technosignature-aware ISO analysis (Tier T4 hypothesis generator, low priors, Bayesian anomaly assessment), while preserving Love>Fear, transparency, and audit guarantees.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with NASA-grade provenance, adaptive clarification protocol, CE-5 bridge, and entropy-based web/canvas execution. | Updated to BordneAI v2.12.2 governance reconciliation patch with no new protocols or behavior surfaces; this release hardens cross-surface version integrity, metadata consistency, and audit/signature policy routing.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
@@ -95,7 +95,8 @@
     "v2.0": "Initial public release with 14-menu system",
     "v2.11.2": "Ergonomics and governance updates: documented plain/simple mode toggle, CHI/Reflexion audit footer option, ephemeris helper pattern, T4 misinformation handling stub, and docs/ external evaluations move.",
     "v2.11.3": "Documentation and provenance patch: added AAIV paper reference and Grok validation mapping; no runtime/engine changes.",
-    "v2.12.0": "AAIV scaffolding: added docs/aaiv_protocol_v2.12.md and docs/aaiv_agent_spec_v2.12.md, plus manifest metadata for technosignature-aware ISO analysis and opt-in AAIV handling rules (Tier T4 hypothesis generator with explicit low priors); no default runtime behavior changes."
+    "v2.12.0": "AAIV scaffolding: added docs/aaiv_protocol_v2.12.md and docs/aaiv_agent_spec_v2.12.md, plus manifest metadata for technosignature-aware ISO analysis and opt-in AAIV handling rules (Tier T4 hypothesis generator with explicit low priors); no default runtime behavior changes.",
+    "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules."
   },
   "key_features": {
     "provenance_discipline": "NASA-grade source_id + as_of + confidence for all facts",
@@ -132,7 +133,7 @@
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
   "signature": "#ATLAS-SIG-MANIFEST-v2.12.0-\u03942025-12-05",
-  "scheduled_release_date": "2025-12-05",
+  "scheduled_release_date": "2026-02-15",
   "continuity_score": 9.7,
   "ethics_constant": "Love>Fear",
   "audit_cycle_hours": 24,

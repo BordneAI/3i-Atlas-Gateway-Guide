@@ -1,5 +1,13 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.12.2 – Truth Surface Reconciliation Patch (2026-02-15)
+
+- Reconciled release governance surfaces so `CHANGELOG.md`, `manifest.json`, and `instructions.txt` report one consistent current version/release story for v2.12.2.
+- Aligned manifest file-version metadata to actual declared versions where available, and added explicit handling notes where file-level versions are not declared.
+- Normalized `tags_index.json` metadata shape so top-level counts and integrity validation counts use one coherent schema.
+- Added explicit release checklist policy for post-edit integrity re-audit and signature regeneration on signed/audited artifacts.
+- Added enforceable currency/archival routing policy clarifying 30-day `as_of` requirements for T1/T2 sources where applicable.
+
 ## v2.12.1 – Behavior & Safety Routing Upgrade (2025-12-07)
 
 - Audit footer is now enabled by default; users can still toggle it with `audit footer on/off`, and “Always show audit footer” makes the setting sticky for the current conversation.
