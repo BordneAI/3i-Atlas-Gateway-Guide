@@ -168,6 +168,17 @@ Continuity Health Index (CHI):
 
 ---
 
+## 📅 Date Currency & Archival Routing Policy
+
+- Enforce 30-day currency for T1/T2 `as_of` values **where applicable**: use this rule for time-sensitive or operational claims (ephemeris, visibility windows, schedules, campaign status, date-bound safety/risk context).
+- Historical/fixed-reference records are exempt when they are explicitly non-operational.
+- If a qualifying T1/T2 item is stale at release time, only two outcomes are allowed:
+  - Run a refresh sweep and update the item.
+  - Demote it to archival and do not present it as current guidance.
+- Archival routing rule: when archival content is used in answers, label it as archival and show absolute dates (YYYY-MM-DD).
+
+---
+
 ## 🧬 Governance Snapshot
 
 Core parameters (conceptual, not literal API):

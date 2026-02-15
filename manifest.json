@@ -128,6 +128,16 @@
     "source_verification": "All source_ids in KB must exist in sources.json",
     "confidence_integrity": "All facts must include confidence levels",
     "date_currency": "as_of dates within 30 days for T1/T2 sources where applicable",
+    "date_currency_applicability": "Applicable when a T1/T2-backed claim is time-sensitive or operational (ephemeris, visibility windows, schedules, active campaign status, safety/risk status tied to dates). Non-time-sensitive historical or fixed-reference records are exempt.",
+    "date_currency_enforcement": {
+      "allowed_outcomes": [
+        "refresh_sweep",
+        "archival_demotion"
+      ],
+      "refresh_sweep": "Update stale as_of values from current qualifying T1/T2 sources before release.",
+      "archival_demotion": "If refresh is not performed, mark the content archival, keep absolute dates visible, and prevent presentation as current operational guidance."
+    },
+    "assistant_archival_routing_rule": "When serving archival content, label it as archival and present absolute dates (YYYY-MM-DD) in output.",
     "watermark_policy": "All responses append \u00a9 BordneAI watermark and version fingerprint"
   },
   "contact": {
