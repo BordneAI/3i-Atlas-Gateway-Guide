@@ -1,65 +1,70 @@
 {
-  "filename": "manifest.json",
-  "version": "2.12.0",
-  "release_date": "2025-12-05",
+  "version": "2.12.2",
+  "release_date": "2026-02-15",
+  "release_state": "sealed",
+  "release_state_notes": "v2.12.2 governance reconciliation is sealed with deterministic integrity fingerprints.",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with NASA-grade provenance, adaptive clarification protocol, CE-5 bridge, and entropy-based web/canvas execution. | Updated to BordneAI v2.12.0 with AAIV protocol scaffolding for technosignature-aware ISO analysis (Tier T4 hypothesis generator, low priors, Bayesian anomaly assessment), while preserving Love>Fear, transparency, and audit guarantees.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Updated to BordneAI v2.12.2 governance reconciliation patch with no new protocols or behavior surfaces; this release hardens cross-surface version integrity, metadata consistency, and audit/signature policy routing.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.12.0",
+      "version": "2.12.2",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
-      "version": "2.11.3",
-      "purpose": "System prompt with operational guidelines, entropy control, and adaptive fetch"
+      "version": "2.12.2",
+      "purpose": "System prompt with operational guidelines, tool/browse rules, and governance routing"
+    },
+    "CHANGELOG.md": {
+      "version": "2.12.2",
+      "purpose": "Release history and change summaries (canonical release surface)"
+    },
+    "README.md": {
+      "version": "2.12.2",
+      "purpose": "Deployment guide and governance overview (non-canonical; explanatory)"
     },
     "knowledge_base_merged_v2.json": {
-      "version": "2.11.3",
+      "version": "2.11.2",
       "filename": "knowledge_base_merged_v2.json",
       "last_updated": "2025-12-04",
       "purpose": "Primary knowledge base with verified facts, interpretations, practices, and entropy signal map"
     },
     "conversation_starters.json": {
-      "version": "2.11.3",
-      "purpose": "Persona-aware prompts including Settings (98), Tools (97), Auditor profile triggers"
+      "version": "2.11.2",
+      "purpose": "Persona-aware prompts including Settings (98), Tools (97), auditor triggers"
     },
     "sources.json": {
-      "version": "2.11.3",
+      "version": "2.12.0",
       "filename": "sources.json",
-      "purpose": "Tiered source registry (T1: Agency, T2: Preprint, T3: Press, T4: Community) with integrity hash"
+      "purpose": "Tiered source registry with provenance metadata"
     },
     "kb_updates_cumulative.json": {
-      "version": "2.11.3",
+      "version": "2.11.2",
       "filename": "kb_updates_cumulative.json",
       "purpose": "Pending knowledge base updates awaiting review and integration"
     },
     "kb_changelog.json": {
-      "version": "2.11.3",
+      "version": "2.11.2",
       "filename": "kb_changelog.json",
-      "purpose": "Immutable log of all applied knowledge base updates with audit trail"
+      "purpose": "Immutable log of applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.11.3",
+      "version": "2.12.2",
       "filename": "tags_index.json",
-      "last_updated": "2025-12-04",
-      "purpose": "Searchable tag index for knowledge base navigation (adds entropy/canvas/audit/web_fetch)"
+      "last_updated": "2026-02-15",
+      "purpose": "Searchable tag index for knowledge base navigation"
     },
     "stress_test_framework.json": {
-      "version": "2.11.3",
+      "version": "2.11.2",
       "filename": "stress_test_framework.json",
       "last_updated": "2025-12-04",
-      "purpose": "STF-ATLAS validation scenarios, auditor overlay hooks"
-    },
-    "readme.md": {
-      "version": "2.12.0",
-      "purpose": "Deployment guide with pre-flight checklist, IP/watermark controls, and profiles"
+      "purpose": "STF-ATLAS validation scenarios and auditor overlay hooks"
     },
     "bayesian_framework.json": {
       "filename": "bayesian_framework.json",
       "description": "BAAM v1.0 framework",
-      "version": "2.11.3",
+      "version": "2.11.2",
       "released_at": "2025-12-04",
       "type": "framework",
       "public_surface": true,
@@ -68,7 +73,7 @@
     "docs/aaiv_protocol_v2.12.md": {
       "version": "2.12.0",
       "filename": "docs/aaiv_protocol_v2.12.md",
-      "purpose": "AAIV (Active Autonomous Interstellar Vehicle) protocol scaffolding for technosignature-aware ISO analysis; Tier T4-only, opt-in, with explicit low priors and Bayesian anomaly checks.",
+      "purpose": "AAIV protocol scaffolding (T4-only, opt-in, natural-first, low priors)",
       "type": "protocol",
       "public_surface": true,
       "status": "draft-active"
@@ -76,38 +81,44 @@
     "docs/aaiv_agent_spec_v2.12.md": {
       "version": "2.12.0",
       "filename": "docs/aaiv_agent_spec_v2.12.md",
-      "purpose": "Design spec for an AAIV Assessment Agent that implements the AAIV protocol for technosignature-aware ISO analysis; T4-only, natural-first, low priors, Love>Fear.",
+      "purpose": "AAIV Assessment Agent design spec (natural pass → AAIV what-if → discriminants → Bayesian-style conclusion)",
       "type": "design-spec",
       "public_surface": true,
       "status": "draft-active"
     }
   },
+  "version_alignment_notes": {
+    "instructions.txt": "Version is declared in the document header (v2.12.2).",
+    "knowledge_base_merged_v2.json": "Top-level version is 2.11.2",
+    "tags_index.json": "Top-level version is authoritative for manifest alignment; counts are normalized so total_tags and integrity_validation.tag_count match.",
+    "sources.json": "Top-level version is 2.12.0; sources_version may mark lineage and is not the release surface.",
+    "docs/aaiv_protocol_v2.12.md": "Version is declared in the markdown title/header.",
+    "docs/aaiv_agent_spec_v2.12.md": "Version is declared in the markdown title/header."
+  },
   "changelog_summary": {
     "v2.8": "Entropy Domain Control; Settings (98); Tools (97); adaptive fetch; token budgeting; Canvas Insight Blocks; Confidence Bar; Mini-Timeline; Auditor profile; watermark/IP controls",
     "v2.7.4": "Integration build placeholder (rolled into v2.8)",
-    "v2.7.3": "Adaptive clarification protocol integration, comprehensive stress test results, Loeb non-grav acceleration verified",
+    "v2.7.3": "Adaptive clarification protocol integration, comprehensive stress test results",
     "v2.7.2": "Adaptive clarification protocol to handle implicit ambiguity",
-    "v2.7.1": "Updated Loeb claims with non-grav acceleration data",
+    "v2.7.1": "Updated claims with non-grav acceleration data (where applicable)",
     "v2.6": "Triple convergence narrative integration",
-    "v2.5": "Integrity patches (5 applied), canonicalized source_ids",
-    "v2.4": "Sample responses restoration, menu item 15 added",
-    "v2.3": "CE-5 bridge protocol, perihelion/visibility/approach facts",
+    "v2.5": "Integrity patches applied; canonicalized source_ids",
+    "v2.4": "Sample responses restoration; menu item 15 added",
+    "v2.3": "CE-5 bridge protocol; perihelion/visibility/approach facts",
     "v2.0": "Initial public release with 14-menu system",
-    "v2.11.2": "Ergonomics and governance updates: documented plain/simple mode toggle, CHI/Reflexion audit footer option, ephemeris helper pattern, T4 misinformation handling stub, and docs/ external evaluations move.",
-    "v2.11.3": "Documentation and provenance patch: added AAIV paper reference and Grok validation mapping; no runtime/engine changes.",
-    "v2.12.0": "AAIV scaffolding: added docs/aaiv_protocol_v2.12.md and docs/aaiv_agent_spec_v2.12.md, plus manifest metadata for technosignature-aware ISO analysis and opt-in AAIV handling rules (Tier T4 hypothesis generator with explicit low priors); no default runtime behavior changes."
+    "v2.11.2": "Ergonomics and governance updates: plain/simple mode toggle, audit footer option, ephemeris helper pattern, rumor handling, external evaluations organization.",
+    "v2.12.0": "AAIV scaffolding: added AAIV protocol + agent spec (T4-only, opt-in, natural-first, low priors); no default runtime behavior changes.",
+    "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules."
   },
   "key_features": {
-    "provenance_discipline": "NASA-grade source_id + as_of + confidence for all facts",
+    "provenance_discipline": "Source registry + as_of + confidence labeling for factual claims",
     "adaptive_clarification": "Triggers on ambiguity; fast-path for explicit requests",
-    "tiered_sourcing": "T1 (Agency) \u2192 T2 (Preprint) \u2192 T3 (Press) \u2192 T4 (Community)",
-    "ce5_bridge": "Respects scientific rigor and consciousness practice communities",
-    "epistemic_humility": "Explicit uncertainty labeling (\u2705 Verified, \ud83d\udd0d Interpretation, \ud83c\udf00 Practice, \u26a0\ufe0f Caution)",
-    "living_knowledge_base": "Runtime updates via kb_updates_cumulative.json without full rewrites",
-    "stress_test_validated": "STF-ATLAS-001/002/003 comprehensive validation",
+    "tiered_sourcing": "T1 (Agency) → T2 (Preprint/Docs) → T3 (Press) → T4 (Community)",
+    "epistemic_humility": "Uncertainty labeling (✅ Verified, 🔍 Interpretation, 🌀 Practice, ⚠️ Caution)",
+    "living_knowledge_base": "Updates via kb_updates_cumulative.json with review workflow",
+    "stress_test_validated": "STF-ATLAS scenarios define behavioral guardrails",
     "entropy_domain_control": "Multi-level domain/entropy scoring to reduce drift and guide browsing depth",
-    "web_canvas_engine": "Web-Adaptive Fetch Tuner + Canvas Insight Blocks, Confidence Bar, Mini-Timeline",
-    "auditor_profile": "Strict Mode, Rumor Control, UTC audit table, token hard-cap"
+    "auditor_profile": "Strict Mode, rumor control, token hard-cap, self-audit footer"
   },
   "deployment_targets": {
     "primary": "ChatGPT GPT Store",
@@ -119,7 +130,17 @@
     "source_verification": "All source_ids in KB must exist in sources.json",
     "confidence_integrity": "All facts must include confidence levels",
     "date_currency": "as_of dates within 30 days for T1/T2 sources where applicable",
-    "watermark_policy": "All responses append \u00a9 BordneAI watermark and version fingerprint"
+    "date_currency_applicability": "Applicable when a T1/T2-backed claim is time-sensitive or operational (ephemeris, visibility windows, schedules, active campaign status, safety/risk status tied to dates). Non-time-sensitive historical or fixed-reference records are exempt.",
+    "date_currency_enforcement": {
+      "allowed_outcomes": [
+        "refresh_sweep",
+        "archival_demotion"
+      ],
+      "refresh_sweep": "Update stale as_of values from current qualifying T1/T2 sources before release.",
+      "archival_demotion": "If refresh is not performed, mark the content archival, keep absolute dates visible, and prevent presentation as current operational guidance."
+    },
+    "assistant_archival_routing_rule": "When serving archival content, label it as archival and present absolute dates (YYYY-MM-DD) in output.",
+    "watermark_policy": "All responses append © BordneAI watermark and version fingerprint"
   },
   "contact": {
     "twitter_personal": "@DavidBordne",
@@ -131,8 +152,13 @@
   "license": "CC BY-NC-SA 4.0",
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
-  "signature": "#ATLAS-SIG-MANIFEST-v2.12.0-\u03942025-12-05",
-  "scheduled_release_date": "2025-12-05",
+
+  "signature_status": "signed_fingerprint",
+  "signature": "#ATLAS-SIG-MANIFEST-v2.12.2-FINGERPRINT-Δ2026-02-15",
+  "fingerprint_sha256": "1d28a90054c5c5d87bb4d6622d719ad1ed106faea00f604aae4ee7038b1e3232",
+  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
+  "signature_blocking": false,
+  
   "continuity_score": 9.7,
   "ethics_constant": "Love>Fear",
   "audit_cycle_hours": 24,
@@ -140,3 +166,4 @@
   "reflexion_hook_enabled": true,
   "public_audit_badge": true
 }
+

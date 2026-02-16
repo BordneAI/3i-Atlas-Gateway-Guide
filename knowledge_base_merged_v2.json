@@ -1,6 +1,6 @@
 {
   "filename": "knowledge_base_merged_v2.json",
-  "kb_version": "2.11.1",
+  "kb_version": "2.11.2",
   "last_updated": "2025-12-04",
   "integrity_note": "v2.11 upgrade from v2.10.1 with entropy system and preserved content",
   "entropy_system": {
@@ -724,7 +724,10 @@
     ]
   },
   "version": "2.11.2",
-  "signature": "#ATLAS-SIG-KB-v2.11.2-Δ2025-12-02",
+  "signature": "#ATLAS-SIG-KB-v2.11.2-FINGERPRINT",
+  "signature_status": "signed_fingerprint",
+  "fingerprint_sha256": "aa9efff8d32ce377ff5a2da2629272010509700decd737cac6405f772a1abafb",
+  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "protocols": {
     "replication_gate_policy": {
       "version": "v2.11-proposal",
@@ -845,5 +848,5 @@
     "false_tier_activity": "minimal",
     "last_reflexion_audit": "2025-12-02T00:00:00Z"
   },
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.11.2-Δ2025-12-02"
+  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide KB v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.11.2-FINGERPRINT"
 }

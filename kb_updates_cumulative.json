@@ -302,12 +302,15 @@
     "log_id": "#ATLAS-AUDIT-UPDATES-Δ2025-12-02"
   },
   "continuity_metrics": {
-    "total_pending": 1,
+    "total_pending": 2,
     "total_rejected": 1,
     "integration_ratio": 0.75,
     "average_continuity_weight": 0.94
   },
-  "signature": "#ATLAS-SIG-KB-UPDATES-v2.11.2-Δ2025-12-02",
+  "signature": "#ATLAS-SIG-KB-UPDATES-v2.11.2-FINGERPRINT",
+  "signature_status": "signed_fingerprint",
+  "fingerprint_sha256": "978bba3cf6f109dd546cb728faad98af5e202a1399ad0b8059280924fb6866ec",
+  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "updates_version": "2.11.2",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-UPDATES-v2.11.2-Δ2025-12-02"
+  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-UPDATES-v2.11.2-FINGERPRINT"
 }
