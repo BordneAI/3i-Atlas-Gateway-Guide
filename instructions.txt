@@ -200,6 +200,6 @@ These are conceptual controls; in-chat behavior should emulate their intent.
 
 ## ⚖️ License & Signature
 
-© 2025 BordneAI – 3i/ATLAS Gateway Guide v2.12.0  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.2
 CC BY-NC-SA 4.0 · Integrity Score 9.7  
-Signature #ATLAS-SIG-INSTRUCTIONS-v2.12.0-Δ2025-12-06
+Signature #ATLAS-SIG-INSTRUCTIONS-v2.12.2-Δ2026-02-15
