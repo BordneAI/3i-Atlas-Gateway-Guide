@@ -760,8 +760,8 @@
       "NASA-SCIENCE-3I-ATLAS-ALT"
     ],
     "confidence": 0.92,
-    "last_audit": "2026-02-16T00:00:00Z",
-    "last_checked": "2026-02-16",
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
     "notes": "Official overview, timeline and visibility windows. This is the primary NASA overview page for Comet 3i/ATLAS; it states there is no threat to Earth and summarizes multi-mission observing context.",
     "publisher": "NASA Science",
     "tier": "T1",
@@ -783,21 +783,6 @@
     "type": "agency",
     "urls": [
       "https://science.nasa.gov/solar-system/comets/3i-atlas/comet-3i-atlas-image-gallery/"
-    ],
-    "verified_by": "EOS Transparency v2.11.2"
-  },
-  "NASA-SCIENCE-3I-ATLAS-OVERVIEW-2026-02": {
-    "confidence": 0.8,
-    "confidence_label": "high",
-    "last_audit": "2026-02-22T00:00:00Z",
-    "last_checked": "2026-02-22",
-    "notes": "NASA overview reaffirming no threat to Earth and closest approach near 1.8 AU (~170 million miles / ~270 million km).",
-    "publisher": "NASA Science",
-    "tier": "T1",
-    "title": "Comet 3i/ATLAS",
-    "type": "agency_overview",
-    "urls": [
-      "https://science.nasa.gov/solar-system/comets/3i-atlas/"
     ],
     "verified_by": "EOS Transparency v2.11.2"
   },

@@ -1,182 +1,153 @@
 {
+  "audit_cycle_hours": 24,
+  "chi_target": 9.7,
+  "continuity_metrics": {
+    "average_continuity_weight": 0.94,
+    "integration_ratio": 0.5,
+    "total_integrated": 3,
+    "total_pending": 1,
+    "total_rejected": 2,
+    "total_tracked": 6
+  },
+  "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
   "filename": "kb_updates_cumulative.json",
-  "pending": [
+  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
+  "fingerprint_sha256": "4f59c7751e01a7ae29224f4d5975a9e96f4deb338e231381a412af60a96b0fa0",
+  "integrated": [
     {
-      "proposal_id": "kb_propose_dec_visibility_refinement",
-      "proposed_at": "2025-11-01T19:45:00Z",
-      "status": "integrated",
-      "type": "refine_existing_fact",
-      "target_path": "/timeline/visibility_windows/december_window",
-      "proposed_change": {
-        "refined_magnitude_forecast": "+8.5 to +9.5 by Dec 31",
-        "altitude_improvement": "Moves higher in pre-dawn sky, easier to locate despite fading",
-        "best_observing_dates": "Dec 1-10 (before magnitude drop becomes significant)"
-      },
-      "rationale": "Press summary (EarthSky) and Horizons-derived tools suggest fading magnitude through December; altitude improves predawn. Treat as forecast until a direct Horizons run is embedded.",
-      "source_ids_proposed": [
-        "EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
-        "NASA-JPL-HORIZONS-3I-ATLAS"
-      ],
-      "as_of": "2025-11-07",
-      "confidence": "medium",
-      "requires_web_search": true,
-      "note": "Validate with a fresh JPL Horizons run and the latest EarthSky page before approval.",
-      "proposal_tier_mix": [
-        "T3_press",
-        "T1_agency"
-      ],
-      "public_surface": false,
       "approval_requirements": [
         "Run JPL Horizons for Dec 1–31 UTC and attach magnitude/elongation table",
         "Confirm latest EarthSky December guidance URL and date",
         "Keep language as forecast; do not hardcode magnitudes without context"
       ],
-      "review_owner": "reviewer_ops@atlas",
+      "as_of": "2025-11-07",
+      "confidence": "medium",
+      "continuity_weight": 1.0,
       "due_by": "2025-11-07T23:59:00Z",
+      "integrated_at": "2025-11-03T18:40:00Z",
+      "integrated_to": "kb_changelog.json entry: kb_apply_dec_magnitude_realistic_forecast_20251103",
+      "note": "Validate with a fresh JPL Horizons run and the latest EarthSky page before approval.",
+      "proposal_id": "kb_propose_dec_visibility_refinement",
+      "proposal_tier_mix": [
+        "T3_press",
+        "T1_agency"
+      ],
+      "proposed_at": "2025-11-01T19:45:00Z",
+      "proposed_change": {
+        "altitude_improvement": "Moves higher in pre-dawn sky, easier to locate despite fading",
+        "best_observing_dates": "Dec 1-10 (before magnitude drop becomes significant)",
+        "refined_magnitude_forecast": "+8.5 to +9.5 by Dec 31"
+      },
+      "public_surface": false,
+      "rationale": "Integrated evidence present in ledger; closed as integrated.",
+      "required_domains": [
+        "ssd.jpl.nasa.gov",
+        "earthsky.org"
+      ],
+      "requires_web_search": false,
       "review_checklist": [
         "Run JPL Horizons (Dec 1–31 UTC) for mag & elongation table",
         "Capture latest EarthSky December page URL + timestamp",
         "Label output as forecast; avoid hardcoded single-value magnitudes",
         "Confirm KB paths exist and won’t overwrite required fields"
       ],
-      "required_domains": [
-        "ssd.jpl.nasa.gov",
-        "earthsky.org"
-      ],
-      "integrated_at": "2025-11-03T18:40:00Z",
-      "integrated_to": "kb_changelog.json entry: kb_apply_dec_magnitude_realistic_forecast_20251103",
-      "tier_system": {
-        "truth_tier": "T2",
-        "false_tier_estimate": "F0",
-        "reflexion_status": "validated"
-      },
-      "continuity_weight": 1.0
-    },
-    {
-      "proposal_id": "kb_propose_galileo_project_update",
-      "proposed_at": "2025-11-01T19:45:00Z",
-      "status": "pending",
-      "type": "add_new_fact",
-      "target_path": "/expert_perspectives/avi_loeb_analysis/galileo_project_involvement",
-      "proposed_change": {
-        "observation_campaign_results": "Pending",
-        "expected_publication_date": "Dec 2025 or Jan 2026",
-        "multi_spectrum_data": "Infrared, optical, radio bands monitored during Nov 11-15 window"
-      },
-      "rationale": "Galileo Project actively observing during Nov 11-15 window, results forthcoming",
+      "review_owner": "reviewer_ops@atlas",
       "source_ids_proposed": [
-        "GALILEO-PROJECT-OVERVIEW"
+        "NASA-EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
+        "NASA-JPL-HORIZONS-3I-ATLAS"
       ],
-      "as_of": "2025-11-07",
-      "confidence": "medium_pending_results",
-      "requires_web_search": true,
-      "note": "Will integrate when Galileo Project publishes preliminary findings or confirms monitoring progress",
-      "proposal_tier_mix": [
-        "T3_press",
-        "T4_community"
-      ],
-      "public_surface": false,
-      "approval_requirements": [
-        "Primary update on the Galileo Project website or institutional page",
-        "If data posted, prefer arXiv/ADS entry; otherwise fence as T3/T4"
-      ],
-      "review_owner": "science_editor@atlas",
-      "due_by": "2025-11-20T23:59:00Z",
-      "review_checklist": [
-        "Check Galileo Project official site for a primary update",
-        "If data posted, prefer arXiv/ADS entry; otherwise keep fenced as T3/T4",
-        "Verify KB target path and avoid implying peer review",
-        "Add publication venue (if any) and embargo notes"
-      ],
-      "required_domains": [
-        "projects.iq.harvard.edu",
-        "arxiv.org",
-        "ui.adsabs.harvard.edu"
-      ],
-      "hold_reason": "Awaiting post-perihelion results publication (expected Dec 2025 – Jan 2026)",
+      "status": "integrated",
+      "target_path": "/timeline/visibility_windows/december_window",
       "tier_system": {
-        "truth_tier": "T2",
-        "false_tier_estimate": "F1",
-        "reflexion_status": "under_review"
+        "false_tier_estimate": "F0",
+        "reflexion_status": "validated",
+        "truth_tier": "T2"
       },
-      "continuity_weight": 0.75
+      "type": "refine_existing_fact",
+      "decision": "CLOSE_AS_INTEGRATED",
+      "decision_at": "2026-02-22T00:09:03Z",
+      "decision_by": "OverdueSweepBot-v2.12.3"
     },
     {
-      "proposal_id": "kb_propose_iawn_registration_detail",
-      "status": "integrated",
+      "continuity_weight": 1.0,
       "integrated_at": "2025-11-03T18:30:00Z",
       "integrated_to": "kb_changelog.json entry: kb_apply_iawn_registration_deadline_20251103",
+      "proposal_id": "kb_propose_iawn_registration_detail",
+      "status": "integrated",
       "tier_system": {
-        "truth_tier": "T1",
         "false_tier_estimate": "F0",
-        "reflexion_status": "validated"
-      },
-      "continuity_weight": 1.0
+        "reflexion_status": "validated",
+        "truth_tier": "T1"
+      }
     },
     {
-      "proposal_id": "kb_propose_swift_oh_update",
-      "status": "integrated",
+      "continuity_weight": 1.0,
       "integrated_at": "2025-11-03T18:35:00Z",
       "integrated_to": "kb_changelog.json entry: kb_apply_swift_oh_preprint_pairing_20251103",
+      "proposal_id": "kb_propose_swift_oh_update",
+      "status": "integrated",
       "tier_system": {
-        "truth_tier": "T1",
         "false_tier_estimate": "F0",
-        "reflexion_status": "validated"
-      },
-      "continuity_weight": 1.0
+        "reflexion_status": "validated",
+        "truth_tier": "T1"
+      }
     },
     {
-      "proposal_id": "kb_propose_kaku_heartbeat_nga_bundle_20251204",
-      "proposed_at": "2025-12-04T00:00:00Z",
-      "status": "pending",
-      "type": "add_new_fact",
-      "target_path": "/composite_updates/kaku_heartbeat_nga",
-      "proposed_change": {
-        "sources": {
-          "expert_commentary": {
-            "kaku_pack": {
-              "description": "Add Michio Kaku as a T3 expert-commentary source for 3i/ATLAS public narrative tracking.",
-              "entries": [
-                {
-                  "source_id": "MICHIO-KAKU-3I-ATLAS-OFFICIAL-SITE",
-                  "role": "popularizer_physicist_commentary",
-                  "tier": "T3",
-                  "notes": "Mkaku.org landing/aggregation pages for 3I/ATLAS TV appearances. Use only for narrative context and threshold quotes, not for orbital or compositional ground truth."
-                },
-                {
-                  "source_id": "MICHIO-KAKU-3I-ATLAS-MEDIA-PACK",
-                  "role": "press_summary",
-                  "tier": "T3",
-                  "notes": "Bundle of mainstream and niche coverage quoting Kaku on 3I/ATLAS (extra energy test, NASA openness critique). Requires cross-check against T1/T2 sources before using any quantitative claims."
-                }
-              ],
-              "use_cases": [
-                "public_discourse_context",
-                "expectation_thresholds",
-                "media_audit"
-              ],
-              "do_not_use_for": [
-                "primary_orbital_elements",
-                "primary_composition_inference"
-              ]
-            }
-          }
+      "approval_requirements": [
+        "Confirm official Michio Kaku 3I/ATLAS appearances on mkaku.org and tag them appropriately.",
+        "Locate the primary heartbeat/periodicity lightcurve paper and attach its arXiv/ADS identifiers.",
+        "Run JPL Horizons at the quoted epochs to confirm or correct A1 values and document uncertainties.",
+        "Ensure all heartbeat/jet/visitor framings are fenced as T3/T4 interpretations, separate from T1/T2 orbital and photometric facts."
+      ],
+      "as_of": "2025-12-04",
+      "confidence": "medium",
+      "continuity_weight": 0.85,
+      "due_by": "2025-12-09T23:59:00Z",
+      "integrated_at": "2026-02-16T00:00:00Z",
+      "integrated_components": [
+        {
+          "component": "lightcurve_spin_period",
+          "kb_path": "/physical_characteristics/rotation_state",
+          "source_id": "SANTANA-ROS-3I-ATLAS-SPIN-2025"
         },
+        {
+          "component": "nongrav_parameters",
+          "kb_path": "/advanced_technical/orbit_solution/non_gravitational_model",
+          "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-16"
+        },
+        {
+          "component": "kaku_narrative_tracking",
+          "kb_path": "/expert_perspectives/public_narrative_tracking/kaku",
+          "source_id": "MICHIO-KAKU-3I-ATLAS-TAG"
+        }
+      ],
+      "note": "Bundle proposal: does not directly change user-facing facts until sources are verified (Kaku pack, heartbeat period, NGA values) and integrated into the main KB structures. Designed to be audited via JPL Horizons, arXiv/ADS, and primary opinion essays.",
+      "previous_status": "integrated_partial",
+      "proposal_id": "kb_propose_kaku_heartbeat_nga_bundle_20251204",
+      "proposal_tier_mix": [
+        "T1_agency_tools",
+        "T2_preprint",
+        "T3_press",
+        "T3"
+      ],
+      "proposed_at": "2025-12-04T00:00:00Z",
+      "proposed_change": {
         "observations": {
           "lightcurve": {
             "heartbeat_periodicity": {
-              "description": "16.16-hour periodic brightness modulation (heartbeat-style lightcurve) reported for 3i/ATLAS.",
-              "candidate_source_id": "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
-              "period_hours": 16.16,
-              "observation_type": "photometric_lightcurve",
-              "natural_interpretation": "Rotating or tumbling nucleus and/or jet-modulated coma brightness; consistent with comet physics.",
               "alternative_interpretations": [
                 {
                   "source_id": "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
-                  "tier": "T3_opinion",
-                  "summary": "Loeb suggests the jets may be pulsed like a heartbeat and potentially tied to artificial thrusters; explicitly non-consensus and speculative."
+                  "summary": "Loeb suggests the jets may be pulsed like a heartbeat and potentially tied to artificial thrusters; explicitly non-consensus and speculative.",
+                  "tier": "T3",
+                  "tier_subtype": "opinion"
                 }
               ],
+              "candidate_source_id": "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
+              "description": "16.16-hour periodic brightness modulation (heartbeat-style lightcurve) reported for 3i/ATLAS.",
+              "natural_interpretation": "Rotating or tumbling nucleus and/or jet-modulated coma brightness; consistent with comet physics.",
+              "observation_type": "photometric_lightcurve",
+              "period_hours": 16.16,
               "validation_requirements": [
                 "Locate and catalog the primary lightcurve paper (likely on arXiv/ADS; Santana-Ros group or equivalent).",
                 "Verify the period, amplitude, and data reduction method from the primary source.",
@@ -190,16 +161,16 @@
             "description": "Press-reported JPL Horizons non-gravitational radial A1 values for 3i/ATLAS around perihelion.",
             "entries": [
               {
-                "label": "NGA_A1_oct30",
-                "epoch": "2025-10-30",
                 "a1_au_per_day2": 1.6e-06,
+                "epoch": "2025-10-30",
+                "label": "NGA_A1_oct30",
                 "provenance": "Press citing JPL Horizons public solution around Oct 30 2025.",
                 "status": "needs_direct_horizons_verification"
               },
               {
-                "label": "NGA_A1_nov24",
-                "epoch": "2025-11-24",
                 "a1_au_per_day2": 4e-07,
+                "epoch": "2025-11-24",
+                "label": "NGA_A1_nov24",
                 "provenance": "Press citing updated JPL Horizons solution around Nov 24 2025.",
                 "status": "needs_direct_horizons_verification"
               }
@@ -215,43 +186,40 @@
               "Ensure BAAM uses verified NGA values, not press-derived numbers, when possible."
             ]
           }
+        },
+        "source_notes": {
+          "expert_commentary": {
+            "kaku_pack": {
+              "description": "Add Michio Kaku as a T3 expert-commentary source for 3i/ATLAS public narrative tracking.",
+              "do_not_use_for": [
+                "primary_orbital_elements",
+                "primary_composition_inference"
+              ],
+              "entries": [
+                {
+                  "notes": "Mkaku.org landing/aggregation pages for 3I/ATLAS TV appearances. Use only for narrative context and threshold quotes, not for orbital or compositional ground truth.",
+                  "role": "popularizer_physicist_commentary",
+                  "source_id": "MICHIO-KAKU-3I-ATLAS-TAG",
+                  "tier": "T3"
+                },
+                {
+                  "notes": "Bundle of mainstream and niche coverage quoting Kaku on 3I/ATLAS (extra energy test, NASA openness critique). Requires cross-check against T1/T2 sources before using any quantitative claims.",
+                  "role": "press_summary",
+                  "source_id": "MICHIO-KAKU-3I-ATLAS-TAG",
+                  "tier": "T3"
+                }
+              ],
+              "use_cases": [
+                "public_discourse_context",
+                "expectation_thresholds",
+                "media_audit"
+              ]
+            }
+          }
         }
       },
-      "rationale": "Integrate a controlled representation of Michio Kaku's 3i/ATLAS commentary (as T3 expert media), a well-documented ~16.16-hour lightcurve periodicity, and press-quoted JPL Horizons NGA values into the KB. This allows the Gateway to track public narrative, heartbeat framing, and 'extra energy' claims while keeping T1/T2 physics clearly separated from T3/T4 speculation.",
-      "source_ids_proposed": [
-        "MICHIO-KAKU-3I-ATLAS-OFFICIAL-SITE",
-        "MICHIO-KAKU-3I-ATLAS-MEDIA-PACK",
-        "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
-        "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
-        "LOEB-3I-ATLAS-ANTI-TAIL-SWARM-2025-12-01",
-        "NGA-HORIZONS-3I-ATLAS-2025-10-30",
-        "NGA-HORIZONS-3I-ATLAS-2025-11-24"
-      ],
-      "as_of": "2025-12-04",
-      "confidence": "medium",
-      "requires_web_search": true,
-      "note": "Bundle proposal: does not directly change user-facing facts until sources are verified (Kaku pack, heartbeat period, NGA values) and integrated into the main KB structures. Designed to be audited via JPL Horizons, arXiv/ADS, and primary opinion essays.",
-      "proposal_tier_mix": [
-        "T1_agency_tools",
-        "T2_preprint",
-        "T3_press",
-        "T3_opinion"
-      ],
       "public_surface": false,
-      "approval_requirements": [
-        "Confirm official Michio Kaku 3I/ATLAS appearances on mkaku.org and tag them appropriately.",
-        "Locate the primary heartbeat/periodicity lightcurve paper and attach its arXiv/ADS identifiers.",
-        "Run JPL Horizons at the quoted epochs to confirm or correct A1 values and document uncertainties.",
-        "Ensure all heartbeat/jet/visitor framings are fenced as T3/T4 interpretations, separate from T1/T2 orbital and photometric facts."
-      ],
-      "review_owner": "science_editor@atlas",
-      "due_by": "2025-12-09T23:59:00Z",
-      "review_checklist": [
-        "Check mkaku.org and major outlets for Kaku primary commentary; avoid using clickbait blogs as primary sources.",
-        "Find and register the Santana-Ros (or equivalent) lightcurve analysis in sources.json with T2 tiering.",
-        "Capture direct JPL Horizons A1/A2/A3 values with timestamps and include them in advanced_technical or orbital_models.",
-        "Verify that BAAM and anomaly sections reference the updated NGA and heartbeat entries correctly and do not overstate artificiality hypotheses."
-      ],
+      "rationale": "Integrated evidence present in ledger; closed as integrated.",
       "required_domains": [
         "mkaku.org",
         "people.com",
@@ -263,54 +231,132 @@
         "ui.adsabs.harvard.edu",
         "ssd.jpl.nasa.gov"
       ],
+      "requires_web_search": false,
+      "review_checklist": [
+        "Check mkaku.org and major outlets for Kaku primary commentary; avoid using clickbait blogs as primary sources.",
+        "Find and register the Santana-Ros (or equivalent) lightcurve analysis in sources.json with T2 tiering.",
+        "Capture direct JPL Horizons A1/A2/A3 values with timestamps and include them in advanced_technical or orbital_models.",
+        "Verify that BAAM and anomaly sections reference the updated NGA and heartbeat entries correctly and do not overstate artificiality hypotheses."
+      ],
+      "review_owner": "science_editor@atlas",
+      "source_ids_proposed": [
+        "MICHIO-KAKU-3I-ATLAS-TAG",
+        "MICHIO-KAKU-3I-ATLAS-TAG",
+        "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
+        "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
+        "LOEB-3I-ATLAS-ANTI-TAIL-SWARM-2025-12-01",
+        "NGA-HORIZONS-3I-ATLAS-2025-10-30",
+        "NGA-HORIZONS-3I-ATLAS-2025-11-24"
+      ],
+      "status": "integrated",
+      "target_path": "/composite_updates/kaku_heartbeat_nga",
       "tier_system": {
-        "truth_tier": "T2",
         "false_tier_estimate": "F1",
-        "reflexion_status": "under_review"
+        "reflexion_status": "under_review",
+        "truth_tier": "T2"
       },
-      "continuity_weight": 0.85
+      "type": "add_new_fact",
+      "decision": "CLOSE_AS_INTEGRATED",
+      "decision_at": "2026-02-22T00:09:03Z",
+      "decision_by": "OverdueSweepBot-v2.12.3"
     }
   ],
+  "integrity_audit": {
+    "as_of": "2026-02-17T03:46:57Z",
+    "audit_passed": true,
+    "auditor": "normalize_updates.js v2.11.1",
+    "chi_score": 9.7,
+    "entropy_leak": 0.02,
+    "false_tier_hits": 0,
+    "log_id": "#ATLAS-AUDIT-UPDATES-Δ2025-12-02",
+    "fingerprint_sha256_at_audit": "e97f5d2fdd6663d7a942a9c48f40d7abcdc56c770972a6dda08e78db035d0e41"
+  },
+  "last_updated": "2026-02-17T03:46:57Z",
+  "love_fear_constant": "Love>Fear",
+  "pending": [],
+  "reflexion_validation": true,
   "rejected": [
     {
+      "alternative_integrated": "Added caveat to blue_hue_reports in KB explaining instrumental artifact",
       "proposal_id": "kb_reject_blue_hue_intrinsic",
       "proposed_at": "2025-10-28T10:00:00Z",
       "rejected_at": "2025-10-29T14:00:00Z",
-      "status": "rejected",
       "rejected_reason": "SOHO/LASCO and STEREO/SECCHI instrument documentation confirms blue-filtered detectors, not true-color imaging. Blue appearance is instrumental artifact, not intrinsic property.",
-      "alternative_integrated": "Added caveat to blue_hue_reports in KB explaining instrumental artifact",
       "source_ids_consulted": [
         "SOHO-LASCO-INSTRUMENT",
         "STEREO-SECCHI-COLOR"
-      ]
+      ],
+      "status": "closed_no_action",
+      "decision": "ARCHIVE_AS_STALE",
+      "decision_at": "2026-02-22T00:09:03Z",
+      "decision_by": "OverdueSweepBot-v2.12.3",
+      "archived_on": "2026-02-22",
+      "archival_note": "Historically rejected proposal retained for audit continuity.",
+      "rationale": "Rejected proposal normalized to canonical closed state."
+    },
+    {
+      "approval_requirements": [
+        "Primary update on the Galileo Project website or institutional page",
+        "If data posted, prefer arXiv/ADS entry; otherwise fence as T3/T4"
+      ],
+      "as_of": "2025-11-07",
+      "confidence": "medium_pending_results",
+      "continuity_weight": 0.75,
+      "due_by": "2026-03-24T00:09:03Z",
+      "hold_reason": "Awaiting post-perihelion results publication (expected Dec 2025 – Jan 2026)",
+      "note": "Will integrate when Galileo Project publishes preliminary findings or confirms monitoring progress",
+      "proposal_id": "kb_propose_galileo_project_update",
+      "proposal_tier_mix": [
+        "T3_press",
+        "T4_community"
+      ],
+      "proposed_at": "2025-11-01T19:45:00Z",
+      "proposed_change": {
+        "expected_publication_date": "Dec 2025 or Jan 2026",
+        "multi_spectrum_data": "Infrared, optical, radio bands monitored during Nov 11-15 window",
+        "observation_campaign_results": "Pending"
+      },
+      "public_surface": false,
+      "rationale": "Needs external verification; deferred with fresh due_by per governance policy.",
+      "rejected_at": "2026-02-16T00:00:00Z",
+      "rejection_reason": "No primary Galileo Project update or publication found on required domains as of 2026-02-16; avoid implying results exist.",
+      "required_domains": [
+        "projects.iq.harvard.edu",
+        "arxiv.org",
+        "ui.adsabs.harvard.edu"
+      ],
+      "requires_web_search": true,
+      "review_checklist": [
+        "Check Galileo Project official site for a primary update",
+        "If data posted, prefer arXiv/ADS entry; otherwise keep fenced as T3/T4",
+        "Verify KB target path and avoid implying peer review",
+        "Add publication venue (if any) and embargo notes"
+      ],
+      "review_owner": "science_editor@atlas",
+      "source_ids_proposed": [
+        "GALILEO-PROJECT-OVERVIEW"
+      ],
+      "status": "deferred",
+      "target_path": "/expert_perspectives/avi_loeb_analysis/galileo_project_involvement",
+      "tier_system": {
+        "false_tier_estimate": "F1",
+        "reflexion_status": "under_review",
+        "truth_tier": "T2"
+      },
+      "type": "add_new_fact",
+      "decision": "DEFER_WITH_NEW_DUE_DATE",
+      "decision_at": "2026-02-22T00:09:03Z",
+      "decision_by": "OverdueSweepBot-v2.12.3",
+      "blocked_by": "requires_web_search"
     }
   ],
-  "version": "2.11.2",
-  "last_updated": "2025-12-05T03:30:00Z",
-  "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
-  "love_fear_constant": "Love>Fear",
-  "reflexion_validation": true,
-  "audit_cycle_hours": 24,
-  "chi_target": 9.7,
-  "integrity_audit": {
-    "as_of": "2025-12-02T00:00:00Z",
-    "auditor": "normalize_updates.js v2.11.1",
-    "false_tier_hits": 0,
-    "entropy_leak": 0.02,
-    "chi_score": 9.7,
-    "audit_passed": true,
-    "log_id": "#ATLAS-AUDIT-UPDATES-Δ2025-12-02"
-  },
-  "continuity_metrics": {
-    "total_pending": 2,
-    "total_rejected": 1,
-    "integration_ratio": 0.75,
-    "average_continuity_weight": 0.94
-  },
-  "signature": "#ATLAS-SIG-KB-UPDATES-v2.11.2-FINGERPRINT",
-  "signature_status": "signed_fingerprint",
-  "fingerprint_sha256": "978bba3cf6f109dd546cb728faad98af5e202a1399ad0b8059280924fb6866ec",
-  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "updates_version": "2.11.2",
-  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-UPDATES-v2.11.2-FINGERPRINT"
+  "signature": "#ATLAS-SIG-UPDATES-v2.12.3-Δ2026-02-16",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.12.3-Δ2026-02-16",
+  "signature_status": "signature_validated",
+  "updates_version": "2.12.3",
+  "verified_by": "EOS Transparency v2.11.2",
+  "version": "2.12.3",
+  "signature_validated_at": "2026-02-22T06:32:29Z",
+  "validated_by": "ATLAS-Governance-Integrity-Repair-v2.12.3-dev",
+  "validation_basis": "Referential integrity verified (missing_ids=0, quarantined_in_surfaced=0); fingerprints rebuilt using CANONICAL_SHA256_V1 (sorted keys, compact JSON; signature fields excluded); marker coherence enforced"
 }

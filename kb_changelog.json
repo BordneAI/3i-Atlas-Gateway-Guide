@@ -824,6 +824,20 @@
         "kb_changelog.json"
       ],
       "tier_system": "truth_tier T1/T2, false_tier_estimate F0, reflexion_status validated"
+    },
+    {
+      "update_id": "kb_apply_polish_consolidate_sources_and_tiers_20260222",
+      "applied_at": "2026-02-22T00:00:00Z",
+      "status": "approved",
+      "type": "integrity_patches",
+      "summary": "Polish: consolidated redundant NASA overview source (or aliased), merged Breakthrough Listen KB nodes into one canonical negative-null fact with primary arXiv citation, and normalized updates-queue tier labels (T3_opinion → T3 + subtype).",
+      "applied_in_files": [
+        "sources.json",
+        "knowledge_base_merged_v2.json",
+        "kb_updates_cumulative.json",
+        "kb_changelog.json"
+      ],
+      "tier_system": "truth_tier T1–T2, false_tier_estimate F0, reflexion_status validated"
     }
   ],
   "entropy": {
