@@ -12,7 +12,7 @@
   "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
   "filename": "kb_updates_cumulative.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "4f59c7751e01a7ae29224f4d5975a9e96f4deb338e231381a412af60a96b0fa0",
+  "fingerprint_sha256": "5080e0032f3c423d1b86453ea46d08b9704f76dbbb5fa013241e945f4a80a808",
   "integrated": [
     {
       "approval_requirements": [
@@ -356,7 +356,7 @@
   "updates_version": "2.12.3",
   "verified_by": "EOS Transparency v2.11.2",
   "version": "2.12.3",
-  "signature_validated_at": "2026-02-22T06:32:29Z",
-  "validated_by": "ATLAS-Governance-Integrity-Repair-v2.12.3-dev",
-  "validation_basis": "Referential integrity verified (missing_ids=0, quarantined_in_surfaced=0); fingerprints rebuilt using CANONICAL_SHA256_V1 (sorted keys, compact JSON; signature fields excluded); marker coherence enforced"
+  "signature_validated_at": "2026-02-22T21:30:00Z",
+  "validated_by": "ATLAS-Release-Seal-v2.12.3",
+  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1."
 }

@@ -14,12 +14,12 @@
       "non_gravitational_model": {
         "g_r_model": "g(r) = (1 au / r)^2 for CO2 (as reported in Horizons output)",
         "parameters_A1_A2_A3_au_per_day2": {
-          "A1": 4.55242395401e-08,
-          "A2": 1.769764900208e-08,
-          "A3": -6.198436617851e-09,
+          "A1": 4.55242395401e-8,
+          "A2": 1.769764900208e-8,
+          "A3": -6.198436617851e-9,
           "confidence": "extremely_high",
           "data_arc": "2025-05-15 to 2026-01-20",
-          "dt_days": 0.0,
+          "dt_days": 0,
           "last_audit": "2026-02-16T00:00:00Z",
           "solution_date": "2026-02-13_09:09:38",
           "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-16",
@@ -264,7 +264,7 @@
           "confidence": "high",
           "framework_note": "Loeb Scale: 0 natural … 10 confirmed technological. Level 4 is a threshold for serious consideration alongside natural models.",
           "note": "Supersedes earlier 8–9/10 phrasing.",
-          "source_id": "LOEB-SCALE-2508.09167"
+          "source_id": "LOEB-SCALE-2508-09167"
         },
         {
           "as_of": "2025-11-07",
@@ -518,7 +518,7 @@
       "confidence": "high",
       "id": "3i_jwst_co2_coma",
       "sources": [
-        "JWST-CO2-2508.18209"
+        "JWST-CO2-2508-18209"
       ],
       "text": "JWST NIRSpec spectroscopy shows that 3i/ATLAS has a CO2-dominated coma with a CO2/H2O ratio of order 8 at r ≈ 3.3 au, along with detections of water, carbon monoxide and other species.",
       "tier": "T2"
@@ -539,7 +539,7 @@
       "confidence": "high",
       "id": "3i_rotation_preperihelion",
       "sources": [
-        "ARXIV-2508.00808-SALT",
+        "ARXIV-2508-00808-SALT",
         "MNRAS-2025-STAF1994-SOAR-PHOTOMETRY"
       ],
       "text": "Time-series photometry in July 2025 reported a ~16.16 ± 0.01 hour periodic brightness modulation (interpreted as nucleus rotation; lightcurve amplitude ~0.3 mag).",
@@ -600,7 +600,7 @@
         "comet-centered image time series",
         "aperture light curves"
       ],
-      "source_id": "ARXIV-2602.12364-TESS-TSSC-HLSP",
+      "source_id": "ARXIV-2602-12364-TESS-TSSC-HLSP",
       "tags": [
         "facts",
         "technical",
@@ -635,7 +635,7 @@
       "notes": "Primary citation updated to Breakthrough Listen GBT preprint; language kept as negative-null observational constraint.",
       "result": "nondetection down to ~100 mW level",
       "sources": [
-        "ARXIV-2512.19763-BREAKTHROUGH-LISTEN-GBT",
+        "ARXIV-2512-19763-BREAKTHROUGH-LISTEN-GBT",
         "SETI-ORG-BREAKTHROUGH-LISTEN-3I-ATLAS",
         "SETI-BERKELEY-BREAKTHROUGH-LISTEN-3I-ATLAS"
       ],
@@ -646,7 +646,7 @@
   ],
   "filename": "knowledge_base_merged_v2.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "b064ecf177b78f96b6025d4d16c930645d79328f86144d9170b94dbafee66f26",
+  "fingerprint_sha256": "c6e31dd5ce66401357f4af6fdef252ee299647d9e6d3ea1961935bb54c972fa6",
   "integrity_audit": {
     "as_of": "2026-02-22T06:03:42Z",
     "audit_log_entry": "#ATLAS-AUDIT-KB-Δ2026-02-16",
@@ -751,7 +751,7 @@
         "presentation": "interpretation_only",
         "sources": [
           "ARXIV-2511-19112-CRYOVOLCANOES",
-          "LIVESCi-3I-ATLAS-CRYOVOLCANOES-20251201"
+          "LIVESCI-3I-ATLAS-CRYOVOLCANOES-20251201"
         ],
         "status": "proposed",
         "tier": "T2"
@@ -1140,9 +1140,9 @@
   },
   "verified_by": "EOS Transparency v2.11.2",
   "version": "2.12.3",
-  "signature_validated_at": "2026-02-22T06:32:29Z",
-  "validated_by": "ATLAS-Governance-Integrity-Repair-v2.12.3-dev",
-  "validation_basis": "Referential integrity verified (missing_ids=0, quarantined_in_surfaced=0); fingerprints rebuilt using CANONICAL_SHA256_V1 (sorted keys, compact JSON; signature fields excluded); marker coherence enforced",
+  "signature_validated_at": "2026-02-22T21:30:00Z",
+  "validated_by": "ATLAS-Release-Seal-v2.12.3",
+  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1.",
   "option_c_templates": {
     "gate_name": "Option C",
     "gate_banner": "Option C active (domain-gated)",

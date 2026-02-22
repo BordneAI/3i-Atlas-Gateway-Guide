@@ -1138,7 +1138,7 @@
   "description": "Source registry upgraded under BordneAI Phase-10 protocols — includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
   "filename": "sources.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "c16deb5a9cf1910f58e43f3b4c05fe4a5933cae6da63fafbbe54bf2987103617",
+  "fingerprint_sha256": "a281653dc7787e159646941885c496064fc48517a697bdfa0a379951c8e5741c",
   "last_updated": "2026-02-17T03:46:57Z",
   "love_fear_constant": "Love>Fear",
   "negative_null_policy": {
@@ -1240,9 +1240,9 @@
     "verified_by": "ATLAS-Governance-Automation-v2.12.3",
     "notes": "Registered from existing KB proposal references; opinion/commentary source, not primary orbital evidence."
   },
-  "signature_validated_at": "2026-02-22T06:47:35Z",
-  "validated_by": "ATLAS-Governance-CleanupOnly-v2.12.3-dev",
-  "validation_basis": "Cleanup-only: manifest note coherence; sources quarantine-meta normalization; changelog clarification; fingerprints rebuilt using CANONICAL_SHA256_V1",
+  "signature_validated_at": "2026-02-22T21:30:00Z",
+  "validated_by": "ATLAS-Release-Seal-v2.12.3",
+  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1.",
   "_quarantined_meta": {
     "confidence": 0.5,
     "last_audit": "2026-02-17T03:15:49Z",
@@ -1271,5 +1271,117 @@
       "https://www.eso.org/public/news/3i-atlas-nickel/"
     ],
     "verified_by": "EOS Transparency v2.11.2"
+  },
+  "LOEB-SCALE-2508-09167": {
+    "confidence": 0.7,
+    "date_published": "2025-08-15",
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
+    "notes": "Framework paper; Level 4 baseline reference. Non-consensus.",
+    "publisher": "arXiv",
+    "tags": [
+      "loeb_scale",
+      "framework"
+    ],
+    "tier": "T2",
+    "title": "The Loeb Scale of Technological Potential in Astrophysical Phenomena",
+    "type": "preprint",
+    "urls": [
+      "https://arxiv.org/abs/2508.09167"
+    ],
+    "verified_by": "EOS Transparency v2.11.2",
+    "aliases": [
+      "LOEB-SCALE-2508.09167"
+    ]
+  },
+  "JWST-CO2-2508-18209": {
+    "confidence": 0.92,
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
+    "notes": "CO2-dominated coma and water-ice signatures.",
+    "publisher": "arXiv / ApJL (accepted)",
+    "tier": "T2",
+    "title": "JWST NIRSpec spectroscopy: CO2-dominated coma (ApJL accepted)",
+    "type": "preprint",
+    "urls": [
+      "https://arxiv.org/abs/2508.18209"
+    ],
+    "verified_by": "EOS Transparency v2.11.2",
+    "aliases": [
+      "JWST-CO2-2508.18209"
+    ]
+  },
+  "ARXIV-2508-00808-SALT": {
+    "aliases": [
+      "ARXIV_2508_00808_SALT_TEMPORAL",
+      "ARXIV-2508.00808-SALT"
+    ],
+    "confidence": 0.7,
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
+    "notes": "Spin, color, spectra, dust activity.",
+    "publisher": "arXiv",
+    "tier": "T2",
+    "title": "Temporal Evolution of 3i/ATLAS (SALT)",
+    "type": "preprint",
+    "urls": [
+      "https://arxiv.org/abs/2508.00808"
+    ],
+    "verified_by": "EOS Transparency v2.11.2"
+  },
+  "ARXIV-2602-12364-TESS-TSSC-HLSP": {
+    "confidence": 0.7,
+    "confidence_label": "high",
+    "date_published": "2026-02-12",
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
+    "notes": "Dedicated TESS observations from 2026-01-15 to 2026-01-22 with 200s and 20s cadence; TSSC HLSP includes comet-centered image time series and aperture light curves available via MAST.",
+    "publisher": "arXiv",
+    "tier": "T2",
+    "title": "TSSC comet-centered data products from TESS 3I/ATLAS observations",
+    "type": "preprint",
+    "urls": [
+      "https://arxiv.org/abs/2602.12364"
+    ],
+    "verified_by": "EOS Transparency v2.11.2",
+    "aliases": [
+      "ARXIV-2602.12364-TESS-TSSC-HLSP"
+    ]
+  },
+  "ARXIV-2512-19763-BREAKTHROUGH-LISTEN-GBT": {
+    "confidence": 0.7,
+    "confidence_label": "high",
+    "date_published": "2025-12-20",
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
+    "notes": "Observed 2025-12-18 with GBT over 1-12 GHz; technosignature search reported nondetection down to ~100 mW level. Treat as a negative-null measurement constraint.",
+    "publisher": "arXiv",
+    "tier": "T2",
+    "title": "Breakthrough Listen Observations of 3I/ATLAS with the Green Bank Telescope at 1-12 GHz",
+    "type": "preprint",
+    "urls": [
+      "https://arxiv.org/abs/2512.19763"
+    ],
+    "verified_by": "EOS Transparency v2.11.2",
+    "aliases": [
+      "ARXIV-2512.19763-BREAKTHROUGH-LISTEN-GBT"
+    ]
+  },
+  "LIVESCI-3I-ATLAS-CRYOVOLCANOES-20251201": {
+    "confidence": 0.4,
+    "last_audit": "2026-02-22T00:00:00Z",
+    "last_checked": "2026-02-22",
+    "notes": "Science-journalism summary of the 3i/ATLAS cryovolcanism preprint, including size and composition ranges and comparison to trans-Neptunian objects.",
+    "publisher": "LiveScience",
+    "tier": "T3",
+    "title": "Interstellar comet 3i/ATLAS is erupting in 'ice volcanoes', new images suggest",
+    "type": "science_press",
+    "urls": [
+      "https://www.livescience.com/space/interstellar-comet-3i-atlas-is-erupting-in-ice-volcanoes-new-images-suggest"
+    ],
+    "verified_by": "EOS Transparency v2.11.2",
+    "aliases": [
+      "LIVESCi-3I-ATLAS-CRYOVOLCANOES-20251201"
+    ]
   }
 }

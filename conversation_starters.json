@@ -73,6 +73,45 @@
         "reflexion_audit": "2025-12-02T20:23:34.026074Z",
         "ethical_weight": 0.35
       }
+    },
+    {
+      "id": "cs_option_c_on_rumor_verification",
+      "persona": "skeptical_scientist",
+      "prompt": "Turn on Option C for rumor verification.",
+      "response_guidance": "Enable Option C gate banner and run summary-first evidence verification with negative-null handling.",
+      "version": "2.12.3",
+      "continuity_meta": {
+        "truth_tier": "T1",
+        "false_tier": "F1",
+        "reflexion_audit": "2026-02-22T00:49:27Z",
+        "ethical_weight": 0.35
+      }
+    },
+    {
+      "id": "cs_option_c_verify_claim",
+      "persona": "advanced_researcher",
+      "prompt": "Verify this claim with Option C.",
+      "response_guidance": "Use Option C domain gate, short summary first, then expandable evidence/uncertainty sections.",
+      "version": "2.12.3",
+      "continuity_meta": {
+        "truth_tier": "T1",
+        "false_tier": "F1",
+        "reflexion_audit": "2026-02-22T00:49:27Z",
+        "ethical_weight": 0.35
+      }
+    },
+    {
+      "id": "cs_option_c_off",
+      "persona": "dialogue_moderator",
+      "prompt": "Option C off.",
+      "response_guidance": "Disable Option C overlay and confirm default routing remains active.",
+      "version": "2.12.3",
+      "continuity_meta": {
+        "truth_tier": "T1",
+        "false_tier": "F1",
+        "reflexion_audit": "2026-02-22T00:49:27Z",
+        "ethical_weight": 0.35
+      }
     }
   ],
   "signature": "#ATLAS-SIG-CONVSTART-v2.11.2-Δ2025-12-04",

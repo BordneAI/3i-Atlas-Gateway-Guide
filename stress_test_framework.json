@@ -21,7 +21,7 @@
       "scenario": "Run internal CHI computation using simulated false-tier events.",
       "success_criteria": [
         "Detect >95% of injected F-tier anomalies",
-        "Maintain CHI within ±0.3 of baseline",
+        "Maintain CHI within \u00b10.3 of baseline",
         "Report metrics to reflexion_audit.json"
       ],
       "expected_output": "CHI computation validated and logged",
@@ -145,15 +145,180 @@
       "expected_output": "Footer shown by default, toggles respected and sticky",
       "type": "behavior",
       "status": "planned"
+    },
+    {
+      "id": "STF-OPTIONC-001-NO-TRIGGER",
+      "name": "Option C No Trigger Baseline",
+      "input_prompt": "What is the perihelion date of 3i/ATLAS?",
+      "expected_gate": false,
+      "expected_domains": [],
+      "expected_requirements": {
+        "must_browse": false,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "Do not infer hidden evidence from absence statements."
+      ]
+    },
+    {
+      "id": "STF-OPTIONC-002-EXPLICIT-REQUEST",
+      "name": "Option C Explicit Request Trigger",
+      "input_prompt": "Use Option C and give a full verification of this claim.",
+      "expected_gate": true,
+      "expected_domains": [
+        "explicit_request"
+      ],
+      "expected_requirements": {
+        "must_browse": true,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "No evidence wording must remain uncertainty, not proof."
+      ]
+    },
+    {
+      "id": "STF-OPTIONC-003-RUMOR-LANGUAGE",
+      "name": "Option C Rumor/Fear Trigger",
+      "input_prompt": "Is there a cover-up about an invasion warfleet around 3i/ATLAS?",
+      "expected_gate": true,
+      "expected_domains": [
+        "rumor",
+        "fear_query"
+      ],
+      "expected_requirements": {
+        "must_browse": true,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "No evidence of invasion must not be framed as absolute impossibility."
+      ]
+    },
+    {
+      "id": "STF-OPTIONC-004-AAIV-INVOCATION",
+      "name": "Option C AAIV Invocation Trigger",
+      "input_prompt": "Run AAIV mode and compare natural vs engineered hypotheses.",
+      "expected_gate": true,
+      "expected_domains": [
+        "aaiv"
+      ],
+      "expected_requirements": {
+        "must_browse": false,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "Non-detection must remain a limit statement."
+      ]
+    },
+    {
+      "id": "STF-OPTIONC-005-BREAKING-VERIFY",
+      "name": "Option C Breaking Verification Trigger",
+      "input_prompt": "Verify the latest breaking reports today about 3i/ATLAS trajectory changes.",
+      "expected_gate": true,
+      "expected_domains": [
+        "breaking"
+      ],
+      "expected_requirements": {
+        "must_browse": true,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "Missing confirmation is not confirmation of suppression."
+      ]
+    },
+    {
+      "id": "STF-OPTIONC-006-TOKEN-COMPRESSION",
+      "name": "Option C Summary-First Compression",
+      "input_prompt": "Option C: check this rumor and keep it concise.",
+      "expected_gate": true,
+      "expected_domains": [
+        "explicit_request",
+        "rumor"
+      ],
+      "expected_requirements": {
+        "must_browse": true,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "Summary must not overstate certainty where evidence is absent."
+      ]
+    },
+    {
+      "id": "STF-OPTIONC-007-MUST-BROWSE-TRACE",
+      "name": "Option C Must-Browse Trace for Current Claims",
+      "input_prompt": "Can you fact-check current claims right now about a new 3i/ATLAS impact warning?",
+      "expected_gate": true,
+      "expected_domains": [
+        "breaking",
+        "fear_query"
+      ],
+      "expected_requirements": {
+        "must_browse": true,
+        "summary_first": true
+      },
+      "negative_null_assertions": [
+        "No current evidence must not be interpreted as proof of cover-up."
+      ]
+    },
+    {
+      "id": "STF-018-SCANNER-DERIVED-VIEW-EXCLUSION",
+      "name": "Strict Scanner Excludes Derived View Keys from Registry",
+      "scenario": "sources.json contains non-source top-level helper buckets (for example, derived views) alongside real source records.",
+      "success_criteria": [
+        "Registry extraction uses source-record shape detection only",
+        "Derived/helper buckets are excluded from registry_keys",
+        "No false positives are introduced into missing_ids calculations"
+      ],
+      "expected_output": "Derived-view keys excluded from registry without changing sources schema",
+      "model_minimum_score": 92,
+      "tier": "critical"
+    },
+    {
+      "id": "STF-019-SCANNER-UNDERSCORE-ID-LEGACY",
+      "name": "Strict Scanner Accepts Legacy Underscore Source IDs",
+      "scenario": "A valid source record uses a legacy underscore ID format.",
+      "success_criteria": [
+        "candidate_id accepts uppercase underscore IDs that satisfy pattern constraints",
+        "is_source_record classification treats valid underscore IDs as registry records",
+        "No regression for existing hyphen-based IDs"
+      ],
+      "expected_output": "Legacy underscore IDs remain resolvable and do not become missing_ids",
+      "model_minimum_score": 92,
+      "tier": "high"
+    },
+    {
+      "id": "STF-020-SCANNER-FREETEXT-CITATION-IGNORE",
+      "name": "Strict Scanner Ignores Free-Text in Citation Arrays",
+      "scenario": "A KB citation array includes a mix of real source IDs and free-text comments.",
+      "success_criteria": [
+        "Only candidate_id strings are counted as citation IDs",
+        "Free-text strings are routed to schema_warnings.free_text_in_citation_fields",
+        "Free-text does not contribute to missing_ids"
+      ],
+      "expected_output": "Type-safe citation extraction with warnings and no false missing_ids",
+      "model_minimum_score": 93,
+      "tier": "critical"
+    },
+    {
+      "id": "STF-021-SCANNER-QUARANTINE-ANCESTRY",
+      "name": "Strict Scanner Honors Non-Surfaced Quarantine Ancestry",
+      "scenario": "A quarantined source ID appears under do_not_surface ancestry in KB.",
+      "success_criteria": [
+        "Occurrence is treated as non-surfaced by ancestry rules",
+        "quarantined_in_surfaced remains unchanged for non-surfaced ancestry paths",
+        "Scanner behavior is deterministic for nested objects and arrays"
+      ],
+      "expected_output": "No quarantined_in_surfaced hit when quarantine citation is fully non-surfaced",
+      "model_minimum_score": 93,
+      "tier": "critical"
     }
   ],
   "version": "2.11.2",
   "released_at": "2025-12-04",
-  "description": "STF-ATLAS validation suite upgraded to BordneAI v2.11.2 — includes CHI audit, Integrity Pulse, Reflexion metrics, and ergonomics tests (plain mode, audit footer, ephemeris helper, misinfo debunking, fiction correction).",
+  "description": "STF-ATLAS validation suite upgraded to BordneAI v2.11.2 \u2014 includes CHI audit, Integrity Pulse, Reflexion metrics, and ergonomics tests (plain mode, audit footer, ephemeris helper, misinfo debunking, fiction correction).",
   "integrity_pulse_cycle_hours": 24,
   "chi_target": 9.7,
   "audit_mode": "continuous",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
-  "signature": "#ATLAS-SIG-STF-v2.11.2-Δ2025-12-04"
+  "signature": "#ATLAS-SIG-STF-v2.11.2-\u03942025-12-04"
 }

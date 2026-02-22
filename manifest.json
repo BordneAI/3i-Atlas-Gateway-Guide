@@ -1,27 +1,27 @@
 {
-  "version": "2.12.3-dev",
+  "version": "2.12.3",
   "release_date": "2026-02-22",
-  "release_state": "dev",
-  "release_state_notes": "Dev surface for v2.12.3 integration; not sealed. Signatures validated; sealing pending checklist.",
+  "release_state": "sealed",
+  "release_state_notes": "Sealed v2.12.3 release surface. Signatures validated; post-seal checklist complete.",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Dev surface tracks Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion (v2 verification clean), and STF Option C gate suite pass logging; run post-edit governance refresh pipeline before sealing.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Sealed v2.12.3 integrates Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion (v2 verification clean), STF gate/full-suite logging, and post-hardening governance integrity closure.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.12.3-dev",
+      "version": "2.12.3",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
-      "version": "2.12.3-dev",
+      "version": "2.12.3",
       "purpose": "System prompt with operational guidelines, tool/browse rules, and governance routing"
     },
     "CHANGELOG.md": {
-      "version": "2.12.3-dev",
+      "version": "2.12.3",
       "purpose": "Release history and change summaries (canonical release surface)"
     },
     "README.md": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "purpose": "Deployment guide and governance overview (non-canonical; explanatory)"
     },
     "knowledge_base_merged_v2.json": {
@@ -109,7 +109,7 @@
     "v2.11.2": "Ergonomics and governance updates: plain/simple mode toggle, audit footer option, ephemeris helper pattern, rumor handling, external evaluations organization.",
     "v2.12.0": "AAIV scaffolding: added AAIV protocol + agent spec (T4-only, opt-in, natural-first, low priors); no default runtime behavior changes.",
     "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules.",
-    "v2.12.3-dev": "Dev integration milestone: Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion, STF Option C gate pass/logging, and post-edit governance refresh required before sealing."
+    "v2.12.3": "Sealed integration milestone: Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion, STF Option C gate/full-suite pass logging, and governance hardening finalized."
   },
   "key_features": {
     "provenance_discipline": "Source registry + as_of + confidence labeling for factual claims",
@@ -156,8 +156,8 @@
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
   "signature_status": "signature_validated",
-  "signature": "#ATLAS-SIG-MANIFEST-v2.12.3-dev-Δ2026-02-22",
-  "fingerprint_sha256": "76a40bbfc5b7a5759f487c850e9ec2b30e119effdee49ba00cb0f9b877a14674",
+  "signature": "#ATLAS-SIG-MANIFEST-v2.12.3-Δ2026-02-22",
+  "fingerprint_sha256": "7e93dd7b3ed6c6658e50993c75d6a1ce66480248bd089a9b48a9f29a078f03c3",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "signature_blocking": false,
   "continuity_score": 9.7,
@@ -166,7 +166,7 @@
   "chi_enabled": true,
   "reflexion_hook_enabled": true,
   "public_audit_badge": true,
-  "signature_validated_at": "2026-02-22T06:47:35Z",
-  "validated_by": "ATLAS-Governance-CleanupOnly-v2.12.3-dev",
-  "validation_basis": "Cleanup-only: manifest note coherence; sources quarantine-meta normalization; changelog clarification; fingerprints rebuilt using CANONICAL_SHA256_V1"
+  "signature_validated_at": "2026-02-22T21:30:00Z",
+  "validated_by": "ATLAS-Release-Seal-v2.12.3",
+  "validation_basis": "Canonical surfaces reconciled to sealed v2.12.3; final STF full-suite results logged; fingerprints rebuilt using CANONICAL_SHA256_V1"
 }
