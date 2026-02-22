@@ -570,8 +570,10 @@
       "version": "v2.11.1"
     },
     {
-      "notes": "Tier enforcement, placeholder ban, and seed indexer governance hardened. Awaiting independent signature validation.",
-      "status": "signature_pending_validation",
+      "notes": "Seal checklist complete; instructions signature regenerated and scanner re-validated.",
+      "status": "signature_validated",
+      "signature_validated_at": "2026-02-22T00:00:00Z",
+      "validated_by": "ATLAS-Governance-Integrity-Repair-v2.12.3",
       "tag": "seal_candidate_v2_12_3",
       "type": "seal_candidate",
       "version": "2.12.3"
@@ -838,6 +840,21 @@
         "kb_changelog.json"
       ],
       "tier_system": "truth_tier T1–T2, false_tier_estimate F0, reflexion_status validated"
+    },
+    {
+      "update_id": "kb_seal_finalize_v2_12_3_20260222",
+      "update_type": "seal_finalize_validation",
+      "timestamp_utc": "2026-02-22T00:00:00Z",
+      "summary": {
+        "missing_ids": 0,
+        "quarantined_in_surfaced": 0,
+        "schema_warnings_free_text_in_citation_fields": 6
+      },
+      "files_touched": [
+        "instructions.txt",
+        "kb_changelog.json",
+        "manifest.json"
+      ]
     }
   ],
   "entropy": {
