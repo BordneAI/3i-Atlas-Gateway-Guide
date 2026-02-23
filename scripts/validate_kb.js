@@ -88,10 +88,10 @@ function isSourceRecord(key, value) {
   if (!hasRequiredStrings) return false;
 
   const hasUrls = Array.isArray(value.urls) &&
+    value.urls.length > 0 &&
     value.urls.every((u) => typeof u === "string" && u.trim().length > 0);
   const hasPath = isNonEmptyString(value.path);
-  const hasLegacyLocator = Array.isArray(value.urls);
-  return hasUrls || hasPath || hasLegacyLocator;
+  return hasUrls || hasPath;
 }
 
 function pushWarning(warnings, key, entry) {

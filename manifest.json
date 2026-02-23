@@ -31,7 +31,7 @@
       "purpose": "Primary knowledge base with verified facts, interpretations, practices, and entropy signal map"
     },
     "conversation_starters.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "purpose": "Persona-aware prompts including Settings (98), Tools (97), auditor triggers"
     },
     "sources.json": {
@@ -50,15 +50,15 @@
       "purpose": "Immutable log of applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "filename": "tags_index.json",
-      "last_updated": "2026-02-15",
+      "last_updated": "2026-02-22",
       "purpose": "Searchable tag index for knowledge base navigation"
     },
     "stress_test_framework.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "filename": "stress_test_framework.json",
-      "last_updated": "2025-12-04",
+      "last_updated": "2026-02-22",
       "purpose": "STF-ATLAS validation scenarios and auditor overlay hooks"
     },
     "bayesian_framework.json": {
@@ -157,7 +157,7 @@
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
   "signature_status": "signature_validated",
   "signature": "#ATLAS-SIG-MANIFEST-v2.12.3-Δ2026-02-22",
-  "fingerprint_sha256": "7e93dd7b3ed6c6658e50993c75d6a1ce66480248bd089a9b48a9f29a078f03c3",
+  "fingerprint_sha256": "3ee006ca683f66790ea3851c2bac97c74ea7710eee4f6549ea0e6913c64a9778",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "signature_blocking": false,
   "continuity_score": 9.7,

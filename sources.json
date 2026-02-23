@@ -47,18 +47,6 @@
     ],
     "verified_by": "EOS Transparency v2.11.2"
   },
-  "ANOMALY-SURVEY-2025": {
-    "confidence": 0.2,
-    "last_audit": "2025-10-30T00:00:00Z",
-    "last_checked": "2025-10-30",
-    "notes": "Composite source for unverified claims (mass, temp, bio-effects, C14, mantras). No peer-reviewed source found.",
-    "publisher": "Greer/Disclosure Proj/Media",
-    "tier": "T3",
-    "title": "Consolidated reports on Buga Sphere anomaly (unverified)",
-    "type": "media",
-    "urls": [],
-    "verified_by": "EOS Transparency v2.11.2"
-  },
   "ANTI-TAIL-2509.07771": {
     "confidence": 0.7,
     "last_audit": "2025-10-30T00:00:00Z",
@@ -1074,19 +1062,24 @@
     ],
     "verified_by": "EOS Transparency v2.11.2"
   },
-  "VARIOUS-PRESS-REPORTS": {
-    "confidence": 0.3,
-    "last_audit": "2026-02-17T00:00:00Z",
-    "last_checked": "2026-02-17",
-    "notes": "Composite placeholder for multiple media references; should be replaced by specific citations.",
-    "publisher": "Media reports",
-    "tier": "T3",
-    "title": "Various press reports (composite)",
-    "type": "media",
-    "urls": [],
-    "verified_by": "EOS Transparency v2.11.2"
-  },
   "_quarantined": {
+    "ANOMALY-SURVEY-2025": {
+      "confidence": 0.2,
+      "confidence_label": "low",
+      "do_not_cite_primary": true,
+      "do_not_surface": true,
+      "last_audit": "2026-02-22T00:00:00Z",
+      "last_checked": "2026-02-22",
+      "notes": "Composite source for unverified claims (mass, temp, bio-effects, C14, mantras). No peer-reviewed source found.",
+      "path": "sources.json",
+      "publisher": "Greer/Disclosure Proj/Media",
+      "quarantine_reason": "composite_unverified",
+      "tier": "T3",
+      "title": "Consolidated reports on Buga Sphere anomaly (unverified)",
+      "type": "media",
+      "urls": [],
+      "verified_by": "EOS Transparency v2.11.2"
+    },
     "ARXIV-3I-ATLAS-SIZE-ESTIMATES": {
       "confidence": 0.5,
       "confidence_label": "medium",
@@ -1094,6 +1087,7 @@
       "do_not_surface": true,
       "last_audit": "2026-02-17T03:15:49Z",
       "last_checked": "2025-11-07",
+      "path": "sources.json",
       "publisher": "arXiv",
       "quarantine_reason": "generic_arxiv_placeholder",
       "tier": "T2",
@@ -1109,6 +1103,7 @@
       "last_audit": "2026-02-17T03:15:49Z",
       "last_checked": "2025-10-30",
       "notes": "No primary CNSA/Tianwen source found as of last_checked; treat as unverified.",
+      "path": "sources.json",
       "publisher": "Unconfirmed",
       "quarantine_reason": "placeholder_unverified",
       "tier": "T3",
@@ -1121,8 +1116,10 @@
       "confidence": 0.3,
       "confidence_label": "low",
       "do_not_cite_primary": true,
+      "do_not_surface": true,
       "last_audit": "2026-02-17T03:15:49Z",
       "last_checked": "2025-11-07",
+      "path": "sources.json",
       "publisher": "Various",
       "quarantine_reason": "placeholder_unverified",
       "tier": "T3",
@@ -1138,7 +1135,7 @@
   "description": "Source registry upgraded under BordneAI Phase-10 protocols — includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
   "filename": "sources.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "a281653dc7787e159646941885c496064fc48517a697bdfa0a379951c8e5741c",
+  "fingerprint_sha256": "8cc51b0f99692a9a93a8155790fc186cfb6037073974787813f462b6079e7474",
   "last_updated": "2026-02-17T03:46:57Z",
   "love_fear_constant": "Love>Fear",
   "negative_null_policy": {
@@ -1240,9 +1237,9 @@
     "verified_by": "ATLAS-Governance-Automation-v2.12.3",
     "notes": "Registered from existing KB proposal references; opinion/commentary source, not primary orbital evidence."
   },
-  "signature_validated_at": "2026-02-22T21:30:00Z",
-  "validated_by": "ATLAS-Release-Seal-v2.12.3",
-  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1.",
+  "signature_validated_at": "2026-02-22T22:00:00Z",
+  "validated_by": "ATLAS-StrictScanner-PurityFix-v2.12.3",
+  "validation_basis": "Strict scanner purity fix: placeholder composite source IDs normalized to quarantine with traceable paths; scanner locator rules hardened; fingerprints rebuilt using CANONICAL_SHA256_V1.",
   "_quarantined_meta": {
     "confidence": 0.5,
     "last_audit": "2026-02-17T03:15:49Z",

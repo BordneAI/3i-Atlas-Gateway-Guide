@@ -312,13 +312,13 @@
       "tier": "critical"
     }
   ],
-  "version": "2.11.2",
-  "released_at": "2025-12-04",
-  "description": "STF-ATLAS validation suite upgraded to BordneAI v2.11.2 \u2014 includes CHI audit, Integrity Pulse, Reflexion metrics, and ergonomics tests (plain mode, audit footer, ephemeris helper, misinfo debunking, fiction correction).",
+  "version": "2.12.3",
+  "released_at": "2026-02-22",
+  "description": "STF-ATLAS validation suite aligned to 3i/ATLAS v2.12.3 seal state \u2014 includes CHI audit, Integrity Pulse, Reflexion metrics, ergonomics tests, Option C gate cases, and strict scanner hardening vectors.",
   "integrity_pulse_cycle_hours": 24,
   "chi_target": 9.7,
   "audit_mode": "continuous",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
-  "signature": "#ATLAS-SIG-STF-v2.11.2-\u03942025-12-04"
+  "signature": "#ATLAS-SIG-STF-v2.12.3-\u03942026-02-22"
 }

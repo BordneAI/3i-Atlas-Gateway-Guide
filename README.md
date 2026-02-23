@@ -27,6 +27,8 @@ This version:
 - Ingests validated T1/T2 updates (NASA Europa Clipper/TESS observations, Breakthrough Listen GBT preprint, TESS HLSP references)
 - Normalizes citation plumbing and resolves free-text citation tokens to eliminate referential warnings
 - Hardens STF execution policy (deterministic cases evaluated; non-deterministic cases explicitly skipped in deterministic runs)
+- Normalizes composite placeholder sources into quarantine with traceable locators (`path`) and duplicate-ID cleanup for strict scanner purity
+- Moves the normalization tool to `scripts/normalize_updates.js` with a backward-compatible root shim (`normalize_updates.js`)
 
 Phase-11 represents a governance and surface-alignment layer built on top of the stable Phase-10 continuity engine. Core reasoning behavior remains v2.11.x.
 
@@ -115,7 +117,7 @@ v2.12.3 does **not** replace the core Phase-10 engine; it hardens governance sur
 |------|-----------|
 | `manifest.json` | System manifest + release metadata |
 | `bayesian_framework.json` | Ethical Bayesian reasoning layer |
-| `normalize_updates.js` | Reflexion normalization + continuity auditing |
+| `scripts/normalize_updates.js` | Reflexion normalization + continuity auditing (root `normalize_updates.js` kept as compatibility shim) |
 | `stress_test_framework.json` | CHI + integrity stress tests |
 | `sources.json` | Provenance registry |
 | `knowledge_base_merged_v2.json` | Tier-tagged knowledge corpus |
@@ -175,6 +177,7 @@ A version bump is incomplete until audit metadata and signatures are refreshed f
 – Canonical surfaces reconciled to sealed state.  
 – Option C gate + STF infrastructure integrated and hardened.  
 – Pre-seal citation cleanup completed (`free_text_in_citation_fields: 0`).  
+- Composite placeholder sources normalized into quarantine with strict record-shape enforcement (`urls` non-empty or `path`).  
 – Final deterministic STF full suite logged (`total: 22, passed: 11, failed: 0, skipped: 11`).
 
 **2.12.2 — Truth Surface Reconciliation Patch (2026-02-15)**  
