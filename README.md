@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.12.2
-### *BordneAI Continuity Surface Alignment (Phase-11 Governance Reconciliation)*  
-Version: **2.12.2** | Phase: **11** | Last Updated: **2026-02-15** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
+# 🌌 3i/ATLAS Gateway Guide — v2.12.3
+### *BordneAI Governance Hardening + Seal Finalization (Phase-11 on Phase-10)*  
+Version: **2.12.3** | Phase: **11** | Last Updated: **2026-02-22** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
 README is informational; canonical surfaces govern
 
 **Validation (v2.11.x runtime engine):**  
@@ -8,7 +8,7 @@ README is informational; canonical surfaces govern
 9.85/10 (Grok aggregate peer review, v2.11.1) ·  
 9.75/10 (human peer review, v2.10.1 baseline)
 
-> v2.12.2 does not modify runtime engine behavior; these scores apply to the v2.11.x continuity engine currently in use.
+> v2.12.3 maintains the v2.11.x continuity runtime base while hardening governance, integrity scanning, and release surfaces.
 
 ---
 
@@ -16,15 +16,19 @@ README is informational; canonical surfaces govern
 
 **3i/ATLAS Gateway Guide** provides an ethically governed, continuously validated knowledge framework built on the **BordneAI Phase-10 Continuity Protocols**.
 
-**v2.12.2 is a governance-only reconciliation release.**  
-It introduces no new runtime engine behavior.
+**v2.12.3 is a governance + data hardening release.**  
+It does not change core runtime behavior semantics, but it expands validated data and integrity controls.
 
 This version:
 
-- Synchronizes version surfaces across `manifest.json`, `instructions.txt`, and `CHANGELOG.md`
-- Normalizes tag index schema alignment
-- Formalizes enforceable date-currency and archival routing rules
-- Clarifies signature regeneration policy for signed artifacts
+- Finalizes canonical surface alignment for sealed `v2.12.3` across `manifest.json`, `instructions.txt`, and `CHANGELOG.md`
+- Integrates Option C domain-gated routing taxonomy, templates, and STF vectors
+- Adds strict referential scanner v1.0.1 (record-shape registry extraction + type-safe citation handling + surfaced ancestry checks)
+- Ingests validated T1/T2 updates (NASA Europa Clipper/TESS observations, Breakthrough Listen GBT preprint, TESS HLSP references)
+- Normalizes citation plumbing and resolves free-text citation tokens to eliminate referential warnings
+- Hardens STF execution policy (deterministic cases evaluated; non-deterministic cases explicitly skipped in deterministic runs)
+- Normalizes composite placeholder sources into quarantine with traceable locators (`path`) and duplicate-ID cleanup for strict scanner purity
+- Moves the normalization tool to `scripts/normalize_updates.js` with a backward-compatible root shim (`normalize_updates.js`)
 
 Phase-11 represents a governance and surface-alignment layer built on top of the stable Phase-10 continuity engine. Core reasoning behavior remains v2.11.x.
 
@@ -103,7 +107,7 @@ v2.11.1 introduced numeric tier weights (T0 → +5 … T5 → 0; F0 → 0 … F7
 - Expanded governance tags  
 - Automated integrity audit cycle (24 h default)
 
-v2.12.2 does **not** modify engine behavior.
+v2.12.3 does **not** replace the core Phase-10 engine; it hardens governance surfaces, data integrity, and release discipline.
 
 ---
 
@@ -113,7 +117,7 @@ v2.12.2 does **not** modify engine behavior.
 |------|-----------|
 | `manifest.json` | System manifest + release metadata |
 | `bayesian_framework.json` | Ethical Bayesian reasoning layer |
-| `normalize_updates.js` | Reflexion normalization + continuity auditing |
+| `scripts/normalize_updates.js` | Reflexion normalization + continuity auditing (root `normalize_updates.js` kept as compatibility shim) |
 | `stress_test_framework.json` | CHI + integrity stress tests |
 | `sources.json` | Provenance registry |
 | `knowledge_base_merged_v2.json` | Tier-tagged knowledge corpus |
@@ -169,8 +173,15 @@ A version bump is incomplete until audit metadata and signatures are refreshed f
 
 ## 🪶 Version Changelog
 
+**2.12.3 — Governance Hardening + Seal Finalization (2026-02-22)**  
+– Canonical surfaces reconciled to sealed state.  
+– Option C gate + STF infrastructure integrated and hardened.  
+– Pre-seal citation cleanup completed (`free_text_in_citation_fields: 0`).  
+- Composite placeholder sources normalized into quarantine with strict record-shape enforcement (`urls` non-empty or `path`).  
+– Final deterministic STF full suite logged (`total: 22, passed: 11, failed: 0, skipped: 11`).
+
 **2.12.2 — Truth Surface Reconciliation Patch (2026-02-15)**  
-– Governance-only release. No new runtime behavior.
+– Governance reconciliation baseline for 2.12.3 hardening.
 
 **2.12.0 (2025-12-05)**  
 – Added AAIV protocol scaffolding (T4-only, opt-in, natural-first).
@@ -200,8 +211,9 @@ Responses are tier-labeled, provenance-tracked, and continuity-validated.
 
 ## ⚖️ License & Attribution
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.2  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.3  
 Released under CC BY-NC-SA 4.0  
 Integrity Score 9.7  
+Signature Status: signature_validated
 
 

@@ -1,5 +1,19 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.12.3 — Seal Finalization + Governance Hardening (2026-02-22)
+
+- Canonical surfaces reconciled to sealed state for `v2.12.3` (`manifest.json`, `instructions.txt`, `CHANGELOG.md`).
+- Option C domain-gated taxonomy + routing templates + entrypoints integrated and audited.
+- Strict Referential Scanner v1.0.1 integrated (record-shape registry detection, type-safe citation extraction, surfaced ancestry checks).
+- New validated T1/T2 data integrated: NASA Europa Clipper observation, NASA TESS reobservation window, NASA safety reaffirmation, Breakthrough Listen GBT preprint constraints, and TESS HLSP references.
+- Citation plumbing cleanup completed pre-seal (`schema_warnings.free_text_in_citation_fields` reduced to `0`).
+- Composite placeholder source normalization completed for strict scanner purity (`ANOMALY-SURVEY-2025` and `VARIOUS-PRESS-REPORTS` quarantined/traceable; duplicate top-level composite removed).
+- Overdue queue sweep + terminal-safe normalization completed (including `T3_opinion` normalization).
+- STF harness hardened for deterministic runs (non-deterministic cases skipped, domain subset comparator enabled).
+- Final deterministic full STF run logged: `total=22`, `passed=11`, `failed=0`, `skipped=11`.
+- Tooling surface normalized: `normalize_updates.js` moved to `scripts/normalize_updates.js` with backward-compatible root shim retained.
+- Governance integrity/fingerprint refreshes recorded through `kb_changelog.json` audit trail.
+
 ## v2.12.2 – Truth Surface Reconciliation Patch (2026-02-15)
 
 - Reconciled release governance surfaces so `CHANGELOG.md`, `manifest.json`, and `instructions.txt` report one consistent current version/release story for v2.12.2.
@@ -144,9 +158,7 @@ Each release includes an ATLAS signature marker and is validated via EOS provena
 
 ### ⚖️ License & Signature
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.2  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.3  
 Released under CC BY-NC-SA 4.0 • Integrity Score 9.7  
 
-## Signature Status
-`needs_regeneration_after_edits`  
-(planned for next integrity sweep)
+Signature Status: signature_validated

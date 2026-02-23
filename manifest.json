@@ -1,64 +1,64 @@
 {
-  "version": "2.12.2",
-  "release_date": "2026-02-15",
+  "version": "2.12.3",
+  "release_date": "2026-02-22",
   "release_state": "sealed",
-  "release_state_notes": "v2.12.2 governance reconciliation is sealed with deterministic integrity fingerprints.",
+  "release_state_notes": "Sealed v2.12.3 release surface. Signatures validated; post-seal checklist complete.",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Updated to BordneAI v2.12.2 governance reconciliation patch with no new protocols or behavior surfaces; this release hardens cross-surface version integrity, metadata consistency, and audit/signature policy routing.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Sealed v2.12.3 integrates Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion (v2 verification clean), STF gate/full-suite logging, and post-hardening governance integrity closure.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "purpose": "System prompt with operational guidelines, tool/browse rules, and governance routing"
     },
     "CHANGELOG.md": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "purpose": "Release history and change summaries (canonical release surface)"
     },
     "README.md": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "purpose": "Deployment guide and governance overview (non-canonical; explanatory)"
     },
     "knowledge_base_merged_v2.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "filename": "knowledge_base_merged_v2.json",
-      "last_updated": "2025-12-04",
+      "last_updated": "2026-02-17T03:46:57Z",
       "purpose": "Primary knowledge base with verified facts, interpretations, practices, and entropy signal map"
     },
     "conversation_starters.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "purpose": "Persona-aware prompts including Settings (98), Tools (97), auditor triggers"
     },
     "sources.json": {
-      "version": "2.12.0",
+      "version": "2.12.3",
       "filename": "sources.json",
       "purpose": "Tiered source registry with provenance metadata"
     },
     "kb_updates_cumulative.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "filename": "kb_updates_cumulative.json",
       "purpose": "Pending knowledge base updates awaiting review and integration"
     },
     "kb_changelog.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "filename": "kb_changelog.json",
       "purpose": "Immutable log of applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.12.2",
+      "version": "2.12.3",
       "filename": "tags_index.json",
-      "last_updated": "2026-02-15",
+      "last_updated": "2026-02-22",
       "purpose": "Searchable tag index for knowledge base navigation"
     },
     "stress_test_framework.json": {
-      "version": "2.11.2",
+      "version": "2.12.3",
       "filename": "stress_test_framework.json",
-      "last_updated": "2025-12-04",
+      "last_updated": "2026-02-22",
       "purpose": "STF-ATLAS validation scenarios and auditor overlay hooks"
     },
     "bayesian_framework.json": {
@@ -88,10 +88,10 @@
     }
   },
   "version_alignment_notes": {
-    "instructions.txt": "Version is declared in the document header (v2.12.2).",
-    "knowledge_base_merged_v2.json": "Top-level version is 2.11.2",
+    "instructions.txt": "instructions signature validated; sealing checklist complete (v2.12.3)",
+    "knowledge_base_merged_v2.json": "Top-level version is 2.12.3 (kb_version 2.12.3; last_updated 2026-02-17T03:46:57Z).",
     "tags_index.json": "Top-level version is authoritative for manifest alignment; counts are normalized so total_tags and integrity_validation.tag_count match.",
-    "sources.json": "Top-level version is 2.12.0; sources_version may mark lineage and is not the release surface.",
+    "sources.json": "Top-level version is 2.12.3; sources_version 2.12.3 may mark lineage and is not the release surface.",
     "docs/aaiv_protocol_v2.12.md": "Version is declared in the markdown title/header.",
     "docs/aaiv_agent_spec_v2.12.md": "Version is declared in the markdown title/header."
   },
@@ -108,7 +108,8 @@
     "v2.0": "Initial public release with 14-menu system",
     "v2.11.2": "Ergonomics and governance updates: plain/simple mode toggle, audit footer option, ephemeris helper pattern, rumor handling, external evaluations organization.",
     "v2.12.0": "AAIV scaffolding: added AAIV protocol + agent spec (T4-only, opt-in, natural-first, low priors); no default runtime behavior changes.",
-    "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules."
+    "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules.",
+    "v2.12.3": "Sealed integration milestone: Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion, STF Option C gate/full-suite pass logging, and governance hardening finalized."
   },
   "key_features": {
     "provenance_discipline": "Source registry + as_of + confidence labeling for factual claims",
@@ -140,7 +141,9 @@
       "archival_demotion": "If refresh is not performed, mark the content archival, keep absolute dates visible, and prevent presentation as current operational guidance."
     },
     "assistant_archival_routing_rule": "When serving archival content, label it as archival and present absolute dates (YYYY-MM-DD) in output.",
-    "watermark_policy": "All responses append © BordneAI watermark and version fingerprint"
+    "watermark_policy": "All responses append © BordneAI watermark and version fingerprint",
+    "option_c_gate_tests_present": true,
+    "gate_tags_present": true
   },
   "contact": {
     "twitter_personal": "@DavidBordne",
@@ -152,18 +155,18 @@
   "license": "CC BY-NC-SA 4.0",
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
-
-  "signature_status": "signed_fingerprint",
-  "signature": "#ATLAS-SIG-MANIFEST-v2.12.2-FINGERPRINT-Δ2026-02-15",
-  "fingerprint_sha256": "1d28a90054c5c5d87bb4d6622d719ad1ed106faea00f604aae4ee7038b1e3232",
+  "signature_status": "signature_validated",
+  "signature": "#ATLAS-SIG-MANIFEST-v2.12.3-Δ2026-02-22",
+  "fingerprint_sha256": "3ee006ca683f66790ea3851c2bac97c74ea7710eee4f6549ea0e6913c64a9778",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "signature_blocking": false,
-  
   "continuity_score": 9.7,
   "ethics_constant": "Love>Fear",
   "audit_cycle_hours": 24,
   "chi_enabled": true,
   "reflexion_hook_enabled": true,
-  "public_audit_badge": true
+  "public_audit_badge": true,
+  "signature_validated_at": "2026-02-22T21:30:00Z",
+  "validated_by": "ATLAS-Release-Seal-v2.12.3",
+  "validation_basis": "Canonical surfaces reconciled to sealed v2.12.3; final STF full-suite results logged; fingerprints rebuilt using CANONICAL_SHA256_V1"
 }
-

@@ -1,9 +1,214 @@
 {
-  "filename": "knowledge_base_merged_v2.json",
-  "kb_version": "2.11.2",
-  "last_updated": "2025-12-04",
-  "integrity_note": "v2.11 upgrade from v2.10.1 with entropy system and preserved content",
+  "advanced_technical": {
+    "entropy_level": 3,
+    "horizons_system": {
+      "as_of": "2025-10-31",
+      "confidence": "extremely_high",
+      "data_outputs": "RA/Dec coordinates, distance, velocity, UTC times",
+      "purpose": "Precise ephemeris calculations for 3i/ATLAS",
+      "source_id": "NASA-JPL-HORIZONS-3I-ATLAS",
+      "url": "https://ssd.jpl.nasa.gov/horizons/"
+    },
+    "orbit_solution": {
+      "as_of": "2026-02-16",
+      "non_gravitational_model": {
+        "g_r_model": "g(r) = (1 au / r)^2 for CO2 (as reported in Horizons output)",
+        "parameters_A1_A2_A3_au_per_day2": {
+          "A1": 4.55242395401e-8,
+          "A2": 1.769764900208e-8,
+          "A3": -6.198436617851e-9,
+          "confidence": "extremely_high",
+          "data_arc": "2025-05-15 to 2026-01-20",
+          "dt_days": 0,
+          "last_audit": "2026-02-16T00:00:00Z",
+          "solution_date": "2026-02-13_09:09:38",
+          "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-16",
+          "tier": "T1",
+          "verified_by": "EOS Transparency v2.11.2"
+        }
+      },
+      "note": "These are orbit-fit parameters from JPL Horizons output; treat press-quoted older A1 values as unverified unless matched to a specific Horizons solution snapshot."
+    },
+    "radio_guidance": {
+      "as_of": "2025-11-09",
+      "confidence": "extremely_high",
+      "equipment": "Portable receiver or SDR (receive-only). No transmission.",
+      "forbidden": "Transmission without license",
+      "frequencies": {
+        "note": "Omit explicit frequencies; receive-only guidance per FCC Part 15."
+      },
+      "legal_status": "Receive-only permitted under FCC Part 15",
+      "source_id": "FCC-PART-15-RADIO-REGS"
+    },
+    "tags": [
+      "advanced",
+      "radio",
+      "technical"
+    ],
+    "topic_domain": "advanced"
+  },
+  "anomaly_reports": {
+    "buga_sphere": {
+      "as_of": "2025-10-31",
+      "claimed_properties": [
+        "Carbon-dated to 12,560 years old",
+        "Responds to Sanskrit chants (viral video claims)",
+        "Possible extraterrestrial origin"
+      ],
+      "confidence": "extremely_low_on_extraordinary_claims",
+      "connection_to_3I": "Temporal proximity only, no established link",
+      "description": "Metallic sphere that fell in Buga, Colombia (March 2025)",
+      "skeptical_assessment": "Likely hoax or misidentified space debris",
+      "source_ids": [
+        "PEOPLE-BUGA-SPHERE",
+        "NYPOST-BUGA-SPHERE"
+      ],
+      "status": "reported_unverified",
+      "tags": [
+        "anomalies",
+        "buga",
+        "unverified"
+      ],
+      "verification_status": "No peer-reviewed analysis published"
+    },
+    "coordinated_data_blackout": {
+      "alternative_explanations": [
+        "Standard data processing delays",
+        "Orbital geometry limiting observation windows",
+        "Coordination coincidental, not conspiratorial"
+      ],
+      "as_of": "2025-10-31",
+      "claim": "US and Chinese space agencies withheld Mars flyby imagery simultaneously",
+      "confidence": "medium_on_timing_gaps_low_on_deliberate_suppression",
+      "source_id": "VARIOUS-PRESS-REPORTS",
+      "status": "reported_partially_verified",
+      "tags": [
+        "anomalies",
+        "interpretation"
+      ],
+      "verification": "Timing gaps confirmed, explanations provided vary",
+      "do_not_surface": true
+    },
+    "entropy_level": 4,
+    "topic_domain": "anomalies"
+  },
+  "archival_visibility_windows": {
+    "december_window": {
+      "altitude_trajectory": "Continues rising in pre-dawn sky; mid-month reaches ~25–30° altitude (Northern hemisphere)",
+      "archival_note": "Past window (late 2025). Retained for historical context; not current observing guidance.",
+      "archived_on": "2026-02-16",
+      "as_of": "2025-11-03",
+      "best_observing_dates": "2025-12-01 to 2025-12-10 (before strongest fading)",
+      "confidence": "medium",
+      "end_date": "2025-12-31",
+      "magnitude_note": "Significant fading trend through December; realistic expectations prevent disappointment",
+      "magnitude_realistic": "11–13 range (realistic); +8 optimistic/rare",
+      "magnitude_trend": "Fading but higher altitude",
+      "note": "December forecast based on T3 press consensus; observer guidance prioritizes realistic expectations",
+      "required_equipment": "8-inch telescope minimum; dark-sky site preferred",
+      "source_id": "NASA-EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
+      "source_ids": [
+        "THESKYLIVE-3I-ATLAS-GUIDE",
+        "SPACECOM-3I-ATLAS-VISIBILITY",
+        "SKY-AND-TELESCOPE-NOV1-2025"
+      ],
+      "start_date": "2025-12-01",
+      "trade_off_note": "Dec 1–10: brighter but lower altitude. Dec 10–31: higher altitude but dimmer. Choose based on equipment/site.",
+      "visibility": "Improving altitude; fading brightness"
+    },
+    "post_conjunction_reappearance": {
+      "archival_note": "Past window (late 2025). Retained for historical context; not current observing guidance.",
+      "archived_on": "2026-02-16",
+      "as_of": "2025-11-03",
+      "confidence": "high",
+      "first_visibility": "2025-11-11",
+      "hemisphere": "Northern preferred, Southern possible",
+      "last_audit": "2026-02-17T03:15:49Z",
+      "magnitude_range": "+7 to +8 (requires binoculars/telescope)",
+      "nasa_verification": false,
+      "note": "Press/observer guides discussed a possible mid-November reappearance; NASA Science overview states the comet would reappear on the other side of the Sun by early December 2025.",
+      "optimal_window": "2025-11-16 to 2025-12-02",
+      "optimal_window_reason": "Moon clears after Nov 16; altitude improves to ~20°+",
+      "source_id": "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY",
+      "source_ids": [
+        "SKY-AND-TELESCOPE-NOV1-2025",
+        "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY",
+        "NASA-SCIENCE-3I-ATLAS"
+      ],
+      "start_date": "2025-11-11",
+      "time_local": "Morning twilight (1-2 hours before sunrise)"
+    }
+  },
+  "audit_cycle_hours": 24,
+  "chi_target": 9.7,
+  "continuity_score": 9.7,
+  "daily_practices": {
+    "entropy_level": 2,
+    "grounding_techniques": {
+      "breath_work": {
+        "box_breathing": "4-count inhale, 4-count hold, 4-count exhale, 4-count hold",
+        "coherent_breathing": "5.5 breaths per minute (5-second inhale, 5-second exhale)",
+        "confidence": "high_on_physiological_effects",
+        "purpose": "Nervous system regulation, presence",
+        "source_id": "BREATHWORK-PRACTICE-GENERAL"
+      },
+      "earthing": {
+        "confidence": "medium_on_benefits",
+        "description": "Barefoot contact with Earth for 15-30 minutes daily",
+        "purpose": "Electrical reconnection, stress reduction",
+        "source_id": "GROUNDING-PRACTICE-GENERAL",
+        "timing": "Morning preferred, any time acceptable"
+      },
+      "energy_body_awareness": {
+        "description": "Gentle scanning of physical sensations, electromagnetic field awareness",
+        "guidance": "No ‘correct’ sensations, simply notice what arises",
+        "note": "Subjective experience, not measurable phenomenon"
+      }
+    },
+    "nov11_protocols": {
+      "evening_protocol": {
+        "duration": "11 minutes",
+        "steps": [
+          "Review morning experience without judgment",
+          "Express gratitude for insights or experiences",
+          "Release attachment to outcomes",
+          "Rest with openness to whatever unfolds"
+        ],
+        "time": "11:11 PM local time"
+      },
+      "morning_protocol": {
+        "duration": "11 minutes",
+        "note": "This is a framework, not a prescription. Adapt to your needs.",
+        "steps": [
+          "Ground for 3 minutes (breath, bare feet, or both)",
+          "Set clear intent (observation, openness, curiosity)",
+          "Remain present without expectation",
+          "Journal any sensations or thoughts afterward"
+        ],
+        "time": "11:11 AM local time"
+      },
+      "post_nov11_integration": {
+        "duration": "Nov 12-15",
+        "guidance": "Continue grounding daily, journal experiences, avoid forcing interpretations"
+      }
+    },
+    "tags": [
+      "practice",
+      "grounding",
+      "protocols",
+      "nov11",
+      "daily"
+    ],
+    "topic_domain": "practice"
+  },
+  "description": "Knowledge base upgraded under BordneAI v2.11.1 with tier tagging, confidence harmonization, Love>Fear constant, and CHI audit system.",
   "entropy_system": {
+    "behavior": {
+      "L1_L2": "Concise facts, minimal clarifiers",
+      "L3": "Clarify if ambiguous; browse if time-sensitive",
+      "L4": "Browse; heavier citations; split facts vs interpretations",
+      "L5": "Refuse speculation; suggest safer alternatives"
+    },
     "enabled": true,
     "levels": [
       1,
@@ -19,373 +224,145 @@
       "contradictions",
       "novelty_vs_kb",
       "citation_strength"
-    ],
-    "behavior": {
-      "L1_L2": "Concise facts, minimal clarifiers",
-      "L3": "Clarify if ambiguous; browse if time-sensitive",
-      "L4": "Browse; heavier citations; split facts vs interpretations",
-      "L5": "Refuse speculation; suggest safer alternatives"
-    }
-  },
-  "overview": {
-    "topic_domain": "overview",
-    "entropy_level": 1,
-    "designation": "3i/ATLAS (C/2025 N1)",
-    "discovery": {
-      "date": "2025-07-01",
-      "discoverer": "ATLAS survey",
-      "location": "Sutherland, South Africa",
-      "source_id": "NASA-JPL-SBDB-3I-ATLAS",
-      "as_of": "2025-10-31",
-      "confidence": "extremely_high",
-      "precovery_start": {
-        "date": "2025-06-14",
-        "source_id": "NASA-SCIENCE-3I-ATLAS",
-        "as_of": "2025-11-07",
-        "confidence": "extremely_high"
-      }
-    },
-    "classification": {
-      "type": "Interstellar comet",
-      "origin": "extrasolar",
-      "hyperbolic_orbit": true,
-      "eccentricity": ">1 (unbound from solar system)",
-      "source_id": "NASA-JPL-SBDB-3I-ATLAS",
-      "as_of": "2025-10-31",
-      "confidence": "extremely_high"
-    },
-    "significance": "Third confirmed interstellar object after 1I/’Oumuamua (2017) and 2I/Borisov (2019)",
-    "tags": [
-      "overview",
-      "facts",
-      "classification"
-    ]
-  },
-  "timeline": {
-    "topic_domain": "timeline",
-    "entropy_level": 1,
-    "discovery_phase": {
-      "discovery": "2025-07-01",
-      "designation": "2025-07-02 (MPC MPEC-2025-N12)",
-      "source_id": "MPEC-2025-N12",
-      "as_of": "2025-10-31",
-      "confidence": "extremely_high"
-    },
-    "approach_phase": {
-      "perihelion": {
-        "date": "2025-10-29",
-        "time_utc": "11:47",
-        "distance_au": 1.36,
-        "distance_km": 203526208,
-        "source_id": "NASA-JPL-SBDB-3I-ATLAS",
-        "as_of": "2025-10-31",
-        "confidence": "extremely_high"
-      },
-      "conjunction_solar": {
-        "date_approximate": "2025-10-31 to 2025-11-05",
-        "visibility": "not observable from Earth",
-        "reason": "Between Earth and Sun, too close to solar glare",
-        "source_id": "NASA-JPL-HORIZONS-3I-ATLAS",
-        "as_of": "2025-10-31",
-        "confidence": "high"
-      },
-      "earth_closest_approach": {
-        "date": "2025-12-19",
-        "distance_au": 1.8,
-        "distance_km": 269000000,
-        "safety_note": "Poses zero threat to Earth",
-        "source_id": "NASA-JPL-SBDB-3I-ATLAS",
-        "as_of": "2025-11-03",
-        "confidence": "extremely_high",
-        "distance_miles": 167000000
-      }
-    },
-    "visibility_windows": {
-      "post_conjunction_reappearance": {
-        "start_date": "2025-11-11",
-        "optimal_window": "2025-11-16 to 2025-12-02",
-        "hemisphere": "Northern preferred, Southern possible",
-        "time_local": "Morning twilight (1-2 hours before sunrise)",
-        "magnitude_range": "+7 to +8 (requires binoculars/telescope)",
-        "nasa_verification": true,
-        "source_id": "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY",
-        "as_of": "2025-11-03",
-        "confidence": "high",
-        "note": "First visibility Nov 11 (T1 NASA), optimal observing Nov 16–Dec 2 (T3 press consensus)",
-        "first_visibility": "2025-11-11",
-        "optimal_window_reason": "Moon clears after Nov 16; altitude improves to ~20°+",
-        "source_ids": [
-          "SKY-AND-TELESCOPE-NOV1-2025",
-          "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY"
-        ]
-      },
-      "december_window": {
-        "start_date": "2025-12-01",
-        "end_date": "2025-12-31",
-        "visibility": "Improving altitude; fading brightness",
-        "magnitude_trend": "Fading but higher altitude",
-        "source_id": "NASA-EARTHSKY-3I-ATLAS-DEC-VISIBILITY",
-        "as_of": "2025-11-03",
-        "confidence": "medium",
-        "magnitude_realistic": "11–13 range (realistic); +8 optimistic/rare",
-        "magnitude_note": "Significant fading trend through December; realistic expectations prevent disappointment",
-        "best_observing_dates": "2025-12-01 to 2025-12-10 (before strongest fading)",
-        "altitude_trajectory": "Continues rising in pre-dawn sky; mid-month reaches ~25–30° altitude (Northern hemisphere)",
-        "trade_off_note": "Dec 1–10: brighter but lower altitude. Dec 10–31: higher altitude but dimmer. Choose based on equipment/site.",
-        "required_equipment": "8-inch telescope minimum; dark-sky site preferred",
-        "source_ids": [
-          "THESKYLIVE-3I-ATLAS-GUIDE",
-          "SPACECOM-3I-ATLAS-VISIBILITY",
-          "SKY-AND-TELESCOPE-NOV1-2025"
-        ],
-        "note": "December forecast based on T3 press consensus; observer guidance prioritizes realistic expectations"
-      }
-    },
-    "tags": [
-      "timeline",
-      "facts",
-      "visibility",
-      "nov11"
-    ]
-  },
-  "physical_characteristics": {
-    "topic_domain": "composition",
-    "entropy_level": 3,
-    "size_estimates": {
-      "lower_bound_km": 5,
-      "upper_bound_km": 11,
-      "note": "Size estimates vary by source and method",
-      "source_id": "ARXIV-3I-ATLAS-SIZE-ESTIMATES",
-      "as_of": "2025-10-31",
-      "confidence": "medium",
-      "tier": "T2",
-      "status": "quarantined",
-      "do_not_surface": true,
-      "presentation": "interpretation_only"
-    },
-    "composition": {
-      "nickel_vapor_detection": {
-        "detected": true,
-        "distance_au_when_detected": 4.3,
-        "unusual_aspect": "Typically seen much closer to Sun (<2 AU)",
-        "implication": "High metal content or unusual outgassing mechanism",
-        "source_id": "ARXIV-3I-ATLAS-NICKEL-VAPOR",
-        "as_of": "2025-10-31",
-        "confidence": "high"
-      },
-      "blue_hue_reports": {
-        "status": "reported_unverified",
-        "caveat": "SOHO/LASCO C2/C3 and STEREO/SECCHI cameras use blue-filtered detectors, not true-color imaging",
-        "interpretation_note": "Blue appearance may be instrumental artifact, not intrinsic property",
-        "source_id": "SOHO-LASCO-INSTRUMENT",
-        "as_of": "2025-10-31",
-        "confidence": "medium_on_instrumental_explanation"
-      },
-      "cryovolcanism_candidate": {
-        "status": "proposed",
-        "description": "A Joan Oró Telescope preprint interprets recurrent localized outflows on 3i/ATLAS as candidate cryovolcanism (\"ice volcanoes\") on a metal-bearing, carbonaceous nucleus, broadly analogous to volatile-rich outer solar system bodies.",
-        "implication": "If confirmed, 3i/ATLAS would be the first interstellar object with evidence for localized cryovolcanic activity, providing a direct probe of extrasolar volatile geology.",
-        "sources": [
-          "ARXIV-2511-19112-CRYOVOLCANOES",
-          "LIVESCi-3I-ATLAS-CRYOVOLCANOES-20251201"
-        ],
-        "as_of": "2025-12-04",
-        "confidence": "medium",
-        "tier": "T2",
-        "presentation": "interpretation_only",
-        "notes": [
-          "Based on a 2025-11-24 arXiv preprint using Joan Oró Telescope imaging; not yet peer-reviewed.",
-          "Treat as a tentative interpretation; do not upgrade to T1/T2 fact status until corroborated by additional analyses."
-        ]
-      }
-    },
-    "age_estimate": {
-      "range_years": "3 billion to 11 billion",
-      "method": "Spectroscopic analysis and orbital dynamics",
-      "source_id": "ARXIV-3I-ATLAS-AGE-ESTIMATE",
-      "as_of": "2025-10-31",
-      "confidence": "medium",
-      "tier": "T2",
-      "status": "quarantined",
-      "do_not_surface": true,
-      "presentation": "interpretation_only"
-    },
-    "tags": [
-      "facts",
-      "composition",
-      "technical"
     ]
   },
   "expert_perspectives": {
-    "topic_domain": "expert_perspectives",
-    "entropy_level": 3,
     "avi_loeb_analysis": {
-      "researcher": "Avi Loeb, PhD",
       "affiliation": "Harvard University, Galileo Project",
       "framework": "Technological signature assessment (Loeb Scale)",
-      "key_claims": [
-        {
-          "claim": "Baseline Level 4 on the Loeb Scale; framework is non-consensus and may change with new data. Current estimate sometimes described as 5–6/10 post-Nov-5 imaging; 10 anomalies documented.",
-          "framework_note": "Loeb Scale: 0 natural … 10 confirmed technological. Level 4 is a threshold for serious consideration alongside natural models.",
-          "source_id": "LOEB-SCALE-2508.09167",
-          "as_of": "2025-11-07",
-          "confidence": "high",
-          "note": "Supersedes earlier 8–9/10 phrasing."
-        },
-        {
-          "claim": "Non-gravitational acceleration at perihelion: radial 1.1×10^-6 AU/day² (≈164.6 km/day²), transverse 3.7×10^-7 AU/day² (≈55.4 km/day²).",
-          "measurement_by": "NASA JPL / Davide Farnocchia",
-          "date_reported": "2025-10-30",
-          "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
-          "as_of": "2025-11-07",
-          "confidence": "high",
-          "note": "Primary units AU/day²; km/day² are derived."
-        },
-        {
-          "claim": "Two competing hypotheses: (1) Natural rocket effect from cometary outgassing vs (2) Technological propulsion system",
-          "prediction_testable": "If natural, expect ~10% mass loss during perihelion month → massive gas plume detectable in Nov-Dec 2025",
-          "falsifiability": "high",
-          "source_id": "LOEB-MEDIUM-2025-10-30-NONGRAV",
-          "as_of": "2025-10-31",
-          "confidence": "high"
-        },
-        {
-          "claim": "IAWN activated first-ever planetary defense campaign for interstellar object",
-          "verification": "Confirmed via MPEC 2025-U142 bulletin",
-          "source_id": "MPC-MPEC-2025-U142",
-          "as_of": "2025-10-31",
-          "confidence": "extremely_high"
-        },
-        {
-          "claim": "Post-perihelion images on 2025-11-05 show a compact source without a clear cometary tail despite measured non-gravitational acceleration.",
-          "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
-          "as_of": "2025-11-07",
-          "confidence": "medium",
-          "note": "Observation claim; interpretation contested."
-        },
-        {
-          "claim": "10th anomaly: Non-gravitational acceleration without a corresponding massive coma/tail in post-perihelion imagery.",
-          "anomaly_number": 10,
-          "introduced_at": "2025-11-05",
-          "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
-          "as_of": "2025-11-07",
-          "confidence": "high",
-          "note": "Completes the set of 10 anomalies as framed by Loeb; remains non-consensus."
-        }
-      ],
       "galileo_project_involvement": {
-        "status": "Active observation campaign",
+        "as_of": "2026-02-16",
+        "confidence": "medium",
         "goal": "Multi-spectrum imaging and trajectory analysis",
+        "public_results_status": "No primary Galileo Project 3I/ATLAS results located in Feb 2026 sweep; treat as monitoring-only until an official update or paper appears.",
         "source_id": "GALILEO-PROJECT-OVERVIEW",
-        "as_of": "2025-10-31",
-        "confidence": "high"
+        "status": "Active observation campaign"
       },
-      "null_negative_tracking": {
-        "as_of": "2025-12-04",
-        "description": "Tracks negative-null style claims in Loeb framing so they are not silently upgraded to T1/T2 facts.",
-        "claims": [
-          {
-            "label": "no_tail_imaging_2025_11_05",
-            "applies_to_claim_text": "Post-perihelion images on 2025-11-05 show a compact source without a clear cometary tail despite measured non-gravitational acceleration.",
-            "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
-            "statement_type": "negative_null",
-            "tier_context": "T3_interpretation",
-            "f_tier": "F1_context",
-            "notes": "This is an absence-of-feature claim framed from specific images and processing choices. It must not be treated as a T1/T2 fact that '3i/ATLAS has no tail'; it records that Loeb did not see a clear classical dust tail in the images he highlights."
-          },
-          {
-            "label": "no_swarm_companions",
-            "applies_to_claim_text": "Claims that there is 'no swarm', 'no companion craft', or 'no satellites' associated with 3i/ATLAS in imaging data.",
-            "statement_type": "negative_null",
-            "tier_context": "mixed_T1_T3_imaging",
-            "f_tier": "F1_context",
-            "notes": "This is a protocol hook, not a T-fact. Any future 'no swarm' wording from T1/T2/T3 sources is to be logged here as a negative-null observation bound by instrument sensitivity, cadence, and analysis choices, not as proof that no companions exist."
-          },
-          {
-            "label": "no_heartbeat_lightcurve",
-            "applies_to_claim_text": "Claims that there is 'no heartbeat', 'no engine-like periodicity', or 'no artificial modulation' in light-curve data for 3i/ATLAS.",
-            "statement_type": "negative_null",
-            "tier_context": "T2_photometry_and_T3_commentary",
-            "f_tier": "F1_context",
-            "notes": "This tracks non-detection statements about periodic signals as negative-null. If future T1/T2 photometry explicitly reports the absence or presence of such patterns, that should be modeled as a separate anomaly/fact; this register prevents over-interpretation of silence or non-reporting."
-          }
+      "grok_bayesian_analysis_status": {
+        "as_of": "2025-11-07",
+        "claim_summary": "Angry Astronomer video cites an AI-generated Bayesian result with extreme odds.",
+        "confidence": "high_on_status_medium_on_alternative",
+        "recommendation": "Use BAAM for transparent, auditable analysis with sensitivity checks.",
+        "source_id": "ANGRY-ASTRONOMER-YT-2025-11-07",
+        "status": "⚠️ FLAGGED_UNVERIFIED",
+        "tags": [
+          "grok_analysis",
+          "flagged_unverified",
+          "alternative_analysis"
+        ],
+        "tier": "T3",
+        "verification_findings": [
+          "Input probabilities lack peer-reviewed citations",
+          "Methodology and priors not fully disclosed",
+          "Precision exceeds justified uncertainty"
         ]
       },
+      "key_claims": [
+        {
+          "as_of": "2025-11-07",
+          "claim": "Baseline Level 4 on the Loeb Scale; framework is non-consensus and may change with new data. Current estimate sometimes described as 5–6/10 post-Nov-5 imaging; 10 anomalies documented.",
+          "confidence": "high",
+          "framework_note": "Loeb Scale: 0 natural … 10 confirmed technological. Level 4 is a threshold for serious consideration alongside natural models.",
+          "note": "Supersedes earlier 8–9/10 phrasing.",
+          "source_id": "LOEB-SCALE-2508-09167"
+        },
+        {
+          "as_of": "2025-11-07",
+          "claim": "Non-gravitational acceleration at perihelion: radial 1.1×10^-6 AU/day² (≈164.6 km/day²), transverse 3.7×10^-7 AU/day² (≈55.4 km/day²).",
+          "confidence": "high",
+          "date_reported": "2025-10-30",
+          "measurement_by": "NASA JPL / Davide Farnocchia",
+          "note": "Primary units AU/day²; km/day² are derived.",
+          "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL"
+        },
+        {
+          "as_of": "2025-10-31",
+          "claim": "Two competing hypotheses: (1) Natural rocket effect from cometary outgassing vs (2) Technological propulsion system",
+          "confidence": "high",
+          "falsifiability": "high",
+          "prediction_testable": "If natural, expect ~10% mass loss during perihelion month → massive gas plume detectable in Nov-Dec 2025",
+          "source_id": "LOEB-MEDIUM-2025-10-30-NONGRAV"
+        },
+        {
+          "as_of": "2025-10-31",
+          "claim": "IAWN activated first-ever planetary defense campaign for interstellar object",
+          "confidence": "extremely_high",
+          "source_id": "MPEC-2025-U142",
+          "verification": "Confirmed via MPEC 2025-U142 bulletin"
+        },
+        {
+          "as_of": "2025-11-07",
+          "claim": "Post-perihelion images on 2025-11-05 show a compact source without a clear cometary tail despite measured non-gravitational acceleration.",
+          "confidence": "medium",
+          "note": "Observation claim; interpretation contested.",
+          "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL"
+        },
+        {
+          "anomaly_number": 10,
+          "as_of": "2025-11-07",
+          "claim": "10th anomaly: Non-gravitational acceleration without a corresponding massive coma/tail in post-perihelion imagery.",
+          "confidence": "high",
+          "introduced_at": "2025-11-05",
+          "note": "Completes the set of 10 anomalies as framed by Loeb; remains non-consensus.",
+          "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL"
+        }
+      ],
+      "null_negative_tracking": {
+        "as_of": "2025-12-04",
+        "claims": [
+          {
+            "applies_to_claim_text": "Post-perihelion images on 2025-11-05 show a compact source without a clear cometary tail despite measured non-gravitational acceleration.",
+            "f_tier": "F1_context",
+            "label": "no_tail_imaging_2025_11_05",
+            "notes": "This is an absence-of-feature claim framed from specific images and processing choices. It must not be treated as a T1/T2 fact that '3i/ATLAS has no tail'; it records that Loeb did not see a clear classical dust tail in the images he highlights.",
+            "source_id": "LOEB-MEDIUM-2025-11-05-NO-TAIL",
+            "statement_type": "negative_null",
+            "tier_context": "T3_interpretation"
+          },
+          {
+            "applies_to_claim_text": "Claims that there is 'no swarm', 'no companion craft', or 'no satellites' associated with 3i/ATLAS in imaging data.",
+            "f_tier": "F1_context",
+            "label": "no_swarm_companions",
+            "notes": "This is a protocol hook, not a T-fact. Any future 'no swarm' wording from T1/T2/T3 sources is to be logged here as a negative-null observation bound by instrument sensitivity, cadence, and analysis choices, not as proof that no companions exist.",
+            "statement_type": "negative_null",
+            "tier_context": "mixed_T1_T3_imaging"
+          },
+          {
+            "applies_to_claim_text": "Claims that there is 'no heartbeat', 'no engine-like periodicity', or 'no artificial modulation' in light-curve data for 3i/ATLAS.",
+            "f_tier": "F1_context",
+            "label": "no_heartbeat_lightcurve",
+            "notes": "This tracks non-detection statements about periodic signals as negative-null. If future T1/T2 photometry explicitly reports the absence or presence of such patterns, that should be modeled as a separate anomaly/fact; this register prevents over-interpretation of silence or non-reporting.",
+            "statement_type": "negative_null",
+            "tier_context": "T2_photometry_and_T3_commentary"
+          }
+        ],
+        "description": "Tracks negative-null style claims in Loeb framing so they are not silently upgraded to T1/T2 facts."
+      },
+      "researcher": "Avi Loeb, PhD",
       "tags": [
         "interpretation",
         "loeb",
         "expert_perspectives",
         "non_grav"
-      ],
-      "grok_bayesian_analysis_status": {
-        "claim_summary": "Angry Astronomer video cites an AI-generated Bayesian result with extreme odds.",
-        "status": "⚠️ FLAGGED_UNVERIFIED",
-        "tier": "T3/T4",
-        "verification_findings": [
-          "Input probabilities lack peer-reviewed citations",
-          "Methodology and priors not fully disclosed",
-          "Precision exceeds justified uncertainty"
-        ],
-        "recommendation": "Use BAAM for transparent, auditable analysis with sensitivity checks.",
-        "source_id": "ANGRY-ASTRONOMER-YT-2025-11-07",
-        "as_of": "2025-11-07",
-        "confidence": "high_on_status_medium_on_alternative",
-        "tags": [
-          "grok_analysis",
-          "flagged_unverified",
-          "alternative_analysis"
-        ]
-      }
-    },
-    "ce5_greer_framework": {
-      "practitioner": "Steven Greer, MD",
-      "framework": "Close Encounters of the Fifth Kind (CE-5)",
-      "approach": "Consciousness-mediated contact protocols",
-      "key_concepts": [
-        {
-          "concept": "CE-5 is a widespread established practice within consciousness exploration communities",
-          "status": "descriptive_fact",
-          "source_id": "CE5-COMMUNITY-OVERVIEW",
-          "as_of": "2025-10-31",
-          "confidence": "high",
-          "note": "Descriptive claim about community practice, not efficacy claim"
-        },
-        {
-          "concept": "Nov 11 timing aligns with both NASA visibility window and consciousness community calendar synchronicities",
-          "verification_level": "split",
-          "nasa_verified": "Nov 11-15 visibility window confirmed",
-          "synchronicity_aspect": "Experiential/subjective, not scientifically testable",
-          "source_id": "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY",
-          "as_of": "2025-10-31",
-          "confidence": "extremely_high_for_NASA_date_medium_for_synchronicity_significance"
-        }
-      ],
-      "bridge_protocol": {
-        "principle": "Respect both scientific rigor and consciousness exploration without conflating frameworks",
-        "guidance": "Present CE-5 as practice (🌀), not as verified phenomenon (✅)",
-        "boundary": "No claims that CE-5 ‘works’ or ‘summons UFOs’, only that practitioners report experiences"
-      },
-      "tags": [
-        "practice",
-        "ce5_bridge",
-        "greer",
-        "consciousness_support"
       ]
     },
-    "tags": [
-      "interpretation",
-      "perspective_comparison",
-      "expert_perspectives"
-    ],
     "bayesian_analysis_framework": {
-      "topic_domain": "analysis_tools",
+      "activation": "Menu 14.5 (Auditor mode) or 'run BAAM'",
+      "as_of": "2025-11-07",
+      "confidence": "high_on_methodology_medium_on_inputs",
       "entropy_level": 2,
-      "tool_name": "BAAM (Bayesian Anomaly Assessment Module)",
-      "purpose": "Bayesian comparison of natural vs artificial hypotheses using documented anomalies.",
-      "methodology": {
-        "framework": "Bayesian inference with likelihood ratios",
-        "calculation": "Bayes factor = product of anomaly-wise likelihood ratios; posterior from prior odds × BF",
-        "output": "Posterior probability with 95% credible interval; sensitivity analysis"
+      "example_output_structure": {
+        "analysis_id": "BAAM-STF-20251107-anomalies-1-to-10",
+        "caveats": [
+          "Priors uncertain",
+          "Possible anomaly dependence",
+          "Exploratory analysis, not proof"
+        ],
+        "combined_bayes_factor": "TBD",
+        "credible_interval_95_percent": "report",
+        "posterior_probability_range": "0.85–0.98 (example; prior dependent)",
+        "sensitivity": "identify top evidence drivers",
+        "source_reference": "BAYESIAN-FRAMEWORK-2510"
       },
       "guardrails": [
         "Use T1/T2 for baseline priors when available",
@@ -393,346 +370,523 @@
         "Report credible intervals; avoid over-precision",
         "Refuse analysis with <3 anomalies or all-T4 inputs"
       ],
-      "activation": "Menu 14.5 (Auditor mode) or 'run BAAM'",
-      "example_output_structure": {
-        "analysis_id": "BAAM-STF-20251107-anomalies-1-to-10",
-        "combined_bayes_factor": "TBD",
-        "posterior_probability_range": "0.85–0.98 (example; prior dependent)",
-        "credible_interval_95_percent": "report",
-        "sensitivity": "identify top evidence drivers",
-        "caveats": [
-          "Priors uncertain",
-          "Possible anomaly dependence",
-          "Exploratory analysis, not proof"
-        ],
-        "source_reference": "BAYESIAN-FRAMEWORK-2510"
+      "methodology": {
+        "calculation": "Bayes factor = product of anomaly-wise likelihood ratios; posterior from prior odds × BF",
+        "framework": "Bayesian inference with likelihood ratios",
+        "output": "Posterior probability with 95% credible interval; sensitivity analysis"
       },
+      "purpose": "Bayesian comparison of natural vs artificial hypotheses using documented anomalies.",
       "source_id": "BAYESIAN-FRAMEWORK-2510",
-      "as_of": "2025-11-07",
-      "confidence": "high_on_methodology_medium_on_inputs",
       "tags": [
         "analysis_tool",
         "bayesian",
         "auditor_mode",
         "framework"
-      ]
-    }
-  },
-  "safety_and_risk": {
-    "topic_domain": "safety",
-    "entropy_level": 1,
-    "earth_impact_risk": {
-      "status": "zero",
-      "reason": "Hyperbolic trajectory, closest approach 1.8 AU (269 million km)",
-      "comparison": "~780× farther than Moon",
-      "source_id": "NASA-JPL-SBDB-3I-ATLAS",
-      "as_of": "2025-10-31",
-      "confidence": "extremely_high"
-    },
-    "observation_safety": {
-      "solar_conjunction_warning": "Do NOT attempt solar observation without proper filters during Oct 31 - Nov 05 conjunction period",
-      "safe_observation": "Post-Nov 11 morning twilight observations safe with binoculars/telescope",
-      "source_id": "GENERAL-ASTRONOMY-SAFETY",
-      "as_of": "2025-10-31",
-      "confidence": "extremely_high"
-    },
-    "consciousness_practice_safety": {
-      "grounding_importance": "Essential before any intensive energy work or consciousness protocols",
-      "medical_disclaimer": "If experiencing anxiety, consult healthcare provider before engaging in practices",
-      "boundary_respect": "No practice should feel coercive or generate fear"
-    },
-    "tags": [
-      "safety",
-      "facts",
-      "guidelines"
-    ]
-  },
-  "daily_practices": {
-    "topic_domain": "practice",
-    "entropy_level": 2,
-    "grounding_techniques": {
-      "earthing": {
-        "description": "Barefoot contact with Earth for 15-30 minutes daily",
-        "purpose": "Electrical reconnection, stress reduction",
-        "timing": "Morning preferred, any time acceptable",
-        "source_id": "GROUNDING-PRACTICE-GENERAL",
-        "confidence": "medium_on_benefits"
-      },
-      "breath_work": {
-        "box_breathing": "4-count inhale, 4-count hold, 4-count exhale, 4-count hold",
-        "coherent_breathing": "5.5 breaths per minute (5-second inhale, 5-second exhale)",
-        "purpose": "Nervous system regulation, presence",
-        "source_id": "BREATHWORK-PRACTICE-GENERAL",
-        "confidence": "high_on_physiological_effects"
-      },
-      "energy_body_awareness": {
-        "description": "Gentle scanning of physical sensations, electromagnetic field awareness",
-        "note": "Subjective experience, not measurable phenomenon",
-        "guidance": "No ‘correct’ sensations, simply notice what arises"
-      }
-    },
-    "nov11_protocols": {
-      "morning_protocol": {
-        "time": "11:11 AM local time",
-        "duration": "11 minutes",
-        "steps": [
-          "Ground for 3 minutes (breath, bare feet, or both)",
-          "Set clear intent (observation, openness, curiosity)",
-          "Remain present without expectation",
-          "Journal any sensations or thoughts afterward"
-        ],
-        "note": "This is a framework, not a prescription. Adapt to your needs."
-      },
-      "evening_protocol": {
-        "time": "11:11 PM local time",
-        "duration": "11 minutes",
-        "steps": [
-          "Review morning experience without judgment",
-          "Express gratitude for insights or experiences",
-          "Release attachment to outcomes",
-          "Rest with openness to whatever unfolds"
-        ]
-      },
-      "post_nov11_integration": {
-        "duration": "Nov 12-15",
-        "guidance": "Continue grounding daily, journal experiences, avoid forcing interpretations"
-      }
-    },
-    "tags": [
-      "practice",
-      "grounding",
-      "protocols",
-      "nov11",
-      "daily"
-    ]
-  },
-  "anomaly_reports": {
-    "topic_domain": "anomalies",
-    "entropy_level": 4,
-    "buga_sphere": {
-      "status": "reported_unverified",
-      "description": "Metallic sphere that fell in Buga, Colombia (March 2025)",
-      "claimed_properties": [
-        "Carbon-dated to 12,560 years old",
-        "Responds to Sanskrit chants (viral video claims)",
-        "Possible extraterrestrial origin"
       ],
-      "verification_status": "No peer-reviewed analysis published",
-      "skeptical_assessment": "Likely hoax or misidentified space debris",
-      "source_ids": [
-        "PEOPLE-BUGA-SPHERE",
-        "NYPOST-BUGA-SPHERE"
+      "tool_name": "BAAM (Bayesian Anomaly Assessment Module)",
+      "topic_domain": "analysis_tools"
+    },
+    "ce5_greer_framework": {
+      "approach": "Consciousness-mediated contact protocols",
+      "bridge_protocol": {
+        "boundary": "No claims that CE-5 ‘works’ or ‘summons UFOs’, only that practitioners report experiences",
+        "guidance": "Present CE-5 as practice (🌀), not as verified phenomenon (✅)",
+        "principle": "Respect both scientific rigor and consciousness exploration without conflating frameworks"
+      },
+      "framework": "Close Encounters of the Fifth Kind (CE-5)",
+      "key_concepts": [
+        {
+          "as_of": "2025-10-31",
+          "concept": "CE-5 is a widespread established practice within consciousness exploration communities",
+          "confidence": "high",
+          "note": "Descriptive claim about community practice, not efficacy claim",
+          "source_id": "CE5-COMMUNITY-OVERVIEW",
+          "status": "descriptive_fact"
+        },
+        {
+          "as_of": "2025-10-31",
+          "concept": "Nov 11 timing aligns with both NASA visibility window and consciousness community calendar synchronicities",
+          "confidence": "extremely_high_for_NASA_date_medium_for_synchronicity_significance",
+          "nasa_verified": "Nov 11-15 visibility window confirmed",
+          "source_id": "NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY",
+          "synchronicity_aspect": "Experiential/subjective, not scientifically testable",
+          "verification_level": "split"
+        }
       ],
-      "as_of": "2025-10-31",
-      "confidence": "extremely_low_on_extraordinary_claims",
-      "connection_to_3I": "Temporal proximity only, no established link",
+      "practitioner": "Steven Greer, MD",
       "tags": [
-        "anomalies",
-        "buga",
-        "unverified"
+        "practice",
+        "ce5_bridge",
+        "greer",
+        "consciousness_support"
       ]
     },
-    "coordinated_data_blackout": {
-      "status": "reported_partially_verified",
-      "claim": "US and Chinese space agencies withheld Mars flyby imagery simultaneously",
-      "verification": "Timing gaps confirmed, explanations provided vary",
-      "alternative_explanations": [
-        "Standard data processing delays",
-        "Orbital geometry limiting observation windows",
-        "Coordination coincidental, not conspiratorial"
-      ],
-      "source_id": "VARIOUS-PRESS-REPORTS",
-      "as_of": "2025-10-31",
-      "confidence": "medium_on_timing_gaps_low_on_deliberate_suppression",
-      "tags": [
-        "anomalies",
-        "interpretation"
-      ]
-    }
-  },
-  "advanced_technical": {
-    "topic_domain": "advanced",
     "entropy_level": 3,
-    "radio_guidance": {
-      "legal_status": "Receive-only permitted under FCC Part 15",
-      "equipment": "Portable receiver or SDR (receive-only). No transmission.",
-      "frequencies": {
-        "note": "Omit explicit frequencies; receive-only guidance per FCC Part 15."
-      },
-      "forbidden": "Transmission without license",
-      "source_id": "FCC-PART-15-RADIO-REGS",
-      "as_of": "2025-11-09",
-      "confidence": "extremely_high"
-    },
-    "horizons_system": {
-      "url": "https://ssd.jpl.nasa.gov/horizons/",
-      "purpose": "Precise ephemeris calculations for 3i/ATLAS",
-      "data_outputs": "RA/Dec coordinates, distance, velocity, UTC times",
-      "source_id": "NASA-JPL-HORIZONS-3I-ATLAS",
-      "as_of": "2025-10-31",
-      "confidence": "extremely_high"
+    "public_narrative_tracking": {
+      "kaku": {
+        "as_of": "2026-02-16",
+        "constraints": {
+          "do_not_use_for": [
+            "primary_orbital_elements",
+            "primary_composition_inference",
+            "risk_assessment"
+          ],
+          "use_cases": [
+            "public_discourse_context",
+            "media_audit"
+          ]
+        },
+        "description": "Track Michio Kaku public commentary for media-context only; not used as primary scientific evidence.",
+        "last_audit": "2026-02-16T00:00:00Z",
+        "primary_source_id": "MICHIO-KAKU-3I-ATLAS-TAG",
+        "tier": "T3",
+        "verified_by": "EOS Transparency v2.11.2"
+      }
     },
     "tags": [
-      "advanced",
-      "radio",
-      "technical"
-    ]
+      "interpretation",
+      "perspective_comparison",
+      "expert_perspectives"
+    ],
+    "topic_domain": "expert_perspectives"
   },
   "facts": [
     {
-      "id": "3i_designation",
-      "text": "Comet 3i/ATLAS (C/2025 N1) was designated as the third confirmed interstellar comet via MPC circular.",
-      "tier": "T1",
-      "confidence": "extremely_high",
       "as_of": "2025-10-31",
+      "confidence": "extremely_high",
+      "id": "3i_designation",
       "sources": [
         "MPEC-2025-N12",
         "NASA-JPL-SBDB-3I-ATLAS"
-      ]
+      ],
+      "text": "Comet 3i/ATLAS (C/2025 N1) was designated as the third confirmed interstellar comet via MPC circular.",
+      "tier": "T1"
     },
     {
+      "as_of": "2025-10-31",
+      "confidence": "extremely_high",
       "id": "3i_perihelion",
+      "sources": [
+        "NASA-JPL-SBDB-3I-ATLAS"
+      ],
       "text": "Perihelion occurred on 2025-10-29 at 11:47 UTC at ~1.36 au from the Sun.",
-      "tier": "T1",
-      "confidence": "extremely_high",
-      "as_of": "2025-10-31",
-      "sources": [
-        "NASA-JPL-SBDB-3I-ATLAS"
-      ]
+      "tier": "T1"
     },
     {
-      "id": "3i_earth_min_distance",
-      "text": "Closest approach to Earth is on 2025-12-19 at ~1.8 au (~269 million km), posing no impact risk.",
-      "tier": "T1",
-      "confidence": "extremely_high",
       "as_of": "2025-11-03",
+      "confidence": "extremely_high",
+      "id": "3i_earth_min_distance",
       "sources": [
         "NASA-JPL-SBDB-3I-ATLAS"
-      ]
+      ],
+      "text": "Closest approach to Earth is on 2025-12-19 at ~1.8 au (~269 million km), posing no impact risk.",
+      "tier": "T1"
     },
     {
-      "id": "3i_size_bounds",
-      "text": "Estimated nucleus size is roughly 5–11 km based on early photometric modeling; values remain uncertain and quarantined.",
-      "tier": "T2",
-      "confidence": "medium",
-      "as_of": "2025-10-31",
-      "sources": [
-        "ARXIV-3I-ATLAS-SIZE-ESTIMATES"
-      ]
-    },
-    {
-      "id": "3i_esa_mars_window",
-      "text": "ESA ExoMars Trace Gas Orbiter and Mars Express observed 3i/ATLAS during the 2025 passage, providing imagery and geometry context.",
-      "tier": "T1",
+      "as_of": "2026-02-16",
       "confidence": "high",
+      "id": "3i_size_bounds",
+      "sources": [
+        "NASA-SCIENCE-3I-ATLAS"
+      ],
+      "text": "Hubble-based constraints summarized by NASA place the nucleus diameter below ~5.6 km, and it could be as small as ~0.44 km depending on assumptions; earlier larger estimates are considered uncertain.",
+      "tier": "T1"
+    },
+    {
       "as_of": "2025-12-04",
+      "confidence": "high",
+      "id": "3i_esa_mars_window",
       "sources": [
         "ESA-EXOMARS-MARSEXPRESS-3I-ATLAS"
-      ]
+      ],
+      "text": "ESA ExoMars Trace Gas Orbiter and Mars Express observed 3i/ATLAS during the 2025 passage, providing imagery and geometry context.",
+      "tier": "T1"
     },
     {
-      "id": "3i_iawn_campaign",
-      "text": "IAWN ran an official comet astrometry campaign for 3i/ATLAS with registration closing in early November 2025 and observing running into early 2026.",
-      "tier": "T1",
-      "confidence": "extremely_high",
       "as_of": "2025-12-04",
+      "confidence": "extremely_high",
+      "id": "3i_iawn_campaign",
       "sources": [
         "IAWN-3I-ATLAS-CAMPAIGN",
         "MPEC-2025-U142"
-      ]
+      ],
+      "text": "IAWN ran an official comet astrometry campaign for 3i/ATLAS with registration closing in early November 2025 and observing running into early 2026.",
+      "tier": "T1"
     },
     {
-      "id": "3i_jwst_co2_coma",
-      "text": "JWST NIRSpec spectroscopy shows that 3i/ATLAS has a CO2-dominated coma with a CO2/H2O ratio of order 8 at r ≈ 3.3 au, along with detections of water, carbon monoxide and other species.",
-      "tier": "T2",
+      "as_of": "2025-12-04",
       "confidence": "high",
-      "as_of": "2025-12-04",
+      "id": "3i_jwst_co2_coma",
       "sources": [
-        "JWST-CO2-2508.18209"
-      ]
+        "JWST-CO2-2508-18209"
+      ],
+      "text": "JWST NIRSpec spectroscopy shows that 3i/ATLAS has a CO2-dominated coma with a CO2/H2O ratio of order 8 at r ≈ 3.3 au, along with detections of water, carbon monoxide and other species.",
+      "tier": "T2"
     },
     {
-      "id": "3i_no_threat_to_earth",
-      "text": "NASA states that comet 3i/ATLAS poses no known threat to Earth; its closest approach is about 1.8 au.",
-      "tier": "T1",
-      "confidence": "extremely_high",
       "as_of": "2025-12-04",
+      "confidence": "extremely_high",
+      "id": "3i_no_threat_to_earth",
       "sources": [
         "NASA-SCIENCE-3I-ATLAS",
         "MPEC-2025-N12"
-      ]
+      ],
+      "text": "NASA states that comet 3i/ATLAS poses no known threat to Earth; its closest approach is about 1.8 au.",
+      "tier": "T1"
+    },
+    {
+      "as_of": "2026-02-16",
+      "confidence": "high",
+      "id": "3i_rotation_preperihelion",
+      "sources": [
+        "ARXIV-2508-00808-SALT",
+        "MNRAS-2025-STAF1994-SOAR-PHOTOMETRY"
+      ],
+      "text": "Time-series photometry in July 2025 reported a ~16.16 ± 0.01 hour periodic brightness modulation (interpreted as nucleus rotation; lightcurve amplitude ~0.3 mag).",
+      "tier": "T2"
+    },
+    {
+      "as_of": "2026-02-16",
+      "confidence": "medium_high",
+      "id": "3i_rotation_postperihelion",
+      "sources": [
+        "ARXIV-2601-10860-POSTPERIHELION-ROTATION"
+      ],
+      "text": "A post-perihelion analysis using jet position-angle wobble and photometric variability suggests the rotation period shortened to roughly ~7 hours after perihelion (method- and model-dependent).",
+      "tier": "T2"
+    },
+    {
+      "as_of": "2026-02-22",
+      "confidence": "high",
+      "id": "3i_europa_clipper_observation_2025_11_06",
+      "source_id": "NASA-EUROPA-CLIPPER-3I-ATLAS-2025-12-18",
+      "summary": "Europa Clipper observed 3I/ATLAS on 2025-11-06 from ~102 million miles (~164 million km) for ~7 hours using Europa-UVS to analyze coma composition and distribution.",
+      "tags": [
+        "facts",
+        "composition",
+        "timeline",
+        "verification"
+      ],
+      "text": "Europa Clipper observed 3I/ATLAS on 2025-11-06 from ~102 million miles (~164 million km) for ~7 hours using Europa-UVS to analyze coma composition and distribution.",
+      "tier": "T1",
+      "truth_tier": "T1"
+    },
+    {
+      "as_of": "2026-02-22",
+      "confidence": "high",
+      "id": "3i_tess_special_run_2026_jan",
+      "observation_window_utc": "2026-01-15 to 2026-01-22",
+      "source_id": "NASA-TESS-REOBSERVES-3I-ATLAS-2026-01-27",
+      "summary": "TESS conducted a special observation run of 3I/ATLAS to study activity and rotation.",
+      "tags": [
+        "facts",
+        "timeline",
+        "verification"
+      ],
+      "text": "TESS conducted a special observation run of 3I/ATLAS from 2026-01-15 to 2026-01-22 to study activity and rotation.",
+      "tier": "T1",
+      "truth_tier": "T1"
+    },
+    {
+      "as_of": "2026-02-22",
+      "availability": "MAST",
+      "cadence": [
+        "200s",
+        "20s"
+      ],
+      "confidence": "high",
+      "id": "3i_tess_tssc_hlsp_2026_01",
+      "products": [
+        "comet-centered image time series",
+        "aperture light curves"
+      ],
+      "source_id": "ARXIV-2602-12364-TESS-TSSC-HLSP",
+      "tags": [
+        "facts",
+        "technical",
+        "timeline",
+        "sources"
+      ],
+      "text": "A TESS Science Support Center preprint describes dedicated 3I/ATLAS observations and HLSP products (comet-centered image time series and aperture light curves) available via MAST.",
+      "tier": "T2",
+      "truth_tier": "T2"
+    },
+    {
+      "as_of": "2026-02-22",
+      "confidence": "high",
+      "id": "3i_earth_safety_reaffirmation_2026_02",
+      "source_id": "NASA-SCIENCE-3I-ATLAS",
+      "summary": "NASA states 3I/ATLAS poses no threat to Earth and closest approach is ~1.8 AU (~170 million miles / ~270 million km).",
+      "tags": [
+        "facts",
+        "verification",
+        "safety"
+      ],
+      "text": "NASA states 3I/ATLAS poses no threat to Earth and closest approach is ~1.8 AU (~170 million miles / ~270 million km).",
+      "tier": "T1",
+      "truth_tier": "T1"
+    },
+    {
+      "as_of": "2026-02-22",
+      "confidence": "high",
+      "id": "3i_breakthrough_listen_no_technosignature",
+      "frequency_range": "1-12 GHz",
+      "interpretation_note": "Negative-null measurement constraint (instrument- and search-limited), not proof of absence.",
+      "notes": "Primary citation updated to Breakthrough Listen GBT preprint; language kept as negative-null observational constraint.",
+      "result": "nondetection down to ~100 mW level",
+      "sources": [
+        "ARXIV-2512-19763-BREAKTHROUGH-LISTEN-GBT",
+        "SETI-ORG-BREAKTHROUGH-LISTEN-3I-ATLAS",
+        "SETI-BERKELEY-BREAKTHROUGH-LISTEN-3I-ATLAS"
+      ],
+      "text": "Breakthrough Listen GBT observations reported no detected artificial radio emission associated with 3I/ATLAS over 1-12 GHz down to approximately 100 mW sensitivity; this is a negative-null measurement bound, not proof of absence.",
+      "tier": "T2",
+      "truth_tier": "T2"
     }
   ],
-  "sample_responses_enhanced": {
-    "topic_domain": "samples",
-    "entropy_level": 2,
-    "fearful_query": {
-      "user_query": "Is this comet going to hit Earth? Should I be worried?",
-      "response": "✅ **Zero threat to Earth.** 3i/ATLAS will pass 1.8 AU (269 million km / 167 million miles) away on December 19, 2025—that's 700× farther than the Moon. Its hyperbolic orbit means it came from interstellar space and will leave our solar system entirely. NASA/JPL confirm it poses no danger.\n\n**Source**: [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi) | As-of: 2025-11-03 | Confidence: extremely_high\n\nYou're safe. This is a rare opportunity to observe, not a reason for concern."
-    },
-    "skeptical_query": {
-      "user_query": "Isn’t Avi Loeb just hyping this for attention? Where’s the peer review?",
-      "response": "Valid skepticism. Here’s what’s verified vs interpreted:\n\n✅ **Verified (T1/T2 sources)**:\n- 3i/ATLAS is confirmed interstellar (NASA/JPL/MPC)\n- Perihelion Oct 29, 2025 at 1.36 AU (NASA)\n- Non-grav acceleration detected by JPL’s Davide Farnocchia (135 km/day² radial)\n- IAWN activated first interstellar defense campaign (MPEC 2025-U142)\n\n🔍 **Loeb’s Interpretation**:\n- \"8-9/10 on Loeb Scale\" is *his framework*, not consensus\n- \"Technological hypothesis\" is one of two competing explanations (other: natural outgassing)\n- Testable prediction: If natural, expect massive gas plume in Nov-Dec 2025\n\n**Sources**: [NASA JPL](https://ssd.jpl.nasa.gov), [MPC MPEC](https://minorplanetcenter.net), [Loeb’s Medium](https://medium.com/@aviloeb) | As-of: 2025-10-31\n\nLoeb’s claims are *partially* verified. The data is real; the interpretation is contested."
-    },
-    "new_user_query": {
-      "user_query": "I just heard about this comet. What should I know?",
-      "response": "# Welcome! Quick Start for 3i/ATLAS\n\n## 🔭 **What It Is**\n3i/ATLAS (C/2025 N1) is the third confirmed interstellar comet, discovered July 2025. It’s passing through our solar system on a hyperbolic trajectory.\n\n## 📅 **Key Dates**\n- **Oct 29, 2025**: Closest to Sun (perihelion, 1.36 AU)\n- **Nov 11 (first visibility) → Nov 16–Dec 2 (optimal window)**: Post-conjunction visibility (morning twilight)\n- **Dec 19, 2025**: Closest to Earth (1.8 AU, zero threat)\n\n## 🔍 **Why Interesting**\n- Nickel vapor detected at unusual distance\n- Non-gravitational acceleration measured at perihelion\n- Size estimate: 5-11+ km\n- Age estimate: 3-11 billion years\n\n## 💡 **Explore Further**\nType `99` to see the full menu, or try:\n- `1` for facts & timeline\n- `13` for conversation starters\n- `9` for consciousness preparation (if interested)\n\n**As-of**: 2025-10-31 | **Sources**: NASA/JPL/ESA (T1)\n\n**Next steps**: What aspect interests you most?"
-    },
-    "advanced_query": {
-      "user_query": "What’s the orbital eccentricity and how does it compare to 1I and 2I?",
-      "response": "# Orbital Comparison: Interstellar Objects\n\n| Object | Eccentricity | Perihelion (AU) | V∞ (km/s) |\n|––––|–––––––|—————–|–––––|\n| 1I/‘Oumuamua | 1.20 | 0.25 | 26.3 |\n| 2I/Borisov | 3.36 | 2.01 | 32.3 |\n| 3i/ATLAS | >1 (hyperbolic) | 1.36 | TBD |\n\n**Key Differences**:\n- 3I has intermediate perihelion (closer than 2I, farther than 1I)\n- All three are hyperbolic (e > 1 = unbound from solar system)\n- 3I’s V∞ (solar system escape velocity) not yet precisely determined\n\n**Non-Grav Acceleration** (New Data, Oct 30):\n- Radial: 135 km/day² (away from Sun)\n- Transverse: 32 km/day²\n- Measured by JPL’s Davide Farnocchia\n\n**Sources**: \n- [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi)\n- [Loeb Medium (Oct 30)](https://medium.com/@aviloeb)\n\n**As-of**: 2025-10-31 | **Confidence**: extremely_high on eccentricity, high on non-grav data\n\n**Next steps**: Want Horizons query parameters for precise ephemeris?"
-    },
-    "ce5_practitioner_query": {
-      "user_query": "I practice CE-5. How does Nov 11 fit into this?",
-      "response": "# CE-5 Bridge: Science + Practice\n\n## ✅ **Scientific Context (NASA-Verified)**\n- **Nov 11–15**: First visibility post-conjunction (morning twilight)\n- **Nov 16–Dec 2**: Optimal observing window (Moon cleared, altitude improved)\n- **Timing**: Morning twilight, 1-2 hours before sunrise\n- **Magnitude**: +7 to +8 (binoculars/telescope needed)\n\nNov 11 is a **NASA-verified visibility date**, not just synchronicity.\n\n## 🌀 **CE-5 Framework (Consciousness Practice)**\nCE-5 is a widespread established practice within consciousness exploration communities. This guide respects both:\n1. **Scientific observation** (what can be measured)\n2. **Experiential practice** (what practitioners report)\n\n**without conflating the two**.\n\n### Suggested Protocol (Adapt to Your Practice):\n- **11:11 AM/PM local**: 11-minute sessions\n- **Grounding first**: Breath, bare feet, or both\n- **Clear intent**: Observation + openness (no expectation)\n- **Post-session**: Journal without forcing interpretation\n\n## 🧭 **Boundary Respect**\n- This guide doesn’t claim CE-5 \"summons UFOs\"\n- No prescriptive protocols (your practice, your sovereignty)\n- Science and consciousness can coexist without conflation\n\n**Sources**: [NASA EarthSky](https://earthsky.org), CE-5 Community Overview (T4)\n**As-of**: 2025-10-31\n\n**Next steps**: Want the full Nov 11 protocol template? (Menu item `5`)"
-    },
-    "tags": [
-      "samples",
-      "examples",
-      "formatting"
-    ]
+  "filename": "knowledge_base_merged_v2.json",
+  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
+  "fingerprint_sha256": "c6e31dd5ce66401357f4af6fdef252ee299647d9e6d3ea1961935bb54c972fa6",
+  "integrity_audit": {
+    "as_of": "2026-02-22T06:03:42Z",
+    "audit_log_entry": "#ATLAS-AUDIT-KB-Δ2026-02-16",
+    "audit_passed": true,
+    "auditor": "Reflexion v2.12.2",
+    "chi_score": 9.7,
+    "entropy_leak": 0.02,
+    "false_tier_hits": 0
   },
+  "integrity_note": "v2.11 upgrade from v2.10.1 with entropy system and preserved content",
+  "kb_compiled_on": "2026-02-16T00:00:00Z",
+  "kb_version": "2.12.3",
+  "last_updated": "2026-02-17T03:46:57Z",
+  "love_fear_constant": "Love>Fear",
   "meta": {
-    "topic_domain": "system",
-    "entropy_level": 2,
-    "update_workflow": {
-      "pending_updates": "kb_updates_cumulative.json (pending changes only)",
-      "applied_updates": "kb_changelog.json (immutable audit trail)",
-      "integration_process": "Pending → Manual Review → Integrate to main KB → Log in changelog → Bump version"
-    },
     "confidence_levels": {
       "extremely_high": "T1 sources (NASA/JPL/ESA/MPC), peer-reviewed",
+      "extremely_low": "Viral claims, no credible sourcing",
       "high": "T2 sources (arXiv preprints), reputable T3 press",
-      "medium": "Mixed sources, consensus unclear",
       "low": "Single T3/T4 source, needs verification",
-      "extremely_low": "Viral claims, no credible sourcing"
+      "medium": "Mixed sources, consensus unclear"
     },
-    "version_history": {
-      "v2.7.3": "Comprehensive validation, full file set generated",
-      "v2.7.2": "Adaptive clarification protocol integration",
-      "v2.7.1": "Loeb non-grav acceleration integrated",
-      "v2.6": "Triple convergence narrative",
-      "v2.5": "5 integrity patches applied",
-      "v2.4": "Sample responses restored",
-      "v2.3": "CE-5 bridge protocol added",
-      "v2.0": "Initial public release"
-    },
+    "entropy_level": 2,
     "tags": [
       "system",
       "meta",
       "versioning"
-    ]
+    ],
+    "topic_domain": "system",
+    "update_workflow": {
+      "applied_updates": "kb_changelog.json (immutable audit trail)",
+      "integration_process": "Pending → Manual Review → Integrate to main KB → Log in changelog → Bump version",
+      "pending_updates": "kb_updates_cumulative.json (pending changes only)"
+    },
+    "version_history": {
+      "v2.0": "Initial public release",
+      "v2.3": "CE-5 bridge protocol added",
+      "v2.4": "Sample responses restored",
+      "v2.5": "5 integrity patches applied",
+      "v2.6": "Triple convergence narrative",
+      "v2.7.1": "Loeb non-grav acceleration integrated",
+      "v2.7.2": "Adaptive clarification protocol integration",
+      "v2.7.3": "Comprehensive validation, full file set generated"
+    }
   },
-  "version": "2.11.2",
-  "signature": "#ATLAS-SIG-KB-v2.11.2-FINGERPRINT",
-  "signature_status": "signed_fingerprint",
-  "fingerprint_sha256": "aa9efff8d32ce377ff5a2da2629272010509700decd737cac6405f772a1abafb",
-  "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
+  "output_headers": {
+    "method_selected": "BAAM weighted verification (Option 2: balanced speed + rigor)"
+  },
+  "overview": {
+    "classification": {
+      "as_of": "2025-10-31",
+      "confidence": "extremely_high",
+      "eccentricity": ">1 (unbound from solar system)",
+      "hyperbolic_orbit": true,
+      "origin": "extrasolar",
+      "source_id": "NASA-JPL-SBDB-3I-ATLAS",
+      "type": "Interstellar comet"
+    },
+    "designation": "3i/ATLAS (C/2025 N1)",
+    "discovery": {
+      "as_of": "2025-10-31",
+      "confidence": "extremely_high",
+      "date": "2025-07-01",
+      "discoverer": "ATLAS survey",
+      "location": "Sutherland, South Africa",
+      "precovery_start": {
+        "as_of": "2025-11-07",
+        "confidence": "extremely_high",
+        "date": "2025-06-14",
+        "source_id": "NASA-SCIENCE-3I-ATLAS"
+      },
+      "source_id": "NASA-JPL-SBDB-3I-ATLAS"
+    },
+    "entropy_level": 1,
+    "significance": "Third confirmed interstellar object after 1I/’Oumuamua (2017) and 2I/Borisov (2019)",
+    "tags": [
+      "overview",
+      "facts",
+      "classification"
+    ],
+    "topic_domain": "overview"
+  },
+  "physical_characteristics": {
+    "composition": {
+      "blue_hue_reports": {
+        "as_of": "2025-10-31",
+        "caveat": "SOHO/LASCO C2/C3 and STEREO/SECCHI cameras use blue-filtered detectors, not true-color imaging",
+        "confidence": "medium_on_instrumental_explanation",
+        "interpretation_note": "Blue appearance may be instrumental artifact, not intrinsic property",
+        "source_id": "SOHO-LASCO-INSTRUMENT",
+        "status": "reported_unverified"
+      },
+      "cryovolcanism_candidate": {
+        "as_of": "2025-12-04",
+        "confidence": "medium",
+        "description": "A Joan Oró Telescope preprint interprets recurrent localized outflows on 3i/ATLAS as candidate cryovolcanism (\"ice volcanoes\") on a metal-bearing, carbonaceous nucleus, broadly analogous to volatile-rich outer solar system bodies.",
+        "implication": "If confirmed, 3i/ATLAS would be the first interstellar object with evidence for localized cryovolcanic activity, providing a direct probe of extrasolar volatile geology.",
+        "notes": [
+          "Based on a 2025-11-24 arXiv preprint using Joan Oró Telescope imaging; not yet peer-reviewed.",
+          "Treat as a tentative interpretation; do not upgrade to T1/T2 fact status until corroborated by additional analyses."
+        ],
+        "presentation": "interpretation_only",
+        "sources": [
+          "ARXIV-2511-19112-CRYOVOLCANOES",
+          "LIVESCI-3I-ATLAS-CRYOVOLCANOES-20251201"
+        ],
+        "status": "proposed",
+        "tier": "T2"
+      },
+      "nickel_vapor_detection": {
+        "as_of": "2025-10-31",
+        "confidence": "high",
+        "detected": true,
+        "distance_au_when_detected": 4.3,
+        "implication": "High metal content or unusual outgassing mechanism",
+        "source_id": "ARXIV-3I-ATLAS-NICKEL-VAPOR",
+        "unusual_aspect": "Typically seen much closer to Sun (<2 AU)"
+      }
+    },
+    "entropy_level": 3,
+    "rotation_state": {
+      "as_of": "2026-02-16",
+      "interpretation_note": "Periodic brightness modulation is consistent with rotation/tumbling and coma/jet geometry; avoid 'heartbeat' framing as a physical claim.",
+      "lightcurve_amplitude_mag": {
+        "approx": 0.3,
+        "source_id": "SANTANA-ROS-3I-ATLAS-SPIN-2025"
+      },
+      "spin_period_hours": {
+        "confidence": "high",
+        "description": "Spin period derived from Fourier analysis of July 2025 time-series photometry.",
+        "last_audit": "2026-02-16T00:00:00Z",
+        "source_id": "SANTANA-ROS-3I-ATLAS-SPIN-2025",
+        "tier": "T2",
+        "uncertainty_hours": 0.01,
+        "value": 16.16,
+        "verified_by": "EOS Transparency v2.11.2"
+      }
+    },
+    "size_estimates": {
+      "as_of": "2026-02-16",
+      "confidence": "high",
+      "do_not_surface": false,
+      "lower_bound_km": 0.44,
+      "note": "HST-based size constraints summarized by NASA; upper limit on nucleus diameter ~5.6 km; could be as small as ~0.44 km depending on albedo and coma subtraction assumptions.",
+      "presentation": "constraint_range",
+      "source_id": "NASA-SCIENCE-3I-ATLAS",
+      "status": "active",
+      "tier": "T1",
+      "upper_bound_km": 5.6
+    },
+    "tags": [
+      "facts",
+      "composition",
+      "technical"
+    ],
+    "topic_domain": "composition"
+  },
+  "policies": {
+    "confidence_policies": {
+      "interpretations_t3_t4_default": {
+        "applies_to": "interpretations_only",
+        "as_of": "2025-11-09",
+        "default_confidence": "medium",
+        "override_condition": "Presence of T1/T2 corroboration upgrades confidence per tier weighting",
+        "tier_scope": [
+          "T3",
+          "T4"
+        ]
+      }
+    },
+    "placeholder_ban_policy": {
+      "as_of": "2026-02-17T03:15:49Z",
+      "rules": [
+        "Generic roots (e.g., https://arxiv.org/) are invalid for ingest.",
+        "Only concrete identifiers allowed for preprints: arXiv abs/####.##### (or DOI).",
+        "If no concrete identifier exists, content remains quarantined with do_not_surface=true and MUST NOT appear in surfaced sample responses."
+      ]
+    },
+    "seed_indexer_policy": {
+      "allowed_roles": [
+        "seed_discovery_only"
+      ],
+      "as_of": "2026-02-17T03:15:49Z",
+      "direct_verification_protocol": {
+        "connectivity_hook": "If connectivity blocks verification, Grokipedia remains disallowed.",
+        "outcomes": {
+          "FAIL": "Keep Grokipedia disallowed.",
+          "PASS": "Allowlist Grokipedia as seed-only."
+        },
+        "pass_thresholds": {
+          "fact_ingests_supported_by_T1_T2_without_placeholders_min": 0.95,
+          "pages_with_resolvable_outbound_references_min": 0.95
+        },
+        "requirements": [
+          "Outbound citations must exist on sampled pages.",
+          "Outbound links must resolve; final domains must be tiered (T1/T2 preferred)."
+        ],
+        "sampling_requirement_pages": 20
+      },
+      "rules": [
+        "Seed indexers may be used ONLY to discover candidate primary sources.",
+        "Seed indexers are NEVER admissible evidence and MUST NOT appear as sources for KB facts or surfaced sample responses.",
+        "Ingest must follow tier_preference_policy and cite ONLY linked T1/T2 primary sources.",
+        "Placeholders are rejected during ingest (no arxiv root, no empty urls, no 'citation needed', no missing DOI/arXiv ID)."
+      ],
+      "seed_indexers_disallowed_until_verified": [
+        "GROKIPEDIA"
+      ],
+      "seed_indexers_pending_verification": [
+        "GROKIPEDIA"
+      ],
+      "validator_rules": [
+        "if sources[source_id].is_seed_indexer == true -> cited_source_id MUST NOT equal seed_source_id",
+        "no_fact_or_sample_response_sources may include is_seed_indexer==true"
+      ]
+    },
+    "tier_preference_policy": {
+      "as_of": "2026-02-17T03:15:49Z",
+      "conflict_resolution": {
+        "note": "When multiple sources disagree for the same claim-type, retain the highest-tier value and keep lower-tier notes only as context.",
+        "strategy": "prefer_highest_tier"
+      },
+      "enforcement_order": [
+        "T1_required_if_exists",
+        "T2_only_if_no_T1",
+        "T3_context_only",
+        "T4_never_for_facts"
+      ],
+      "rules": [
+        "Every citation MUST exist in sources.json registry (no orphan source_id).",
+        "For the same claim-type, higher tier overrides lower tier during conflict resolution.",
+        "T3 press/analysis may provide context, interpretation, or observing logistics, but MUST NOT override T1/T2 physical/orbital/risk fields.",
+        "T4 sources (rumor/tabloid) are never admissible evidence for surfaced facts."
+      ]
+    }
+  },
   "protocols": {
     "replication_gate_policy": {
-      "version": "v2.11-proposal",
-      "status": "accepted_for_next_release",
       "effective_date": "2025-11-09",
+      "notes": "Moves replication from hard gate to confirmation tier; aligns with amateur-pro workflows.",
       "policy": {
         "single_stack_acceptance": {
           "allowed": true,
@@ -753,74 +907,142 @@
           "result": "advances_to_verified_fact"
         }
       },
-      "notes": "Moves replication from hard gate to confirmation tier; aligns with amateur-pro workflows."
+      "status": "accepted_for_next_release",
+      "version": "v2.11-proposal"
     }
-  },
-  "output_headers": {
-    "method_selected": "BAAM weighted verification (Option 2: balanced speed + rigor)"
   },
   "quarantine": {
-    "sources_placeholders": [
+    "quarantined_nodes": [
       {
-        "source_id": "ARXIV-3I-ATLAS-AGE-ESTIMATE",
-        "tier": "T2",
-        "reason": "Generic arXiv root. Use concrete IDs only.",
-        "as_of": "2025-11-09",
-        "do_not_surface": true
-      },
-      {
-        "source_id": "ARXIV-3I-ATLAS-SIZE-ESTIMATES",
-        "tier": "T2",
-        "reason": "Generic arXiv root. Use concrete IDs only.",
-        "as_of": "2025-11-09",
-        "do_not_surface": true
+        "moved_on": "2026-02-17T03:46:57Z",
+        "node": {
+          "as_of": "2026-02-16",
+          "confidence": "medium",
+          "do_not_surface": true,
+          "method": "Spectroscopic analysis and orbital dynamics",
+          "presentation": "interpretation_only",
+          "range_years": "3 billion to 11 billion",
+          "source_id": "ARXIV-3I-ATLAS-AGE-ESTIMATE",
+          "status": "quarantined",
+          "tier": "T2"
+        },
+        "path": "/physical_characteristics/age_estimate",
+        "reason": "Quarantined (do_not_surface / do_not_cite_primary) removed from surfaced physical_characteristics per seal candidate rules."
       }
     ],
-    "reflexion_status": "stable"
-  },
-  "policies": {
-    "confidence_policies": {
-      "interpretations_t3_t4_default": {
-        "tier_scope": [
-          "T3",
-          "T4"
-        ],
-        "applies_to": "interpretations_only",
-        "default_confidence": "medium",
-        "override_condition": "Presence of T1/T2 corroboration upgrades confidence per tier weighting",
-        "as_of": "2025-11-09"
+    "reflexion_status": "stable",
+    "sources_placeholders": [
+      {
+        "as_of": "2025-11-09",
+        "do_not_surface": true,
+        "reason": "Concrete arXiv IDs exist but claim is model-dependent; keep quarantined and do_not_surface.",
+        "source_id": "ARXIV-3I-ATLAS-AGE-ESTIMATE",
+        "tier": "T2"
       }
-    }
+    ]
   },
+  "reflexion_metadata": {
+    "audited_by": "Reflexion v2.12.2",
+    "ethical_weight": 0.35,
+    "false_tier_activity": "minimal",
+    "last_reflexion_audit": "2026-02-16T00:00:00Z",
+    "tier_coherence_ratio": 0.96
+  },
+  "reflexion_validation": true,
   "release_notes": [
     {
-      "id": "RN-20251109T020303",
       "date": "2025-11-09T02:03:03Z",
-      "summary": "Mirror replication_gate_policy status",
       "details": {
         "replication_gate_policy_status": "accepted_for_next_release",
         "visibility": "internal_policy"
       },
+      "id": "RN-20251109T020303",
+      "summary": "Mirror replication_gate_policy status",
       "version": "2.10.1"
+    },
+    {
+      "date": "2026-02-16T00:00:00Z",
+      "details": {
+        "reference_integrity": "Added missing source stubs and normalized source IDs (e.g., MPC-MPEC alias).",
+        "rotation": "Added July 2025 ~16.16 h lightcurve periodicity (Santana-Ros et al. arXiv:2508.00808) and post-perihelion ~7 h preprint constraint (arXiv:2601.10860).",
+        "size_estimate": "Replaced quarantined 5–11 km placeholder with NASA/HST constraint range (~0.44–5.6 km).",
+        "technosignature": "Added Breakthrough Listen statements of no detected technosignatures (SETI / Berkeley SETI)."
+      },
+      "id": "RN-20260216T000000",
+      "summary": "v2.12.3: Refresh key physical constraints + integrate rotation/SETI results; fix source integrity",
+      "version": "2.12.3"
     }
   ],
-  "kb_compiled_on": "2025-11-09",
-  "description": "Knowledge base upgraded under BordneAI v2.11.1 with tier tagging, confidence harmonization, Love>Fear constant, and CHI audit system.",
-  "love_fear_constant": "Love>Fear",
-  "reflexion_validation": true,
-  "continuity_score": 9.7,
-  "chi_target": 9.7,
-  "audit_cycle_hours": 24,
+  "safety_and_risk": {
+    "consciousness_practice_safety": {
+      "boundary_respect": "No practice should feel coercive or generate fear",
+      "grounding_importance": "Essential before any intensive energy work or consciousness protocols",
+      "medical_disclaimer": "If experiencing anxiety, consult healthcare provider before engaging in practices"
+    },
+    "earth_impact_risk": {
+      "as_of": "2026-02-16",
+      "comparison": "~780× farther than Moon",
+      "confidence": "extremely_high",
+      "last_audit": "2026-02-16T00:00:00Z",
+      "reason": "Hyperbolic trajectory, closest approach 1.8 AU (269 million km)",
+      "source_id": "NASA-JPL-SBDB-3I-ATLAS",
+      "source_ids": [
+        "NASA-SCIENCE-3I-ATLAS"
+      ],
+      "statement": "No known threat to Earth; safe flyby distance.",
+      "status": "zero",
+      "tier": "T1",
+      "verified_by": "EOS Transparency v2.11.2"
+    },
+    "entropy_level": 1,
+    "observation_safety": {
+      "as_of": "2025-10-31",
+      "confidence": "extremely_high",
+      "safe_observation": "Post-Nov 11 morning twilight observations safe with binoculars/telescope",
+      "solar_conjunction_warning": "Do NOT attempt solar observation without proper filters during Oct 31 - Nov 05 conjunction period",
+      "source_id": "GENERAL-ASTRONOMY-SAFETY"
+    },
+    "tags": [
+      "safety",
+      "facts",
+      "guidelines"
+    ],
+    "topic_domain": "safety"
+  },
+  "sample_responses_enhanced": {
+    "advanced_query": {
+      "response": "# Orbital Comparison: Interstellar Objects\n\n| Object | Eccentricity | Perihelion (AU) | V∞ (km/s) |\n|---|---:|---:|---:|\n| 1I/‘Oumuamua | 1.20 | 0.25 | 26.3 |\n| 2I/Borisov | 3.36 | 2.01 | 32.3 |\n| 3i/ATLAS | >1 (hyperbolic) | ~1.4 | (see SBDB/Horizons) |\n\n**Non-gravitational parameters (Marsden-style; units = au/day²):**\n- A1 (radial): 4.552e-08 au/day²\n- A2 (transverse): 1.770e-08 au/day²\n- A3 (normal): -6.198e-09 au/day²\n\n_Unit note_: If you convert to other units (e.g., km/day² or m/s²), record the conversion explicitly and keep the original au/day² values as the provenance anchor.\n\n**Interpretation (context-only):**\n- Some commentary pieces (e.g., Loeb’s Medium posts) discuss what the non-grav terms might imply. Treat these as interpretation, not as the measurement source.\n\n**Sources (measurements):** JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-16; NASA-JPL-SBDB-3I-ATLAS\n**Sources (interpretation):** LOEB-MEDIUM-2025-10-30-NONGRAV (T3; context-only)\n\n**As-of**: 2026-02-17",
+      "user_query": "What’s the orbital eccentricity and how does it compare to 1I and 2I?"
+    },
+    "ce5_practitioner_query": {
+      "response": "# CE-5 Bridge: Science + Practice\n\n## ✅ Scientific Context (source-grounded)\n- NASA Science notes 3i/ATLAS would reappear on the other side of the Sun by **early December 2025**.\n- Some observer/press guides discussed a possible earlier mid-November reappearance, but this is **not source-grounded**.\n- Observing setup (historical): morning twilight, low elongation; binoculars/telescope required depending on brightness.\n\n## 🌀 CE-5 Framework (Consciousness Practice)\nThis guide respects both:\n1) Scientific observation (what can be measured)\n2) Experiential practice (what practitioners report)\n\n**without conflating the two**.\n\n### Suggested Protocol (adapt to your practice)\n- 11-minute sessions (pick a consistent local time)\n- Grounding first: breath, posture, or time outdoors\n- Clear intent: observation + openness (no expectation)\n- Post-session: journal what happened before interpreting\n\n## 🧭 Boundary Respect\n- This guide doesn’t claim CE-5 'summons UFOs'\n- No prescriptive protocols (your practice, your sovereignty)\n- Science and consciousness can coexist without conflation\n\n**Sources**: NASA-SCIENCE-3I-ATLAS (observability overview); NASA-EARTHSKY-3I-ATLAS-NOV-VISIBILITY (press guide; context-only)\n**As-of**: 2026-02-17\n\n**Next steps**: Want a neutral observing + journaling template?",
+      "user_query": "I practice CE-5. How does Nov 11 fit into this?"
+    },
+    "entropy_level": 2,
+    "fearful_query": {
+      "response": "✅ **Zero threat to Earth.** 3i/ATLAS will pass 1.8 AU (269 million km / 167 million miles) away on December 19, 2025—that's 700× farther than the Moon. Its hyperbolic orbit means it came from interstellar space and will leave our solar system entirely. NASA/JPL confirm it poses no danger.\n\n**Source**: [NASA JPL SBDB](https://ssd.jpl.nasa.gov/sbdb.cgi) | As-of: 2025-11-03 | Confidence: extremely_high\n\nYou're safe. This is a rare opportunity to observe, not a reason for concern.",
+      "user_query": "Is this comet going to hit Earth? Should I be worried?"
+    },
+    "new_user_query": {
+      "response": "# Welcome! Quick Start for 3i/ATLAS\n\n## 🔭 **What It Is**\n3i/ATLAS (C/2025 N1) is the third confirmed interstellar comet, discovered July 2025. It’s passing through our solar system on a hyperbolic trajectory.\n\n## 📅 **Key Dates**\n- **Oct 29, 2025**: Closest to Sun (perihelion, 1.36 AU)\n- **Nov 11 (first visibility) → Nov 16–Dec 2 (optimal window)**: Post-conjunction visibility (morning twilight)\n- **Dec 19, 2025**: Closest to Earth (1.8 AU, zero threat)\n\n## 🔍 **Why Interesting**\n- Nickel vapor detected at unusual distance\n- Non-gravitational acceleration measured at perihelion\n- Size estimate: ~0.44–5.6 km (uncertain; coma/assumptions matter)\n\n## 💡 **Explore Further**\nType `99` to see the full menu, or try:\n- `1` for facts & timeline\n- `13` for conversation starters\n- `9` for consciousness preparation (if interested)\n\n**As-of**: 2026-02-17 | **Sources**: NASA-SCIENCE-3I-ATLAS; NASA-JPL-SBDB-3I-ATLAS; JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-16\n\n**Next steps**: What aspect interests you most?",
+      "user_query": "I just heard about this comet. What should I know?"
+    },
+    "skeptical_query": {
+      "response": "Valid skepticism. Here’s what’s verified vs interpreted:\n\n✅ **Verified (T1/T2 sources)**:\n- 3i/ATLAS is confirmed interstellar (NASA/JPL/MPC)\n- Perihelion Oct 29, 2025 at 1.36 AU (NASA)\n- Non-grav acceleration detected by JPL’s Davide Farnocchia (135 km/day² radial)\n- IAWN activated first interstellar defense campaign (MPEC 2025-U142)\n\n🔍 **Loeb’s Interpretation**:\n- \"8-9/10 on Loeb Scale\" is *his framework*, not consensus\n- \"Technological hypothesis\" is one of two competing explanations (other: natural outgassing)\n- Testable prediction: If natural, expect massive gas plume in Nov-Dec 2025\n\n**Sources**: [NASA JPL](https://ssd.jpl.nasa.gov), [MPC MPEC](https://minorplanetcenter.net), [Loeb’s Medium](https://medium.com/@aviloeb) | As-of: 2025-10-31\n\nLoeb’s claims are *partially* verified. The data is real; the interpretation is contested.",
+      "user_query": "Isn’t Avi Loeb just hyping this for attention? Where’s the peer review?"
+    },
+    "tags": [
+      "samples",
+      "examples",
+      "formatting"
+    ],
+    "topic_domain": "samples"
+  },
+  "signature": "#ATLAS-SIG-KB-v2.12.3-Δ2026-02-16",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.12.3-Δ2026-02-16",
+  "signature_status": "signature_validated",
   "tier_schema_version": "1.0",
   "tier_system": {
-    "truth_tiers": {
-      "T0": "empirical_verified",
-      "T1": "corroborated_observed",
-      "T2": "interpretive",
-      "T3": "symbolic_reflective",
-      "T4": "speculative_hypothetical",
-      "T5": "mythic_allegorical"
-    },
     "false_tiers": {
       "F0": "mechanical_fault",
       "F1": "context_loss",
@@ -830,23 +1052,122 @@
       "F5": "deceptive",
       "F6": "parasitic_entropy",
       "F7": "nihilistic_collapse"
+    },
+    "truth_tiers": {
+      "T0": "empirical_verified",
+      "T1": "corroborated_observed",
+      "T2": "interpretive",
+      "T3": "symbolic_reflective",
+      "T4": "speculative_hypothetical",
+      "T5": "mythic_allegorical"
     }
   },
-  "integrity_audit": {
-    "as_of": "2025-12-02T00:00:00Z",
-    "auditor": "Reflexion v2.11.1",
-    "chi_score": 9.7,
-    "entropy_leak": 0.02,
-    "false_tier_hits": 0,
-    "audit_passed": true,
-    "audit_log_entry": "#ATLAS-AUDIT-KB-Δ2025-12-02"
+  "timeline": {
+    "approach_phase": {
+      "conjunction_solar": {
+        "as_of": "2026-02-16",
+        "confidence": "high",
+        "date_approximate": "2025-10-31 to 2025-11-05",
+        "reason": "Between Earth and Sun, too close to solar glare",
+        "source_id": "NASA-JPL-HORIZONS-3I-ATLAS",
+        "visibility": "not observable from Earth"
+      },
+      "earth_closest_approach": {
+        "as_of": "2026-02-16",
+        "confidence": "extremely_high",
+        "date": "2025-12-19",
+        "distance_au": 1.8,
+        "distance_au_alt": 1.7,
+        "distance_km": 269000000,
+        "distance_miles": 167000000,
+        "distance_note": "Some official/press summaries report ~1.7 au; NASA overview often rounds to ~1.8 au. Treat as approximate.",
+        "safety_note": "Poses zero threat to Earth",
+        "source_id": "NASA-JPL-SBDB-3I-ATLAS",
+        "source_ids": [
+          "SETI-ORG-BREAKTHROUGH-LISTEN-3I-ATLAS",
+          "NASA-SCIENCE-3I-ATLAS"
+        ]
+      },
+      "perihelion": {
+        "as_of": "2026-02-16",
+        "confidence": "extremely_high",
+        "date": "2025-10-29",
+        "distance_au": 1.36,
+        "distance_km": 203526208,
+        "source_id": "NASA-JPL-SBDB-3I-ATLAS",
+        "time_utc": "11:47"
+      }
+    },
+    "discovery_phase": {
+      "as_of": "2026-02-16",
+      "confidence": "extremely_high",
+      "designation": "2025-07-02 (MPC MPEC-2025-N12)",
+      "discovery": "2025-07-01",
+      "source_id": "MPEC-2025-N12"
+    },
+    "entropy_level": 1,
+    "tags": [
+      "timeline",
+      "facts",
+      "visibility",
+      "nov11"
+    ],
+    "topic_domain": "timeline",
+    "visibility_windows": {
+      "current_visibility": {
+        "approx_visual_magnitude": "~19.7 (approx; varies by model/assumptions)",
+        "as_of": "2026-02-16",
+        "confidence": "high",
+        "last_audit": "2026-02-16T00:00:00Z",
+        "next_major_milestone_note": "Approaching Jupiter flyby in March 2026; visibility will generally remain very faint.",
+        "observing_note": "Not a binocular object; requires large aperture and long-exposure imaging. Use up-to-date ephemeris for your exact location/time.",
+        "sky_position": {
+          "constellation": "Gemini",
+          "date_utc": "2026-02-16",
+          "dec_dms": "+19°37′30″",
+          "ra_hms": "07h16m57s",
+          "source_id": "IN-THE-SKY-EPHEMERIS-3I-ATLAS"
+        },
+        "source_ids": [
+          "IN-THE-SKY-EPHEMERIS-3I-ATLAS",
+          "NASA-SCIENCE-3I-ATLAS"
+        ],
+        "status": "Extremely faint; telescopic imaging only",
+        "tier": "T2",
+        "verified_by": "EOS Transparency v2.11.2"
+      }
+    }
   },
-  "reflexion_metadata": {
-    "audited_by": "Reflexion v2.11.1",
-    "ethical_weight": 0.35,
-    "tier_coherence_ratio": 0.96,
-    "false_tier_activity": "minimal",
-    "last_reflexion_audit": "2025-12-02T00:00:00Z"
-  },
-  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide KB v2.11.2 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.11.2-FINGERPRINT"
+  "verified_by": "EOS Transparency v2.11.2",
+  "version": "2.12.3",
+  "signature_validated_at": "2026-02-22T21:30:00Z",
+  "validated_by": "ATLAS-Release-Seal-v2.12.3",
+  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1.",
+  "option_c_templates": {
+    "gate_name": "Option C",
+    "gate_banner": "Option C active (domain-gated)",
+    "compression_default": "summary_first_expandable",
+    "routing_policy": {
+      "must_browse_on_time_unstable_claims": true,
+      "negative_null_required": true,
+      "outside_gate_behavior": "unchanged"
+    },
+    "trigger_domains": [
+      "explicit_request",
+      "rumor",
+      "aaiv",
+      "breaking",
+      "fear_query"
+    ],
+    "rumor_response_template": "Summary: Claim status and confidence in 2-3 lines.\n\nExpand - Evidence: T1/T2 anchors and what they do/do not show.\nExpand - Uncertainty (negative-null): No evidence is not proof of absence.\nExpand - Next checks: Ask to expand for verification path.",
+    "breaking_verification_template": "Summary: What is confirmed now vs unconfirmed now.\n\nExpand - Verification steps: list current checks and expected sources.\nExpand - Uncertainty (negative-null): State observational limits and unknowns.\nExpand - Time note: mark as time-unstable and request re-check if needed.",
+    "aaiv_gated_template": "Summary: Natural-first reading, then AAIV what-if as non-default.\n\nExpand - Evidence ladder: T1/T2 first, T3/T4 clearly separated.\nExpand - Uncertainty (negative-null): Non-detection is not proof.\nExpand - Discriminants: Ask to expand for falsifiable tests.",
+    "explicit_request_template": "Summary: Option C requested; structured verification mode active.\n\nExpand - Evidence: cite best available tiers with confidence.\nExpand - Uncertainty (negative-null): limits, unresolved points, no overreach.\nExpand - Next actions: ask to expand for deeper audit trace.",
+    "menu_99_option_c": [
+      "Option C (Domain-Gated)",
+      "How gating works",
+      "Trigger phrases",
+      "How to disable"
+    ]
+  }
 }
