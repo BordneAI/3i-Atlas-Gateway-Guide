@@ -116,7 +116,10 @@ v2.12.3 does **not** replace the core Phase-10 engine; it hardens governance sur
 | File | Function |
 |------|-----------|
 | `manifest.json` | System manifest + release metadata |
+| `BOOTLOADER.md` | Runtime boot sequence and release-aligned startup summary |
 | `bayesian_framework.json` | Ethical Bayesian reasoning layer |
+| `conversation_starters.json` | Persona-aware entry prompts and routing starters |
+| `PROMPTS/guardian_prompt.md` | Contributor governance prompt for AI-assisted repo work |
 | `scripts/normalize_updates.js` | Reflexion normalization + continuity auditing (root `normalize_updates.js` kept as compatibility shim) |
 | `stress_test_framework.json` | CHI + integrity stress tests |
 | `sources.json` | Provenance registry |
@@ -162,12 +165,18 @@ If any signed or integrity-audited file is edited:
 Signed/audited artifacts include:
 
 - `manifest.json`
+- `BOOTLOADER.md`
+- `bayesian_framework.json`
+- `conversation_starters.json`
+- `stress_test_framework.json`
 - `tags_index.json`
 - `kb_updates_cumulative.json`
 - `knowledge_base_merged_v2.json`
 - `sources.json`
 
 A version bump is incomplete until audit metadata and signatures are refreshed for all edited signed artifacts.
+A version bump is also incomplete until manifest-listed live `docs/` surfaces and release-reviewed governance surfaces (`BOOTLOADER.md`, `PROMPTS/guardian_prompt.md`) have been explicitly reviewed for package alignment.
+Run `node scripts/validate_kb.js` after release-surface edits, and use `node scripts/refresh_release_signatures.js --all --write` before sealing when signed surfaces changed.
 
 ---
 

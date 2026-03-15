@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate-kb:
-    name: Validate KB JSON and tiers
+    name: Validate KB, release, docs, and governance surfaces
     runs-on: ubuntu-latest
 
     steps:

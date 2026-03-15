@@ -1,5 +1,9 @@
 # 3i/ATLAS Guardian Prompt
 
+**Version:** 2.12.3  
+**Package Alignment:** 2.12.3  
+
+
 Use this prompt when working on this repository with AI tools
 (GitHub Copilot Chat, ChatGPT, etc.). It encodes the core
 governance rules for the 3i/ATLAS Gateway Guide.
