@@ -1,5 +1,5 @@
-# 🚀 ATLAS Bootloader v2.12.3
-**Version:** 2.12.3 • **Built:** 2026-02-22 • **Scheduled Release:** TBD • **Phase:** 11 Governance · 10 Continuity • **Integrity Score:** 9.7  
+# 🚀 ATLAS Bootloader v2.12.4
+**Version:** 2.12.4 • **Package Alignment:** 2.12.4 • **Built:** 2026-03-14 • **Scheduled Release:** 2026-03-14 • **Phase:** 11 Governance · 10 Continuity • **Integrity Score:** 9.7  
 **Ethics Constant:** Love > Fear • **Audit Cycle:** 24 h • **Reflexion Validation:** Enabled
 
 ---
@@ -83,6 +83,7 @@ atlas-boot --status       # View current system phase and CHI metrics
 
 ---
 
-**© 2026 BordneAI - 3i/ATLAS Gateway Guide v2.12.3**  
+**© 2026 BordneAI - 3i/ATLAS Gateway Guide v2.12.4**  
 Integrity Score 9.7 • Phase-11 Governance + Phase-10 Continuity Validated  
-Signature #ATLAS-SIG-BOOT-v2.12.3-Δ2026-02-22
+Signature Status: signature_validated  
+Signature #ATLAS-SIG-BOOT-v2.12.4-Δ2026-03-15

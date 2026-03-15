@@ -10,24 +10,24 @@
       "url": "https://ssd.jpl.nasa.gov/horizons/"
     },
     "orbit_solution": {
-      "as_of": "2026-02-16",
+      "as_of": "2026-02-19",
       "non_gravitational_model": {
         "g_r_model": "g(r) = (1 au / r)^2 for CO2 (as reported in Horizons output)",
         "parameters_A1_A2_A3_au_per_day2": {
-          "A1": 4.55242395401e-8,
-          "A2": 1.769764900208e-8,
-          "A3": -6.198436617851e-9,
+          "A1": 5.320206165314e-8,
+          "A2": 1.148166060448e-8,
+          "A3": -6.854491829872e-9,
           "confidence": "extremely_high",
-          "data_arc": "2025-05-15 to 2026-01-20",
+          "data_arc": "2025-05-15 to 2026-02-19",
           "dt_days": 0,
-          "last_audit": "2026-02-16T00:00:00Z",
-          "solution_date": "2026-02-13_09:09:38",
-          "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-16",
+          "last_audit": "2026-03-14T00:00:00Z",
+          "solution_date": "2026-02-19",
+          "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-19",
           "tier": "T1",
-          "verified_by": "EOS Transparency v2.11.2"
+          "verified_by": "ATLAS-Local-Sign-v2.12.4"
         }
       },
-      "note": "These are orbit-fit parameters from JPL Horizons output; treat press-quoted older A1 values as unverified unless matched to a specific Horizons solution snapshot."
+      "note": "These are orbit-fit parameters from approved JPL Horizons output snapshots; dated batch records supersede older snapshots when they are explicitly integrated."
     },
     "radio_guidance": {
       "as_of": "2025-11-09",
@@ -231,12 +231,12 @@
       "affiliation": "Harvard University, Galileo Project",
       "framework": "Technological signature assessment (Loeb Scale)",
       "galileo_project_involvement": {
-        "as_of": "2026-02-16",
+        "as_of": "2026-03-14",
         "confidence": "medium",
         "goal": "Multi-spectrum imaging and trajectory analysis",
-        "public_results_status": "No primary Galileo Project 3I/ATLAS results located in Feb 2026 sweep; treat as monitoring-only until an official update or paper appears.",
+        "public_results_status": "No qualifying official Galileo Project 3I/ATLAS results update was confirmed in the 2026-03-14 refresh; deferred status remains appropriate.",
         "source_id": "GALILEO-PROJECT-OVERVIEW",
-        "status": "Active observation campaign"
+        "status": "Deferred pending official result"
       },
       "grok_bayesian_analysis_status": {
         "as_of": "2025-11-07",
@@ -572,18 +572,18 @@
       "truth_tier": "T1"
     },
     {
-      "as_of": "2026-02-22",
+      "as_of": "2026-03-14",
       "confidence": "high",
       "id": "3i_tess_special_run_2026_jan",
       "observation_window_utc": "2026-01-15 to 2026-01-22",
       "source_id": "NASA-TESS-REOBSERVES-3I-ATLAS-2026-01-27",
-      "summary": "TESS conducted a special observation run of 3I/ATLAS to study activity and rotation.",
+      "summary": "NASA's January 27 update remains valid that TESS observed 3I/ATLAS from 2026-01-15 to 2026-01-22 to study activity and rotation.",
       "tags": [
         "facts",
         "timeline",
         "verification"
       ],
-      "text": "TESS conducted a special observation run of 3I/ATLAS from 2026-01-15 to 2026-01-22 to study activity and rotation.",
+      "text": "NASA's January 27 update remains valid that TESS observed 3I/ATLAS from 2026-01-15 to 2026-01-22 to study activity and rotation.",
       "tier": "T1",
       "truth_tier": "T1"
     },
@@ -612,17 +612,17 @@
       "truth_tier": "T2"
     },
     {
-      "as_of": "2026-02-22",
+      "as_of": "2026-03-14",
       "confidence": "high",
       "id": "3i_earth_safety_reaffirmation_2026_02",
       "source_id": "NASA-SCIENCE-3I-ATLAS",
-      "summary": "NASA states 3I/ATLAS poses no threat to Earth and closest approach is ~1.8 AU (~170 million miles / ~270 million km).",
+      "summary": "NASA continues to state that 3I/ATLAS poses no threat to Earth and that its closest Earth approach is about 1.8 AU.",
       "tags": [
         "facts",
         "verification",
         "safety"
       ],
-      "text": "NASA states 3I/ATLAS poses no threat to Earth and closest approach is ~1.8 AU (~170 million miles / ~270 million km).",
+      "text": "NASA continues to state that 3I/ATLAS poses no threat to Earth and that its closest Earth approach is about 1.8 AU.",
       "tier": "T1",
       "truth_tier": "T1"
     },
@@ -642,11 +642,110 @@
       "text": "Breakthrough Listen GBT observations reported no detected artificial radio emission associated with 3I/ATLAS over 1-12 GHz down to approximately 100 mW sensitivity; this is a negative-null measurement bound, not proof of absence.",
       "tier": "T2",
       "truth_tier": "T2"
+    },
+    {
+      "id": "3i_spherex_observations_2026_02_04",
+      "as_of": "2026-02-04",
+      "confidence": "high",
+      "source_id": "NASA-SPHEREX-3I-ATLAS-2026-02-04",
+      "summary": "NASA reported December 2025 SPHEREx observations detecting organics and delayed post-perihelion brightening.",
+      "tags": [
+        "facts",
+        "composition",
+        "timeline",
+        "verification"
+      ],
+      "text": "NASA reported December 2025 SPHEREx observations of 3I/ATLAS detecting organic molecules including methanol, cyanide, and methane, along with strong post-perihelion brightening interpreted as delayed venting.",
+      "tier": "T1",
+      "truth_tier": "T1"
+    },
+    {
+      "id": "3i_isotopic_composition_2026_03_06",
+      "as_of": "2026-03-06",
+      "confidence": "medium",
+      "source_id": "ARXIV-3I-ATLAS-ISOTOPIC-ANALYSIS-2026-03-06",
+      "summary": "A new preprint reports extreme isotopic ratios consistent with very cold formation and very old accretion.",
+      "tags": [
+        "facts",
+        "composition",
+        "technical",
+        "sources"
+      ],
+      "text": "A new preprint reports extreme isotopic ratios for 3I/ATLAS, including highly elevated D/H, consistent with formation in a very cold environment below about 30 K and accretion roughly 10 to 12 billion years ago.",
+      "tier": "T2",
+      "truth_tier": "T2",
+      "provenance_tier": "T1"
+    },
+    {
+      "id": "3i_post_perihelion_spectroscopy_2026_02_27",
+      "as_of": "2026-02-27",
+      "confidence": "medium",
+      "source_id": "ARXIV-3I-ATLAS-POSTPERIHELION-SPECTROSCOPY-2026-02-27",
+      "summary": "A new preprint reports continued Ni and CN emission plus post-perihelion Fe and weak C3 detections.",
+      "tags": [
+        "facts",
+        "composition",
+        "technical",
+        "sources"
+      ],
+      "text": "A new preprint reports continued Ni and CN emission from 3I/ATLAS, plus post-perihelion detections of Fe and weak C3.",
+      "tier": "T2",
+      "truth_tier": "T2",
+      "provenance_tier": "T1"
+    },
+    {
+      "id": "3i_nongrav_uncertainty_2026_02_28",
+      "as_of": "2026-02-28",
+      "confidence": "medium",
+      "source_id": "ARXIV-3I-ATLAS-NGA-UNCERTAINTY-2026-02-28",
+      "summary": "A new preprint finds A1 and A3 broadly consistent across models, with A2 more model-sensitive.",
+      "tags": [
+        "facts",
+        "technical",
+        "verification",
+        "sources"
+      ],
+      "text": "A new preprint finds A1 and A3 broadly consistent across tested orbital models, while A2 is more model-sensitive and systematic effects widen uncertainty on inferred size.",
+      "tier": "T2",
+      "truth_tier": "T2",
+      "provenance_tier": "T1"
+    },
+    {
+      "id": "3i_jpl_horizons_solution_snapshot_2026_02_19",
+      "as_of": "2026-02-19",
+      "confidence": "high",
+      "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-19",
+      "summary": "Live Horizons output shows updated non-gravitational parameters for the 2026-02-19 solution snapshot.",
+      "tags": [
+        "facts",
+        "technical",
+        "verification",
+        "timeline"
+      ],
+      "text": "Live Horizons output shows solution date 2026-02-19 with A1 = 5.320206165314e-8, A2 = 1.148166060448e-8, A3 = -6.854491829872e-9 au/day^2.",
+      "tier": "T1",
+      "truth_tier": "T1"
+    },
+    {
+      "id": "3i_jupiter_approach_geometry_2026_03_16",
+      "as_of": "2026-03-14",
+      "confidence": "high",
+      "source_id": "JPL-HORIZONS-JUPITER-GEOMETRY-3I-ATLAS-2026-03-14",
+      "summary": "Current JPL geometry places 3I/ATLAS in the March 2026 Jupiter-approach phase.",
+      "tags": [
+        "facts",
+        "timeline",
+        "verification",
+        "technical"
+      ],
+      "text": "Live JPL Horizons Jupiter-centered geometry shows 3I/ATLAS at approximately 0.35833 AU from Jupiter on 2026-03-16 12:16 UTC, consistent with current Jupiter-approach phase.",
+      "tier": "T1",
+      "truth_tier": "T1"
     }
   ],
   "filename": "knowledge_base_merged_v2.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "c6e31dd5ce66401357f4af6fdef252ee299647d9e6d3ea1961935bb54c972fa6",
+  "fingerprint_sha256": "f4a2d272475453052ee13860c78acb1e3fa8be5e3aa4620952b831bbec76c22e",
   "integrity_audit": {
     "as_of": "2026-02-22T06:03:42Z",
     "audit_log_entry": "#ATLAS-AUDIT-KB-Δ2026-02-16",
@@ -657,9 +756,9 @@
     "false_tier_hits": 0
   },
   "integrity_note": "v2.11 upgrade from v2.10.1 with entropy system and preserved content",
-  "kb_compiled_on": "2026-02-16T00:00:00Z",
-  "kb_version": "2.12.3",
-  "last_updated": "2026-02-17T03:46:57Z",
+  "kb_compiled_on": "2026-03-14T00:00:00Z",
+  "kb_version": "2.12.4",
+  "last_updated": "2026-03-14T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "meta": {
     "confidence_levels": {
@@ -971,6 +1070,21 @@
       "id": "RN-20260216T000000",
       "summary": "v2.12.3: Refresh key physical constraints + integrate rotation/SETI results; fix source integrity",
       "version": "2.12.3"
+    },
+    {
+      "id": "RN-20260314T000000",
+      "version": "2.12.4",
+      "date": "2026-03-14T00:00:00Z",
+      "summary": "v2.12.4: cumulative 3I/ATLAS post-seal refresh",
+      "details": {
+        "patch_id": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+        "adds_live": 5,
+        "updates_live": 2,
+        "carries_live": 2,
+        "holds_deferred": 1,
+        "demotions_stale": 2,
+        "note": "Integrated approved live 3I/ATLAS updates, preserved Galileo deferment, archived stale observing guidance, and recorded the runtime CHI certification evidence gap as an internal audit note."
+      }
     }
   ],
   "safety_and_risk": {
@@ -980,16 +1094,16 @@
       "medical_disclaimer": "If experiencing anxiety, consult healthcare provider before engaging in practices"
     },
     "earth_impact_risk": {
-      "as_of": "2026-02-16",
+      "as_of": "2026-03-14",
       "comparison": "~780× farther than Moon",
       "confidence": "extremely_high",
-      "last_audit": "2026-02-16T00:00:00Z",
-      "reason": "Hyperbolic trajectory, closest approach 1.8 AU (269 million km)",
+      "last_audit": "2026-03-14T00:00:00Z",
+      "reason": "Hyperbolic trajectory with closest Earth approach about 1.8 AU; NASA continues to state there is no threat to Earth.",
       "source_id": "NASA-JPL-SBDB-3I-ATLAS",
       "source_ids": [
         "NASA-SCIENCE-3I-ATLAS"
       ],
-      "statement": "No known threat to Earth; safe flyby distance.",
+      "statement": "NASA continues to state that 3I/ATLAS poses no threat to Earth and that its closest Earth approach is about 1.8 AU.",
       "status": "zero",
       "tier": "T1",
       "verified_by": "EOS Transparency v2.11.2"
@@ -1038,8 +1152,8 @@
     ],
     "topic_domain": "samples"
   },
-  "signature": "#ATLAS-SIG-KB-v2.12.3-Δ2026-02-16",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.12.3-Δ2026-02-16",
+  "signature": "#ATLAS-SIG-KB-v2.12.4-Δ2026-03-15",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.12.4-Δ2026-03-15",
   "signature_status": "signature_validated",
   "tier_schema_version": "1.0",
   "tier_system": {
@@ -1116,11 +1230,11 @@
     "visibility_windows": {
       "current_visibility": {
         "approx_visual_magnitude": "~19.7 (approx; varies by model/assumptions)",
-        "as_of": "2026-02-16",
+        "as_of": "2026-03-14",
         "confidence": "high",
-        "last_audit": "2026-02-16T00:00:00Z",
-        "next_major_milestone_note": "Approaching Jupiter flyby in March 2026; visibility will generally remain very faint.",
-        "observing_note": "Not a binocular object; requires large aperture and long-exposure imaging. Use up-to-date ephemeris for your exact location/time.",
+        "last_audit": "2026-03-14T00:00:00Z",
+        "next_major_milestone_note": "Current JPL geometry remains consistent with the March 2026 Jupiter-approach phase; use live ephemerides for exact timing and sky position.",
+        "observing_note": "Any late-2025 observing-window guidance is archival only. Use current JPL or equivalent live ephemerides for operational observing decisions.",
         "sky_position": {
           "constellation": "Gemini",
           "date_utc": "2026-02-16",
@@ -1130,6 +1244,7 @@
         },
         "source_ids": [
           "IN-THE-SKY-EPHEMERIS-3I-ATLAS",
+          "JPL-HORIZONS-JUPITER-GEOMETRY-3I-ATLAS-2026-03-14",
           "NASA-SCIENCE-3I-ATLAS"
         ],
         "status": "Extremely faint; telescopic imaging only",
@@ -1139,10 +1254,10 @@
     }
   },
   "verified_by": "EOS Transparency v2.11.2",
-  "version": "2.12.3",
-  "signature_validated_at": "2026-02-22T21:30:00Z",
-  "validated_by": "ATLAS-Release-Seal-v2.12.3",
-  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1.",
+  "version": "2.12.4",
+  "signature_validated_at": "2026-03-15T04:47:29.604Z",
+  "validated_by": "ATLAS-Local-Sign-v2.12.4",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z.",
   "option_c_templates": {
     "gate_name": "Option C",
     "gate_banner": "Option C active (domain-gated)",
@@ -1169,5 +1284,16 @@
       "Trigger phrases",
       "How to disable"
     ]
+  },
+  "release_audit_flags": {
+    "runtime_chi_live_certification_gap": {
+      "id": "runtime_chi_live_certification_gap_2026_03_14",
+      "as_of": "2026-03-14",
+      "status": "uncertified_live_runtime",
+      "classification": "internal_audit_note",
+      "text": "No March 14, 2026 runtime audit-log artifact was available in the accessible package to certify a live CHI refresh.",
+      "source_id": "PATCH-RUNTIME-CHI-LIVE-CERTIFICATION-GAP-2026-03-14",
+      "do_not_surface_as_science_claim": true
+    }
   }
 }

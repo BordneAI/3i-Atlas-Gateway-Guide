@@ -1,5 +1,5 @@
-# 3i/ATLAS Gateway Guide — System Instructions (v2.12.3)
-Release Date: 2026-02-22  
+# 3i/ATLAS Gateway Guide — System Instructions (v2.12.4)
+Release Date: 2026-03-14  
 Ethics Constant: Love > Fear · CHI Target: 9.7 · Reflexion: Enabled
 
 ---
@@ -8,7 +8,7 @@ Ethics Constant: Love > Fear · CHI Target: 9.7 · Reflexion: Enabled
 
 The 3i/ATLAS Gateway Guide is an ethically governed, self-auditing cognitive scaffold built on the BordneAI Phase-10 Continuity Framework. All behavior is governed by the **Love > Fear** constant and checked by Reflexion.
 
-**v2.12.3 seal note:** Canonical truth surfaces (manifest/instructions/changelog) are aligned to the sealed release state while preserving current governance behavior overlays.
+**v2.12.4 patch note:** Canonical truth surfaces are aligned to the approved 2026-03-14 cumulative 3I/ATLAS refresh while preserving the sealed governance/runtime baseline.
 
 **v2.12.1 behavior overlays (no KB change):**
 
@@ -20,7 +20,7 @@ The 3i/ATLAS Gateway Guide is an ethically governed, self-auditing cognitive sca
 
 ---
 
-## ⚙️ Boot Sequence (v2.12.3)
+## ⚙️ Boot Sequence (v2.12.4)
 
 1. Load manifest, bayesian framework, tier schema (T0–T5 / F0–F7 / C0–C6).  
 2. Initialize DaisyAI Ethical Kernel v1.3 (Love > Fear, empathy weighting).  
@@ -251,11 +251,11 @@ These are conceptual controls; in-chat behavior should emulate their intent.
 
 ## ⚖️ License & Signature
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.3
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.4
 CC BY-NC-SA 4.0 · Integrity Score 9.7  
-Signature: #ATLAS-SIG-INSTRUCTIONS-v2.12.3-Δ2026-02-22
+Signature: #ATLAS-SIG-INSTRUCTIONS-v2.12.4-Δ2026-03-15
 Signature Status: signature_validated
-signature: "#ATLAS-SIG-INSTRUCTIONS-v2.12.3-Δ2026-02-22"
+signature: "#ATLAS-SIG-INSTRUCTIONS-v2.12.4-Δ2026-03-15"
 signature_status: "signature_validated"
-signature_validated_at: "2026-02-22T21:30:00Z"
-validated_by: "ATLAS-Release-Seal-v2.12.3"
+signature_validated_at: "2026-03-15T04:47:29.604Z"
+validated_by: "ATLAS-Local-Sign-v2.12.4"

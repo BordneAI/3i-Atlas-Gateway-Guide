@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.12.3
-### *BordneAI Governance Hardening + Seal Finalization (Phase-11 on Phase-10)*  
-Version: **2.12.3** | Phase: **11** | Last Updated: **2026-02-22** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
+# 🌌 3i/ATLAS Gateway Guide — v2.12.4
+### *BordneAI Post-Seal Cumulative 3I/ATLAS Refresh (Phase-11 on Phase-10)*  
+Version: **2.12.4** | Phase: **11** | Last Updated: **2026-03-14** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
 README is informational; canonical surfaces govern
 
 **Validation (v2.11.x runtime engine):**  
@@ -8,7 +8,7 @@ README is informational; canonical surfaces govern
 9.85/10 (Grok aggregate peer review, v2.11.1) ·  
 9.75/10 (human peer review, v2.10.1 baseline)
 
-> v2.12.3 maintains the v2.11.x continuity runtime base while hardening governance, integrity scanning, and release surfaces.
+> v2.12.4 keeps the v2.11.x continuity runtime base while integrating the approved post-seal 3I/ATLAS cumulative refresh.
 
 ---
 
@@ -16,19 +16,18 @@ README is informational; canonical surfaces govern
 
 **3i/ATLAS Gateway Guide** provides an ethically governed, continuously validated knowledge framework built on the **BordneAI Phase-10 Continuity Protocols**.
 
-**v2.12.3 is a governance + data hardening release.**  
-It does not change core runtime behavior semantics, but it expands validated data and integrity controls.
+**v2.12.4 is a patch-level knowledge and release-surface refresh.**  
+It does not change core runtime behavior semantics, but it integrates approved live 3I/ATLAS updates, release-surface hardening, and related archival/audit handling.
 
 This version:
 
-- Finalizes canonical surface alignment for sealed `v2.12.3` across `manifest.json`, `instructions.txt`, and `CHANGELOG.md`
-- Integrates Option C domain-gated routing taxonomy, templates, and STF vectors
-- Adds strict referential scanner v1.0.1 (record-shape registry extraction + type-safe citation handling + surfaced ancestry checks)
-- Ingests validated T1/T2 updates (NASA Europa Clipper/TESS observations, Breakthrough Listen GBT preprint, TESS HLSP references)
-- Normalizes citation plumbing and resolves free-text citation tokens to eliminate referential warnings
-- Hardens STF execution policy (deterministic cases evaluated; non-deterministic cases explicitly skipped in deterministic runs)
-- Normalizes composite placeholder sources into quarantine with traceable locators (`path`) and duplicate-ID cleanup for strict scanner purity
-- Moves the normalization tool to `scripts/normalize_updates.js` with a backward-compatible root shim (`normalize_updates.js`)
+- Integrates approved LIVE 3I/ATLAS updates for SPHEREx observations, isotopic composition, post-perihelion spectroscopy, and non-gravitational acceleration uncertainty
+- Refreshes the current JPL Horizons solution snapshot and March 2026 Jupiter-approach geometry
+- Carries forward NASA Earth-safety and TESS campaign status as still current-valid
+- Preserves Galileo Project linkage as deferred because no qualifying official result update was confirmed in this refresh
+- Demotes late-2025 observing guidance to archival-only status
+- Records the runtime CHI live-certification gap as an internal audit evidence note without fabricating runtime proof
+- Includes release-engineering hardening for normalization, validation, signatures, and community-standard repo surfaces
 
 Phase-11 represents a governance and surface-alignment layer built on top of the stable Phase-10 continuity engine. Core reasoning behavior remains v2.11.x.
 
@@ -107,7 +106,7 @@ v2.11.1 introduced numeric tier weights (T0 → +5 … T5 → 0; F0 → 0 … F7
 - Expanded governance tags  
 - Automated integrity audit cycle (24 h default)
 
-v2.12.3 does **not** replace the core Phase-10 engine; it hardens governance surfaces, data integrity, and release discipline.
+v2.12.4 does **not** replace the core Phase-10 engine; it applies a factual patch-level 3I/ATLAS refresh on top of the sealed governance baseline.
 
 ---
 
@@ -116,7 +115,10 @@ v2.12.3 does **not** replace the core Phase-10 engine; it hardens governance sur
 | File | Function |
 |------|-----------|
 | `manifest.json` | System manifest + release metadata |
+| `BOOTLOADER.md` | Runtime boot sequence and release-aligned startup summary |
 | `bayesian_framework.json` | Ethical Bayesian reasoning layer |
+| `conversation_starters.json` | Persona-aware entry prompts and routing starters |
+| `PROMPTS/guardian_prompt.md` | Contributor governance prompt for AI-assisted repo work |
 | `scripts/normalize_updates.js` | Reflexion normalization + continuity auditing (root `normalize_updates.js` kept as compatibility shim) |
 | `stress_test_framework.json` | CHI + integrity stress tests |
 | `sources.json` | Provenance registry |
@@ -162,12 +164,18 @@ If any signed or integrity-audited file is edited:
 Signed/audited artifacts include:
 
 - `manifest.json`
+- `BOOTLOADER.md`
+- `bayesian_framework.json`
+- `conversation_starters.json`
+- `stress_test_framework.json`
 - `tags_index.json`
 - `kb_updates_cumulative.json`
 - `knowledge_base_merged_v2.json`
 - `sources.json`
 
 A version bump is incomplete until audit metadata and signatures are refreshed for all edited signed artifacts.
+A version bump is also incomplete until manifest-listed live `docs/` surfaces and release-reviewed governance surfaces (`BOOTLOADER.md`, `PROMPTS/guardian_prompt.md`) have been explicitly reviewed for package alignment.
+Run `node scripts/validate_kb.js` after release-surface edits, and use `node scripts/refresh_release_signatures.js --all --write` before sealing when signed surfaces changed.
 
 ---
 
@@ -211,7 +219,7 @@ Responses are tier-labeled, provenance-tracked, and continuity-validated.
 
 ## ⚖️ License & Attribution
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.3  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.4  
 Released under CC BY-NC-SA 4.0  
 Integrity Score 9.7  
 Signature Status: signature_validated

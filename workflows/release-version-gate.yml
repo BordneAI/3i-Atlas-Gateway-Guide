@@ -7,12 +7,17 @@ on:
 
 jobs:
   check-versions:
-    name: Check manifest and README versions
+    name: Check manifest and release surfaces
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
       - name: Extract tag name
         id: vars
@@ -39,16 +44,29 @@ jobs:
             exit 1
           fi
 
-      - name: Check manifest readme.md version entry
+      - name: Check manifest README.md version entry
         run: |
           TAG="${{ steps.vars.outputs.tag }}"
           VERSION="${TAG#v}"
 
-          MANIFEST_README_VERSION=$(jq -r '.files["readme.md"].version' manifest.json)
-          echo "manifest files[\"readme.md\"].version: $MANIFEST_README_VERSION"
+          MANIFEST_README_VERSION=$(jq -r '.files["README.md"].version' manifest.json)
+          echo "manifest files[\"README.md\"].version: $MANIFEST_README_VERSION"
 
           if [ "$MANIFEST_README_VERSION" != "$VERSION" ]; then
-            echo "❌ manifest files[\"readme.md\"].version ($MANIFEST_README_VERSION) does not match tag version ($VERSION)"
+            echo "❌ manifest files[\"README.md\"].version ($MANIFEST_README_VERSION) does not match tag version ($VERSION)"
+            exit 1
+          fi
+
+      - name: Check manifest BOOTLOADER.md version entry
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          VERSION="${TAG#v}"
+
+          MANIFEST_BOOT_VERSION=$(jq -r '.files["BOOTLOADER.md"].version' manifest.json)
+          echo "manifest files[\"BOOTLOADER.md\"].version: $MANIFEST_BOOT_VERSION"
+
+          if [ "$MANIFEST_BOOT_VERSION" != "$VERSION" ]; then
+            echo "❌ manifest files[\"BOOTLOADER.md\"].version ($MANIFEST_BOOT_VERSION) does not match tag version ($VERSION)"
             exit 1
           fi
 
@@ -62,6 +80,10 @@ jobs:
             echo "❌ README.md does not mention v$VERSION in the headline."
             exit 1
           fi
+
+      - name: Run release surface validator
+        run: |
+          node scripts/validate_kb.js
 
       - name: All checks passed
         run: echo "✅ Release versions are consistent."

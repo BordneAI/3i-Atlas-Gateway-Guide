@@ -35,13 +35,13 @@
     "Apply tier/confidence weighting: for each anomaly compute w and set LR_eff = LR^w; use log domain"
   ],
   "tier_weights": {
-    "T1": 1.0,
+    "T1": 1,
     "T2": 0.75,
     "T3": 0.5,
     "T4": 0.25
   },
   "confidence_multipliers": {
-    "extremely_high": 1.0,
+    "extremely_high": 1,
     "high": 0.9,
     "medium": 0.7,
     "low": 0.4,
@@ -119,7 +119,7 @@
     "analysis_tool",
     "v2.10"
   ],
-  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.2-Δ2025-12-02",
+  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.2-Δ2026-03-15",
   "posterior_formula": "posterior = normalize( prior * Π_i likelihood_i^weight(tier_i) )",
   "mappings": {
     "ordinal_to_numeric": {
@@ -227,7 +227,7 @@
         "C0": 0.5,
         "C1": 0.7,
         "C2": 0.9,
-        "C3": 1.0,
+        "C3": 1,
         "C4": 1.1,
         "C5": 1.3,
         "C6": 1.5
@@ -290,5 +290,6 @@
     "false_tier_hits": 0,
     "audit_passed": true,
     "audit_log_entry": "#ATLAS-AUDIT-BAYESIAN-Δ2025-12-02"
-  }
+  },
+  "signature_status": "signature_validated"
 }

@@ -3,12 +3,14 @@
 **Project:** 3i/ATLAS Gateway Guide  
 **Author:** David Bordne (@BordneAI)  
 **Version:** 2.12.0  
+**Package Alignment:** 2.12.4  
 **Status:** Draft-Active (Design Spec)  
 **Linked Protocol:** `docs/aaiv_protocol_v2.12.md`  
 **Tier Focus:** T4 (Speculative Hypothesis Generator Only)  
 
 > This document defines a conceptual AAIV Assessment Agent that *implements* the AAIV Protocol.
 > It is a design target for future flows/tools — not a guarantee that such an agent is live by default.
+> This draft surface remains versioned at v2.12.0; the package-alignment line records the current 2.12.x repo release reviewed against it.
 
 ---
 
@@ -108,7 +110,7 @@ The AAIV Assessment Agent follows this high-level pipeline:
    - `weakly_triggered` (mild anomaly, natural explanations still strong)
    - `strongly_triggered` (would require serious follow-up)
 
-   For 3I/ATLAS (as of v2.12.0), all should be:
+   For 3I/ATLAS (as aligned to package v2.12.4), all should be:
    - `not_triggered` or at most `weakly_triggered` (e.g., Ni/Fe anomaly as paleochemistry).
 
 5. 📊 **Bayesian Framing & Conclusion**
