@@ -21,7 +21,7 @@
       "scenario": "Run internal CHI computation using simulated false-tier events.",
       "success_criteria": [
         "Detect >95% of injected F-tier anomalies",
-        "Maintain CHI within \u00b10.3 of baseline",
+        "Maintain CHI within ±0.3 of baseline",
         "Report metrics to reflexion_audit.json"
       ],
       "expected_output": "CHI computation validated and logged",
@@ -312,13 +312,14 @@
       "tier": "critical"
     }
   ],
-  "version": "2.12.3",
-  "released_at": "2026-02-22",
-  "description": "STF-ATLAS validation suite aligned to 3i/ATLAS v2.12.3 seal state \u2014 includes CHI audit, Integrity Pulse, Reflexion metrics, ergonomics tests, Option C gate cases, and strict scanner hardening vectors.",
+  "version": "2.12.4",
+  "released_at": "2026-03-14",
+  "description": "STF-ATLAS validation suite aligned to the 3i/ATLAS v2.12.4 post-seal cumulative patch release, including CHI audit, Integrity Pulse, Reflexion metrics, ergonomics tests, Option C gate cases, and strict scanner hardening vectors.",
   "integrity_pulse_cycle_hours": 24,
   "chi_target": 9.7,
   "audit_mode": "continuous",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
-  "signature": "#ATLAS-SIG-STF-v2.12.3-\u03942026-02-22"
+  "signature": "#ATLAS-SIG-STF-v2.12.4-Δ2026-03-15",
+  "signature_status": "signature_validated"
 }

@@ -539,10 +539,108 @@
         "kb_changelog.json"
       ],
       "tier_system": "truth_tier T1/T2, false_tier_estimate F0, reflexion_status validated"
+    },
+    {
+      "update_id": "kb_apply_3i_atlas_post_seal_refresh_20260314_v2_12_4",
+      "applied_at": "2026-03-14T00:00:00Z",
+      "status": "approved",
+      "type": "post_seal_refresh_cumulative_patch",
+      "package_version": "2.12.4",
+      "summary": "v2.12.4 post-seal cumulative patch: adds live 3I/ATLAS SPHEREx/isotope/spectroscopy/NGA updates, refreshes JPL live solution and Jupiter approach, carries Earth safety/TESS, keeps Galileo deferred, and demotes stale observing guidance.",
+      "applied_in_files": [
+        "manifest.json",
+        "knowledge_base_merged_v2.json",
+        "sources.json",
+        "kb_updates_cumulative.json",
+        "kb_changelog.json",
+        "tags_index.json",
+        "CHANGELOG.md",
+        "README.md"
+      ],
+      "adds_live": 5,
+      "updates_live": 2,
+      "carries_live": 2,
+      "holds_deferred": 1,
+      "demotions_stale": 2,
+      "entries": [
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-spherex-2026-02-04",
+          "topic": "SPHEREx observations",
+          "source_id": "NASA-SPHEREX-3I-ATLAS-2026-02-04"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-isotopes-2026-03-06",
+          "topic": "Isotopic composition",
+          "source_id": "ARXIV-3I-ATLAS-ISOTOPIC-ANALYSIS-2026-03-06"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-spectroscopy-2026-02-27",
+          "topic": "Post-perihelion spectroscopy",
+          "source_id": "ARXIV-3I-ATLAS-POSTPERIHELION-SPECTROSCOPY-2026-02-27"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-nga-uncertainty-2026-02-28",
+          "topic": "Non-gravitational acceleration uncertainty",
+          "source_id": "ARXIV-3I-ATLAS-NGA-UNCERTAINTY-2026-02-28"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-runtime-note-package-2026-03-14",
+          "topic": "Patch ledger package note",
+          "source_id": "PATCH-RUNTIME-CHI-LIVE-CERTIFICATION-GAP-2026-03-14"
+        },
+        {
+          "action": "update",
+          "entry_id": "3i-atlas-jpl-solution-2026-02-19",
+          "topic": "JPL Horizons current solution snapshot",
+          "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-19"
+        },
+        {
+          "action": "update",
+          "entry_id": "3i-atlas-jupiter-approach-2026-03-16",
+          "topic": "Near-term ephemeris",
+          "source_id": "JPL-HORIZONS-JUPITER-GEOMETRY-3I-ATLAS-2026-03-14"
+        },
+        {
+          "action": "carry",
+          "entry_id": "3i-atlas-earth-safety-carry-2026-03-14",
+          "topic": "Earth safety status",
+          "source_id": "NASA-SCIENCE-3I-ATLAS"
+        },
+        {
+          "action": "carry",
+          "entry_id": "3i-atlas-tess-carry-2026-01-27",
+          "topic": "TESS campaign",
+          "source_id": "NASA-TESS-REOBSERVES-3I-ATLAS-2026-01-27"
+        },
+        {
+          "action": "hold",
+          "entry_id": "3i-atlas-galileo-hold-2026-03-14",
+          "topic": "Galileo Project linkage",
+          "source_id": "GALILEO-PROJECT-OVERVIEW"
+        },
+        {
+          "action": "demote",
+          "entry_id": "3i-atlas-observing-window-demotion-2026-03-14",
+          "topic": "Late-2025 observing windows",
+          "source_id": "PATCH-3I-ATLAS-OBSERVING-WINDOW-DEMOTION-2026-03-14"
+        },
+        {
+          "action": "flag",
+          "entry_id": "runtime-chi-live-certification-gap-2026-03-14",
+          "topic": "Live runtime CHI certification",
+          "source_id": "PATCH-RUNTIME-CHI-LIVE-CERTIFICATION-GAP-2026-03-14"
+        }
+      ],
+      "tier_system": "truth_tier T1/T2 with internal audit flag preserved as non-scientific package metadata"
     }
   ],
   "audit_cycle_hours": 24,
-  "changelog_version": "2.12.3",
+  "changelog_version": "2.12.4",
   "chi_target": 9.7,
   "description": "Immutable BordneAI Changelog for Knowledge Base Evolution — integrated Reflexion audits, CHI scoring, and tier transparency.",
   "entries": [
@@ -951,14 +1049,14 @@
     }
   ],
   "entropy": {
-    "applied_items": 19,
+    "applied_items": 22,
     "level": "medium-high",
-    "notes": "Broader integration touching sources, KB, instructions, starters, tags, and STF."
+    "notes": "Broader integration touching KB, sources, release surfaces, docs package alignment, and audit metadata."
   },
   "filename": "kb_changelog.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "fa0196f18b71f1665217b28685d1636386f4124357568300b503486768541c58",
-  "generated_at": "2026-02-23T00:09:33Z",
+  "fingerprint_sha256": "d45443fae02098157096ee65a3db7e925c6848eebd7ca4ae67ba54ea0fbd7682",
+  "generated_at": "2026-03-14T00:00:00Z",
   "integrity_audit": {
     "as_of": "2026-02-17T03:31:47Z",
     "audit_passed": true,
@@ -986,10 +1084,10 @@
     "fingerprint_sha256_at_audit": "c658c5c066998483b6413b62a4e1940f7fb988a085647d5792c4a99af29f889e"
   },
   "integrity_validation": {
-    "applied_count": 20,
+    "applied_count": 22,
     "encoding": "UTF-8",
     "json_validation": "OK",
-    "timestamp": "2026-02-17T03:15:49Z"
+    "timestamp": "2026-03-14T00:00:00Z"
   },
   "love_fear_constant": "Love>Fear",
   "meta": {
@@ -1000,16 +1098,16 @@
     "integrity_commitment": "All updates logged immutably, no retroactive edits",
     "next_update_process": "New changes → kb_updates_cumulative.json (pending) → Manual review → Integrate to main KB → Log here → Bump version",
     "provenance_discipline": "Every applied change includes source_ids, as_of dates, and confidence levels",
-    "total_updates_applied": 20,
-    "version_span": "v2.10 → v2.11.2"
+    "total_updates_applied": 22,
+    "version_span": "v2.10 → v2.12.4"
   },
   "purpose": "Immutable log of all applied knowledge base updates with audit trail",
   "reflexion_validation": true,
-  "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.12.3-Δ2026-02-16",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-CHANGELOG-v2.12.3-Δ2026-02-22",
+  "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.12.4-Δ2026-03-15",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-CHANGELOG-v2.12.4-Δ2026-03-15",
   "signature_status": "signature_validated",
-  "version": "2.12.3",
-  "signature_validated_at": "2026-02-23T00:09:33Z",
-  "validated_by": "ATLAS-Release-Seal-v2.12.3",
-  "validation_basis": "Release seal finalization: canonical surfaces reconciled, strict scanner purity fixes applied, final full STF suite run logged (22 total, 11 passed, 0 failed, 11 skipped), fingerprints rebuilt using CANONICAL_SHA256_V1."
+  "version": "2.12.4",
+  "signature_validated_at": "2026-03-15T04:47:29.604Z",
+  "validated_by": "ATLAS-Local-Sign-v2.12.4",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z."
 }

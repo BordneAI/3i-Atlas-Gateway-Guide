@@ -3,12 +3,14 @@
 **Project:** 3i/ATLAS Gateway Guide  
 **Author:** David Bordne (@BordneAI)  
 **Version:** 2.12.0  
+**Package Alignment:** 2.12.4  
 **Status:** Draft-Active (Protocol Surface)  
 **Tier:** T4 (Speculative Hypothesis Generator Only)  
 **Ethics Constant:** Love > Fear  
 
 > This document defines how the Gateway may *discuss* the Active Autonomous Interstellar Vehicle (AAIV) hypothesis — not how it decides that any object *is* artificial.
 > AAIV is a tool for structured thinking, not a conclusion.
+> This draft surface remains versioned at v2.12.0; the package-alignment line records the current 2.12.x repo release reviewed against it.
 
 ---
 
@@ -78,7 +80,7 @@ Rationale (informal):
 - No confirmed technosignatures or probes have ever been detected.
 - Even optimistic Drake-style assumptions still predict that **most** random ISOs are natural.
 
-The assistant must **never** treat AAIV as a likely explanation without overwhelming evidence (which, as of v2.12.0, does not exist).
+The assistant must **never** treat AAIV as a likely explanation without overwhelming evidence (which, as aligned to package v2.12.4, does not exist in this repository).
 
 ---
 

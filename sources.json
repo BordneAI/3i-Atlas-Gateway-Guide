@@ -382,8 +382,8 @@
   },
   "GALILEO-PROJECT-OVERVIEW": {
     "confidence": 0.7,
-    "last_audit": "2025-11-07T00:00:00Z",
-    "last_checked": "2025-11-07",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "last_checked": "2026-03-14",
     "publisher": "Harvard",
     "tier": "T3",
     "title": "Harvard Galileo Project — Overview",
@@ -391,7 +391,8 @@
     "urls": [
       "https://projects.iq.harvard.edu/galileo/home"
     ],
-    "verified_by": "EOS Transparency v2.11.2"
+    "verified_by": "EOS Transparency v2.11.2",
+    "notes": "Reviewed on 2026-03-14 for 3I/ATLAS linkage. No qualifying official Galileo Project 3I/ATLAS results update was confirmed in this refresh."
   },
   "GENERAL-ASTRONOMY-SAFETY": {
     "confidence": 0.92,
@@ -687,8 +688,8 @@
   },
   "NASA-JPL-HORIZONS-3I-ATLAS": {
     "confidence": 0.92,
-    "last_audit": "2025-11-07T00:00:00Z",
-    "last_checked": "2025-11-07",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "last_checked": "2026-03-14",
     "publisher": "NASA JPL",
     "tier": "T1",
     "title": "JPL HORIZONS: 3i/ATLAS Ephemerides",
@@ -696,7 +697,8 @@
     "urls": [
       "https://ssd.jpl.nasa.gov/horizons/"
     ],
-    "verified_by": "EOS Transparency v2.11.2"
+    "verified_by": "EOS Transparency v2.11.2",
+    "notes": "Primary Horizons tool reference for current 3I/ATLAS solutions and geometry snapshots used in the v2.12.4 cumulative patch."
   },
   "NASA-JPL-SBDB-3I-ATLAS": {
     "aliases": [
@@ -748,9 +750,9 @@
       "NASA-SCIENCE-3I-ATLAS-ALT"
     ],
     "confidence": 0.92,
-    "last_audit": "2026-02-22T00:00:00Z",
-    "last_checked": "2026-02-22",
-    "notes": "Official overview, timeline and visibility windows. This is the primary NASA overview page for Comet 3i/ATLAS; it states there is no threat to Earth and summarizes multi-mission observing context.",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "last_checked": "2026-03-14",
+    "notes": "Official overview, timeline and visibility windows. NASA continues to state that 3I/ATLAS poses no threat to Earth and summarizes multi-mission observing context.",
     "publisher": "NASA Science",
     "tier": "T1",
     "title": "Comet 3i/ATLAS",
@@ -778,9 +780,9 @@
     "confidence": 0.8,
     "confidence_label": "high",
     "date_published": "2026-01-27",
-    "last_audit": "2026-02-22T00:00:00Z",
-    "last_checked": "2026-02-22",
-    "notes": "Special TESS observation run from 2026-01-15 to 2026-01-22 for activity and rotation studies, including public imagery compilation context.",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "last_checked": "2026-03-14",
+    "notes": "January 27, 2026 NASA update remains current for the TESS campaign window from 2026-01-15 to 2026-01-22 and its activity/rotation focus.",
     "publisher": "NASA Science blog",
     "tier": "T1",
     "title": "NASA's TESS Reobserves Comet 3I/ATLAS",
@@ -1135,8 +1137,8 @@
   "description": "Source registry upgraded under BordneAI Phase-10 protocols — includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
   "filename": "sources.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "8cc51b0f99692a9a93a8155790fc186cfb6037073974787813f462b6079e7474",
-  "last_updated": "2026-02-17T03:46:57Z",
+  "fingerprint_sha256": "d5aabdf20d88da92e33f0238c8e003169e4698aa7d49be9989e12ade8249ba44",
+  "last_updated": "2026-03-14T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "negative_null_policy": {
     "applies_to_tiers": [
@@ -1196,11 +1198,11 @@
     "verified_by": "EOS Transparency v2.11.2"
   },
   "reflexion_validation": true,
-  "released_at": "2025-12-02",
-  "signature": "#ATLAS-SIG-SOURCES-v2.12.3-Δ2026-02-16",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.12.3-Δ2026-02-16",
+  "released_at": "2026-03-14",
+  "signature": "#ATLAS-SIG-SOURCES-v2.12.4-Δ2026-03-15",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.12.4-Δ2026-03-15",
   "signature_status": "signature_validated",
-  "sources_version": "2.12.3",
+  "sources_version": "2.12.4",
   "transparency_map": {
     "confidence": 0.5,
     "fields": [
@@ -1222,7 +1224,7 @@
     "verified_by": "EOS Transparency v2.11.2"
   },
   "verified_by": "EOS Transparency v2.11.2",
-  "version": "2.12.3",
+  "version": "2.12.4",
   "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30": {
     "source_id": "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
     "title": "Heartbeat periodicity commentary for 3I/ATLAS (Loeb, Nov 30, 2025)",
@@ -1237,9 +1239,9 @@
     "verified_by": "ATLAS-Governance-Automation-v2.12.3",
     "notes": "Registered from existing KB proposal references; opinion/commentary source, not primary orbital evidence."
   },
-  "signature_validated_at": "2026-02-22T22:00:00Z",
-  "validated_by": "ATLAS-StrictScanner-PurityFix-v2.12.3",
-  "validation_basis": "Strict scanner purity fix: placeholder composite source IDs normalized to quarantine with traceable paths; scanner locator rules hardened; fingerprints rebuilt using CANONICAL_SHA256_V1.",
+  "signature_validated_at": "2026-03-15T04:47:29.604Z",
+  "validated_by": "ATLAS-Local-Sign-v2.12.4",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z.",
   "_quarantined_meta": {
     "confidence": 0.5,
     "last_audit": "2026-02-17T03:15:49Z",
@@ -1380,5 +1382,125 @@
     "aliases": [
       "LIVESCi-3I-ATLAS-CRYOVOLCANOES-20251201"
     ]
+  },
+  "NASA-SPHEREX-3I-ATLAS-2026-02-04": {
+    "title": "NASA's SPHEREx Mission Tracks Brightening of Interstellar Comet",
+    "publisher": "NASA Science",
+    "type": "agency_news",
+    "tier": "T1",
+    "provenance_tier": "T1",
+    "confidence": 0.92,
+    "date_published": "2026-02-04",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "science.nasa.gov",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Registered from the approved cumulative patch payload; exact external locator was not included in the approved package.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "ARXIV-3I-ATLAS-ISOTOPIC-ANALYSIS-2026-03-06": {
+    "title": "3I/ATLAS isotopic analysis preprint",
+    "publisher": "arXiv",
+    "type": "preprint",
+    "tier": "T2",
+    "provenance_tier": "T1",
+    "confidence": 0.78,
+    "date_published": "2026-03-06",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "arxiv.org",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Registered from the approved cumulative patch payload; exact external locator was not included in the approved package.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "ARXIV-3I-ATLAS-POSTPERIHELION-SPECTROSCOPY-2026-02-27": {
+    "title": "3I/ATLAS post-perihelion spectroscopy preprint",
+    "publisher": "arXiv",
+    "type": "preprint",
+    "tier": "T2",
+    "provenance_tier": "T1",
+    "confidence": 0.78,
+    "date_published": "2026-02-27",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "arxiv.org",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Registered from the approved cumulative patch payload; exact external locator was not included in the approved package.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "ARXIV-3I-ATLAS-NGA-UNCERTAINTY-2026-02-28": {
+    "title": "3I/ATLAS non-gravitational acceleration uncertainty preprint",
+    "publisher": "arXiv",
+    "type": "preprint",
+    "tier": "T2",
+    "provenance_tier": "T1",
+    "confidence": 0.78,
+    "date_published": "2026-02-28",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "arxiv.org",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Registered from the approved cumulative patch payload; exact external locator was not included in the approved package.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-19": {
+    "title": "JPL Horizons batch output for ATLAS (C/2025 N1) showing the 2026-02-19 non-gravitational solution snapshot",
+    "publisher": "NASA/JPL Solar System Dynamics (Horizons)",
+    "type": "agency_tool_output",
+    "tier": "T1",
+    "provenance_tier": "T1",
+    "confidence": 0.92,
+    "date_published": "2026-02-19",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "ssd.jpl.nasa.gov",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Registered from the approved cumulative patch payload; exact Horizons batch locator was not included in the approved package.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "JPL-HORIZONS-JUPITER-GEOMETRY-3I-ATLAS-2026-03-14": {
+    "title": "JPL Horizons Jupiter-centered geometry output",
+    "publisher": "NASA/JPL Solar System Dynamics (Horizons)",
+    "type": "agency_tool_output",
+    "tier": "T1",
+    "provenance_tier": "T1",
+    "confidence": 0.92,
+    "date_published": "2026-03-14",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "ssd.jpl.nasa.gov",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Registered from the approved cumulative patch payload; exact Horizons geometry locator was not included in the approved package.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "PATCH-3I-ATLAS-OBSERVING-WINDOW-DEMOTION-2026-03-14": {
+    "title": "Post-seal stale guidance demotion",
+    "publisher": "3i/ATLAS package audit",
+    "type": "internal_audit",
+    "tier": "T0",
+    "provenance_tier": "T0",
+    "confidence": 1,
+    "date_published": "2026-03-14",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "package",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Internal package audit note preserving the demotion of late-2025 observing guidance to archival-only status.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
+  },
+  "PATCH-RUNTIME-CHI-LIVE-CERTIFICATION-GAP-2026-03-14": {
+    "title": "Post-seal runtime audit evidence gap",
+    "publisher": "3i/ATLAS package audit",
+    "type": "internal_audit",
+    "tier": "T0",
+    "provenance_tier": "T0",
+    "confidence": 1,
+    "date_published": "2026-03-14",
+    "last_checked": "2026-03-14",
+    "last_audit": "2026-03-14T00:00:00Z",
+    "source_domain": "package",
+    "path": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+    "notes": "Internal package audit note recording that no March 14, 2026 runtime audit-log artifact was available in the accessible package to certify a live CHI refresh.",
+    "verified_by": "ATLAS-Local-Sign-v2.12.4"
   }
 }

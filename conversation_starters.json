@@ -1,8 +1,8 @@
 {
   "filename": "conversation_starters.json",
-  "version": "2.12.3",
-  "last_updated": "2026-02-22",
-  "updated_at": "2025-12-05T02:45:00.000000Z",
+  "version": "2.12.4",
+  "last_updated": "2026-03-14",
+  "updated_at": "2026-03-14T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
   "chi_target": 9.7,
@@ -10,7 +10,7 @@
     "default_truth_tier": "T1",
     "max_false_tier_allowed": "F2"
   },
-  "description": "Conversation starters validated for BordneAI v2.11.x (Phase-10) with Reflexion-aware context/entropy handling; packaged with 3i/ATLAS v2.12.3 seal ergonomics.",
+  "description": "Conversation starters validated for BordneAI v2.11.x (Phase-10) with Reflexion-aware context/entropy handling; packaged with the 3i/ATLAS v2.12.4 post-seal cumulative refresh.",
   "starters": [
     {
       "id": "cs_observatory_monitoring",
@@ -114,7 +114,8 @@
       }
     }
   ],
-  "signature": "#ATLAS-SIG-CONVSTART-v2.12.3-Δ2026-02-22",
+  "signature": "#ATLAS-SIG-CONVSTART-v2.12.4-Δ2026-03-15",
   "metadata": {},
-  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CONVSTART-v2.12.3-Δ2026-02-22"
+  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CONVSTART-v2.12.4-Δ2026-03-15",
+  "signature_status": "signature_validated"
 }

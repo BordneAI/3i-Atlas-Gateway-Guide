@@ -1,5 +1,26 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.12.4 — Post-Seal Cumulative 3I/ATLAS Refresh (2026-03-14)
+
+### Added
+- Integrated approved LIVE entries for SPHEREx observations, isotopic composition, post-perihelion spectroscopy, and non-gravitational acceleration uncertainty.
+- Registered the runtime CHI live-certification gap as an internal audit note in the release ledgers to preserve the approved patch summary without promoting it as science content.
+
+### Updated
+- Refreshed the JPL Horizons current solution snapshot to the 2026-02-19 batch values for A1, A2, and A3.
+- Updated near-term ephemeris language to reflect the March 2026 Jupiter-approach phase from the approved JPL geometry snapshot.
+
+### Carried Forward
+- Preserved NASA's current no-threat-to-Earth statement for 3I/ATLAS.
+- Carried forward NASA's January 27 TESS campaign update as still current-valid.
+
+### Deferred
+- Kept Galileo Project linkage in deferred status because no qualifying official result update was confirmed in this refresh.
+
+### Demoted / Archival
+- Demoted late-2025 observing-window guidance to archival-only status.
+- Flagged the missing March 14 runtime CHI certification artifact as an internal audit evidence gap.
+
 ## v2.12.3 — Seal Finalization + Governance Hardening (2026-02-22)
 
 - Canonical surfaces reconciled to sealed state for `v2.12.3` (`manifest.json`, `instructions.txt`, `CHANGELOG.md`).
@@ -158,7 +179,7 @@ Each release includes an ATLAS signature marker and is validated via EOS provena
 
 ### ⚖️ License & Signature
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.3  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.4  
 Released under CC BY-NC-SA 4.0 • Integrity Score 9.7  
 
 Signature Status: signature_validated

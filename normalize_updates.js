@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-// Backward-compatible entrypoint; canonical script lives in scripts/.
-require('./scripts/normalize_updates.js');
+const path = require("path");
+
+require(path.join(__dirname, "scripts", "normalize_updates.js"));

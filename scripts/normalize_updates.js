@@ -1,304 +1,191 @@
 #!/usr/bin/env node
-/**
- * normalize_updates.js
- * Normalize kb_updates_cumulative.json (v2.10.1) to pending-only queue format
- *
- * Goals:
- * - Remove all integrated items or move them to changelog
- * - Normalize statuses to "pending"
- * - Fix domains to bare hostnames
- * - Ensure proper schema with required keys
- * - Keep operations inert (no KB mutations)
- */
+const fs = require("fs");
+const path = require("path");
 
-const fs = require('fs');
-const path = require('path');
+const ROOT = path.resolve(__dirname, "..");
+const P = {
+  manifest: path.join(ROOT, "manifest.json"),
+  updates: path.join(ROOT, "kb_updates_cumulative.json"),
+  changelog: path.join(ROOT, "kb_changelog.json")
+};
+const SUPPORTED = /^2\.12\.\d+$/;
+const FLAGS = new Set(["--dry-run", "--write", "--json", "--help"]);
 
-// File paths
-const ROOT = path.resolve(__dirname, '..');
-const UPDATES_PATH = path.join(ROOT, 'kb_updates_cumulative.json');
-const CHANGELOG_PATH = path.join(ROOT, 'kb_changelog.json');
-const MERGED_PATH = path.join(ROOT, 'knowledge_base_merged_v2.json');
-
-/**
- * Extract bare domain from URL or domain string
- */
-function normalizeDomain(domainStr) {
-  if (!domainStr) return null;
-
+function usage(code = 0) {
+  const out = code === 0 ? process.stdout : process.stderr;
+  out.write("Usage: node normalize_updates.js --dry-run|--write [--json]\n");
+  process.exit(code);
+}
+function parseArgs(argv) {
+  const flags = argv.slice(2);
+  for (const flag of flags) if (!FLAGS.has(flag)) usage(1);
+  if (flags.includes("--help")) usage(0);
+  const dry = flags.includes("--dry-run");
+  const write = flags.includes("--write");
+  if (dry === write) usage(1);
+  return { json: flags.includes("--json"), mode: dry ? "dry-run" : "write" };
+}
+function readJson(file) { return JSON.parse(fs.readFileSync(file, "utf8")); }
+function saveJson(file, value) {
+  const raw = JSON.stringify(value, null, 2) + "\n";
+  const tmp = `${file}.tmp`;
+  fs.writeFileSync(tmp, raw, "utf8");
+  fs.renameSync(tmp, file);
+}
+function clone(value) { return JSON.parse(JSON.stringify(value)); }
+function same(a, b) { return JSON.stringify(a) === JSON.stringify(b); }
+function push(report, level, code, location, message) { report[level].push({ code, location, message }); }
+function change(report, location, before, after, reason) { report.changes.push({ location, before, after, reason }); }
+function dedupe(list) {
+  const seen = new Set();
+  return list.filter((item) => (seen.has(item) ? false : (seen.add(item), true)));
+}
+function normDomain(value) {
+  if (typeof value !== "string" || !value.trim()) return null;
+  const trimmed = value.trim();
   try {
-    // Try parsing as URL first
-    const url = new URL(domainStr.includes('://') ? domainStr : `https://${domainStr}`);
-    return url.hostname;
+    const url = new URL(trimmed.includes("://") ? trimmed : `https://${trimmed}`);
+    return url.hostname.toLowerCase() || null;
   } catch {
-    // Fallback: split on / and take first part
-    const parts = domainStr.split('/');
-    return parts[0].trim() || null;
+    return /^[A-Za-z0-9.-]+$/.test(trimmed) ? trimmed.toLowerCase() : null;
   }
 }
-
-/**
- * Load JSON file with error handling
- */
-function loadJson(filePath) {
-  try {
-    const content = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(content);
-  } catch (err) {
-    console.error(`Failed to load ${filePath}:`, err.message);
-    process.exit(1);
+function normArray(item, field, loc, report, map = (v) => v, sort = false) {
+  if (!(field in item)) return;
+  if (!Array.isArray(item[field])) return push(report, "errors", "field_not_array", `${loc}.${field}`, `${field} must be an array.`);
+  const next = [];
+  for (let i = 0; i < item[field].length; i += 1) {
+    const value = item[field][i];
+    if (typeof value !== "string") return push(report, "errors", "non_string_array_value", `${loc}.${field}[${i}]`, `${field} must contain only strings.`);
+    const mapped = map(value);
+    if (mapped == null || mapped === "") return push(report, "errors", "array_value_not_normalizable", `${loc}.${field}[${i}]`, `Could not normalize ${field}.`);
+    next.push(mapped);
+  }
+  const finalList = dedupe(next);
+  if (sort) finalList.sort();
+  if (!same(item[field], finalList)) {
+    const before = item[field];
+    item[field] = finalList;
+    change(report, `${loc}.${field}`, before, finalList, "Normalized deterministic string array.");
   }
 }
-
-/**
- * Save JSON file atomically with tmp + rename
- */
-function saveJson(filePath, obj) {
-  try {
-    const tmpPath = filePath + '.tmp';
-    fs.writeFileSync(tmpPath, JSON.stringify(obj, null, 2) + '\n', 'utf8');
-    fs.renameSync(tmpPath, filePath);
-    console.log(`✓ Saved ${path.basename(filePath)}`);
-  } catch (err) {
-    console.error(`Failed to save ${filePath}:`, err.message);
-    process.exit(1);
+function inferRejected(item) { return item && item.decision === "DEFER_WITH_NEW_DUE_DATE" ? "deferred" : "closed_no_action"; }
+function normStatus(item, bucket, loc, report) {
+  const allowed = { pending: new Set(["pending"]), integrated: new Set(["integrated"]), rejected: new Set(["closed_no_action", "deferred"]) };
+  if (bucket === "pending" && (item.integrated_at || item.integrated_to)) return push(report, "errors", "pending_history_fields_present", loc, "Pending entries may not carry integrated history fields.");
+  const fallback = bucket === "pending" ? "pending" : bucket === "integrated" ? "integrated" : inferRejected(item);
+  if (item.status == null) {
+    item.status = fallback;
+    return change(report, `${loc}.status`, null, fallback, "Filled missing supported status.");
+  }
+  if (typeof item.status !== "string" || !item.status.trim()) return push(report, "errors", "status_not_string", `${loc}.status`, "Status must be a non-empty string.");
+  const next = item.status.trim().toLowerCase().replace(/[\s-]+/g, "_");
+  if (!allowed[bucket].has(next)) return push(report, "errors", "unsupported_status", `${loc}.status`, `Unsupported status ${item.status} for ${bucket}.`);
+  if (next !== item.status) {
+    const before = item.status;
+    item.status = next;
+    change(report, `${loc}.status`, before, next, "Normalized supported status token.");
   }
 }
-
-/**
- * Main normalization logic
- */
-function normalize() {
-  console.log('Loading files...');
-  const upd = loadJson(UPDATES_PATH);
-  const cl = loadJson(CHANGELOG_PATH);
-
-  const nowIso = new Date().toISOString();
-  const integratedBuffer = [];
-
-  console.log('Normalizing kb_updates_cumulative.json...');
-
-  // Remove deprecated top-level keys
-  if ('added_in' in upd) {
-    delete upd.added_in;
-    console.log('  - Removed added_in');
+function validateRepo(manifest, updates, changelog, report) {
+  const mv = manifest && manifest.version;
+  if (!SUPPORTED.test(mv || "")) push(report, "errors", "unsupported_version", "manifest.version", `Only 2.12.x repos are supported; found ${mv || "<missing>"}.`);
+  const checks = [
+    [updates.version, "kb_updates_cumulative.version"],
+    [updates.updates_version, "kb_updates_cumulative.updates_version"],
+    [changelog.version, "kb_changelog.version"],
+    [changelog.changelog_version, "kb_changelog.changelog_version"]
+  ];
+  for (const [value, label] of checks) if (value !== mv) push(report, "errors", "version_mismatch", label, `${label} must match manifest.version (${mv}).`);
+  for (const key of ["pending", "integrated", "rejected"]) if (!Array.isArray(updates[key])) push(report, "errors", "unsupported_schema", key, `${key} must be an array.`);
+  if (!updates.continuity_metrics || typeof updates.continuity_metrics !== "object") push(report, "errors", "unsupported_schema", "continuity_metrics", "continuity_metrics must be present.");
+  if (!Array.isArray(changelog.applied)) push(report, "errors", "unsupported_schema", "kb_changelog.applied", "kb_changelog.applied must be an array.");
+}
+function dupProposalIds(updates, report) {
+  const seen = new Map();
+  for (const bucket of ["pending", "integrated", "rejected"]) {
+    for (let i = 0; i < updates[bucket].length; i += 1) {
+      const id = updates[bucket][i] && updates[bucket][i].proposal_id;
+      if (typeof id !== "string" || !id.trim()) continue;
+      const loc = `${bucket}[${i}].proposal_id`;
+      if (!seen.has(id)) seen.set(id, []);
+      seen.get(id).push(loc);
+    }
   }
-  if ('added_index' in upd) {
-    delete upd.added_index;
-    console.log('  - Removed added_index');
-  }
-
-  // Ensure required schema keys exist
-  upd.schema_version = upd.schema_version || '2.0';
-  upd.kb_version = upd.kb_version || '2.10.1';
-  upd.file = upd.file || 'kb_updates_cumulative.json';
-  upd.as_of = nowIso;
-  upd.status = 'PENDING_QUEUE';
-  upd.notes = upd.notes || 'Pending knowledge base updates awaiting review and integration';
-  upd.pending = upd.pending || [];
-  upd.rejected = upd.rejected || [];
-  upd.updates = upd.updates || [];
-  upd.entries = upd.entries || [];
-  upd.sources_registry_ops = upd.sources_registry_ops || [];
-  upd.ops_rollback = upd.ops_rollback || [];
-  upd.tests = upd.tests || [];
-  upd.integrity = upd.integrity || {
-    as_of: nowIso,
-    signature: `#ATLAS-SIG-UPDATES-v2.10.1-Δ${nowIso.slice(0, 10)}`
+  for (const [id, locations] of seen.entries()) if (locations.length > 1) push(report, "errors", "duplicate_proposal_id", locations.join(", "), `Duplicate proposal_id ${id}.`);
+}
+function refreshMetrics(updates, report) {
+  const items = [...updates.pending, ...updates.integrated, ...updates.rejected];
+  const weights = items.map((item) => item && item.continuity_weight).filter((value) => typeof value === "number" && Number.isFinite(value));
+  const target = {
+    average_continuity_weight: weights.length ? Number((weights.reduce((a, b) => a + b, 0) / weights.length).toFixed(4)) : updates.continuity_metrics.average_continuity_weight,
+    integration_ratio: items.length ? Number((updates.integrated.length / items.length).toFixed(4)) : 0,
+    total_integrated: updates.integrated.length,
+    total_pending: updates.pending.length,
+    total_rejected: updates.rejected.length,
+    total_tracked: items.length
   };
-
-  console.log('  - Ensured all required schema keys');
-
-  // Process pending proposals
-  console.log('Processing pending proposals...');
-  (upd.pending || []).forEach(p => {
-    // Collect integrated proposals for tracking
-    if (p.status && p.status.toLowerCase() === 'integrated') {
-      integratedBuffer.push(p);
-      console.log(`  - Found integrated proposal: ${p.proposal_id}`);
+  for (const [key, value] of Object.entries(target)) {
+    if (!same(updates.continuity_metrics[key], value)) {
+      const before = updates.continuity_metrics[key];
+      updates.continuity_metrics[key] = value;
+      change(report, `continuity_metrics.${key}`, before, value, "Refreshed derived continuity metric.");
     }
-    if (p.integrated_at || p.integrated_to) {
-      integratedBuffer.push(p);
-    }
-
-    // Force status to pending
-    p.status = 'pending';
-
-    // Remove integrated fields
-    delete p.integrated_at;
-    delete p.integrated_to;
-
-    // Normalize required_domains
-    if (Array.isArray(p.required_domains)) {
-      p.required_domains = p.required_domains
-        .map(normalizeDomain)
-        .filter(d => d !== null);
-      console.log(`  - Normalized domains for ${p.proposal_id}`);
-    }
-
-    // Special handling for December visibility proposal
-    if (p.proposal_id === 'kb_propose_dec_visibility_refinement') {
-      p.artifacts = p.artifacts || {};
-      if (!('horizons_csv' in p.artifacts)) {
-        p.artifacts.horizons_csv = null;
-      }
-      if (!('earthsky_url' in p.artifacts)) {
-        p.artifacts.earthsky_url = null;
-      }
-      console.log(`  - Ensured Dec visibility artifacts fields`);
-    }
-  });
-
-  // Process updates array
-  console.log('Processing updates array...');
-  (upd.updates || []).forEach(u => {
-    u.status = u.status || 'pending';
-  });
-
-  // Process entries array
-  console.log('Processing entries array...');
-  (upd.entries || []).forEach(e => {
-    e.status = e.status || 'pending';
-
-    // Fix ID format if needed
-    if (e.id && e.id.startsWith('U-2WELCOME-')) {
-      const newId = e.id.replace('U-2WELCOME-', 'U-2025-');
-      console.log(`  - Fixed ID: ${e.id} → ${newId}`);
-      e.id = newId;
-    }
-  });
-
-  // Process sources_registry_ops
-  console.log('Processing sources_registry_ops...');
-  (upd.sources_registry_ops || []).forEach(o => {
-    o.status = o.status || 'pending';
-  });
-
-  // Process rejected proposals
-  console.log('Processing rejected proposals...');
-  (upd.rejected || []).forEach(r => {
-    r.status = r.status || 'rejected';
-  });
-
-  // Process tests - ensure non-blocking
-  console.log('Processing tests...');
-  (upd.tests || []).forEach(t => {
-    // Mark as CI-only if assert exists
-    if (t.assert && !t.mode) {
-      t.mode = 'ci_only';
-    }
-  });
-
-  // Update integrity footer
-  upd.integrity.as_of = nowIso;
-  upd.integrity.signature = `#ATLAS-SIG-UPDATES-v2.10.1-Δ${nowIso.slice(0, 10)}`;
-
-  // Handle integrated items in changelog
-  console.log('\nChecking integrated proposals against changelog...');
-  if (cl.applied) {
-    const appliedIds = new Set(cl.applied.map(a => a.update_id || a.id));
-
-    integratedBuffer.forEach(p => {
-      // Generate expected changelog entry ID from integrated_to field if available
-      if (p.integrated_to) {
-        // Extract ID from field like "kb_changelog.json entry: kb_apply_iawn_registration_deadline_20251103"
-        const match = p.integrated_to.match(/kb_apply[^,\s]*/);
-        if (match) {
-          const expectedId = match[0];
-          if (appliedIds.has(expectedId)) {
-            console.log(`  ✓ Found changelog entry for ${p.proposal_id}: ${expectedId}`);
-          } else {
-            console.log(`  ⚠ Missing changelog entry for ${p.proposal_id} (expected: ${expectedId})`);
-          }
-        }
-      }
-    });
   }
+}
+function checkRefs(updates, changelog, report) {
+  const applied = new Set(changelog.applied.map((entry) => entry && (entry.update_id || entry.id)).filter(Boolean));
+  updates.integrated.forEach((item, index) => {
+    if (!item || typeof item.integrated_to !== "string") return;
+    const match = item.integrated_to.match(/entry:\s*([^\s,]+)/i);
+    if (match && !applied.has(match[1])) push(report, "warnings", "missing_changelog_reference", `integrated[${index}].integrated_to`, `Missing kb_changelog.applied ID ${match[1]}.`);
+  });
+}
+function render(report) {
+  const lines = [
+    `normalize_updates.js (${report.mode})`,
+    `Files checked: ${report.filesChecked.join(", ")}`,
+    `Changes ${report.mode === "write" ? "applied" : "planned"}: ${report.changes.length}`
+  ];
+  report.changes.forEach((entry) => lines.push(`- ${entry.location}: ${entry.reason}`));
+  lines.push(`Warnings: ${report.warnings.length}`);
+  report.warnings.forEach((entry) => lines.push(`- [${entry.code}] ${entry.location}: ${entry.message}`));
+  lines.push(`Errors: ${report.errors.length}`);
+  report.errors.forEach((entry) => lines.push(`- [${entry.code}] ${entry.location}: ${entry.message}`));
+  return lines.join("\n");
+}
 
-  console.log('\nValidation...');
-
-  // Validation 1: No integrated status in pending
-  const integratedInPending = upd.pending.filter(p =>
-    p.status && p.status.toLowerCase() === 'integrated'
-  );
-  if (integratedInPending.length > 0) {
-    console.error('✗ Found integrated status in pending array');
-    process.exit(1);
+(function main() {
+  const opts = parseArgs(process.argv);
+  const report = { changes: [], errors: [], filesChecked: ["manifest.json", "kb_updates_cumulative.json", "kb_changelog.json"], mode: opts.mode, warnings: [] };
+  let manifest, updates, changelog;
+  try {
+    manifest = readJson(P.manifest);
+    updates = readJson(P.updates);
+    changelog = readJson(P.changelog);
+  } catch (error) {
+    push(report, "errors", "json_load_failed", "load", error.message);
   }
-  console.log('  ✓ No integrated status in pending array');
-
-  // Validation 2: No top-level added_in or added_index
-  if ('added_in' in upd || 'added_index' in upd) {
-    console.error('✗ Found deprecated top-level keys (added_in/added_index)');
-    process.exit(1);
-  }
-  console.log('  ✓ No deprecated top-level keys');
-
-  // Validation 3: All required_domains match pattern
-  const domainPattern = /^[A-Za-z0-9.-]+$/;
-  let invalidDomains = false;
-  upd.pending.forEach(p => {
-    if (Array.isArray(p.required_domains)) {
-      p.required_domains.forEach(d => {
-        if (!domainPattern.test(d)) {
-          console.error(`  ✗ Invalid domain: ${d}`);
-          invalidDomains = true;
-        }
+  if (report.errors.length === 0) validateRepo(manifest, updates, changelog, report);
+  const next = report.errors.length === 0 ? clone(updates) : null;
+  if (next) {
+    for (const bucket of ["pending", "integrated", "rejected"]) {
+      next[bucket].forEach((item, index) => {
+        const loc = `${bucket}[${index}]`;
+        normStatus(item, bucket, loc, report);
+        normArray(item, "approval_requirements", loc, report);
+        normArray(item, "proposal_tier_mix", loc, report);
+        normArray(item, "required_domains", loc, report, normDomain, true);
+        normArray(item, "review_checklist", loc, report);
+        normArray(item, "source_ids_proposed", loc, report);
       });
     }
-  });
-  if (invalidDomains) {
-    process.exit(1);
+    dupProposalIds(next, report);
+    refreshMetrics(next, report);
+    checkRefs(next, changelog, report);
   }
-  console.log('  ✓ All domains match expected pattern');
-
-  // Validation 4: December visibility proposal exists and is pending with artifacts
-  const decProp = upd.pending.find(p => p.proposal_id === 'kb_propose_dec_visibility_refinement');
-  if (!decProp) {
-    console.error('✗ December visibility proposal not found');
-    process.exit(1);
-  }
-  if (decProp.status !== 'pending') {
-    console.error(`✗ December visibility proposal has status '${decProp.status}' instead of 'pending'`);
-    process.exit(1);
-  }
-  if (!decProp.artifacts || !('horizons_csv' in decProp.artifacts) || !('earthsky_url' in decProp.artifacts)) {
-    console.error('✗ December visibility proposal missing required artifact fields');
-    process.exit(1);
-  }
-  console.log('  ✓ December visibility proposal is valid');
-
-  // Validation 5: JSON validity
-  try {
-    JSON.stringify(upd);
-    JSON.stringify(cl);
-    console.log('  ✓ JSON structure is valid');
-  } catch (err) {
-    console.error(`✗ JSON validation failed: ${err.message}`);
-    process.exit(1);
-  }
-
-  // Save files
-  console.log('\nSaving files...');
-  saveJson(UPDATES_PATH, upd);
-  saveJson(CHANGELOG_PATH, cl);
-
-  console.log('\n✓ Normalization complete!');
-  console.log(`  - Version: ${upd.version}`);
-  console.log(`  - Schema version: ${upd.schema_version}`);
-  console.log(`  - KB version: ${upd.kb_version}`);
-  console.log(`  - Pending proposals: ${upd.pending.length}`);
-  console.log(`  - Rejected proposals: ${upd.rejected.length}`);
-  console.log(`  - Updated at: ${upd.as_of}`);
-
-  return 0;
-}
-
-// Execute
-try {
-  process.exit(normalize());
-} catch (err) {
-  console.error('Fatal error:', err.message);
-  console.error(err.stack);
-  process.exit(1);
-}
+  const summary = { status: report.errors.length ? "failed" : "ok", mode: report.mode, files_checked: report.filesChecked, counts: { changes: report.changes.length, errors: report.errors.length, warnings: report.warnings.length }, changes: report.changes, warnings: report.warnings, errors: report.errors };
+  if (report.errors.length === 0 && opts.mode === "write" && report.changes.length) saveJson(P.updates, next);
+  process.stdout.write(opts.json ? JSON.stringify(summary, null, 2) + "\n" : render(report) + "\n");
+  process.exit(report.errors.length ? 1 : 0);
+})();

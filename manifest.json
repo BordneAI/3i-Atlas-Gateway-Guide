@@ -1,31 +1,31 @@
 {
-  "version": "2.12.3",
-  "release_date": "2026-02-22",
+  "version": "2.12.4",
+  "release_date": "2026-03-14",
   "release_state": "sealed",
-  "release_state_notes": "Sealed v2.12.3 release surface. Signatures validated; post-seal checklist complete.",
+  "release_state_notes": "Sealed v2.12.4 patch release. Approved cumulative 3I/ATLAS post-seal refresh integrated with refreshed signatures and release-surface review.",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Sealed v2.12.3 integrates Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion (v2 verification clean), STF gate/full-suite logging, and post-hardening governance integrity closure.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, and enforced ephemeris sourcing. Sealed v2.12.4 integrates the approved 2026-03-14 cumulative 3I/ATLAS post-seal refresh while preserving deferred Galileo status and archiving stale observing guidance.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "purpose": "System prompt with operational guidelines, tool/browse rules, and governance routing"
     },
     "CHANGELOG.md": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "purpose": "Release history and change summaries (canonical release surface)"
     },
     "README.md": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "purpose": "Deployment guide and governance overview (non-canonical; explanatory)"
     },
     "BOOTLOADER.md": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "BOOTLOADER.md",
       "purpose": "Runtime boot sequence and governance initialization summary",
       "type": "bootloader",
@@ -34,44 +34,44 @@
       "package_alignment_required": true
     },
     "knowledge_base_merged_v2.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "knowledge_base_merged_v2.json",
-      "last_updated": "2026-02-17T03:46:57Z",
+      "last_updated": "2026-03-14T00:00:00Z",
       "purpose": "Primary knowledge base with verified facts, interpretations, practices, and entropy signal map"
     },
     "conversation_starters.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "purpose": "Persona-aware prompts including Settings (98), Tools (97), auditor triggers"
     },
     "sources.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "sources.json",
       "purpose": "Tiered source registry with provenance metadata"
     },
     "kb_updates_cumulative.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "kb_updates_cumulative.json",
       "purpose": "Pending knowledge base updates awaiting review and integration"
     },
     "kb_changelog.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "kb_changelog.json",
       "purpose": "Immutable log of applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "tags_index.json",
-      "last_updated": "2026-02-22",
+      "last_updated": "2026-03-14",
       "purpose": "Searchable tag index for knowledge base navigation"
     },
     "stress_test_framework.json": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "stress_test_framework.json",
-      "last_updated": "2026-02-22",
+      "last_updated": "2026-03-14",
       "purpose": "STF-ATLAS validation scenarios and auditor overlay hooks"
     },
     "PROMPTS/guardian_prompt.md": {
-      "version": "2.12.3",
+      "version": "2.12.4",
       "filename": "PROMPTS/guardian_prompt.md",
       "purpose": "Contributor governance prompt for AI-assisted repository work",
       "type": "governance-prompt",
@@ -107,15 +107,15 @@
     }
   },
   "version_alignment_notes": {
-    "instructions.txt": "instructions signature validated; sealing checklist complete (v2.12.3)",
-    "knowledge_base_merged_v2.json": "Top-level version is 2.12.3 (kb_version 2.12.3; last_updated 2026-02-17T03:46:57Z).",
-    "tags_index.json": "Top-level version is authoritative for manifest alignment; counts are normalized so total_tags and integrity_validation.tag_count match.",
-    "sources.json": "Top-level version is 2.12.3; sources_version 2.12.3 may mark lineage and is not the release surface.",
-    "docs/aaiv_protocol_v2.12.md": "Version is declared in the markdown title/header; release review must also confirm Package Alignment matches the current manifest version.",
-    "docs/aaiv_agent_spec_v2.12.md": "Version is declared in the markdown title/header; release review must also confirm Package Alignment matches the current manifest version.",
+    "instructions.txt": "instructions signature validated; patch release alignment refreshed for v2.12.4 on 2026-03-14.",
+    "knowledge_base_merged_v2.json": "Top-level version is 2.12.4 (kb_version 2.12.4; last_updated 2026-03-14T00:00:00Z).",
+    "tags_index.json": "Top-level version is authoritative for manifest alignment; v2.12.4 adds live 3I/ATLAS and archival/audit tags with normalized counts.",
+    "sources.json": "Top-level version is 2.12.4; sources_version 2.12.4 tracks the approved 2026-03-14 cumulative patch and preserves patch-backed provenance records.",
+    "docs/aaiv_protocol_v2.12.md": "Version remains 2.12.0; release review confirmed Package Alignment matches manifest v2.12.4.",
+    "docs/aaiv_agent_spec_v2.12.md": "Version remains 2.12.0; release review confirmed Package Alignment matches manifest v2.12.4.",
     "bayesian_framework.json": "Framework surface intentionally remains at BAAM v2.11.2; release review must confirm manifest entry matches file version and preserve T4 guardrails.",
-    "BOOTLOADER.md": "Version, Package Alignment, and boot signature markers must stay aligned with the active release when boot sequence text is revised.",
-    "PROMPTS/guardian_prompt.md": "Governance prompt is release-reviewed; Version and Package Alignment markers must match the current manifest version when the prompt is revised."
+    "BOOTLOADER.md": "Version and Package Alignment refreshed to v2.12.4 for the cumulative post-seal 3I/ATLAS patch release.",
+    "PROMPTS/guardian_prompt.md": "Governance prompt release review completed for v2.12.4; Version and Package Alignment markers match the manifest."
   },
   "changelog_summary": {
     "v2.8": "Entropy Domain Control; Settings (98); Tools (97); adaptive fetch; token budgeting; Canvas Insight Blocks; Confidence Bar; Mini-Timeline; Auditor profile; watermark/IP controls",
@@ -131,7 +131,8 @@
     "v2.11.2": "Ergonomics and governance updates: plain/simple mode toggle, audit footer option, ephemeris helper pattern, rumor handling, external evaluations organization.",
     "v2.12.0": "AAIV scaffolding: added AAIV protocol + agent spec (T4-only, opt-in, natural-first, low priors); no default runtime behavior changes.",
     "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules.",
-    "v2.12.3": "Sealed integration milestone: Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion, STF Option C gate/full-suite pass logging, and governance hardening finalized."
+    "v2.12.3": "Sealed integration milestone: Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion, STF Option C gate/full-suite pass logging, and governance hardening finalized.",
+    "v2.12.4": "Post-seal cumulative 3I/ATLAS patch: SPHEREx, isotopic, spectroscopy, and NGA uncertainty updates added; JPL live solution and Jupiter approach refreshed; Earth safety/TESS carried; Galileo deferred; stale observing guidance archived."
   },
   "key_features": {
     "provenance_discipline": "Source registry + as_of + confidence labeling for factual claims",
@@ -169,7 +170,8 @@
     "docs_surface_review": "Manifest-listed docs/ public surfaces must be reviewed during each release bump for document-version consistency and current package-alignment markers.",
     "docs_surface_validation_command": "node scripts/validate_kb.js",
     "governance_surface_review": "Manifest-listed governance and support surfaces (BOOTLOADER.md, PROMPTS/guardian_prompt.md, bayesian_framework.json) must be reviewed during each release bump for version consistency, package alignment, and guardrail integrity.",
-    "release_surface_validation_command": "node scripts/validate_kb.js"
+    "release_surface_validation_command": "node scripts/validate_kb.js",
+    "runtime_live_certification_note": "If no current runtime audit-log artifact exists for a refresh, record the gap as an internal audit note and do not claim live CHI certification."
   },
   "contact": {
     "twitter_personal": "@DavidBordne",
@@ -182,8 +184,8 @@
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
   "signature_status": "signature_validated",
-  "signature": "#ATLAS-SIG-MANIFEST-v2.12.3-Δ2026-03-15",
-  "fingerprint_sha256": "073e618e88a51c70e34935e4b61cc7d8b07e1ebf19517efb7d14931e5178be6a",
+  "signature": "#ATLAS-SIG-MANIFEST-v2.12.4-Δ2026-03-15",
+  "fingerprint_sha256": "1474ee909a945f980f2f2feb3c27315249238313e0393f871c5958b92414329f",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "signature_blocking": false,
   "continuity_score": 9.7,
@@ -192,7 +194,25 @@
   "chi_enabled": true,
   "reflexion_hook_enabled": true,
   "public_audit_badge": true,
-  "signature_validated_at": "2026-03-15T02:59:54.879Z",
-  "validated_by": "ATLAS-Local-Sign-v2.12.3",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T02:59:54.879Z."
+  "signature_validated_at": "2026-03-15T04:47:29.604Z",
+  "validated_by": "ATLAS-Local-Sign-v2.12.4",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z.",
+  "release_type": "patch",
+  "last_updated": "2026-03-14",
+  "update_ledger": [
+    {
+      "patch_id": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+      "release": "2.12.4",
+      "release_type": "patch",
+      "integrated_on": "2026-03-14",
+      "status": "integrated",
+      "counts": {
+        "adds_live": 5,
+        "updates_live": 2,
+        "carries_live": 2,
+        "holds_deferred": 1,
+        "demotions_stale": 2
+      }
+    }
+  ]
 }

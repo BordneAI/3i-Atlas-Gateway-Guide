@@ -2,17 +2,17 @@
   "audit_cycle_hours": 24,
   "chi_target": 9.7,
   "continuity_metrics": {
-    "average_continuity_weight": 0.94,
-    "integration_ratio": 0.5,
-    "total_integrated": 3,
-    "total_pending": 1,
+    "average_continuity_weight": 0.97,
+    "integration_ratio": 0.71,
+    "total_integrated": 5,
+    "total_pending": 0,
     "total_rejected": 2,
-    "total_tracked": 6
+    "total_tracked": 7
   },
   "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
   "filename": "kb_updates_cumulative.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "5080e0032f3c423d1b86453ea46d08b9704f76dbbb5fa013241e945f4a80a808",
+  "fingerprint_sha256": "3e410ac7d1d813f268e4950562c006a11a209adb52c05c366d1544b7ad35bca2",
   "integrated": [
     {
       "approval_requirements": [
@@ -22,7 +22,7 @@
       ],
       "as_of": "2025-11-07",
       "confidence": "medium",
-      "continuity_weight": 1.0,
+      "continuity_weight": 1,
       "due_by": "2025-11-07T23:59:00Z",
       "integrated_at": "2025-11-03T18:40:00Z",
       "integrated_to": "kb_changelog.json entry: kb_apply_dec_magnitude_realistic_forecast_20251103",
@@ -69,7 +69,7 @@
       "decision_by": "OverdueSweepBot-v2.12.3"
     },
     {
-      "continuity_weight": 1.0,
+      "continuity_weight": 1,
       "integrated_at": "2025-11-03T18:30:00Z",
       "integrated_to": "kb_changelog.json entry: kb_apply_iawn_registration_deadline_20251103",
       "proposal_id": "kb_propose_iawn_registration_detail",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "continuity_weight": 1.0,
+      "continuity_weight": 1,
       "integrated_at": "2025-11-03T18:35:00Z",
       "integrated_to": "kb_changelog.json entry: kb_apply_swift_oh_preprint_pairing_20251103",
       "proposal_id": "kb_propose_swift_oh_update",
@@ -161,14 +161,14 @@
             "description": "Press-reported JPL Horizons non-gravitational radial A1 values for 3i/ATLAS around perihelion.",
             "entries": [
               {
-                "a1_au_per_day2": 1.6e-06,
+                "a1_au_per_day2": 0.0000016,
                 "epoch": "2025-10-30",
                 "label": "NGA_A1_oct30",
                 "provenance": "Press citing JPL Horizons public solution around Oct 30 2025.",
                 "status": "needs_direct_horizons_verification"
               },
               {
-                "a1_au_per_day2": 4e-07,
+                "a1_au_per_day2": 4e-7,
                 "epoch": "2025-11-24",
                 "label": "NGA_A1_nov24",
                 "provenance": "Press citing updated JPL Horizons solution around Nov 24 2025.",
@@ -259,6 +259,97 @@
       "decision": "CLOSE_AS_INTEGRATED",
       "decision_at": "2026-02-22T00:09:03Z",
       "decision_by": "OverdueSweepBot-v2.12.3"
+    },
+    {
+      "proposal_id": "kb_cumulative_patch_20260314_post_seal_refresh_3i_atlas",
+      "status": "integrated",
+      "type": "cumulative_patch",
+      "proposed_at": "2026-03-14T00:00:00Z",
+      "integrated_at": "2026-03-14T00:00:00Z",
+      "integrated_to": "manifest 2.12.4 / knowledge_base_merged_v2.json",
+      "continuity_weight": 1,
+      "patch_id": "kb-cumulative-patch-2026-03-14-post-seal-refresh-3i-atlas",
+      "release": "2.12.4",
+      "adds_live": 5,
+      "updates_live": 2,
+      "carries_live": 2,
+      "holds_deferred": 1,
+      "demotions_stale": 2,
+      "integrated_entries": [
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-spherex-2026-02-04",
+          "topic": "SPHEREx observations",
+          "source_id": "NASA-SPHEREX-3I-ATLAS-2026-02-04"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-isotopes-2026-03-06",
+          "topic": "Isotopic composition",
+          "source_id": "ARXIV-3I-ATLAS-ISOTOPIC-ANALYSIS-2026-03-06"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-spectroscopy-2026-02-27",
+          "topic": "Post-perihelion spectroscopy",
+          "source_id": "ARXIV-3I-ATLAS-POSTPERIHELION-SPECTROSCOPY-2026-02-27"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-nga-uncertainty-2026-02-28",
+          "topic": "Non-gravitational acceleration uncertainty",
+          "source_id": "ARXIV-3I-ATLAS-NGA-UNCERTAINTY-2026-02-28"
+        },
+        {
+          "action": "add",
+          "entry_id": "3i-atlas-runtime-note-package-2026-03-14",
+          "topic": "Patch ledger package note",
+          "source_id": "PATCH-RUNTIME-CHI-LIVE-CERTIFICATION-GAP-2026-03-14"
+        },
+        {
+          "action": "update",
+          "entry_id": "3i-atlas-jpl-solution-2026-02-19",
+          "topic": "JPL Horizons current solution snapshot",
+          "source_id": "JPL-HORIZONS-BATCH-3I-ATLAS-2026-02-19"
+        },
+        {
+          "action": "update",
+          "entry_id": "3i-atlas-jupiter-approach-2026-03-16",
+          "topic": "Near-term ephemeris",
+          "source_id": "JPL-HORIZONS-JUPITER-GEOMETRY-3I-ATLAS-2026-03-14"
+        },
+        {
+          "action": "carry",
+          "entry_id": "3i-atlas-earth-safety-carry-2026-03-14",
+          "topic": "Earth safety status",
+          "source_id": "NASA-SCIENCE-3I-ATLAS"
+        },
+        {
+          "action": "carry",
+          "entry_id": "3i-atlas-tess-carry-2026-01-27",
+          "topic": "TESS campaign",
+          "source_id": "NASA-TESS-REOBSERVES-3I-ATLAS-2026-01-27"
+        },
+        {
+          "action": "hold",
+          "entry_id": "3i-atlas-galileo-hold-2026-03-14",
+          "topic": "Galileo Project linkage",
+          "source_id": "GALILEO-PROJECT-OVERVIEW"
+        },
+        {
+          "action": "demote",
+          "entry_id": "3i-atlas-observing-window-demotion-2026-03-14",
+          "topic": "Late-2025 observing windows",
+          "source_id": "PATCH-3I-ATLAS-OBSERVING-WINDOW-DEMOTION-2026-03-14"
+        },
+        {
+          "action": "flag",
+          "entry_id": "runtime-chi-live-certification-gap-2026-03-14",
+          "topic": "Live runtime CHI certification",
+          "source_id": "PATCH-RUNTIME-CHI-LIVE-CERTIFICATION-GAP-2026-03-14"
+        }
+      ],
+      "rationale": "Approved cumulative patch applied to the sealed 2.12.3 baseline as the 2.12.4 patch release."
     }
   ],
   "integrity_audit": {
@@ -271,7 +362,7 @@
     "log_id": "#ATLAS-AUDIT-UPDATES-Δ2025-12-02",
     "fingerprint_sha256_at_audit": "e97f5d2fdd6663d7a942a9c48f40d7abcdc56c770972a6dda08e78db035d0e41"
   },
-  "last_updated": "2026-02-17T03:46:57Z",
+  "last_updated": "2026-03-14T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "pending": [],
   "reflexion_validation": true,
@@ -350,13 +441,13 @@
       "blocked_by": "requires_web_search"
     }
   ],
-  "signature": "#ATLAS-SIG-UPDATES-v2.12.3-Δ2026-02-16",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.3 | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.12.3-Δ2026-02-16",
+  "signature": "#ATLAS-SIG-UPDATES-v2.12.4-Δ2026-03-15",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.12.4-Δ2026-03-15",
   "signature_status": "signature_validated",
-  "updates_version": "2.12.3",
+  "updates_version": "2.12.4",
   "verified_by": "EOS Transparency v2.11.2",
-  "version": "2.12.3",
-  "signature_validated_at": "2026-02-22T21:30:00Z",
-  "validated_by": "ATLAS-Release-Seal-v2.12.3",
-  "validation_basis": "Release seal finalization: canonical surfaces reconciled, full STF suite logged (22 total, 11 passed, 0 failed, 11 skipped), strict referential scan clean, fingerprints rebuilt using CANONICAL_SHA256_V1."
+  "version": "2.12.4",
+  "signature_validated_at": "2026-03-15T04:47:29.604Z",
+  "validated_by": "ATLAS-Local-Sign-v2.12.4",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z."
 }
