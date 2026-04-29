@@ -2,8 +2,8 @@
   "audit_cycle_hours": 24,
   "chi_target": 9.7,
   "continuity_metrics": {
-    "average_continuity_weight": 0.97,
-    "integration_ratio": 0.71,
+    "average_continuity_weight": 0.9333,
+    "integration_ratio": 0.7143,
     "total_integrated": 5,
     "total_pending": 0,
     "total_rejected": 2,
@@ -12,7 +12,7 @@
   "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
   "filename": "kb_updates_cumulative.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "3e410ac7d1d813f268e4950562c006a11a209adb52c05c366d1544b7ad35bca2",
+  "fingerprint_sha256": "daf8407e5b8d3a5f262a79e300772737470927c0e4ca6b0ade32676e0aaa0a2d",
   "integrated": [
     {
       "approval_requirements": [
@@ -41,8 +41,8 @@
       "public_surface": false,
       "rationale": "Integrated evidence present in ledger; closed as integrated.",
       "required_domains": [
-        "ssd.jpl.nasa.gov",
-        "earthsky.org"
+        "earthsky.org",
+        "ssd.jpl.nasa.gov"
       ],
       "requires_web_search": false,
       "review_checklist": [
@@ -221,15 +221,15 @@
       "public_surface": false,
       "rationale": "Integrated evidence present in ledger; closed as integrated.",
       "required_domains": [
+        "arxiv.org",
+        "businesstimes.co",
+        "cfa.harvard.edu",
+        "economictimes.com",
         "mkaku.org",
         "people.com",
-        "businesstimes.co",
-        "usaherald.com",
-        "economictimes.com",
-        "cfa.harvard.edu",
-        "arxiv.org",
+        "ssd.jpl.nasa.gov",
         "ui.adsabs.harvard.edu",
-        "ssd.jpl.nasa.gov"
+        "usaherald.com"
       ],
       "requires_web_search": false,
       "review_checklist": [
@@ -240,7 +240,6 @@
       ],
       "review_owner": "science_editor@atlas",
       "source_ids_proposed": [
-        "MICHIO-KAKU-3I-ATLAS-TAG",
         "MICHIO-KAKU-3I-ATLAS-TAG",
         "LIGHTCURVE-3I-ATLAS-SANTANA-ROSS-2025",
         "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
@@ -412,8 +411,8 @@
       "rejected_at": "2026-02-16T00:00:00Z",
       "rejection_reason": "No primary Galileo Project update or publication found on required domains as of 2026-02-16; avoid implying results exist.",
       "required_domains": [
-        "projects.iq.harvard.edu",
         "arxiv.org",
+        "projects.iq.harvard.edu",
         "ui.adsabs.harvard.edu"
       ],
       "requires_web_search": true,
@@ -441,13 +440,13 @@
       "blocked_by": "requires_web_search"
     }
   ],
-  "signature": "#ATLAS-SIG-UPDATES-v2.12.4-Δ2026-03-15",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.12.4-Δ2026-03-15",
+  "signature": "#ATLAS-SIG-UPDATES-v2.12.4-Δ2026-04-29",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.12.4-Δ2026-04-29",
   "signature_status": "signature_validated",
   "updates_version": "2.12.4",
   "verified_by": "EOS Transparency v2.11.2",
   "version": "2.12.4",
-  "signature_validated_at": "2026-03-15T04:47:29.604Z",
+  "signature_validated_at": "2026-04-29T19:58:57.219Z",
   "validated_by": "ATLAS-Local-Sign-v2.12.4",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z."
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T19:58:57.219Z."
 }

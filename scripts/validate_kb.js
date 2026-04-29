@@ -329,6 +329,26 @@ function validateGitSignature(opt, report) {
   result.errors.forEach((entry) => push(report, "errors", entry.code, entry.location, entry.message));
   result.warnings.forEach((entry) => push(report, "warnings", entry.code, entry.location, entry.message));
 }
+function validateNormalizedLedger(report) {
+  const result = spawnSync("node", ["scripts/normalize_updates.js", "--dry-run", "--json"], { cwd: ROOT, encoding: "utf8" });
+  if (result.error || result.status !== 0) {
+    const message = (result.error && result.error.message) || result.stderr || result.stdout || "Could not verify normalized ledger state.";
+    push(report, "errors", "normalize_updates_check_failed", "scripts/normalize_updates.js", message.trim());
+    return;
+  }
+  let summary;
+  try {
+    summary = JSON.parse(result.stdout);
+  } catch (error) {
+    push(report, "errors", "normalize_updates_parse_failed", "scripts/normalize_updates.js", error.message);
+    return;
+  }
+  if (summary && Array.isArray(summary.changes) && summary.changes.length > 0) {
+    summary.changes.forEach((entry) => {
+      push(report, "errors", "ledger_not_normalized", entry.location || "kb_updates_cumulative.json", entry.reason || "Ledger normalization drift detected.");
+    });
+  }
+}
 function render(report) {
   const lines = [`Overall status: ${report.errors.length ? "FAIL" : "PASS"}`, `Files checked (${report.files_checked.length}): ${report.files_checked.join(", ")}`];
   if (report.git_signature) {
@@ -369,6 +389,7 @@ function render(report) {
     refs.surfaced.forEach((id) => push(report, "errors", "quarantined_in_surfaced", "knowledge_base_merged_v2.json", `Quarantined source ${id} is cited in surfaced content.`));
   }
   validateLedgers(loaded, report);
+  validateNormalizedLedger(report);
   if (manifest) validateMarkdownSurfaces(manifest, report);
   validateGitSignature(opt, report);
   const summary = {
