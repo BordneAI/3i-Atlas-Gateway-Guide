@@ -1,0 +1,25 @@
+{
+  "tool": "Axiom Guard",
+  "tool_version": "0.2.1",
+  "package_alignment": "2.14.0-candidate",
+  "status": "candidate-active",
+  "standard_library_only": true,
+  "required_commands": [
+    "python -S -m unittest discover -s tools/axiom_guard/tests -v",
+    "tools/axiom_guard/run_axiom_guard.sh --plain --no-persist",
+    "tools/axiom_guard/run_axiom_guard.sh --json --no-persist"
+  ],
+  "smoke_input": "classify: No radio signal was detected",
+  "expected_semantics": {
+    "classification": "Negative Null",
+    "detection_status": "bounded non-detection"
+  },
+  "boundaries": [
+    "not AGI",
+    "not consciousness",
+    "not a replacement for the KB",
+    "AAIV remains T4-only",
+    "negative-null is bounded non-detection, not proof of absence"
+  ]
+}
+

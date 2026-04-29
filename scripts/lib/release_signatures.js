@@ -14,6 +14,7 @@ const SIGNATURE_BLOCK_KEYS = new Set([
   "fingerprint_sha256",
   "fingerprint_method"
 ]);
+const SEMVER_PATTERN = "(\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?)";
 
 const JSON_SURFACES = {
   "manifest.json": { token: "MANIFEST" },
@@ -35,7 +36,7 @@ const JSON_SURFACES = {
   },
   "tags_index.json": {
     token: "TAGS",
-    footer: (version) => `© BordneAI – 3i/ATLAS Gateway Guide v${version} | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v${version}-FINGERPRINT`
+    footer: (version, date) => `© BordneAI – 3i/ATLAS Gateway Guide v${version} | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v${version}-Δ${date}`
   },
   "conversation_starters.json": {
     token: "CONVSTART",
@@ -48,7 +49,7 @@ const JSON_SURFACES = {
 const TEXT_SURFACES = {
   "instructions.txt": {
     token: "INSTRUCTIONS",
-    versionRegex: /System Instructions \(v(\d+\.\d+\.\d+)\)/,
+    versionRegex: new RegExp(`System Instructions \\(v${SEMVER_PATTERN}\\)`),
     apply(text, ctx) {
       let next = text;
       next = replaceLine(next, /^Signature:\s*.*$/m, `Signature: ${ctx.signature}`);
@@ -62,7 +63,7 @@ const TEXT_SURFACES = {
   },
   "BOOTLOADER.md": {
     token: "BOOT",
-    versionRegex: /\*\*Version:\*\*\s*(\d+\.\d+\.\d+)/,
+    versionRegex: new RegExp(`\\*\\*Version:\\*\\*\\s*${SEMVER_PATTERN}`),
     apply(text, ctx) {
       let next = text;
       next = replaceLine(next, /^Signature Status:\s*.*$/m, "Signature Status: signature_validated  ");

@@ -1,9 +1,9 @@
 {
   "filename": "tags_index.json",
-  "version": "2.12.4",
-  "last_updated": "2026-03-14",
+  "version": "2.14.0-candidate",
+  "last_updated": "2026-04-29",
   "release_state": "sealed",
-  "release_state_notes": "Tags schema aligned to the v2.12.4 cumulative 3I/ATLAS post-seal patch release.",
+  "release_state_notes": "Tags schema aligned to the v2.14.0-candidate Axiom Guard integration release while preserving v2.12.4 post-seal science refresh tags.",
   "total_tags": 93,
   "purpose": "Searchable tag index for knowledge base navigation and content discovery",
   "tags": [
@@ -336,10 +336,10 @@
     "level": "low",
     "notes": "Tag surface expanded without altering core categories."
   },
-  "signature": "#ATLAS-SIG-TAGS-v2.12.4-Δ2026-03-15",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.12.4-FINGERPRINT",
+  "signature": "#ATLAS-SIG-TAGS-v2.14.0-candidate-Δ2026-04-29",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate | CC BY-NC-SA 4.0 | #ATLAS-SIG-TAGS-v2.14.0-candidate-Δ2026-04-29",
   "signature_status": "signature_validated",
-  "fingerprint_sha256": "50465b0ef997f2e0ade4cbf0747051af8956ff1f0fa4430199086b0311fc1ad9",
+  "fingerprint_sha256": "2570fe1ee44c57a2b2d7d14bc37a3da0c7c63ca8c64df691a03838747fe91bb4",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "description": "Expanded tag index harmonized with BordneAI continuity, ethics, and reflexion governance.",
   "love_fear_constant": "Love>Fear",

@@ -1,7 +1,7 @@
 # 3i/ATLAS Guardian Prompt
 
-**Version:** 2.12.4  
-**Package Alignment:** 2.12.4  
+**Version:** 2.14.0-candidate  
+**Package Alignment:** 2.14.0-candidate  
 
 
 Use this prompt when working on this repository with AI tools
@@ -117,6 +117,18 @@ Do not upgrade rumors to “evidence” in wording or structure.
 
 All AAIV/CE-5 text must keep a clear boundary between
 **subjective experience** and **external fact**.
+
+---
+
+## 6A. Axiom Guard handling
+
+- Axiom Guard is a bounded local governance sidecar.
+- It is **not AGI**, **not consciousness**, and **not a KB replacement**.
+- Use it for claim classification, negative-null discipline,
+  optional audit/memory records, and release preflight checks.
+- Treat "no detection" outputs as **bounded non-detection**,
+  not proof of absence.
+- Keep AAIV T4-only even when Axiom Guard is present.
 
 ---
 

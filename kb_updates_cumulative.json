@@ -12,7 +12,7 @@
   "description": "Knowledge Base Updates synchronized with BordneAI Phase-10 Continuity Protocols — Reflexion validation, CHI computation, and tier tagging integrated.",
   "filename": "kb_updates_cumulative.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "daf8407e5b8d3a5f262a79e300772737470927c0e4ca6b0ade32676e0aaa0a2d",
+  "fingerprint_sha256": "062d0451731dd2b124f085c2e652162ac1783e66b78a222f0bc1119839fd05a8",
   "integrated": [
     {
       "approval_requirements": [
@@ -361,7 +361,7 @@
     "log_id": "#ATLAS-AUDIT-UPDATES-Δ2025-12-02",
     "fingerprint_sha256_at_audit": "e97f5d2fdd6663d7a942a9c48f40d7abcdc56c770972a6dda08e78db035d0e41"
   },
-  "last_updated": "2026-03-14T00:00:00Z",
+  "last_updated": "2026-04-29",
   "love_fear_constant": "Love>Fear",
   "pending": [],
   "reflexion_validation": true,
@@ -440,13 +440,13 @@
       "blocked_by": "requires_web_search"
     }
   ],
-  "signature": "#ATLAS-SIG-UPDATES-v2.12.4-Δ2026-04-29",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.12.4-Δ2026-04-29",
+  "signature": "#ATLAS-SIG-UPDATES-v2.14.0-candidate-Δ2026-04-29",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate | CC BY-NC-SA 4.0 | #ATLAS-SIG-UPDATES-v2.14.0-candidate-Δ2026-04-29",
   "signature_status": "signature_validated",
-  "updates_version": "2.12.4",
+  "updates_version": "2.14.0-candidate",
   "verified_by": "EOS Transparency v2.11.2",
-  "version": "2.12.4",
-  "signature_validated_at": "2026-04-29T19:58:57.219Z",
-  "validated_by": "ATLAS-Local-Sign-v2.12.4",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T19:58:57.219Z."
+  "version": "2.14.0-candidate",
+  "signature_validated_at": "2026-04-29T21:12:53.106Z",
+  "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T21:12:53.106Z."
 }

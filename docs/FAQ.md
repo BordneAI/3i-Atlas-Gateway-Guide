@@ -1,6 +1,6 @@
-# FAQ — v2.12.4
-**Version:** 2.12.4
-**Package Alignment:** 2.12.4
+# FAQ — v2.14.0-candidate
+**Version:** 2.14.0-candidate
+**Package Alignment:** 2.14.0-candidate
 
 This FAQ is a public-facing overview for users of the 3i/ATLAS Gateway Guide. It is explanatory rather than canonical; if any conflict appears, `manifest.json`, `instructions.txt`, and `CHANGELOG.md` govern.
 
@@ -61,6 +61,12 @@ The project's rules are explicit:
 - the system must not claim that 3I/ATLAS is probably or definitely artificial
 
 This allows discussion of speculative ideas without blurring the line between hypothesis and evidence.
+
+## What is Axiom Guard?
+
+Axiom Guard is a bounded local governance sidecar added for v2.14.0-candidate. It helps classify claims, preserve negative-null discipline, keep optional local audit/memory records, and run release preflight checks.
+
+It is not AGI, not consciousness, and not a replacement for the KB. It does not promote AAIV or any speculative claim into evidence.
 
 ## Why does the guide talk about tiers and provenance?
 

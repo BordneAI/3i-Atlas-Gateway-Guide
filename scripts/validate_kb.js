@@ -35,6 +35,7 @@ const PROV = /^(T[0-5]|F[0-7])(?:_[A-Za-z0-9-]+)?$/;
 const CITE = new Set(["source_id", "source_ids", "sources", "citations"]);
 const QUAR = new Set(["quarantine", "_quarantine", "_quarantined", "quarantined_nodes"]);
 const FLAGS = new Set(["--json", "--help", "--verify-git-signature", "--allow-dirty-git-signature"]);
+const SEMVER = "(\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?)";
 
 function usage(code = 0) {
   (code ? process.stderr : process.stdout).write("Usage: node scripts/validate_kb.js [--json] [--verify-git-signature] [--allow-dirty-git-signature]\n");
@@ -64,7 +65,7 @@ function candidateId(id) { return typeof id === "string" && !id.startsWith("_") 
 function nonEmpty(value) { return typeof value === "string" && value.trim().length > 0; }
 function extractSemver(value) {
   if (typeof value !== "string") return null;
-  const match = value.match(/(\d+\.\d+\.\d+)/);
+  const match = value.match(new RegExp(SEMVER));
   return match ? match[1] : null;
 }
 function isSourceRecord(key, value) {
@@ -94,7 +95,7 @@ function dirtyFiles(paths, report) {
   result.stdout.split(/\r?\n/).filter(Boolean).forEach((line) => dirty.add(line.slice(3).trim().replace(/\\/g, "/")));
   return dirty;
 }
-function tokens(value) { return typeof value === "string" ? [...value.matchAll(/(?:^|[^0-9])(\d+\.\d+\.\d+)(?![0-9])/g)].map((m) => m[1]) : []; }
+function tokens(value) { return typeof value === "string" ? [...value.matchAll(new RegExp(`(?:^|[^0-9])${SEMVER}(?![0-9A-Za-z.-])`, "g"))].map((m) => m[1]) : []; }
 function validateSignatures(file, data, dirty, report) {
   if (!data || typeof data.version !== "string") return;
   ["signature", "signature_footer", "validated_by", "validation_basis"].forEach((field) => tokens(data[field]).forEach((token) => {
@@ -276,15 +277,15 @@ function extractLabeledVersion(raw, label) {
   return match ? extractSemver(match[1]) : null;
 }
 function extractTitleVersion(raw) {
-  const match = raw.match(/^#\s+.*?\bv(\d+\.\d+\.\d+)/m);
+  const match = raw.match(new RegExp(`^#\\s+.*?\\bv${SEMVER}`, "m"));
   return match ? match[1] : null;
 }
 function extractSignatureTokenVersion(raw) {
-  const match = raw.match(/#ATLAS-SIG-[A-Z-]+-v(\d+\.\d+\.\d+)/);
+  const match = raw.match(new RegExp(`#ATLAS-SIG-[A-Z-]+-v${SEMVER}`));
   return match ? match[1] : null;
 }
 function extractChangelogTopVersion(raw) {
-  const match = raw.match(/^##\s+v(\d+\.\d+\.\d+)\b/m);
+  const match = raw.match(new RegExp(`^##\\s+v${SEMVER}\\b`, "m"));
   return match ? match[1] : null;
 }
 function validateMarkdownSurfaces(manifest, report) {

@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Extract tag name
         id: vars
         run: |
@@ -83,7 +88,11 @@ jobs:
 
       - name: Run release surface validator
         run: |
-          node scripts/validate_kb.js
+          node scripts/validate_kb.js --json
+
+      - name: Run Axiom release preflight
+        run: |
+          python scripts/axiom_preflight.py --plain
 
       - name: All checks passed
         run: echo "Release versions are consistent."

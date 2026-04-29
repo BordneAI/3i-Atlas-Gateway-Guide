@@ -3,14 +3,14 @@
 **Project:** 3i/ATLAS Gateway Guide  
 **Author:** David Bordne (@BordneAI)  
 **Version:** 2.12.0  
-**Package Alignment:** 2.12.4  
+**Package Alignment:** 2.14.0-candidate  
 **Status:** Draft-Active (Protocol Surface)  
 **Tier:** T4 (Speculative Hypothesis Generator Only)  
 **Ethics Constant:** Love > Fear  
 
 > This document defines how the Gateway may *discuss* the Active Autonomous Interstellar Vehicle (AAIV) hypothesis — not how it decides that any object *is* artificial.
 > AAIV is a tool for structured thinking, not a conclusion.
-> This draft surface remains versioned at v2.12.0; the package-alignment line records the current 2.12.x repo release reviewed against it.
+> This draft surface remains versioned at v2.12.0; the package-alignment line records the current v2.14.0-candidate repo release reviewed against it.
 
 ---
 

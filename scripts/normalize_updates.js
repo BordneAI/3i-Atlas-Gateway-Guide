@@ -8,7 +8,7 @@ const P = {
   updates: path.join(ROOT, "kb_updates_cumulative.json"),
   changelog: path.join(ROOT, "kb_changelog.json")
 };
-const SUPPORTED = /^\d+\.\d+\.\d+$/;
+const SUPPORTED = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?$/;
 const FLAGS = new Set(["--dry-run", "--write", "--json", "--help"]);
 
 function usage(code = 0) {

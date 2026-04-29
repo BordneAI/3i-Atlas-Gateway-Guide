@@ -745,7 +745,7 @@
   ],
   "filename": "knowledge_base_merged_v2.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "f4a2d272475453052ee13860c78acb1e3fa8be5e3aa4620952b831bbec76c22e",
+  "fingerprint_sha256": "ecddc11cdadca1f3e1ba0d58eb2360d0e15774406e2912248195e0cc2fa7fb1e",
   "integrity_audit": {
     "as_of": "2026-02-22T06:03:42Z",
     "audit_log_entry": "#ATLAS-AUDIT-KB-Δ2026-02-16",
@@ -757,8 +757,8 @@
   },
   "integrity_note": "v2.11 upgrade from v2.10.1 with entropy system and preserved content",
   "kb_compiled_on": "2026-03-14T00:00:00Z",
-  "kb_version": "2.12.4",
-  "last_updated": "2026-03-14T00:00:00Z",
+  "kb_version": "2.14.0-candidate",
+  "last_updated": "2026-04-29T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "meta": {
     "confidence_levels": {
@@ -788,7 +788,8 @@
       "v2.6": "Triple convergence narrative",
       "v2.7.1": "Loeb non-grav acceleration integrated",
       "v2.7.2": "Adaptive clarification protocol integration",
-      "v2.7.3": "Comprehensive validation, full file set generated"
+      "v2.7.3": "Comprehensive validation, full file set generated",
+      "v2.14.0-candidate": "Axiom Guard bounded governance sidecar and release preflight bridge"
     }
   },
   "output_headers": {
@@ -1085,6 +1086,19 @@
         "demotions_stale": 2,
         "note": "Integrated approved live 3I/ATLAS updates, preserved Galileo deferment, archived stale observing guidance, and recorded the runtime CHI certification evidence gap as an internal audit note."
       }
+    },
+    {
+      "id": "RN-20260429T000000-AXIOM-GUARD",
+      "version": "2.14.0-candidate",
+      "date": "2026-04-29T00:00:00Z",
+      "summary": "v2.14.0-candidate: Axiom Guard bounded governance sidecar integration",
+      "details": {
+        "sidecar_path": "tools/axiom_guard/",
+        "preflight_path": "scripts/axiom_preflight.py",
+        "negative_null_policy": "bounded non-detection, not proof of absence",
+        "aaiv_policy": "T4-only, opt-in, natural-first, low-prior",
+        "boundary": "not AGI, not consciousness, not a KB replacement"
+      }
     }
   ],
   "safety_and_risk": {
@@ -1152,8 +1166,8 @@
     ],
     "topic_domain": "samples"
   },
-  "signature": "#ATLAS-SIG-KB-v2.12.4-Δ2026-03-15",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.12.4-Δ2026-03-15",
+  "signature": "#ATLAS-SIG-KB-v2.14.0-candidate-Δ2026-04-29",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-v2.14.0-candidate-Δ2026-04-29",
   "signature_status": "signature_validated",
   "tier_schema_version": "1.0",
   "tier_system": {
@@ -1254,10 +1268,10 @@
     }
   },
   "verified_by": "EOS Transparency v2.11.2",
-  "version": "2.12.4",
-  "signature_validated_at": "2026-03-15T04:47:29.604Z",
-  "validated_by": "ATLAS-Local-Sign-v2.12.4",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z.",
+  "version": "2.14.0-candidate",
+  "signature_validated_at": "2026-04-29T21:12:53.106Z",
+  "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T21:12:53.106Z.",
   "option_c_templates": {
     "gate_name": "Option C",
     "gate_banner": "Option C active (domain-gated)",

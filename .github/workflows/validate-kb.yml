@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Install dependencies (if any)
         run: |
           if [ -f package.json ]; then
@@ -30,4 +35,8 @@ jobs:
 
       - name: Run KB validation script
         run: |
-          node scripts/validate_kb.js
+          node scripts/validate_kb.js --json
+
+      - name: Run Axiom Guard preflight
+        run: |
+          python scripts/axiom_preflight.py --plain

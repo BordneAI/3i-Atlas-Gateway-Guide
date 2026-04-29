@@ -1,0 +1,15 @@
+From repository root:
+
+python -S -m unittest discover -s tools/axiom_guard/tests -v
+tools/axiom_guard/run_axiom_guard.sh --plain --no-persist
+tools/axiom_guard/run_axiom_guard.sh --json --no-persist
+python scripts/axiom_preflight.py --plain
+python scripts/axiom_preflight.py --json
+
+Expected smoke input:
+classify: No radio signal was detected
+
+Expected smoke semantics:
+classification: Negative Null
+detection_status: bounded non-detection
+

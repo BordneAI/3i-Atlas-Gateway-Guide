@@ -1,5 +1,5 @@
-# 🚀 ATLAS Bootloader v2.12.4
-**Version:** 2.12.4 • **Package Alignment:** 2.12.4 • **Built:** 2026-03-14 • **Scheduled Release:** 2026-03-14 • **Phase:** 11 Governance · 10 Continuity • **Integrity Score:** 9.7  
+# 🚀 ATLAS Bootloader v2.14.0-candidate
+**Version:** 2.14.0-candidate • **Package Alignment:** 2.14.0-candidate • **Built:** 2026-04-29 • **Scheduled Release:** 2026-04-29 • **Phase:** 11 Governance · 10 Continuity • **Integrity Score:** 9.7  
 **Ethics Constant:** Love > Fear • **Audit Cycle:** 24 h • **Reflexion Validation:** Enabled
 
 ---
@@ -14,7 +14,8 @@
 7. Enable governance overlays: Plain Mode auto-trigger, Audit Footer ON-by-default, Rumor Radar, Ephemeris Helper (live tools only), user-controlled Location Memory, and Option C domain-gated routing layer (deterministic trigger taxonomy + STF-backed validation).  
 8. Verify integrity fingerprints, manifest validation flags, and prior build signature (dev may show pending until post-edit refresh).  
 9. Mount AAIV documentation layer (v2.12): load `docs/aaiv_protocol_v2.12.md` and `docs/aaiv_agent_spec_v2.12.md` as T4 speculative scaffolding with low priors; Love > Fear enforced; no speculative promotion.  
-10. Broadcast startup event -> **System Ready ✓**
+10. Mount Axiom Guard sidecar (`tools/axiom_guard/`) for bounded claim classification, negative-null discipline, optional local audit/memory records, and release preflight checks.  
+11. Broadcast startup event -> **System Ready ✓**
 
 ---
 
@@ -64,6 +65,7 @@ Each boot cycle aligns C-tier function range to its valid T-tier band and verifi
 - Option C adds deterministic domain-gated routing triggers (explicit request, rumor, AAIV, breaking/current verification, fear-framing domains).  
 - Option C defaults to summary-first token compression with expandable sections.  
 - Option C enforces must-browse policy for time-unstable claims (routing requirement; execution depends on runtime/tool availability).  
+- Axiom Guard is bounded local governance tooling: not AGI, not consciousness, not a KB replacement; negative-null remains bounded non-detection.
 
 ---
 
@@ -83,7 +85,7 @@ atlas-boot --status       # View current system phase and CHI metrics
 
 ---
 
-**© 2026 BordneAI - 3i/ATLAS Gateway Guide v2.12.4**  
+**© 2026 BordneAI - 3i/ATLAS Gateway Guide v2.14.0-candidate**  
 Integrity Score 9.7 • Phase-11 Governance + Phase-10 Continuity Validated  
 Signature Status: signature_validated  
-Signature #ATLAS-SIG-BOOT-v2.12.4-Δ2026-03-15
+Signature #ATLAS-SIG-BOOT-v2.14.0-candidate-Δ2026-04-29

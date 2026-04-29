@@ -312,14 +312,15 @@
       "tier": "critical"
     }
   ],
-  "version": "2.12.4",
+  "version": "2.14.0-candidate",
   "released_at": "2026-03-14",
-  "description": "STF-ATLAS validation suite aligned to the 3i/ATLAS v2.12.4 post-seal cumulative patch release, including CHI audit, Integrity Pulse, Reflexion metrics, ergonomics tests, Option C gate cases, and strict scanner hardening vectors.",
+  "description": "STF-ATLAS validation suite aligned to the 3i/ATLAS v2.14.0-candidate Axiom Guard integration release, including CHI audit, Integrity Pulse, Reflexion metrics, ergonomics tests, Option C gate cases, strict scanner hardening vectors, and release-preflight expectations.",
   "integrity_pulse_cycle_hours": 24,
   "chi_target": 9.7,
   "audit_mode": "continuous",
   "love_fear_constant": "Love>Fear",
   "reflexion_validation": true,
-  "signature": "#ATLAS-SIG-STF-v2.12.4-Δ2026-03-15",
-  "signature_status": "signature_validated"
+  "signature": "#ATLAS-SIG-STF-v2.14.0-candidate-Δ2026-04-29",
+  "signature_status": "signature_validated",
+  "last_updated": "2026-04-29"
 }
