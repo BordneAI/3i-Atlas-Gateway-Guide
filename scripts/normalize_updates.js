@@ -8,7 +8,7 @@ const P = {
   updates: path.join(ROOT, "kb_updates_cumulative.json"),
   changelog: path.join(ROOT, "kb_changelog.json")
 };
-const SUPPORTED = /^2\.12\.\d+$/;
+const SUPPORTED = /^\d+\.\d+\.\d+$/;
 const FLAGS = new Set(["--dry-run", "--write", "--json", "--help"]);
 
 function usage(code = 0) {
@@ -89,7 +89,7 @@ function normStatus(item, bucket, loc, report) {
 }
 function validateRepo(manifest, updates, changelog, report) {
   const mv = manifest && manifest.version;
-  if (!SUPPORTED.test(mv || "")) push(report, "errors", "unsupported_version", "manifest.version", `Only 2.12.x repos are supported; found ${mv || "<missing>"}.`);
+  if (!SUPPORTED.test(mv || "")) push(report, "errors", "unsupported_version", "manifest.version", `manifest.version must be a supported semver value; found ${mv || "<missing>"}.`);
   const checks = [
     [updates.version, "kb_updates_cumulative.version"],
     [updates.updates_version, "kb_updates_cumulative.updates_version"],

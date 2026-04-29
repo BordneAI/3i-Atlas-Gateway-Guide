@@ -2,7 +2,7 @@
 const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
-const { computeFingerprint, JSON_SURFACES } = require("./lib/release_signatures");
+const { computeFingerprint, JSON_SURFACES, TEXT_SURFACES } = require("./lib/release_signatures");
 const { verifyGitReleaseSignature } = require("./lib/git_signature_verifier");
 
 const ROOT = process.cwd();
@@ -16,6 +16,9 @@ const JSON_FILES = [
   "conversation_starters.json",
   "stress_test_framework.json",
   "bayesian_framework.json"
+];
+const TEXT_FILES = [
+  "instructions.txt"
 ];
 const PACKAGE_ALIGNED_JSON = new Set([
   "knowledge_base_merged_v2.json",
@@ -104,6 +107,30 @@ function validateSignatures(file, data, dirty, report) {
       if (data.signature_status === "signature_validated" && dirty.has(file)) push(report, "errors", "validated_surface_dirty", file, "File is dirty in git and its signed fingerprint is stale; run the local signature refresh command.");
     }
   }
+}
+function validateTextSurfaces(report) {
+  TEXT_FILES.forEach((file) => {
+    report.files_checked.push(file);
+    const raw = readText(file, report);
+    if (raw == null) return;
+    const config = TEXT_SURFACES[file];
+    if (!config) {
+      push(report, "warnings", "text_surface_unconfigured", file, "No text surface validation config is registered for this file.");
+      return;
+    }
+    const versionMatch = raw.match(config.versionRegex);
+    if (!versionMatch) {
+      push(report, "errors", "text_surface_version_missing", file, "Text surface is missing a recognizable version marker.");
+      return;
+    }
+    const version = versionMatch[1];
+    const signatureVersion = extractSignatureTokenVersion(raw);
+    if (!/^Signature:\s*#ATLAS-SIG-/m.test(raw)) push(report, "errors", "text_surface_signature_missing", file, "Text surface is missing a Signature marker.");
+    if (!/^signature_status:\s*"signature_validated"$/m.test(raw)) push(report, "errors", "text_surface_signature_status_missing", file, "Text surface is missing a validated signature_status marker.");
+    if (!/^validated_by:\s*".+"$/m.test(raw)) push(report, "errors", "text_surface_validated_by_missing", file, "Text surface is missing a validated_by marker.");
+    if (!/^signature_validated_at:\s*".+"$/m.test(raw)) push(report, "errors", "text_surface_signature_timestamp_missing", file, "Text surface is missing a signature_validated_at marker.");
+    if (signatureVersion && signatureVersion !== version) push(report, "errors", "text_surface_signature_version_drift", file, `Signature token ${signatureVersion} does not match text surface version ${version}.`);
+  });
 }
 function validateVersions(loaded, report) {
   const manifest = loaded["manifest.json"];
@@ -323,6 +350,7 @@ function render(report) {
   const dirty = dirtyFiles([...JSON_FILES, ...markdownPaths], report);
   validateVersions(loaded, report);
   JSON_FILES.forEach((file) => loaded[file] && validateSignatures(file, loaded[file], dirty, report));
+  validateTextSurfaces(report);
   if (loaded["sources.json"] && loaded["knowledge_base_merged_v2.json"]) {
     const ids = registry(loaded["sources.json"], report);
     const refs = scanCitations(loaded["knowledge_base_merged_v2.json"], ids.quar, report);

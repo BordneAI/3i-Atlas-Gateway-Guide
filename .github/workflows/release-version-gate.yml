@@ -40,7 +40,7 @@ jobs:
           echo "manifest.json version: $MANIFEST_VERSION"
 
           if [ "$MANIFEST_VERSION" != "$VERSION" ]; then
-            echo "❌ manifest.json .version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
+            echo "manifest.json .version ($MANIFEST_VERSION) does not match tag version ($VERSION)"
             exit 1
           fi
 
@@ -53,7 +53,7 @@ jobs:
           echo "manifest files[\"README.md\"].version: $MANIFEST_README_VERSION"
 
           if [ "$MANIFEST_README_VERSION" != "$VERSION" ]; then
-            echo "❌ manifest files[\"README.md\"].version ($MANIFEST_README_VERSION) does not match tag version ($VERSION)"
+            echo "manifest files[\"README.md\"].version ($MANIFEST_README_VERSION) does not match tag version ($VERSION)"
             exit 1
           fi
 
@@ -66,7 +66,7 @@ jobs:
           echo "manifest files[\"BOOTLOADER.md\"].version: $MANIFEST_BOOT_VERSION"
 
           if [ "$MANIFEST_BOOT_VERSION" != "$VERSION" ]; then
-            echo "❌ manifest files[\"BOOTLOADER.md\"].version ($MANIFEST_BOOT_VERSION) does not match tag version ($VERSION)"
+            echo "manifest files[\"BOOTLOADER.md\"].version ($MANIFEST_BOOT_VERSION) does not match tag version ($VERSION)"
             exit 1
           fi
 
@@ -77,7 +77,7 @@ jobs:
 
           echo "Checking that README.md headline mentions v$VERSION ..."
           if ! grep -q "v$VERSION" README.md; then
-            echo "❌ README.md does not mention v$VERSION in the headline."
+            echo "README.md does not mention v$VERSION in the headline."
             exit 1
           fi
 
@@ -86,4 +86,4 @@ jobs:
           node scripts/validate_kb.js
 
       - name: All checks passed
-        run: echo "✅ Release versions are consistent."
+        run: echo "Release versions are consistent."
