@@ -76,7 +76,14 @@ cd tools/axiom_guard
 
 Negative-null claims mean bounded non-detection, not proof of absence.
 
----
+Release preflight:
+
+```bash
+python scripts/axiom_preflight.py --plain
+node scripts/validate_kb.js
+node scripts/refresh_release_signatures.js --all --write
+
+Axiom Guard is a governance helper only. It does not replace source-based reasoning, the KB, or live web verification.
 
 ## External Evaluations
 
@@ -212,6 +219,16 @@ Run `node scripts/validate_kb.js` after release-surface edits, and use `node scr
 ---
 
 ## 🪶 Version Changelog
+
+## 🪶 Version Changelog
+
+**2.14.0-candidate — NexGen Axiom Guard Integration (2026-04-29)**  
+– Added `tools/axiom_guard/` as a bounded governance sidecar.  
+– Added `scripts/axiom_preflight.py` release-preflight bridge.  
+– Added negative-null smoke tests for non-detection claims.  
+– Registered Axiom Guard in `manifest.json`.  
+– Preserved AAIV as T4-only, opt-in, natural-first, and low-prior.  
+– Breaking changes: none.
 
 **2.12.3 — Governance Hardening + Seal Finalization (2026-02-22)**  
 – Canonical surfaces reconciled to sealed state.  
