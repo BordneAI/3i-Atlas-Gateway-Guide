@@ -1,4 +1,5 @@
 # FAQ — v2.12.4
+**Version:** 2.12.4
 **Package Alignment:** 2.12.4
 
 This FAQ is a public-facing overview for users of the 3i/ATLAS Gateway Guide. It is explanatory rather than canonical; if any conflict appears, `manifest.json`, `instructions.txt`, and `CHANGELOG.md` govern.

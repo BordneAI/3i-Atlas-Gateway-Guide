@@ -265,7 +265,8 @@ function validateLedgers(loaded, report) {
 function markdownFiles(manifest) {
   return Object.entries(manifest.files || {}).filter(([file, meta]) => {
     if (!file.endsWith(".md")) return false;
-    if (file === "README.md" || file === "CHANGELOG.md") return false;
+    if (file === "README.md") return false;
+    if (file === "CHANGELOG.md") return true;
     return meta && (meta.public_surface === true || meta.release_review === true);
   });
 }
@@ -282,11 +283,21 @@ function extractSignatureTokenVersion(raw) {
   const match = raw.match(/#ATLAS-SIG-[A-Z-]+-v(\d+\.\d+\.\d+)/);
   return match ? match[1] : null;
 }
+function extractChangelogTopVersion(raw) {
+  const match = raw.match(/^##\s+v(\d+\.\d+\.\d+)\b/m);
+  return match ? match[1] : null;
+}
 function validateMarkdownSurfaces(manifest, report) {
   markdownFiles(manifest).forEach(([file, meta]) => {
     report.files_checked.push(file);
     const raw = readText(file, report);
     if (raw == null) return;
+    if (file === "CHANGELOG.md") {
+      const topVersion = extractChangelogTopVersion(raw);
+      if (!topVersion) push(report, "errors", "changelog_version_missing", file, "CHANGELOG.md is missing a parsable top release heading like `## vX.Y.Z`.");
+      else if (topVersion !== manifest.version) push(report, "errors", "changelog_version_mismatch", file, `Top changelog version ${topVersion} does not match manifest.version ${manifest.version}.`);
+      return;
+    }
     const version = extractLabeledVersion(raw, "Version");
     const packageAlignment = extractLabeledVersion(raw, "Package Alignment");
     const titleVersion = extractTitleVersion(raw);
