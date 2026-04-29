@@ -1131,13 +1131,47 @@
       "verified_by": "EOS Transparency v2.11.2"
     }
   },
+  "NASA-OPEN-DATA-3I-ATLAS-2026-03-20": {
+    "title": "How Open NASA Data on Comet 3I/ATLAS Will Power Tomorrow’s Discoveries",
+    "publisher": "NASA Science",
+    "type": "agency_article",
+    "tier": "T1",
+    "provenance_tier": "T1",
+    "confidence": 0.92,
+    "confidence_score": 0.92,
+    "date_published": "2026-03-20",
+    "last_checked": "2026-04-29",
+    "last_audit": "2026-04-29T00:00:00Z",
+    "urls": [
+      "https://science.nasa.gov/open-science/interstellar-comet-3i-atlas-data/"
+    ],
+    "verified_by": "ATLAS-Live-Update-Test-v2.14.0-candidate",
+    "notes": "NASA Open Science article documenting public archive availability, TESS May 2025 archival capture, and multi-mission volatile-production context."
+  },
+  "AXIOM-GUARD-V2-14-PREFLIGHT": {
+    "title": "Axiom Guard v2.14.0 Candidate Preflight and Negative-Null Behavior",
+    "publisher": "BordneAI / 3i/ATLAS Gateway Guide",
+    "type": "local_governance_tool",
+    "tier": "T1",
+    "confidence": 0.92,
+    "confidence_score": 0.92,
+    "last_checked": "2026-04-29",
+    "last_audit": "2026-04-29T00:00:00Z",
+    "path": "tools/axiom_guard/verification_summary.json",
+    "urls": [
+      "[local] tools/axiom_guard/verification_summary.json",
+      "[local] scripts/axiom_preflight.py"
+    ],
+    "verified_by": "ATLAS-Local-Sign-v2.14.0-candidate",
+    "notes": "Defines bounded claim classification and negative-null behavior for release preflight; sidecar governance tool, not a KB replacement."
+  },
   "audit_cycle_hours": 24,
   "chi_target": 9.7,
   "derived_views_policy": "Derived views: T1_agency_sources / T2_preprint_sources / T3_press_sources are convenience lists that MUST be a subset of the canonical keyed registry. They MUST NOT redefine fields (tier/confidence/urls). Authoritative metadata lives only in the per-source registry entries.",
   "description": "Source registry upgraded under BordneAI Phase-10 protocols — includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
   "filename": "sources.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "93fab8d8d7b110acc8d09f3d84a1e5c3162093d3e2bdc45e92a5bb1e968094b6",
+  "fingerprint_sha256": "10021914bbe6efd733aa9156981950ae61509259eb77f7728639a797fedb1e5a",
   "last_updated": "2026-04-29T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "negative_null_policy": {
@@ -1239,9 +1273,9 @@
     "verified_by": "ATLAS-Governance-Automation-v2.12.3",
     "notes": "Registered from existing KB proposal references; opinion/commentary source, not primary orbital evidence."
   },
-  "signature_validated_at": "2026-04-29T22:06:51.502Z",
+  "signature_validated_at": "2026-04-29T22:55:38.217Z",
   "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:06:51.502Z.",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:55:38.217Z.",
   "_quarantined_meta": {
     "confidence": 0.5,
     "last_audit": "2026-02-17T03:15:49Z",

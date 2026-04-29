@@ -741,11 +741,42 @@
       "text": "Live JPL Horizons Jupiter-centered geometry shows 3I/ATLAS at approximately 0.35833 AU from Jupiter on 2026-03-16 12:16 UTC, consistent with current Jupiter-approach phase.",
       "tier": "T1",
       "truth_tier": "T1"
+    },
+    {
+      "id": "axiom_guard_negative_null_behavior",
+      "as_of": "2026-04-29",
+      "tier": "T1",
+      "confidence": "high",
+      "text": "Axiom Guard classifies non-detection claims as bounded negative-null observations, not proof of absence. Example: 'No radio signal was detected' means no signal was detected within the stated instrument, time, frequency, sensitivity, and analysis limits.",
+      "source_id": "AXIOM-GUARD-V2-14-PREFLIGHT",
+      "tags": [
+        "axiom_guard",
+        "negative_null",
+        "governance",
+        "behavior"
+      ]
+    },
+    {
+      "id": "3i_open_nasa_data_archives_2026_03_20",
+      "as_of": "2026-04-29",
+      "confidence": "high",
+      "source_id": "NASA-OPEN-DATA-3I-ATLAS-2026-03-20",
+      "summary": "NASA reports that 3I/ATLAS observations from multiple missions are being preserved in public archives for future research.",
+      "tags": [
+        "facts",
+        "sources",
+        "open_science",
+        "timeline",
+        "verification"
+      ],
+      "text": "NASA reports that more than a dozen NASA science missions observed 3I/ATLAS and that mission data are being preserved in public archives; TESS archival data also captured the comet in May 2025 before its July 2025 official identification.",
+      "tier": "T1",
+      "truth_tier": "T1"
     }
   ],
   "filename": "knowledge_base_merged_v2.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "ecddc11cdadca1f3e1ba0d58eb2360d0e15774406e2912248195e0cc2fa7fb1e",
+  "fingerprint_sha256": "c508965a909ea891d6249e236f793029c22a86e0927a214a6b56267494a03185",
   "integrity_audit": {
     "as_of": "2026-02-22T06:03:42Z",
     "audit_log_entry": "#ATLAS-AUDIT-KB-Δ2026-02-16",
@@ -1269,9 +1300,9 @@
   },
   "verified_by": "EOS Transparency v2.11.2",
   "version": "2.14.0-candidate",
-  "signature_validated_at": "2026-04-29T22:06:51.502Z",
+  "signature_validated_at": "2026-04-29T22:55:38.217Z",
   "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:06:51.502Z.",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:55:38.217Z.",
   "option_c_templates": {
     "gate_name": "Option C",
     "gate_banner": "Option C active (domain-gated)",

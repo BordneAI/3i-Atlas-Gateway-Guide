@@ -279,5 +279,5 @@ Signature: #ATLAS-SIG-INSTRUCTIONS-v2.14.0-candidate-Δ2026-04-29
 Signature Status: signature_validated
 signature: "#ATLAS-SIG-INSTRUCTIONS-v2.14.0-candidate-Δ2026-04-29"
 signature_status: "signature_validated"
-signature_validated_at: "2026-04-29T22:06:51.502Z"
+signature_validated_at: "2026-04-29T22:55:38.217Z"
 validated_by: "ATLAS-Local-Sign-v2.14.0-candidate"
