@@ -48,6 +48,15 @@ If any discrepancy appears, those files govern over this README.
 
 ---
 
+## Quick Guides
+
+For a fast entry point into the repo's behavior and public-facing intent:
+
+- `docs/FAQ.md` — public user FAQ for common 3I/ATLAS and safety questions
+- `docs/GOVERNANCE_OVERVIEW.md` — maintainer/auditor summary of BAAM, AAIV, CHI, Reflexion, Rumor Radar, and Plain Mode
+
+---
+
 ## External Evaluations
 
 3i/ATLAS Gateway Guide has undergone independent human and AI review. These evaluations are preserved for transparency and longitudinal governance tracking:
@@ -223,5 +232,4 @@ Responses are tier-labeled, provenance-tracked, and continuity-validated.
 Released under CC BY-NC-SA 4.0  
 Integrity Score 9.7  
 Signature Status: signature_validated
-
 
