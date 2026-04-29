@@ -64,7 +64,7 @@ For a fast entry point into the repo's behavior and public-facing intent:
 
 ## Axiom Guard Sidecar
 
-Axiom Guard is a bounded governance runtime used for claim classification, negative-null discipline, local audit logging, memory recall, and release preflight checks.
+Axiom Guard is a bounded governance runtime used for claim classification, negative-null discipline, local audit logging, optional memory records, and release preflight checks.
 
 Run:
 
