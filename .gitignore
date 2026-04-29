@@ -33,3 +33,5 @@ build/
 # OS / misc
 Thumbs.db
 Desktop.ini
+
+tools/axiom_guard/.axiom_guard_state/

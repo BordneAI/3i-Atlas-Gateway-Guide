@@ -322,6 +322,7 @@ class Preflight:
     def _run(self, command: Sequence[str]) -> subprocess.CompletedProcess[str]:
         env = os.environ.copy()
         env.setdefault("PYTHONUNBUFFERED", "1")
+        env.setdefault("PYTHON_BIN", sys.executable)
         return subprocess.run(command, cwd=str(ROOT), text=True, capture_output=True, env=env)
 
     @staticmethod
