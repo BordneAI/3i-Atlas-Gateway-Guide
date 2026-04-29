@@ -1239,9 +1239,9 @@
     "verified_by": "ATLAS-Governance-Automation-v2.12.3",
     "notes": "Registered from existing KB proposal references; opinion/commentary source, not primary orbital evidence."
   },
-  "signature_validated_at": "2026-04-29T22:04:27.036Z",
+  "signature_validated_at": "2026-04-29T22:06:51.502Z",
   "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:04:27.036Z.",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:06:51.502Z.",
   "_quarantined_meta": {
     "confidence": 0.5,
     "last_audit": "2026-02-17T03:15:49Z",

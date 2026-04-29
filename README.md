@@ -82,8 +82,11 @@ Release preflight:
 python scripts/axiom_preflight.py --plain
 node scripts/validate_kb.js
 node scripts/refresh_release_signatures.js --all --write
+```
 
 Axiom Guard is a governance helper only. It does not replace source-based reasoning, the KB, or live web verification.
+
+---
 
 ## External Evaluations
 
@@ -217,8 +220,6 @@ A version bump is also incomplete until manifest-listed live `docs/` surfaces an
 Run `node scripts/validate_kb.js` after release-surface edits, and use `node scripts/refresh_release_signatures.js --all --write` before sealing when signed surfaces changed.
 
 ---
-
-## 🪶 Version Changelog
 
 ## 🪶 Version Changelog
 

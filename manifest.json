@@ -234,9 +234,9 @@
   "chi_enabled": true,
   "reflexion_hook_enabled": true,
   "public_audit_badge": true,
-  "signature_validated_at": "2026-04-29T22:04:27.036Z",
+  "signature_validated_at": "2026-04-29T22:06:51.502Z",
   "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:04:27.036Z.",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:06:51.502Z.",
   "release_type": "minor_candidate",
   "last_updated": "2026-04-29",
   "update_ledger": [

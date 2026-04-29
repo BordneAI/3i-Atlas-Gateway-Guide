@@ -446,7 +446,7 @@
   "updates_version": "2.14.0-candidate",
   "verified_by": "EOS Transparency v2.11.2",
   "version": "2.14.0-candidate",
-  "signature_validated_at": "2026-04-29T22:04:27.036Z",
+  "signature_validated_at": "2026-04-29T22:06:51.502Z",
   "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:04:27.036Z."
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:06:51.502Z."
 }
