@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import re
 import subprocess
 import urllib.request
 import urllib.error
@@ -8,9 +9,9 @@ from datetime import datetime, timezone
 
 BASE = "http://localhost:1111"
 MODEL_PREFERENCE = [
-    "qwen/qwen3.6-35b-a3b",
     "google/gemma-4-e4b",
-    "openai/gpt-oss-20b"
+    "openai/gpt-oss-20b",
+    "qwen/qwen3.6-35b-a3b"
 ]
 
 PROMPT = """Output ONLY valid JSON.
@@ -67,19 +68,56 @@ def choose_model(models):
         return ids[0]
     raise RuntimeError("No LM Studio models available from /v1/models")
 
+def extract_json(text):
+    if not text:
+        raise ValueError("empty model response")
+
+    text = text.strip()
+
+    # Strip common markdown wrappers if present
+    text = text.replace("```json", "").replace("```", "").strip()
+
+    # First try direct JSON
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
+
+    # Then try first JSON object substring
+    m = re.search(r'\{.*\}', text, flags=re.DOTALL)
+    if m:
+        return json.loads(m.group(0))
+
+    raise ValueError("no JSON object found")
+
+
 def ask_model(model):
     payload = {
         "model": model,
         "messages": [
-            {"role": "system", "content": "You are a bounded scheduled computational baseline. Output JSON only."},
+            {"role": "system", "content": "Return only compact JSON. No reasoning. No markdown. No explanation."},
             {"role": "user", "content": PROMPT}
         ],
         "temperature": 0.0,
-        "max_tokens": 300
+        "max_tokens": 200
     }
     resp = http_json("POST", "/v1/chat/completions", payload)
-    content = resp["choices"][0]["message"]["content"].strip()
-    return json.loads(content)
+    msg = resp["choices"][0]["message"]
+
+    # Some local reasoning models return empty content and put text elsewhere.
+    candidates = [
+        msg.get("content", ""),
+        msg.get("reasoning_content", "")
+    ]
+
+    last_error = None
+    for c in candidates:
+        try:
+            return extract_json(c)
+        except Exception as e:
+            last_error = e
+
+    raise ValueError(f"JSON parse failed: {type(last_error).__name__}: {last_error}")
 
 def main():
     root = Path(__file__).resolve().parents[1]

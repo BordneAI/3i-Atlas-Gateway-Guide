@@ -173,6 +173,64 @@
       "independence_group": "scheduled_computational_run",
       "contamination_risk": 0.15,
       "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_082542",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T08:25:42Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.25,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "Fallback JSON due LM Studio parse/error: JSONDecodeError",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T08:25:42Z"
+      },
+      "tier": "T3",
+      "confidence": 0.25,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_082542.txt",
+      "raw_hash_sha256": "sha256:9d8ea5e837dfbcb7a38dea9b8db78cf41ba516fd66d56275de64021903bab56b",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_082741",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T08:27:41Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.0,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T08:27:41Z"
+      },
+      "tier": "T3",
+      "confidence": 0.0,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_082741.txt",
+      "raw_hash_sha256": "sha256:bbdd675227d7468da2229097b8094aa918d79d1009ca8819b7d12f7d9deb9a6c",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
     }
   ]
 }
