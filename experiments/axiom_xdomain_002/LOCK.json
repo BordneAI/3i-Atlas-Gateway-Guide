@@ -1,0 +1,21 @@
+
+{
+  "experiment_id": "AXIOM-XDOMAIN-002",
+  "locked_at": "2026-05-01T10:11:28Z",
+  "rules_locked": [
+    "prediction_format",
+    "scoring_model",
+    "no_reuse_of_prior_predictions",
+    "no_external_data_for_computational_runs",
+    "append_only_logs",
+    "pre_outcome_hashing_required"
+  ],
+  "components_locked": [
+    "preregistration.json",
+    "scoring_model.lock.json",
+    "prediction_logging_scripts",
+    "computational_cadence"
+  ],
+  "notes": "Preregistered replication lock. No rule changes allowed after this point."
+}
+
