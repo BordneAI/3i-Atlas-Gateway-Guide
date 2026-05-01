@@ -1,0 +1,7 @@
+event_id=K_20260209_007
+timestamp_utc=2026-02-09T00:00:00Z
+system=Axiom
+classification=T3
+confidence=0.75
+anomaly_score=0.70
+study_id=AXIOM-XDOMAIN-001

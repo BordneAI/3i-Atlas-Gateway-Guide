@@ -1,0 +1,1 @@
+CHI audit passed with CHI 9.7 and entropy leak 0.01.

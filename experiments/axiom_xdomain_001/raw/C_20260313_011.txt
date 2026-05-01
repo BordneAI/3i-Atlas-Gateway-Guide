@@ -1,0 +1,5 @@
+event_id=C_20260313_011
+timestamp_utc=2026-03-13T04:00:00Z
+text=Major update imminent within 48 hours
+locked_before_outcome=true
+study_id=AXIOM-XDOMAIN-001

@@ -1,0 +1,5 @@
+event_id=C_seed_isotopes_20260305
+timestamp_utc=2026-03-05T12:00:00Z
+text=Water or isotope anomaly update likely within 72 hours.
+locked_before_outcome=false
+study_id=AXIOM-XDOMAIN-001

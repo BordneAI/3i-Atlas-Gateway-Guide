@@ -1,0 +1,5 @@
+event_id=C_20260310_010
+timestamp_utc=2026-03-10T05:00:00Z
+text=Spectroscopy will introduce ambiguity
+locked_before_outcome=true
+study_id=AXIOM-XDOMAIN-001

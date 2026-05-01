@@ -1,0 +1,5 @@
+event_id=C_seed_spectroscopy_20260226
+timestamp_utc=2026-02-26T12:00:00Z
+text=Spectroscopy may introduce new ambiguity or metal-emission detail.
+locked_before_outcome=false
+study_id=AXIOM-XDOMAIN-001

@@ -1,0 +1,7 @@
+event_id=C_live_20260501_043206
+timestamp_utc=2026-05-01T04:32:06Z
+text=Within 72 hours, a new public 3I/ATLAS paper or agency update will mention isotope ratios, water/OH, metal vapor, spectroscopy, or NGA model uncertainty.
+window_hours=72
+locked_before_outcome=true
+hash_created_before_outcome=true
+study_id=AXIOM-XDOMAIN-001

@@ -1,0 +1,1 @@
+Axiom Guard classifies non-detection claims as bounded negative-null observations, not proof of absence.

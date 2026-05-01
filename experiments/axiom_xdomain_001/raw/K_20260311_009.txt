@@ -1,0 +1,7 @@
+event_id=K_20260311_009
+timestamp_utc=2026-03-11T00:00:00Z
+system=Axiom
+classification=T3
+confidence=0.76
+anomaly_score=0.70
+study_id=AXIOM-XDOMAIN-001

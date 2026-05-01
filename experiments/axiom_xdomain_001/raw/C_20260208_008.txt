@@ -1,0 +1,5 @@
+event_id=C_20260208_008
+timestamp_utc=2026-02-08T07:00:00Z
+text=Water or volatile indicators may appear
+locked_before_outcome=true
+study_id=AXIOM-XDOMAIN-001

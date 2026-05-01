@@ -1,0 +1,1 @@
+v2.12.4 post-seal cumulative patch added SPHEREx, isotope, spectroscopy, NGA, JPL solution, and Jupiter geometry entries.

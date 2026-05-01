@@ -1,0 +1,7 @@
+event_id=K_20260314_010
+timestamp_utc=2026-03-14T01:00:00Z
+system=Axiom
+classification=T3_instrumented_pattern
+confidence=0.78
+anomaly_score=0.72
+study_id=AXIOM-XDOMAIN-001
