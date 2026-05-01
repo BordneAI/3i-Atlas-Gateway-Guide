@@ -144,6 +144,35 @@
       "independence_group": "scheduled_computational_run",
       "contamination_risk": 0.15,
       "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_081820",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T08:18:20Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.25,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "qwen/qwen3.6-35b-a3b",
+        "notes": "Fallback JSON due LM Studio parse/error: JSONDecodeError",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T08:18:20Z"
+      },
+      "tier": "T3",
+      "confidence": 0.25,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_081820.txt",
+      "raw_hash_sha256": "sha256:ea0a97d4da2830e35162769df26674238879d05df7f0f355b600950f6e4091b9",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
     }
   ]
 }
