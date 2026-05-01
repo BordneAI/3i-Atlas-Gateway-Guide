@@ -1,4 +1,15 @@
 {
   "study_id": "AXIOM-XDOMAIN-002",
-  "null_results": []
+  "null_results": [
+    {
+      "prediction_id": "C_002_20260501_075716",
+      "logged_utc": "2026-05-01T08:02:54Z",
+      "window_start_utc": "2026-05-01T07:57:16Z",
+      "window_end_utc": "2026-05-04T07:57:16Z",
+      "outcome": "excluded",
+      "reason": "Prediction overly broad (4 topic tags) relative to preregistered optimal specificity; excluded before any outcome observed.",
+      "negative_null": false,
+      "notes": "Pre-analysis correction; no outcome evaluated."
+    }
+  ]
 }

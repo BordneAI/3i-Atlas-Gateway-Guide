@@ -1,0 +1,7 @@
+event_id=K_002_20260501_080802
+timestamp_utc=2026-05-01T08:08:02Z
+prompt_id=AXIOM-XDOMAIN-002-FIXED-PROMPT-001
+prompt=Assess whether any current 3I/ATLAS-related scientific release is likely within the next 72 hours. Classify expected domain tags only. Do not browse. Do not use new external information. Output fixed JSON only.
+output_json={"classification": "scheduled_control_run", "expected_topics": ["spectroscopy", "isotopes", "water", "nga", "no-update"], "notes": "Fixed scheduled computational run. No browsing. No new external information used.", "prediction_window_hours": 72}
+hash_created_before_outcome=true
+study_id=AXIOM-XDOMAIN-002

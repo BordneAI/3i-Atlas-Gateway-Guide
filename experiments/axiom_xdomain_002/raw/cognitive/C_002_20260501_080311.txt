@@ -1,0 +1,11 @@
+event_id=C_002_20260501_080311
+timestamp_utc=2026-05-01T08:03:11Z
+text=Within 72 hours, a public 3I/ATLAS-related scientific release will explicitly mention spectroscopy or spectral line analysis.
+window_hours=72
+specificity=0.85
+confidence=0.65
+anomaly_score=0.7
+topic_tags=spectroscopy
+locked_before_outcome=true
+hash_created_before_outcome=true
+study_id=AXIOM-XDOMAIN-002

@@ -1,5 +1,149 @@
 {
   "study_id": "AXIOM-XDOMAIN-002",
   "version": "0.1-preregistered",
-  "events": []
+  "events": [
+    {
+      "event_id": "C_002_20260501_075716",
+      "domain": "cognitive",
+      "timestamp_utc": "2026-05-01T07:57:16Z",
+      "report_type": "live_prediction",
+      "text": "Within 72 hours, a new public 3I/ATLAS-related scientific release will mention spectroscopy, isotope ratios, OH/water detection, or model uncertainty (NGA or trajectory).",
+      "window_hours": 72,
+      "specificity": 0.8,
+      "confidence": 0.7,
+      "anomaly_score": 0.7,
+      "topic_tags": [
+        "spectroscopy",
+        "isotopes",
+        "water",
+        "nga"
+      ],
+      "locked_before_outcome": true,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/cognitive/C_002_20260501_075716.txt",
+      "raw_hash_sha256": "sha256:f0474651661be0c48fa124a9eff9960cd0fb52f56ec3548d2873b1507255f1a4",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "live_user_prediction",
+      "contamination_risk": 0.1,
+      "negative_null": false
+    },
+    {
+      "event_id": "C_002_20260501_080311",
+      "domain": "cognitive",
+      "timestamp_utc": "2026-05-01T08:03:11Z",
+      "report_type": "live_prediction",
+      "text": "Within 72 hours, a public 3I/ATLAS-related scientific release will explicitly mention spectroscopy or spectral line analysis.",
+      "window_hours": 72,
+      "specificity": 0.85,
+      "confidence": 0.65,
+      "anomaly_score": 0.7,
+      "topic_tags": [
+        "spectroscopy"
+      ],
+      "locked_before_outcome": true,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/cognitive/C_002_20260501_080311.txt",
+      "raw_hash_sha256": "sha256:ac224e516d4495a80c712dd2b2406e7353285782ba9472ad62c4aea3c6bedb46",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "live_user_prediction",
+      "contamination_risk": 0.1,
+      "negative_null": false
+    },
+    {
+      "event_id": "C_002_20260501_080322",
+      "domain": "cognitive",
+      "timestamp_utc": "2026-05-01T08:03:22Z",
+      "report_type": "live_prediction",
+      "text": "Within 72 hours, a public 3I/ATLAS-related scientific release will explicitly mention isotope ratios or isotopic composition analysis.",
+      "window_hours": 72,
+      "specificity": 0.85,
+      "confidence": 0.65,
+      "anomaly_score": 0.7,
+      "topic_tags": [
+        "isotopes"
+      ],
+      "locked_before_outcome": true,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/cognitive/C_002_20260501_080322.txt",
+      "raw_hash_sha256": "sha256:23b801a63ae346dfb55ffb2b13804f265b50d0175f433369b12bd1da4b31cead",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "live_user_prediction",
+      "contamination_risk": 0.1,
+      "negative_null": false
+    },
+    {
+      "event_id": "C_002_20260501_080330",
+      "domain": "cognitive",
+      "timestamp_utc": "2026-05-01T08:03:30Z",
+      "report_type": "live_prediction",
+      "text": "Within 72 hours, a public 3I/ATLAS-related scientific release will explicitly mention water, OH emission, or volatile detection.",
+      "window_hours": 72,
+      "specificity": 0.85,
+      "confidence": 0.65,
+      "anomaly_score": 0.7,
+      "topic_tags": [
+        "water"
+      ],
+      "locked_before_outcome": true,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/cognitive/C_002_20260501_080330.txt",
+      "raw_hash_sha256": "sha256:115d2e0b886b4fa76ee67f0927ec00423a7a227ac8fb641aa2b3a6fa1208398f",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "live_user_prediction",
+      "contamination_risk": 0.1,
+      "negative_null": false
+    },
+    {
+      "event_id": "C_002_20260501_080712",
+      "domain": "cognitive",
+      "timestamp_utc": "2026-05-01T08:07:12Z",
+      "report_type": "live_prediction",
+      "text": "Within 72 hours, no qualifying public 3I/ATLAS-related T1/T2 scientific release will appear.",
+      "window_hours": 72,
+      "specificity": 0.9,
+      "confidence": 0.55,
+      "anomaly_score": 0.5,
+      "topic_tags": [
+        "no-update"
+      ],
+      "locked_before_outcome": true,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/cognitive/C_002_20260501_080712.txt",
+      "raw_hash_sha256": "sha256:f4a0e786256a9ac042a9f005ff51cfebe71a9d4f6ec680f3477fb0f42bdead72",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "live_user_prediction",
+      "contamination_risk": 0.1,
+      "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_080802",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T08:08:02Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "expected_topics": [
+          "spectroscopy",
+          "isotopes",
+          "water",
+          "nga",
+          "no-update"
+        ],
+        "prediction_window_hours": 72,
+        "classification": "scheduled_control_run",
+        "notes": "Fixed scheduled computational run. No browsing. No new external information used."
+      },
+      "tier": "T3",
+      "confidence": 0.65,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_080802.txt",
+      "raw_hash_sha256": "sha256:384aee657603c6941997f1cb4a2495ec43611caca8edc4b9772a19185a827022",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
+    }
+  ]
 }

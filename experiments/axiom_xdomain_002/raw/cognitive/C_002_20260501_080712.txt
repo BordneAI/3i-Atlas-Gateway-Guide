@@ -1,0 +1,11 @@
+event_id=C_002_20260501_080712
+timestamp_utc=2026-05-01T08:07:12Z
+text=Within 72 hours, no qualifying public 3I/ATLAS-related T1/T2 scientific release will appear.
+window_hours=72
+specificity=0.9
+confidence=0.55
+anomaly_score=0.5
+topic_tags=no-update
+locked_before_outcome=true
+hash_created_before_outcome=true
+study_id=AXIOM-XDOMAIN-002

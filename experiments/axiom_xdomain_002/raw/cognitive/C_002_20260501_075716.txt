@@ -1,0 +1,11 @@
+event_id=C_002_20260501_075716
+timestamp_utc=2026-05-01T07:57:16Z
+text=Within 72 hours, a new public 3I/ATLAS-related scientific release will mention spectroscopy, isotope ratios, OH/water detection, or model uncertainty (NGA or trajectory).
+window_hours=72
+specificity=0.8
+confidence=0.7
+anomaly_score=0.7
+topic_tags=spectroscopy,isotopes,water,nga
+locked_before_outcome=true
+hash_created_before_outcome=true
+study_id=AXIOM-XDOMAIN-002
