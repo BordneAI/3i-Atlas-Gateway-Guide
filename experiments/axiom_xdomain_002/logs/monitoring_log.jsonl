@@ -1,0 +1,2 @@
+{"event":"monitoring_start","timestamp_utc":"2026-05-01T07:52:31Z"}
+{"event":"monitoring_start_context","study_id":"AXIOM-XDOMAIN-002","branch":"codex/v2.15.0-xdomain-pipeline","notes":"preregistered, no prior events logged"}
