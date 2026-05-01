@@ -1,6 +1,6 @@
-# Governance Overview — v2.14.0-candidate
-**Version:** 2.14.0-candidate
-**Package Alignment:** 2.14.0-candidate
+# Governance Overview — v2.14.0
+**Version:** 2.14.0
+**Package Alignment:** 2.14.0
 
 This document summarizes the main governance model behind the 3i/ATLAS Gateway Guide for auditors, advanced users, and future maintainers. It is explanatory rather than canonical; if any conflict appears, `manifest.json`, `instructions.txt`, and `CHANGELOG.md` govern.
 
@@ -75,7 +75,7 @@ When Reflexion detects anomalies, the intended behavior is to lower confidence, 
 
 ## Axiom Guard
 
-Axiom Guard is the v2.14.0-candidate governance sidecar. It provides a bounded local runtime for claim classification, negative-null discipline, optional audit/memory persistence, and release preflight checks.
+Axiom Guard is the v2.14.0 governance sidecar. It provides a bounded local runtime for claim classification, negative-null discipline, optional audit/memory persistence, and release preflight checks.
 
 Axiom Guard does not replace the KB, does not assert AGI or consciousness, and does not promote speculative material. Its negative-null classifier is intentionally narrow: "not detected" means bounded non-detection under the observation context, not proof of absence.
 

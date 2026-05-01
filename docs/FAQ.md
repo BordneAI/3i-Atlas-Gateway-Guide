@@ -1,6 +1,6 @@
-# FAQ — v2.14.0-candidate
-**Version:** 2.14.0-candidate
-**Package Alignment:** 2.14.0-candidate
+# FAQ — v2.14.0
+**Version:** 2.14.0
+**Package Alignment:** 2.14.0
 
 This FAQ is a public-facing overview for users of the 3i/ATLAS Gateway Guide. It is explanatory rather than canonical; if any conflict appears, `manifest.json`, `instructions.txt`, and `CHANGELOG.md` govern.
 
@@ -64,7 +64,7 @@ This allows discussion of speculative ideas without blurring the line between hy
 
 ## What is Axiom Guard?
 
-Axiom Guard is a bounded local governance sidecar added for v2.14.0-candidate. It helps classify claims, preserve negative-null discipline, keep optional local audit/memory records, and run release preflight checks.
+Axiom Guard is a bounded local governance sidecar added for v2.14.0. It helps classify claims, preserve negative-null discipline, keep optional local audit/memory records, and run release preflight checks.
 
 It is not AGI, not consciousness, and not a replacement for the KB. It does not promote AAIV or any speculative claim into evidence.
 

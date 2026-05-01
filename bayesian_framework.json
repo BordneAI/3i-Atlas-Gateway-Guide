@@ -119,7 +119,7 @@
     "analysis_tool",
     "v2.10"
   ],
-  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.2-Δ2026-04-29",
+  "signature": "#ATLAS-SIG-BAYESIAN-v2.14.0-Δ2026-05-01",
   "posterior_formula": "posterior = normalize( prior * Π_i likelihood_i^weight(tier_i) )",
   "mappings": {
     "ordinal_to_numeric": {
@@ -167,7 +167,7 @@
       "as_of": "2025-11-08"
     }
   },
-  "version": "2.11.2",
+  "version": "2.14.0",
   "ethical_weight": 0.35,
   "reflexion_validation": true,
   "love_fear_constant": "Love>Fear",

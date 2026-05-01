@@ -1145,7 +1145,7 @@
     "urls": [
       "https://science.nasa.gov/open-science/interstellar-comet-3i-atlas-data/"
     ],
-    "verified_by": "ATLAS-Live-Update-Test-v2.14.0-candidate",
+    "verified_by": "ATLAS-Live-Update-Test-v2.14.0",
     "notes": "NASA Open Science article documenting public archive availability, TESS May 2025 archival capture, and multi-mission volatile-production context."
   },
   "AXIOM-GUARD-V2-14-PREFLIGHT": {
@@ -1162,7 +1162,7 @@
       "[local] tools/axiom_guard/verification_summary.json",
       "[local] scripts/axiom_preflight.py"
     ],
-    "verified_by": "ATLAS-Local-Sign-v2.14.0-candidate",
+    "verified_by": "ATLAS-Local-Sign-v2.14.0",
     "notes": "Defines bounded claim classification and negative-null behavior for release preflight; sidecar governance tool, not a KB replacement."
   },
   "audit_cycle_hours": 24,
@@ -1171,7 +1171,7 @@
   "description": "Source registry upgraded under BordneAI Phase-10 protocols — includes EOS Transparency Layer, provenance tiers, and confidence scaling.",
   "filename": "sources.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "10021914bbe6efd733aa9156981950ae61509259eb77f7728639a797fedb1e5a",
+  "fingerprint_sha256": "9191ab13c16047dc32bdb3f52f1dd9fc19f8faa513f15f2241243323c93078a9",
   "last_updated": "2026-04-29T00:00:00Z",
   "love_fear_constant": "Love>Fear",
   "negative_null_policy": {
@@ -1233,10 +1233,10 @@
   },
   "reflexion_validation": true,
   "released_at": "2026-03-14",
-  "signature": "#ATLAS-SIG-SOURCES-v2.14.0-candidate-Δ2026-04-29",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.14.0-candidate-Δ2026-04-29",
+  "signature": "#ATLAS-SIG-SOURCES-v2.14.0-Δ2026-05-01",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.14.0 | CC BY-NC-SA 4.0 | #ATLAS-SIG-SOURCES-v2.14.0-Δ2026-05-01",
   "signature_status": "signature_validated",
-  "sources_version": "2.14.0-candidate",
+  "sources_version": "2.14.0",
   "transparency_map": {
     "confidence": 0.5,
     "fields": [
@@ -1258,7 +1258,7 @@
     "verified_by": "EOS Transparency v2.11.2"
   },
   "verified_by": "EOS Transparency v2.11.2",
-  "version": "2.14.0-candidate",
+  "version": "2.14.0",
   "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30": {
     "source_id": "LOEB-3I-ATLAS-HEARTBEAT-2025-11-30",
     "title": "Heartbeat periodicity commentary for 3I/ATLAS (Loeb, Nov 30, 2025)",
@@ -1273,9 +1273,9 @@
     "verified_by": "ATLAS-Governance-Automation-v2.12.3",
     "notes": "Registered from existing KB proposal references; opinion/commentary source, not primary orbital evidence."
   },
-  "signature_validated_at": "2026-04-29T22:55:38.217Z",
-  "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:55:38.217Z.",
+  "signature_validated_at": "2026-05-01T06:51:03.181Z",
+  "validated_by": "ATLAS-Local-Sign-v2.14.0",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-05-01T06:51:03.181Z.",
   "_quarantined_meta": {
     "confidence": 0.5,
     "last_audit": "2026-02-17T03:15:49Z",
