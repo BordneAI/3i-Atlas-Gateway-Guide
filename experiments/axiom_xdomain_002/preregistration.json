@@ -1,0 +1,23 @@
+{
+  "study_id": "AXIOM-XDOMAIN-002",
+  "status": "preregistered",
+  "created_utc": "2026-05-01T00:00:00Z",
+  "hypothesis": "Pre-outcome hashed cognitive and computational records may correlate with later independent 3I/ATLAS-related scientific/publication events above predefined thresholds.",
+  "null_hypothesis": "Observed correlations are explained by chance, broad prediction language, publication frequency, shared information sources, or post-hoc interpretation.",
+  "prediction_window_hours": 72,
+  "minimum_prediction_specificity": 0.75,
+  "minimum_independent_clusters": 3,
+  "primary_success_threshold": 0.65,
+  "secondary_t3_threshold": 0.40,
+  "replication_requirement": "At least 3 qualifying clusters across separate publication events.",
+  "locked_scoring_model": "scoring_model.lock.json",
+  "retrospective_entries_allowed": false,
+  "negative_null_policy": "No match is bounded non-detection, not proof of absence.",
+  "kb_promotion_allowed": false,
+  "status_policy": {
+    "T4": "score < 0.40 or retrospective or ambiguous source",
+    "T3": "score >= 0.40, pre-hashed, independent source, but not replicated",
+    "T2_candidate": "score >= 0.65, pre-outcome hash true, T1/T2 physical source, specificity >= 0.75, 3 independent clusters, controls lower than real run, no KB contamination",
+    "T2_validated": "not available in XDOMAIN-002 alone; requires external replication"
+  }
+}

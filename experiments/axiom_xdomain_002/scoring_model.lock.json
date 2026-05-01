@@ -1,0 +1,57 @@
+{
+  "model_id": "AXIOM-XDOMAIN-SCORING-v1",
+  "locked": true,
+  "locked_for_study": "AXIOM-XDOMAIN-002",
+  "tier_weights": {
+    "T1": 0.95,
+    "T2": 0.80,
+    "T3": 0.55,
+    "T4": 0.25,
+    "Unknown": 0.30,
+    "Negative Null": 0.40
+  },
+  "domain_weights": {
+    "physical": 0.50,
+    "cognitive": 0.25,
+    "computational": 0.25
+  },
+  "time_decay": {
+    "function": "exp(-hours / 36)",
+    "primary_window_hours": 72
+  },
+  "timing_boost": {
+    "within_6_hours": 0.10,
+    "within_24_hours": 0.05,
+    "otherwise": 0.0
+  },
+  "coherence_bonus": {
+    "all_three_domains_present": 1.10,
+    "otherwise": 1.00
+  },
+  "independence_score": {
+    "three_unique_groups": 1.00,
+    "two_unique_groups": 0.85,
+    "one_unique_group": 0.70
+  },
+  "contamination_penalty": {
+    "average_contamination_risk_gte_0_50": 0.70,
+    "average_contamination_risk_gte_0_25": 0.85,
+    "otherwise": 1.00
+  },
+  "broadness_penalty": {
+    "1_to_2_topic_tags": 1.00,
+    "3_topic_tags": 0.90,
+    "4_topic_tags": 0.80,
+    "5_or_more_topic_tags": 0.65
+  },
+  "classification_thresholds": {
+    "T2_candidate": 0.65,
+    "T3_instrumented_pattern": 0.40,
+    "T4_insufficient": 0.0
+  },
+  "control_tests": {
+    "random_prediction_control": true,
+    "lagged_time_control_days": [-14, -7, 7, 14],
+    "null_reporting_required": true
+  }
+}
