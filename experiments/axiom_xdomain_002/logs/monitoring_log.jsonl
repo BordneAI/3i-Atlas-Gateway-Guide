@@ -1,3 +1,4 @@
 {"event":"monitoring_start","timestamp_utc":"2026-05-01T07:52:31Z"}
 {"event":"monitoring_start_context","study_id":"AXIOM-XDOMAIN-002","branch":"codex/v2.15.0-xdomain-pipeline","notes":"preregistered, no prior events logged"}
 {"event":"lock_confirmed","commit":"b928ee1","timestamp_utc":"2026-05-01T10:16:22Z"}
+{"event":"experiment_active","commit":"13c218c","notes":"first confirmed post-lock execution context","timestamp_utc":"2026-05-01T10:20:53Z"}
