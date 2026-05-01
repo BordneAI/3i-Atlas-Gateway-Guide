@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "n_scored": 9,
+    "total_score": 0.0,
+    "mean_score": 0.0
+  },
+  "results": [
+    {
+      "prediction_id": "C_002_20260501_080330",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "C_002_20260501_080322",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "C_002_20260501_080311",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "C_002_20260501_080712",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "C_002_20260501_075716",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "K_002_20260501_081820",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "K_002_20260501_082741",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "K_002_20260501_080802",
+      "outcome": "null",
+      "score": 0.0
+    },
+    {
+      "prediction_id": "K_002_20260501_082542",
+      "outcome": "null",
+      "score": 0.0
+    }
+  ]
+}
