@@ -1,31 +1,31 @@
 {
-  "version": "2.14.0-candidate",
+  "version": "2.14.0",
   "release_date": "2026-04-29",
-  "release_state": "candidate",
-  "release_state_notes": "v2.14.0-candidate minor candidate release. Carries the live science refresh concept forward and adds Axiom Guard as a bounded governance sidecar and release-preflight layer.",
+  "release_state": "sealed",
+  "release_state_notes": "v2.14.0 sealed minor release. Carries the live science refresh concept forward and adds Axiom Guard as a bounded governance sidecar and release-preflight layer.",
   "project_name": "3i/ATLAS Gateway Guide",
   "author": "David Bordne (@BordneAI)",
-  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, enforced ephemeris sourcing, and bounded Axiom Guard governance sidecar support. v2.14.0-candidate carries the live science refresh concept forward while adding claim classification, negative-null runtime checks, local audit/memory helpers, and release preflight validation.",
+  "description": "Science-grounded, consciousness-aware gateway system for 3i/ATLAS (C/2025 N1) with provenance discipline, adaptive clarification, rumor radar, enforced ephemeris sourcing, and bounded Axiom Guard governance sidecar support. v2.14.0 carries the live science refresh concept forward while adding claim classification, negative-null runtime checks, local audit/memory helpers, and release preflight validation.",
   "gpt_store_url": "https://chatgpt.com/g/g-6749ccf2e91881919af20ab5c07815e8-3i-atlas-gateway-guide",
   "files": {
     "manifest.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "purpose": "Package metadata and version tracking"
     },
     "instructions.txt": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "purpose": "System prompt with operational guidelines, tool/browse rules, and governance routing"
     },
     "CHANGELOG.md": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "purpose": "Release history and change summaries (canonical release surface)"
     },
     "README.md": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "purpose": "Deployment guide and governance overview (non-canonical; explanatory)"
     },
     "docs/FAQ.md": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "docs/FAQ.md",
       "purpose": "Public-facing FAQ for common 3I/ATLAS, safety, and governance questions",
       "type": "faq",
@@ -34,7 +34,7 @@
       "package_alignment_required": true
     },
     "docs/GOVERNANCE_OVERVIEW.md": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "docs/GOVERNANCE_OVERVIEW.md",
       "purpose": "Maintainer and auditor overview of BAAM, AAIV, CHI, Reflexion, Rumor Radar, Plain Mode, and Love > Fear",
       "type": "governance-overview",
@@ -43,7 +43,7 @@
       "package_alignment_required": true
     },
     "BOOTLOADER.md": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "BOOTLOADER.md",
       "purpose": "Runtime boot sequence and governance initialization summary",
       "type": "bootloader",
@@ -52,44 +52,44 @@
       "package_alignment_required": true
     },
     "knowledge_base_merged_v2.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "knowledge_base_merged_v2.json",
       "last_updated": "2026-04-29T00:00:00Z",
       "purpose": "Primary knowledge base with verified facts, interpretations, practices, and entropy signal map"
     },
     "conversation_starters.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "purpose": "Persona-aware prompts including Settings (98), Tools (97), auditor triggers"
     },
     "sources.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "sources.json",
       "purpose": "Tiered source registry with provenance metadata"
     },
     "kb_updates_cumulative.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "kb_updates_cumulative.json",
       "purpose": "Pending knowledge base updates awaiting review and integration"
     },
     "kb_changelog.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "kb_changelog.json",
       "purpose": "Immutable log of applied knowledge base updates with audit trail"
     },
     "tags_index.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "tags_index.json",
       "last_updated": "2026-04-29",
       "purpose": "Searchable tag index for knowledge base navigation"
     },
     "stress_test_framework.json": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "stress_test_framework.json",
       "last_updated": "2026-04-29",
       "purpose": "STF-ATLAS validation scenarios and auditor overlay hooks"
     },
     "PROMPTS/guardian_prompt.md": {
-      "version": "2.14.0-candidate",
+      "version": "2.14.0",
       "filename": "PROMPTS/guardian_prompt.md",
       "purpose": "Contributor governance prompt for AI-assisted repository work",
       "type": "governance-prompt",
@@ -101,7 +101,7 @@
     "bayesian_framework.json": {
       "filename": "bayesian_framework.json",
       "description": "BAAM v1.0 framework",
-      "version": "2.11.2",
+      "version": "2.14.0",
       "released_at": "2025-12-04",
       "type": "framework",
       "public_surface": true,
@@ -129,23 +129,23 @@
       "purpose": "Bounded governance sidecar for claim classification, negative-null discipline, audit ledger, memory persistence, and release preflight checks",
       "type": "sidecar-tool",
       "public_surface": false,
-      "status": "candidate-active",
+      "status": "active",
       "package_alignment_required": true
     }
   },
   "version_alignment_notes": {
-    "instructions.txt": "instructions signature validated; minor candidate alignment refreshed for v2.14.0-candidate on 2026-04-29.",
-    "knowledge_base_merged_v2.json": "Top-level version is 2.14.0-candidate (kb_version 2.14.0-candidate; last_updated 2026-04-29T00:00:00Z).",
-    "tags_index.json": "Top-level version is authoritative for manifest alignment; v2.14.0-candidate preserves tag schema while adding Axiom Guard release-surface tracking.",
-    "sources.json": "Top-level version is 2.14.0-candidate; sources_version 2.14.0-candidate preserves prior source tiers and quarantine boundaries.",
-    "docs/FAQ.md": "Version and Package Alignment markers track the v2.14.0-candidate package release for public-facing user guidance.",
-    "docs/GOVERNANCE_OVERVIEW.md": "Version and Package Alignment markers track the v2.14.0-candidate package release for maintainer and auditor guidance.",
-    "docs/aaiv_protocol_v2.12.md": "Version remains 2.12.0; release review confirmed Package Alignment exception is intentional for v2.14.0-candidate.",
-    "docs/aaiv_agent_spec_v2.12.md": "Version remains 2.12.0; release review confirmed Package Alignment exception is intentional for v2.14.0-candidate.",
-    "bayesian_framework.json": "Framework surface intentionally remains at BAAM v2.11.2; v2.14.0-candidate release review preserves T4 guardrails and does not force framework SemVer alignment.",
-    "BOOTLOADER.md": "Version and Package Alignment refreshed to v2.14.0-candidate for Axiom Guard sidecar startup registration.",
-    "PROMPTS/guardian_prompt.md": "Governance prompt release review completed for v2.14.0-candidate; Version and Package Alignment markers match the manifest.",
-    "tools/axiom_guard": "Sidecar tool keeps internal runtime version 0.2.1 while package alignment is tracked by the v2.14.0-candidate manifest entry."
+    "instructions.txt": "instructions signature validated; sealed release alignment for v2.14.0 on 2026-04-29.",
+    "knowledge_base_merged_v2.json": "Top-level version is 2.14.0 (kb_version 2.14.0; last_updated 2026-04-29T00:00:00Z).",
+    "tags_index.json": "Top-level version is authoritative for manifest alignment; v2.14.0 preserves tag schema while adding Axiom Guard release-surface tracking.",
+    "sources.json": "Top-level version is 2.14.0; sources_version 2.14.0 preserves prior source tiers and quarantine boundaries.",
+    "docs/FAQ.md": "Version and Package Alignment markers track the v2.14.0 package release for public-facing user guidance.",
+    "docs/GOVERNANCE_OVERVIEW.md": "Version and Package Alignment markers track the v2.14.0 package release for maintainer and auditor guidance.",
+    "docs/aaiv_protocol_v2.12.md": "Version remains 2.12.0; release review confirmed Package Alignment exception is intentional for v2.14.0.",
+    "docs/aaiv_agent_spec_v2.12.md": "Version remains 2.12.0; release review confirmed Package Alignment exception is intentional for v2.14.0.",
+    "bayesian_framework.json": "Framework surface intentionally remains at BAAM v2.11.2; v2.14.0 release review preserves T4 guardrails and does not force framework SemVer alignment.",
+    "BOOTLOADER.md": "Version and Package Alignment refreshed to v2.14.0 for Axiom Guard sidecar startup registration.",
+    "PROMPTS/guardian_prompt.md": "Governance prompt release review completed for v2.14.0; Version and Package Alignment markers match the manifest.",
+    "tools/axiom_guard": "Sidecar tool keeps internal runtime version 0.2.1 while package alignment is tracked by the v2.14.0 manifest entry."
   },
   "changelog_summary": {
     "v2.8": "Entropy Domain Control; Settings (98); Tools (97); adaptive fetch; token budgeting; Canvas Insight Blocks; Confidence Bar; Mini-Timeline; Auditor profile; watermark/IP controls",
@@ -163,7 +163,7 @@
     "v2.12.2": "Truth Surface Reconciliation Patch: synchronized release surfaces, aligned manifest file-version metadata, normalized tags index schema metadata, added explicit re-audit/re-sign checklist policy, and clarified enforceable 30-day currency/archival routing rules.",
     "v2.12.3": "Sealed integration milestone: Option C domain-gated taxonomy/routing/templates+entrypoints, overdue queue sweep completion, STF Option C gate/full-suite pass logging, and governance hardening finalized.",
     "v2.12.4": "Post-seal cumulative 3I/ATLAS patch: SPHEREx, isotopic, spectroscopy, and NGA uncertainty updates added; JPL live solution and Jupiter approach refreshed; Earth safety/TESS carried; Galileo deferred; stale observing guidance archived.",
-    "v2.14.0-candidate": "NexGen Axiom Guard integration: adds bounded governance sidecar, negative-null runtime classifier, CLI audit shell, memory/audit persistence, and release preflight bridge."
+    "v2.14.0": "NexGen Axiom Guard integration: adds bounded governance sidecar, negative-null runtime classifier, CLI audit shell, memory/audit persistence, and release preflight bridge."
   },
   "key_features": {
     "provenance_discipline": "Source registry + as_of + confidence labeling for factual claims",
@@ -224,8 +224,8 @@
   "attribution": "Developed under BordneAI Ethical Operating System [EOS] with GCET Level 7+ meta-governance principles",
   "uuid": "3e23a554-7f87-43cd-9709-0f5808ce880f",
   "signature_status": "signature_validated",
-  "signature": "#ATLAS-SIG-MANIFEST-v2.14.0-candidate-Δ2026-04-29",
-  "fingerprint_sha256": "15fc3637a1d302ce1d5dfae380dda46d255a34f159e48dcbc8cea3c0bdafb0af",
+  "signature": "#ATLAS-SIG-MANIFEST-v2.14.0-Δ2026-05-01",
+  "fingerprint_sha256": "ce2f48fa535297f49fabffd808a0b781fef92446afbd3c4f5cf69d84c433895c",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
   "signature_blocking": false,
   "continuity_score": 9.7,
@@ -234,10 +234,10 @@
   "chi_enabled": true,
   "reflexion_hook_enabled": true,
   "public_audit_badge": true,
-  "signature_validated_at": "2026-04-29T22:55:38.217Z",
-  "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:55:38.217Z.",
-  "release_type": "minor_candidate",
+  "signature_validated_at": "2026-05-01T06:51:03.181Z",
+  "validated_by": "ATLAS-Local-Sign-v2.14.0",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-05-01T06:51:03.181Z.",
+  "release_type": "minor",
   "last_updated": "2026-04-29",
   "update_ledger": [
     {
@@ -255,11 +255,11 @@
       }
     },
     {
-      "patch_id": "v2.14.0-candidate-axiom-guard-sidecar",
-      "release": "2.14.0-candidate",
-      "release_type": "minor_candidate",
+      "patch_id": "v2.14.0-axiom-guard-sidecar",
+      "release": "2.14.0",
+      "release_type": "minor",
       "integrated_on": "2026-04-29",
-      "status": "candidate-integrated",
+      "status": "integrated",
       "counts": {
         "sidecar_tools_added": 1,
         "release_gates_added": 1,

@@ -1,6 +1,6 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
-## v2.14.0-candidate — NexGen Axiom Guard Integration (2026-04-29)
+## v2.14.0 — NexGen Axiom Guard Integration (2026-04-29)
 
 ### Added
 - Added `tools/axiom_guard/` as a bounded governance sidecar runtime.
@@ -9,7 +9,7 @@
 - Registered Axiom Guard in `manifest.json`.
 
 ### Updated
-- Promoted package state from sealed patch release to minor candidate release.
+- Promoted package state from sealed patch release to sealed minor release.
 - Added release-gate expectations for Axiom Guard tests, KB validation, and signature refresh.
 
 ### Governance
@@ -200,7 +200,7 @@ Each release includes an ATLAS signature marker and is validated via EOS provena
 
 ### ⚖️ License & Signature
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.14.0  
 Released under CC BY-NC-SA 4.0 • Integrity Score 9.7  
 
 Signature Status: signature_validated

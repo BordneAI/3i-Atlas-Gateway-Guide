@@ -3,14 +3,14 @@
 **Project:** 3i/ATLAS Gateway Guide  
 **Author:** David Bordne (@BordneAI)  
 **Version:** 2.12.0  
-**Package Alignment:** 2.14.0-candidate  
+**Package Alignment:** 2.14.0  
 **Status:** Draft-Active (Design Spec)  
 **Linked Protocol:** `docs/aaiv_protocol_v2.12.md`  
 **Tier Focus:** T4 (Speculative Hypothesis Generator Only)  
 
 > This document defines a conceptual AAIV Assessment Agent that *implements* the AAIV Protocol.
 > It is a design target for future flows/tools — not a guarantee that such an agent is live by default.
-> This draft surface remains versioned at v2.12.0; the package-alignment line records the current v2.14.0-candidate repo release reviewed against it.
+> This draft surface remains versioned at v2.12.0; the package-alignment line records the current v2.14.0 repo release reviewed against it.
 
 ---
 

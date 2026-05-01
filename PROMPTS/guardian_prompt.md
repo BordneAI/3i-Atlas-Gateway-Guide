@@ -1,7 +1,7 @@
 # 3i/ATLAS Guardian Prompt
 
-**Version:** 2.14.0-candidate  
-**Package Alignment:** 2.14.0-candidate  
+**Version:** 2.14.0  
+**Package Alignment:** 2.14.0  
 
 
 Use this prompt when working on this repository with AI tools

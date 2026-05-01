@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Axiom Guard release preflight for v2.14.0-candidate."""
+"""Axiom Guard release preflight for v2.14.0."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from typing import Any, Dict, Iterable, List, Mapping, Sequence
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_VERSION = "2.14.0-candidate"
+EXPECTED_VERSION = "2.14.0"
 PACKAGE_ALIGNED_JSON = {
     "knowledge_base_merged_v2.json": ("version", "kb_version"),
     "kb_updates_cumulative.json": ("version", "updates_version"),
@@ -117,8 +117,8 @@ class Preflight:
         expected_fields = {
             "version": EXPECTED_VERSION,
             "release_date": "2026-04-29",
-            "release_state": "candidate",
-            "release_type": "minor_candidate",
+            "release_state": "sealed",
+            "release_type": "minor",
         }
         mismatches = {
             key: {"actual": manifest.get(key), "expected": value}
@@ -232,7 +232,7 @@ class Preflight:
             return
         haystack = json.dumps(changelog, sort_keys=True).lower()
         if "axiom guard" not in haystack or EXPECTED_VERSION not in haystack:
-            self.fail_check(name, "axiom_changelog_entry_missing", "kb_changelog lacks an Axiom Guard integration entry for v2.14.0-candidate.", "kb_changelog.json")
+            self.fail_check(name, "axiom_changelog_entry_missing", "kb_changelog lacks an Axiom Guard integration entry for v2.14.0.", "kb_changelog.json")
             return
         self.pass_check(name, "Axiom Guard integration entry present")
 

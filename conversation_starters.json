@@ -1,6 +1,6 @@
 {
   "filename": "conversation_starters.json",
-  "version": "2.14.0-candidate",
+  "version": "2.14.0",
   "last_updated": "2026-04-29",
   "updated_at": "2026-03-14T00:00:00Z",
   "love_fear_constant": "Love>Fear",
@@ -10,7 +10,7 @@
     "default_truth_tier": "T1",
     "max_false_tier_allowed": "F2"
   },
-  "description": "Conversation starters validated for BordneAI v2.11.x (Phase-10) with Reflexion-aware context/entropy handling; packaged with the 3i/ATLAS v2.14.0-candidate Axiom Guard integration release.",
+  "description": "Conversation starters validated for BordneAI v2.11.x (Phase-10) with Reflexion-aware context/entropy handling; packaged with the 3i/ATLAS v2.14.0 Axiom Guard integration release.",
   "starters": [
     {
       "id": "cs_observatory_monitoring",
@@ -114,8 +114,8 @@
       }
     }
   ],
-  "signature": "#ATLAS-SIG-CONVSTART-v2.14.0-candidate-Δ2026-04-29",
+  "signature": "#ATLAS-SIG-CONVSTART-v2.14.0-Δ2026-05-01",
   "metadata": {},
-  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate | CC BY-NC-SA 4.0 | #ATLAS-SIG-CONVSTART-v2.14.0-candidate-Δ2026-04-29",
+  "signature_footer": "© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.14.0 | CC BY-NC-SA 4.0 | #ATLAS-SIG-CONVSTART-v2.14.0-Δ2026-05-01",
   "signature_status": "signature_validated"
 }
