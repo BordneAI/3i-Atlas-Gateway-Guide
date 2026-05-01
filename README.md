@@ -1,6 +1,6 @@
-# 🌌 3i/ATLAS Gateway Guide — v2.12.4
-### *BordneAI Post-Seal Cumulative 3I/ATLAS Refresh (Phase-11 on Phase-10)*  
-Version: **2.12.4** | Phase: **11** | Last Updated: **2026-03-14** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
+# 🌌 3i/ATLAS Gateway Guide — v2.14.0-candidate
+### *NexGen Axiom Guard Integration (Phase-11 on Phase-10)*  
+Version: **2.14.0-candidate** | Phase: **11** | Last Updated: **2026-04-29** | Integrity Score: **9.7** | Ethics Constant: **Love > Fear** | Audit Cycle: **24 h**
 README is informational; canonical surfaces govern
 
 **Validation (v2.11.x runtime engine):**  
@@ -8,7 +8,7 @@ README is informational; canonical surfaces govern
 9.85/10 (Grok aggregate peer review, v2.11.1) ·  
 9.75/10 (human peer review, v2.10.1 baseline)
 
-> v2.12.4 keeps the v2.11.x continuity runtime base while integrating the approved post-seal 3I/ATLAS cumulative refresh.
+> v2.14.0-candidate keeps the v2.11.x continuity runtime base, carries the v2.12.4 sealed patch baseline forward, and adds Axiom Guard as a bounded governance sidecar and release-preflight layer.
 
 ---
 
@@ -16,11 +16,16 @@ README is informational; canonical surfaces govern
 
 **3i/ATLAS Gateway Guide** provides an ethically governed, continuously validated knowledge framework built on the **BordneAI Phase-10 Continuity Protocols**.
 
-**v2.12.4 is a patch-level knowledge and release-surface refresh.**  
-It does not change core runtime behavior semantics, but it integrates approved live 3I/ATLAS updates, release-surface hardening, and related archival/audit handling.
+**v2.14.0-candidate is a non-breaking minor candidate release.**  
+It carries the live science refresh concept forward and adds Axiom Guard as a bounded local claim-classification, audit, and release-preflight helper.
 
 This version:
 
+- Adds `tools/axiom_guard/` as a dependency-light governance sidecar
+- Adds negative-null smoke tests for non-detection claims
+- Adds `scripts/axiom_preflight.py` as a release-preflight bridge
+- Keeps Axiom Guard bounded: not AGI, not consciousness, and not a KB replacement
+- Preserves AAIV as T4-only, opt-in, natural-first, and low-prior
 - Integrates approved LIVE 3I/ATLAS updates for SPHEREx observations, isotopic composition, post-perihelion spectroscopy, and non-gravitational acceleration uncertainty
 - Refreshes the current JPL Horizons solution snapshot and March 2026 Jupiter-approach geometry
 - Carries forward NASA Earth-safety and TESS campaign status as still current-valid
@@ -54,6 +59,32 @@ For a fast entry point into the repo's behavior and public-facing intent:
 
 - `docs/FAQ.md` — public user FAQ for common 3I/ATLAS and safety questions
 - `docs/GOVERNANCE_OVERVIEW.md` — maintainer/auditor summary of BAAM, AAIV, CHI, Reflexion, Rumor Radar, and Plain Mode
+
+---
+
+## Axiom Guard Sidecar
+
+Axiom Guard is a bounded governance runtime used for claim classification, negative-null discipline, local audit logging, optional memory records, and release preflight checks.
+
+Run:
+
+```bash
+cd tools/axiom_guard
+./run_axiom_guard.sh --plain --no-persist
+./run_axiom_guard.sh --json --no-persist
+```
+
+Negative-null claims mean bounded non-detection, not proof of absence.
+
+Release preflight:
+
+```bash
+python scripts/axiom_preflight.py --plain
+node scripts/validate_kb.js
+node scripts/refresh_release_signatures.js --all --write
+```
+
+Axiom Guard is a governance helper only. It does not replace source-based reasoning, the KB, or live web verification.
 
 ---
 
@@ -115,7 +146,7 @@ v2.11.1 introduced numeric tier weights (T0 → +5 … T5 → 0; F0 → 0 … F7
 - Expanded governance tags  
 - Automated integrity audit cycle (24 h default)
 
-v2.12.4 does **not** replace the core Phase-10 engine; it applies a factual patch-level 3I/ATLAS refresh on top of the sealed governance baseline.
+v2.14.0-candidate does **not** replace the core Phase-10 engine; it adds a bounded Axiom Guard sidecar and release-preflight layer on top of the sealed governance baseline.
 
 ---
 
@@ -129,6 +160,8 @@ v2.12.4 does **not** replace the core Phase-10 engine; it applies a factual patc
 | `conversation_starters.json` | Persona-aware entry prompts and routing starters |
 | `PROMPTS/guardian_prompt.md` | Contributor governance prompt for AI-assisted repo work |
 | `scripts/normalize_updates.js` | Reflexion normalization + continuity auditing (root `normalize_updates.js` kept as compatibility shim) |
+| `scripts/axiom_preflight.py` | Axiom Guard release preflight bridge |
+| `tools/axiom_guard/` | Bounded governance sidecar for claim classification and negative-null smoke checks |
 | `stress_test_framework.json` | CHI + integrity stress tests |
 | `sources.json` | Provenance registry |
 | `knowledge_base_merged_v2.json` | Tier-tagged knowledge corpus |
@@ -190,6 +223,14 @@ Run `node scripts/validate_kb.js` after release-surface edits, and use `node scr
 
 ## 🪶 Version Changelog
 
+**2.14.0-candidate — NexGen Axiom Guard Integration (2026-04-29)**  
+– Added `tools/axiom_guard/` as a bounded governance sidecar.  
+– Added `scripts/axiom_preflight.py` release-preflight bridge.  
+– Added negative-null smoke tests for non-detection claims.  
+– Registered Axiom Guard in `manifest.json`.  
+– Preserved AAIV as T4-only, opt-in, natural-first, and low-prior.  
+– Breaking changes: none.
+
 **2.12.3 — Governance Hardening + Seal Finalization (2026-02-22)**  
 – Canonical surfaces reconciled to sealed state.  
 – Option C gate + STF infrastructure integrated and hardened.  
@@ -228,8 +269,7 @@ Responses are tier-labeled, provenance-tracked, and continuity-validated.
 
 ## ⚖️ License & Attribution
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.4  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate  
 Released under CC BY-NC-SA 4.0  
 Integrity Score 9.7  
 Signature Status: signature_validated
-

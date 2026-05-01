@@ -1,5 +1,26 @@
 # 🧾 3i/ATLAS Gateway Guide — CHANGELOG
 
+## v2.14.0-candidate — NexGen Axiom Guard Integration (2026-04-29)
+
+### Added
+- Added `tools/axiom_guard/` as a bounded governance sidecar runtime.
+- Added negative-null classification smoke tests for non-detection claims.
+- Added `scripts/axiom_preflight.py` as the release preflight bridge.
+- Registered Axiom Guard in `manifest.json`.
+
+### Updated
+- Promoted package state from sealed patch release to minor candidate release.
+- Added release-gate expectations for Axiom Guard tests, KB validation, and signature refresh.
+
+### Governance
+- Axiom Guard is not AGI, not consciousness, and not a replacement for the KB.
+- It acts as a local claim-classification, audit, and release-preflight layer.
+- Negative-null claims remain observational limits, not proof of absence.
+- AAIV remains T4-only, opt-in, natural-first, and low-prior.
+
+### Breaking Changes
+- None.
+
 ## v2.12.4 — Post-Seal Cumulative 3I/ATLAS Refresh (2026-03-14)
 
 ### Added
@@ -179,7 +200,7 @@ Each release includes an ATLAS signature marker and is validated via EOS provena
 
 ### ⚖️ License & Signature
 
-© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.12.4  
+© 2026 BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate  
 Released under CC BY-NC-SA 4.0 • Integrity Score 9.7  
 
 Signature Status: signature_validated

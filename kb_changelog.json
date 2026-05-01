@@ -637,10 +637,38 @@
         }
       ],
       "tier_system": "truth_tier T1/T2 with internal audit flag preserved as non-scientific package metadata"
+    },
+    {
+      "update_id": "kb_apply_axiom_guard_sidecar_20260429_v2_14_0_candidate",
+      "applied_at": "2026-04-29T00:00:00Z",
+      "status": "candidate-integrated",
+      "type": "governance_sidecar_integration",
+      "package_version": "2.14.0-candidate",
+      "summary": "Added Axiom Guard as a bounded governance sidecar and release preflight layer; negative-null smoke semantics classify non-detection as bounded non-detection, not proof of absence.",
+      "applied_in_files": [
+        "manifest.json",
+        "CHANGELOG.md",
+        "README.md",
+        "instructions.txt",
+        "BOOTLOADER.md",
+        "PROMPTS/guardian_prompt.md",
+        "docs/FAQ.md",
+        "docs/GOVERNANCE_OVERVIEW.md",
+        "tools/axiom_guard/",
+        "scripts/axiom_preflight.py",
+        ".github/workflows/validate-kb.yml",
+        ".github/workflows/release-version-gate.yml"
+      ],
+      "governance": {
+        "axiom_guard_boundary": "not AGI, not consciousness, not a KB replacement",
+        "negative_null": "bounded non-detection",
+        "aaiv": "T4-only, opt-in, natural-first, low-prior",
+        "breaking_changes": "none"
+      }
     }
   ],
   "audit_cycle_hours": 24,
-  "changelog_version": "2.12.4",
+  "changelog_version": "2.14.0-candidate",
   "chi_target": 9.7,
   "description": "Immutable BordneAI Changelog for Knowledge Base Evolution — integrated Reflexion audits, CHI scoring, and tier transparency.",
   "entries": [
@@ -1046,6 +1074,20 @@
         "skipped": 11,
         "failed_case_ids": []
       }
+    },
+    {
+      "update_id": "release_axiom_guard_preflight_20260429_v2_14_0_candidate",
+      "update_type": "release_preflight_gate",
+      "package_version": "2.14.0-candidate",
+      "timestamp_utc": "2026-04-29T00:00:00Z",
+      "summary": {
+        "sidecar": "tools/axiom_guard/",
+        "preflight": "scripts/axiom_preflight.py",
+        "required_smoke": "classify: No radio signal was detected",
+        "expected_classification": "Negative Null",
+        "expected_detection_status": "bounded non-detection",
+        "governance_boundary": "Axiom Guard is bounded local governance tooling, not AGI, not consciousness, and not a KB replacement."
+      }
     }
   ],
   "entropy": {
@@ -1055,8 +1097,8 @@
   },
   "filename": "kb_changelog.json",
   "fingerprint_method": "sha256_canonical_json_excluding_signature_block",
-  "fingerprint_sha256": "d45443fae02098157096ee65a3db7e925c6848eebd7ca4ae67ba54ea0fbd7682",
-  "generated_at": "2026-03-14T00:00:00Z",
+  "fingerprint_sha256": "773e5f47ef6248d22924a46d6e6a7adc0e08cafb3642068b2dabaceca1546b1c",
+  "generated_at": "2026-04-29T00:00:00Z",
   "integrity_audit": {
     "as_of": "2026-02-17T03:31:47Z",
     "audit_passed": true,
@@ -1103,11 +1145,11 @@
   },
   "purpose": "Immutable log of all applied knowledge base updates with audit trail",
   "reflexion_validation": true,
-  "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.12.4-Δ2026-03-15",
-  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.12.4 | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-CHANGELOG-v2.12.4-Δ2026-03-15",
+  "signature": "#ATLAS-SIG-KB-CHANGELOG-v2.14.0-candidate-Δ2026-04-29",
+  "signature_footer": "© BordneAI – 3i/ATLAS Gateway Guide v2.14.0-candidate | CC BY-NC-SA 4.0 | #ATLAS-SIG-KB-CHANGELOG-v2.14.0-candidate-Δ2026-04-29",
   "signature_status": "signature_validated",
-  "version": "2.12.4",
-  "signature_validated_at": "2026-03-15T04:47:29.604Z",
-  "validated_by": "ATLAS-Local-Sign-v2.12.4",
-  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-03-15T04:47:29.604Z."
+  "version": "2.14.0-candidate",
+  "signature_validated_at": "2026-04-29T22:55:38.217Z",
+  "validated_by": "ATLAS-Local-Sign-v2.14.0-candidate",
+  "validation_basis": "Local signature refresh via scripts/refresh_release_signatures.js using sha256_canonical_json_excluding_signature_block at 2026-04-29T22:55:38.217Z."
 }

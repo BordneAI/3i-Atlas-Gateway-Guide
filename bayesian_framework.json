@@ -119,7 +119,7 @@
     "analysis_tool",
     "v2.10"
   ],
-  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.2-Δ2026-03-15",
+  "signature": "#ATLAS-SIG-BAYESIAN-v2.11.2-Δ2026-04-29",
   "posterior_formula": "posterior = normalize( prior * Π_i likelihood_i^weight(tier_i) )",
   "mappings": {
     "ordinal_to_numeric": {

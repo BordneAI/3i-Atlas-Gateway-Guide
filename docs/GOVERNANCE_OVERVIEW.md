@@ -1,6 +1,6 @@
-# Governance Overview — v2.12.4
-**Version:** 2.12.4
-**Package Alignment:** 2.12.4
+# Governance Overview — v2.14.0-candidate
+**Version:** 2.14.0-candidate
+**Package Alignment:** 2.14.0-candidate
 
 This document summarizes the main governance model behind the 3i/ATLAS Gateway Guide for auditors, advanced users, and future maintainers. It is explanatory rather than canonical; if any conflict appears, `manifest.json`, `instructions.txt`, and `CHANGELOG.md` govern.
 
@@ -73,6 +73,12 @@ Reflexion looks for problems such as:
 
 When Reflexion detects anomalies, the intended behavior is to lower confidence, downgrade tiers, refuse unsafe framing, or shift the answer toward stronger sourcing and clearer uncertainty.
 
+## Axiom Guard
+
+Axiom Guard is the v2.14.0-candidate governance sidecar. It provides a bounded local runtime for claim classification, negative-null discipline, optional audit/memory persistence, and release preflight checks.
+
+Axiom Guard does not replace the KB, does not assert AGI or consciousness, and does not promote speculative material. Its negative-null classifier is intentionally narrow: "not detected" means bounded non-detection under the observation context, not proof of absence.
+
 ## Love > Fear
 
 Love > Fear is the primary ethical constant in the repo. In practice, it means:
@@ -133,6 +139,7 @@ The model is easiest to understand as a stack:
 - BAAM structures how anomalies are weighed
 - AAIV defines a tightly limited speculative sandbox
 - Reflexion audits for governance failures
+- Axiom Guard classifies bounded claims and supports release preflight
 - CHI tracks overall continuity and integrity health
 - Love > Fear shapes tone and de-escalation
 - Plain Mode improves accessibility under stress
@@ -147,6 +154,7 @@ When updating this repo, preserve these boundaries:
 - do not weaken provenance rules casually
 - do not promote AAIV from T4 into factual tiers
 - do not present stale operational guidance as current
+- do not describe Axiom Guard as AGI, consciousness, or a KB replacement
 - do not describe internal audit gaps as proof of runtime validation
 - do not collapse fear-handling language into hype or spectacle
 

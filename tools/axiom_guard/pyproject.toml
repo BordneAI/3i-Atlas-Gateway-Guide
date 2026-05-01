@@ -1,0 +1,13 @@
+[project]
+name = "axiom-guard"
+version = "0.2.1"
+description = "Bounded governance sidecar for 3i/ATLAS claim classification and release preflight smoke checks"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.axiom_guard]
+package_alignment = "2.14.0-candidate"
+public_surface = false
+status = "candidate-active"
+standard_library_only = true
+
