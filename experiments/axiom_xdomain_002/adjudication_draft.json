@@ -1,0 +1,331 @@
+{
+  "study_id": "AXIOM-XDOMAIN-002",
+  "record_type": "adjudication_draft",
+  "source_policy": "derived_from_committed_event_ledger_no_raw_mutation",
+  "summary": {
+    "study_id": "AXIOM-XDOMAIN-002",
+    "generated_utc": "2026-05-02T16:57:44Z",
+    "as_of_utc": "2026-05-02T16:57:44Z",
+    "adjudication_stage": "bridge_no_physical_matching_no_scoring",
+    "n_prediction_records": 15,
+    "n_physical_records": 0,
+    "n_other_records": 0,
+    "n_logged_outcome_overrides": 1,
+    "n_windows_open": 12,
+    "n_windows_closed_unmatched": 0,
+    "n_excluded": 3,
+    "scoring_performed": false,
+    "physical_matching_performed": false
+  },
+  "prediction_records": [
+    {
+      "record_id": "C_002_20260501_075716",
+      "record_type": "cognitive",
+      "raw_file": "raw/cognitive/C_002_20260501_075716.txt",
+      "timestamp_utc": "2026-05-01T07:57:16Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T07:57:16Z",
+      "window_end_utc": "2026-05-04T07:57:16Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "spectroscopy",
+        "isotopes",
+        "water",
+        "nga"
+      ],
+      "valid_for_matching": false,
+      "fallback_generated": false,
+      "logged_outcome_applied": true,
+      "provisional_outcome": "excluded",
+      "outcome_status": "logged_exclusion",
+      "matched_event_ids": [],
+      "reason": "Logged exclusion: Prediction overly broad (4 topic tags) relative to preregistered optimal specificity; excluded before any outcome observed."
+    },
+    {
+      "record_id": "C_002_20260501_080311",
+      "record_type": "cognitive",
+      "raw_file": "raw/cognitive/C_002_20260501_080311.txt",
+      "timestamp_utc": "2026-05-01T08:03:11Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:03:11Z",
+      "window_end_utc": "2026-05-04T08:03:11Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "spectroscopy"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "C_002_20260501_080322",
+      "record_type": "cognitive",
+      "raw_file": "raw/cognitive/C_002_20260501_080322.txt",
+      "timestamp_utc": "2026-05-01T08:03:22Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:03:22Z",
+      "window_end_utc": "2026-05-04T08:03:22Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "isotopes"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "C_002_20260501_080330",
+      "record_type": "cognitive",
+      "raw_file": "raw/cognitive/C_002_20260501_080330.txt",
+      "timestamp_utc": "2026-05-01T08:03:30Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:03:30Z",
+      "window_end_utc": "2026-05-04T08:03:30Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "water"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "C_002_20260501_080712",
+      "record_type": "cognitive",
+      "raw_file": "raw/cognitive/C_002_20260501_080712.txt",
+      "timestamp_utc": "2026-05-01T08:07:12Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:07:12Z",
+      "window_end_utc": "2026-05-04T08:07:12Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260501_080802",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_080802.txt",
+      "timestamp_utc": "2026-05-01T08:08:02Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:08:02Z",
+      "window_end_utc": "2026-05-04T08:08:02Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "spectroscopy",
+        "isotopes",
+        "water",
+        "nga",
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260501_081820",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_081820.txt",
+      "timestamp_utc": "2026-05-01T08:18:20Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:18:20Z",
+      "window_end_utc": "2026-05-04T08:18:20Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": false,
+      "fallback_generated": true,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "excluded",
+      "outcome_status": "provisional",
+      "matched_event_ids": [],
+      "reason": "Fallback/generated recovery output; preserve but exclude from scoring."
+    },
+    {
+      "record_id": "K_002_20260501_082542",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_082542.txt",
+      "timestamp_utc": "2026-05-01T08:25:42Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:25:42Z",
+      "window_end_utc": "2026-05-04T08:25:42Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": false,
+      "fallback_generated": true,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "excluded",
+      "outcome_status": "provisional",
+      "matched_event_ids": [],
+      "reason": "Fallback/generated recovery output; preserve but exclude from scoring."
+    },
+    {
+      "record_id": "K_002_20260501_082741",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_082741.txt",
+      "timestamp_utc": "2026-05-01T08:27:41Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T08:27:41Z",
+      "window_end_utc": "2026-05-04T08:27:41Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260501_121917",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_121917.txt",
+      "timestamp_utc": "2026-05-01T12:19:17Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T12:19:17Z",
+      "window_end_utc": "2026-05-04T12:19:17Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260501_123651",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_123651.txt",
+      "timestamp_utc": "2026-05-01T12:36:51Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T12:36:51Z",
+      "window_end_utc": "2026-05-04T12:36:51Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260501_124857",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_124857.txt",
+      "timestamp_utc": "2026-05-01T12:48:57Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T12:48:57Z",
+      "window_end_utc": "2026-05-04T12:48:57Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260501_125001",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260501_125001.txt",
+      "timestamp_utc": "2026-05-01T12:50:01Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-01T12:50:01Z",
+      "window_end_utc": "2026-05-04T12:50:01Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260502_000010",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260502_000010.txt",
+      "timestamp_utc": "2026-05-02T00:00:10Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-02T00:00:10Z",
+      "window_end_utc": "2026-05-05T00:00:10Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260502_120001",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260502_120001.txt",
+      "timestamp_utc": "2026-05-02T12:00:01Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-02T12:00:01Z",
+      "window_end_utc": "2026-05-05T12:00:01Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    }
+  ],
+  "physical_records": [],
+  "other_records": []
+}
