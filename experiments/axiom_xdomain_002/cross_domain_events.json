@@ -231,6 +231,151 @@
       "independence_group": "scheduled_computational_run",
       "contamination_risk": 0.15,
       "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_121917",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T12:19:17Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.0,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T12:19:17Z"
+      },
+      "tier": "T3",
+      "confidence": 0.0,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_121917.txt",
+      "raw_hash_sha256": "sha256:d6ed9e55e066c0811a94c94e81b34c77d641857c1a86d5c9c5a8e181c12cf9af",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_123651",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T12:36:51Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.0,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T12:36:51Z"
+      },
+      "tier": "T3",
+      "confidence": 0.0,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_123651.txt",
+      "raw_hash_sha256": "sha256:77f583792b0e4eafe9fca81ad1a2e882ce76f40d6dda7e17954f84f7953fe2d2",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_124857",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T12:48:57Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.0,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T12:48:56Z"
+      },
+      "tier": "T3",
+      "confidence": 0.0,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_124857.txt",
+      "raw_hash_sha256": "sha256:18e73b8afe0e8f2125c82d2f42f36f9c36714110c4d18eb7fc2f498d7a0425f4",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260501_125001",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-01T12:50:01Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.0,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-01T12:50:01Z"
+      },
+      "tier": "T3",
+      "confidence": 0.0,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260501_125001.txt",
+      "raw_hash_sha256": "sha256:fdc55b3eeaa2c0dc086f688291ece93d3a202ef78d25044bb20626ef7e86af45",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
+    },
+    {
+      "event_id": "K_002_20260502_000010",
+      "domain": "computational",
+      "timestamp_utc": "2026-05-02T00:00:10Z",
+      "system": "Axiom/Gateway",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "model_or_runtime_version": "v2.15.0-candidate",
+      "output_json": {
+        "classification": "scheduled_control_run",
+        "confidence": 0.0,
+        "expected_topics": [
+          "no-update"
+        ],
+        "lmstudio_model": "google/gemma-4-e4b",
+        "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+        "prediction_window_hours": 72,
+        "run_utc": "2026-05-02T00:00:10Z"
+      },
+      "tier": "T3",
+      "confidence": 0.0,
+      "anomaly_score": 0.6,
+      "hash_created_before_outcome": true,
+      "raw_file": "raw/computational/K_002_20260502_000010.txt",
+      "raw_hash_sha256": "sha256:ef1cce587bedc4d280e6c8df7a2e263ef4329ec812b7274ec241b595c1212984",
+      "hash_method": "sha256_raw_file_v1",
+      "independence_group": "scheduled_computational_run",
+      "contamination_risk": 0.15,
+      "negative_null": false
     }
   ]
 }

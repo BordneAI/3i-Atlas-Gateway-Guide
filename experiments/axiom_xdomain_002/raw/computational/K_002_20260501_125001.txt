@@ -1,0 +1,7 @@
+event_id=K_002_20260501_125001
+timestamp_utc=2026-05-01T12:50:01Z
+prompt_id=AXIOM-XDOMAIN-002-FIXED-PROMPT-001
+prompt=Assess whether any current 3I/ATLAS-related scientific release is likely within the next 72 hours. Classify expected domain tags only. Do not browse. Do not use new external information. Output fixed JSON only.
+output_json={"classification": "scheduled_control_run", "confidence": 0.0, "expected_topics": ["no-update"], "lmstudio_model": "google/gemma-4-e4b", "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.", "prediction_window_hours": 72, "run_utc": "2026-05-01T12:50:01Z"}
+hash_created_before_outcome=true
+study_id=AXIOM-XDOMAIN-002
