@@ -1,7 +1,7 @@
 {
   "study_id": "AXIOM-XDOMAIN-002",
   "record_type": "interim_experiment_summary",
-  "generated_utc": "2026-05-02T17:15:16Z",
+  "generated_utc": "2026-05-02T17:37:33Z",
   "source_policy": "derived_report_no_raw_mutation",
   "files": {
     "events": "experiments/axiom_xdomain_002/cross_domain_events.json",
@@ -45,7 +45,7 @@
       "file": "experiments/axiom_xdomain_002/raw/computational/K_002_20260502_120001.txt",
       "event_id": "K_002_20260502_120001",
       "timestamp_utc": "2026-05-02T12:00:01Z",
-      "age_hours": 5.254
+      "age_hours": 5.626
     },
     "summary": {
       "n_checks": 11,

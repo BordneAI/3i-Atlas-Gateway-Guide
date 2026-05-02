@@ -1,6 +1,6 @@
 # AXIOM-XDOMAIN-002 Interim Summary
 
-Generated UTC: 2026-05-02T17:15:16Z
+Generated UTC: 2026-05-02T17:37:33Z
 
 ## Status
 
@@ -50,7 +50,7 @@ Current report is baseline-only. No physical events have been ingested, no physi
 - File: experiments/axiom_xdomain_002/raw/computational/K_002_20260502_120001.txt
 - Event ID: K_002_20260502_120001
 - Timestamp UTC: 2026-05-02T12:00:01Z
-- Age hours: 5.254
+- Age hours: 5.626
 
 ## Limitations
 
