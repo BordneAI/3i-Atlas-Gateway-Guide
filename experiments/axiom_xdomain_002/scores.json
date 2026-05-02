@@ -1,54 +1,134 @@
 {
+  "study_id": "AXIOM-XDOMAIN-002",
+  "generated_utc": "2026-05-02T07:55:41Z",
   "summary": {
-    "n_scored": 9,
+    "n_records": 9,
+    "n_scored": 7,
+    "n_excluded": 2,
     "total_score": 0.0,
     "mean_score": 0.0
   },
   "results": [
     {
-      "prediction_id": "C_002_20260501_080330",
+      "event_id": "K_002_20260501_080802",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "spectroscopy",
+        "isotopes",
+        "water",
+        "nga",
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260501_080802.txt"
     },
     {
-      "prediction_id": "C_002_20260501_080322",
-      "outcome": "null",
-      "score": 0.0
+      "event_id": "K_002_20260501_081820",
+      "record_type": "computational",
+      "valid_prediction": false,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.25,
+      "outcome": "excluded",
+      "score": null,
+      "reason": "Fallback/generated recovery output; not scored as model prediction.",
+      "raw_file": "raw/computational/K_002_20260501_081820.txt"
     },
     {
-      "prediction_id": "C_002_20260501_080311",
-      "outcome": "null",
-      "score": 0.0
+      "event_id": "K_002_20260501_082542",
+      "record_type": "computational",
+      "valid_prediction": false,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.25,
+      "outcome": "excluded",
+      "score": null,
+      "reason": "Fallback/generated recovery output; not scored as model prediction.",
+      "raw_file": "raw/computational/K_002_20260501_082542.txt"
     },
     {
-      "prediction_id": "C_002_20260501_080712",
+      "event_id": "K_002_20260501_082741",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260501_082741.txt"
     },
     {
-      "prediction_id": "C_002_20260501_075716",
+      "event_id": "K_002_20260501_121917",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260501_121917.txt"
     },
     {
-      "prediction_id": "K_002_20260501_081820",
+      "event_id": "K_002_20260501_123651",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260501_123651.txt"
     },
     {
-      "prediction_id": "K_002_20260501_082741",
+      "event_id": "K_002_20260501_124857",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260501_124857.txt"
     },
     {
-      "prediction_id": "K_002_20260501_080802",
+      "event_id": "K_002_20260501_125001",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260501_125001.txt"
     },
     {
-      "prediction_id": "K_002_20260501_082542",
+      "event_id": "K_002_20260502_000010",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
       "outcome": "null",
-      "score": 0.0
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260502_000010.txt"
     }
   ]
 }

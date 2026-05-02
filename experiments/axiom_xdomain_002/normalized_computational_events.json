@@ -1,0 +1,182 @@
+{
+  "study_id": "AXIOM-XDOMAIN-002",
+  "record_type": "normalized_computational_events",
+  "source_policy": "derived_from_raw_files_no_raw_mutation",
+  "records": [
+    {
+      "event_id": "K_002_20260501_080802",
+      "timestamp_utc": "2026-05-01T08:08:02Z",
+      "raw_file": "raw/computational/K_002_20260501_080802.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "spectroscopy",
+        "isotopes",
+        "water",
+        "nga",
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": null,
+      "run_utc": "2026-05-01T08:08:02Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "Fixed scheduled computational run. No browsing. No new external information used.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_081820",
+      "timestamp_utc": "2026-05-01T08:18:20Z",
+      "raw_file": "raw/computational/K_002_20260501_081820.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.25,
+      "lmstudio_model": "qwen/qwen3.6-35b-a3b",
+      "run_utc": "2026-05-01T08:18:20Z",
+      "valid_prediction": false,
+      "fallback_generated": true,
+      "notes": "Fallback JSON due LM Studio parse/error: JSONDecodeError",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_082542",
+      "timestamp_utc": "2026-05-01T08:25:42Z",
+      "raw_file": "raw/computational/K_002_20260501_082542.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.25,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-01T08:25:42Z",
+      "valid_prediction": false,
+      "fallback_generated": true,
+      "notes": "Fallback JSON due LM Studio parse/error: JSONDecodeError",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_082741",
+      "timestamp_utc": "2026-05-01T08:27:41Z",
+      "raw_file": "raw/computational/K_002_20260501_082741.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-01T08:27:41Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_121917",
+      "timestamp_utc": "2026-05-01T12:19:17Z",
+      "raw_file": "raw/computational/K_002_20260501_121917.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-01T12:19:17Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_123651",
+      "timestamp_utc": "2026-05-01T12:36:51Z",
+      "raw_file": "raw/computational/K_002_20260501_123651.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-01T12:36:51Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_124857",
+      "timestamp_utc": "2026-05-01T12:48:57Z",
+      "raw_file": "raw/computational/K_002_20260501_124857.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-01T12:48:56Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260501_125001",
+      "timestamp_utc": "2026-05-01T12:50:01Z",
+      "raw_file": "raw/computational/K_002_20260501_125001.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-01T12:50:01Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260502_000010",
+      "timestamp_utc": "2026-05-02T00:00:10Z",
+      "raw_file": "raw/computational/K_002_20260502_000010.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-02T00:00:10Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
+    }
+  ]
+}
