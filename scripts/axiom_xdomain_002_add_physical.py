@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "experiments" / "axiom_xdomain_002"
-EVENTS_FILE = EXP / "cross_domain_events.json"
+DEFAULT_EVENTS_FILE = EXP / "cross_domain_events.json"
 
 VALID_TIERS = {"T1", "T2", "T3", "T4"}
 
@@ -31,24 +31,24 @@ def slugify(value):
     return value.strip("-")[:40] or "event"
 
 
-def load_events():
-    if not EVENTS_FILE.exists():
+def load_events(path):
+    if not path.exists():
         return {
             "study_id": "AXIOM-XDOMAIN-002",
             "version": "0.1-preregistered",
             "events": []
         }
 
-    data = json.loads(EVENTS_FILE.read_text())
+    data = json.loads(path.read_text(encoding="utf-8"))
 
     if "events" not in data or not isinstance(data["events"], list):
-        raise SystemExit("cross_domain_events.json must contain an 'events' array")
+        raise SystemExit(f"{path} must contain an 'events' array")
 
     return data
 
 
-def write_events(data):
-    EVENTS_FILE.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+def write_events(path, data):
+    path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 
 
 def make_event_id(timestamp_utc, topic_tags, source_reference):
@@ -88,6 +88,7 @@ def main():
         description="Append an independent physical/cross-domain event for AXIOM-XDOMAIN-002."
     )
 
+    parser.add_argument("--events-file", default=str(DEFAULT_EVENTS_FILE), help="Target event ledger. Defaults to live cross_domain_events.json.")
     parser.add_argument("--timestamp-utc", required=True, help="Event/publication timestamp in UTC ISO format")
     parser.add_argument("--source-tier", required=True, choices=sorted(VALID_TIERS))
     parser.add_argument("--confidence", required=True, type=float)
@@ -102,6 +103,7 @@ def main():
 
     args = parser.parse_args()
 
+    events_file = Path(args.events_file)
     topic_tags = [t.strip().lower() for t in args.topic_tags.split(",") if t.strip()]
     timestamp_utc = parse_utc(args.timestamp_utc)
     ingested_at_utc = utc_now()
@@ -126,7 +128,7 @@ def main():
 
     validate_event(event)
 
-    data = load_events()
+    data = load_events(events_file)
 
     existing_ids = {e.get("event_id") for e in data["events"]}
     if event["event_id"] in existing_ids:
@@ -135,17 +137,17 @@ def main():
     if args.dry_run:
         print(json.dumps({
             "dry_run": True,
-            "would_append_to": str(EVENTS_FILE.relative_to(ROOT)),
+            "would_append_to": str(events_file),
             "event": event
         }, indent=2))
         return
 
     data["events"].append(event)
-    write_events(data)
+    write_events(events_file, data)
 
     print(json.dumps({
         "appended": event["event_id"],
-        "file": str(EVENTS_FILE.relative_to(ROOT)),
+        "file": str(events_file),
         "timestamp_utc": event["timestamp_utc"],
         "source_tier": event["source_tier"],
         "topic_tags": event["topic_tags"]
