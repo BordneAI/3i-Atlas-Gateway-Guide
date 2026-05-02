@@ -1,0 +1,73 @@
+{
+  "study_id": "AXIOM-XDOMAIN-002",
+  "record_type": "interim_experiment_summary",
+  "generated_utc": "2026-05-02T17:15:16Z",
+  "source_policy": "derived_report_no_raw_mutation",
+  "files": {
+    "events": "experiments/axiom_xdomain_002/cross_domain_events.json",
+    "scores": "experiments/axiom_xdomain_002/scores.json",
+    "adjudication": "experiments/axiom_xdomain_002/adjudication_draft.json",
+    "source_eligibility": "experiments/axiom_xdomain_002/SOURCE_ELIGIBILITY.md",
+    "summary_json": "experiments/axiom_xdomain_002/reports/summary.json",
+    "summary_md": "experiments/axiom_xdomain_002/reports/summary.md"
+  },
+  "event_ledger": {
+    "n_events": 15,
+    "domain_counts": {
+      "cognitive": 5,
+      "computational": 10
+    }
+  },
+  "raw_files": {
+    "raw_cognitive_files": 5,
+    "raw_computational_files": 10
+  },
+  "scoring": {
+    "n_records": 10,
+    "n_scored": 8,
+    "n_excluded": 2,
+    "total_score": 0.0,
+    "mean_score": 0.0
+  },
+  "adjudication": {
+    "n_prediction_records": 15,
+    "n_physical_records": 0,
+    "n_logged_outcome_overrides": 1,
+    "n_windows_open": 12,
+    "n_windows_closed_unmatched": 0,
+    "n_excluded": 3,
+    "scoring_performed": false,
+    "physical_matching_performed": false
+  },
+  "healthcheck": {
+    "status": "pass",
+    "latest_computational_output": {
+      "file": "experiments/axiom_xdomain_002/raw/computational/K_002_20260502_120001.txt",
+      "event_id": "K_002_20260502_120001",
+      "timestamp_utc": "2026-05-02T12:00:01Z",
+      "age_hours": 5.254
+    },
+    "summary": {
+      "n_checks": 11,
+      "n_pass": 11,
+      "n_warn": 0,
+      "n_fail": 0
+    }
+  },
+  "interpretation": {
+    "baseline_only": true,
+    "physical_events_ingested": 0,
+    "physical_matching_performed": false,
+    "scoring_performed_by_adjudication": false,
+    "signal_conclusion": "none",
+    "t2_candidate_assessment": "blocked",
+    "plain_language": "Current report is baseline-only. No physical events have been ingested, no physical matching has been performed, and no signal conclusion can be drawn yet."
+  },
+  "limitations": [
+    "No real physical/publication event has been appended to the live ledger yet.",
+    "No physical event matching has been performed.",
+    "No final hit/miss adjudication has been performed.",
+    "Current score is baseline/null behavior and does not indicate positive or negative anomaly evidence.",
+    "AXIOM-XDOMAIN outputs remain experimental/T3 unless separately adjudicated, reviewed, and promoted."
+  ]
+}
