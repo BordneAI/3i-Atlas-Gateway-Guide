@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 import json
+import os
 import re
 import subprocess
 import urllib.request
+from urllib.parse import urlparse
 import urllib.error
 from pathlib import Path
 from datetime import datetime, timezone
 
-BASE = "http://localhost:1111"
+BASE = os.environ.get("LMSTUDIO_BASE_URL")
+if not BASE:
+    raise RuntimeError("LMSTUDIO_BASE_URL must be set by the local runtime wrapper.")
 MODEL_PREFERENCE = [
     "google/gemma-4-e4b",
     "openai/gpt-oss-20b",
@@ -55,7 +59,11 @@ def ensure_server():
     try:
         return http_json("GET", "/v1/models")
     except Exception:
-        subprocess.run(["lms", "server", "start", "--port", "1111"], check=False)
+        parsed = urlparse(BASE)
+        cmd = ["lms", "server", "start"]
+        if parsed.port:
+            cmd.extend(["--port", str(parsed.port)])
+        subprocess.run(cmd, check=False)
     return http_json("GET", "/v1/models")
 
 def choose_model(models):
