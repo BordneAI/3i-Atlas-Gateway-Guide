@@ -1,9 +1,9 @@
 {
   "study_id": "AXIOM-XDOMAIN-002",
-  "generated_utc": "2026-05-02T16:28:12Z",
+  "generated_utc": "2026-05-03T07:07:25Z",
   "summary": {
-    "n_records": 10,
-    "n_scored": 8,
+    "n_records": 11,
+    "n_scored": 9,
     "n_excluded": 2,
     "total_score": 0.0,
     "mean_score": 0.0
@@ -142,6 +142,19 @@
       "score": 0.0,
       "reason": "No qualifying physical/publication event adjudicated yet.",
       "raw_file": "raw/computational/K_002_20260502_120001.txt"
+    },
+    {
+      "event_id": "K_002_20260503_000002",
+      "record_type": "computational",
+      "valid_prediction": true,
+      "expected_topics": [
+        "no-update"
+      ],
+      "confidence": 0.0,
+      "outcome": "null",
+      "score": 0.0,
+      "reason": "No qualifying physical/publication event adjudicated yet.",
+      "raw_file": "raw/computational/K_002_20260503_000002.txt"
     }
   ]
 }
