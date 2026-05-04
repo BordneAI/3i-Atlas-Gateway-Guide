@@ -215,6 +215,25 @@
       "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
       "hash_created_before_outcome": true,
       "study_id": "AXIOM-XDOMAIN-002"
+    },
+    {
+      "event_id": "K_002_20260504_000002",
+      "timestamp_utc": "2026-05-04T00:00:02Z",
+      "raw_file": "raw/computational/K_002_20260504_000002.txt",
+      "prompt_id": "AXIOM-XDOMAIN-002-FIXED-PROMPT-001",
+      "classification": "scheduled_control_run",
+      "expected_topics": [
+        "no-update"
+      ],
+      "prediction_window_hours": 72,
+      "confidence": 0.0,
+      "lmstudio_model": "google/gemma-4-e4b",
+      "run_utc": "2026-05-04T00:00:02Z",
+      "valid_prediction": true,
+      "fallback_generated": false,
+      "notes": "No specific pattern or scheduled release information is available for 3I/ATLAS within the next 72 hours based on general prior expectations.",
+      "hash_created_before_outcome": true,
+      "study_id": "AXIOM-XDOMAIN-002"
     }
   ]
 }

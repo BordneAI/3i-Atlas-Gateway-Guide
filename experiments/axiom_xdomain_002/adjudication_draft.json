@@ -4,14 +4,14 @@
   "source_policy": "derived_from_committed_event_ledger_no_raw_mutation",
   "summary": {
     "study_id": "AXIOM-XDOMAIN-002",
-    "generated_utc": "2026-05-03T07:07:25Z",
-    "as_of_utc": "2026-05-03T07:07:25Z",
+    "generated_utc": "2026-05-04T01:00:38Z",
+    "as_of_utc": "2026-05-04T01:00:38Z",
     "adjudication_stage": "bridge_no_physical_matching_no_scoring",
-    "n_prediction_records": 16,
+    "n_prediction_records": 17,
     "n_physical_records": 0,
     "n_other_records": 0,
     "n_logged_outcome_overrides": 1,
-    "n_windows_open": 13,
+    "n_windows_open": 14,
     "n_windows_closed_unmatched": 0,
     "n_excluded": 3,
     "scoring_performed": false,
@@ -333,6 +333,26 @@
       "window_hours": 72,
       "window_start_utc": "2026-05-03T00:00:02Z",
       "window_end_utc": "2026-05-06T00:00:02Z",
+      "window_closed_as_of": false,
+      "topics": [
+        "no-update"
+      ],
+      "valid_for_matching": true,
+      "fallback_generated": false,
+      "logged_outcome_applied": false,
+      "provisional_outcome": "null",
+      "outcome_status": "provisional_open_window",
+      "matched_event_ids": [],
+      "reason": "Outcome window is still open; no hit/miss adjudication performed."
+    },
+    {
+      "record_id": "K_002_20260504_000002",
+      "record_type": "computational",
+      "raw_file": "raw/computational/K_002_20260504_000002.txt",
+      "timestamp_utc": "2026-05-04T00:00:02Z",
+      "window_hours": 72,
+      "window_start_utc": "2026-05-04T00:00:02Z",
+      "window_end_utc": "2026-05-07T00:00:02Z",
       "window_closed_as_of": false,
       "topics": [
         "no-update"

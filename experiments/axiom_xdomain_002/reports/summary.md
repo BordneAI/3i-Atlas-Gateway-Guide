@@ -1,6 +1,6 @@
 # AXIOM-XDOMAIN-002 Interim Summary
 
-Generated UTC: 2026-05-03T07:07:25Z
+Generated UTC: 2026-05-04T01:00:38Z
 
 ## Status
 
@@ -16,30 +16,30 @@ Current report is baseline-only. No physical events have been ingested, no physi
 
 ## Event Ledger
 
-- Total events: 16
+- Total events: 17
 - Cognitive events: 5
-- Computational events: 11
+- Computational events: 12
 - Physical events: 0
 
 ## Raw Files
 
 - Raw cognitive files: 5
-- Raw computational files: 11
+- Raw computational files: 12
 
 ## Scoring Snapshot
 
-- Records: 11
-- Scored: 9
+- Records: 12
+- Scored: 10
 - Excluded: 2
 - Total score: 0.0
 - Mean score: 0.0
 
 ## Adjudication Draft
 
-- Prediction records: 16
+- Prediction records: 17
 - Physical records: 0
 - Logged outcome overrides: 1
-- Open windows: 13
+- Open windows: 14
 - Closed unmatched windows: 0
 - Excluded records: 3
 - Scoring performed: False
@@ -47,10 +47,10 @@ Current report is baseline-only. No physical events have been ingested, no physi
 
 ## Latest Computational Output
 
-- File: experiments/axiom_xdomain_002/raw/computational/K_002_20260503_000002.txt
-- Event ID: K_002_20260503_000002
-- Timestamp UTC: 2026-05-03T00:00:02Z
-- Age hours: 7.123
+- File: experiments/axiom_xdomain_002/raw/computational/K_002_20260504_000002.txt
+- Event ID: K_002_20260504_000002
+- Timestamp UTC: 2026-05-04T00:00:02Z
+- Age hours: 1.01
 
 ## Limitations
 

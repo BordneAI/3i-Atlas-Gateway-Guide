@@ -1,7 +1,7 @@
 {
   "study_id": "AXIOM-XDOMAIN-002",
   "record_type": "interim_experiment_summary",
-  "generated_utc": "2026-05-03T07:07:25Z",
+  "generated_utc": "2026-05-04T01:00:38Z",
   "source_policy": "derived_report_no_raw_mutation",
   "files": {
     "events": "experiments/axiom_xdomain_002/cross_domain_events.json",
@@ -12,28 +12,28 @@
     "summary_md": "experiments/axiom_xdomain_002/reports/summary.md"
   },
   "event_ledger": {
-    "n_events": 16,
+    "n_events": 17,
     "domain_counts": {
       "cognitive": 5,
-      "computational": 11
+      "computational": 12
     }
   },
   "raw_files": {
     "raw_cognitive_files": 5,
-    "raw_computational_files": 11
+    "raw_computational_files": 12
   },
   "scoring": {
-    "n_records": 11,
-    "n_scored": 9,
+    "n_records": 12,
+    "n_scored": 10,
     "n_excluded": 2,
     "total_score": 0.0,
     "mean_score": 0.0
   },
   "adjudication": {
-    "n_prediction_records": 16,
+    "n_prediction_records": 17,
     "n_physical_records": 0,
     "n_logged_outcome_overrides": 1,
-    "n_windows_open": 13,
+    "n_windows_open": 14,
     "n_windows_closed_unmatched": 0,
     "n_excluded": 3,
     "scoring_performed": false,
@@ -42,10 +42,10 @@
   "healthcheck": {
     "status": "pass",
     "latest_computational_output": {
-      "file": "experiments/axiom_xdomain_002/raw/computational/K_002_20260503_000002.txt",
-      "event_id": "K_002_20260503_000002",
-      "timestamp_utc": "2026-05-03T00:00:02Z",
-      "age_hours": 7.123
+      "file": "experiments/axiom_xdomain_002/raw/computational/K_002_20260504_000002.txt",
+      "event_id": "K_002_20260504_000002",
+      "timestamp_utc": "2026-05-04T00:00:02Z",
+      "age_hours": 1.01
     },
     "summary": {
       "n_checks": 11,
